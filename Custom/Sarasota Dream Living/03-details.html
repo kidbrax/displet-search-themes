@@ -1,7 +1,9 @@
 {{ bottom_navigation }}
+<div class="clear"></div>
+
 <div class='col1'>
 
-  <div id='actions1' class="dropshadow oswald">
+  <div id='actions1'>
     <div id='requestShowing'>{{ request_showing }}</div>
     <div id='addToFavorites'>{{ add_to_favorites }}</div>
 	<div class="clear"></div>
@@ -26,7 +28,7 @@
 
       <div class='subColumnTwo'>
         <p>{{ num_bedrooms }} Bed / {{ full_baths }} Bath</p>
-        <p># Stories {{ stories }}</p>
+        <p># Stories: {{ stories }}</p>
         <p>{{ square_feet }} Sq. Ft.</p>
         <p><span class='fieldName'>Property Type:</span> {{ property_type }}</p>
         <p><span class='fieldName'>Year Built:</span> {{ year_built }}</p>
@@ -39,7 +41,6 @@
   <div class='tanBack' id='detailsRemarks'>
     <p class="tanbacktit">Agent Description</p>
     <p>{{ remarks }}</p>
-    <p class="remarks">*These remarks entered by listing agent.</p>
   </div>
 
 <div id='detailsProperty2' class='tanBack'>

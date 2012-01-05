@@ -8,14 +8,14 @@ Global Styles
 }
 
 body {
-  	color: #464646;
+  	color: #243d39;
 	font-family: Arial;
-	font-size: 11px;
+	font-size: 12px;
 }
 
-a, a:visited{
+a{
 	text-decoration:none;
-	color:#666;
+	color:#000;
 }
 
 a:hover{
@@ -57,13 +57,11 @@ Wrapper Styles
 	width: 960px;
 	margin: 0px auto;
 	overflow: hidden;
+	margin-top: 30px;
 }
 
 #contentWrapper {
-	padding: 28px;
-	border:1px solid #ddd;
 	overflow: hidden;
-	background:#fff;
 }
 
 #contentWrapper h1, 
@@ -85,12 +83,16 @@ globalToolbar Styles
 ******************/
 
 #globalToolbar {
-	height: 45px;
-	font-weight: bold;
-	line-height:45px;
-	background:url('http://displet.com/images/displetorange/globaltoolbarback.png') 0 0 repeat-x;
+	height: 51px;
+	width: 960px;
+	line-height:51px;
+	background:url('http://displet.com/images/sarasotadreamliving/globaltoolbarback.png') 0 0 no-repeat;
 	color:#fff;
 	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	text-shadow: 1px 1px 3px #111;
+	text-transform: uppercase;
 }
 
 #globalToolbar a {
@@ -104,15 +106,13 @@ globalToolbar Styles
 
 #userToolbarLinks {
 	float: left;
-	margin-right: 21px;
+	margin-left: 20px;
+	margin-right: 10px;
 }
 
 #userToolbarLinks li {
 	float: left;
-	font-size: 12px;
-	padding-left:21px;
-	padding-right: 23px;
-	background: url('http://displet.com/images/displetorange/globaltoolbarborder.png') right top repeat-y;
+	padding: 0px 10px;
 }
 
 #quickSearch {
@@ -122,25 +122,32 @@ globalToolbar Styles
 #quickSearch form {
 	float: left;
 	display: inline;
-	padding-top: 9px;
+	padding-top: 12px;
 }
 
 #quickSearch input {
 	display: inline;
 	float: left;
-	height: 24px;
-	border-top: 1px solid #404040;
-	border-left: 1px solid #404040;
-	margin:0 11px;
+	height: 26px;
+	border: 1px solid #386c61;
+	margin: 0px 10px;
 	padding: 0px 5px;
-	line-height:24px;
+	line-height:26px;
 	background:#fff;
-	color:#a4a4a4;
-	width: 91px;
+	color:#1e3431;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	width: 102px;
 }
 
 input#street_name {
-	width: 147px;
+	width: 123px;
+	margin-left: 0px;
+}
+
+input#street_number{
+	width: 68px;
 }
 
 #quickSearch span#textQuick{
@@ -149,18 +156,22 @@ input#street_name {
 
 #quickSearch span#textOr{
 	float: left;
-	text-transform: uppercase;
 }
 
 #loggedIn {
 	float: right;
-	color: #757575;
-	margin: 10px 10px 0px 0px;
+	color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	text-shadow: 1px 1px 3px #111;
+	text-transform: uppercase;
+	margin: 8px 26px 0px 0px;
 	padding: 0px;
-	background:url('http://displet.com/images/displetorange/loginback.png') 0 0 no-repeat;
-	width:108px;
-	height:25px;
-	line-height:25px;
+	background:url('http://displet.com/images/sarasotadreamliving/loginback.png') 0 0 no-repeat;
+	width:149px;
+	height:37px;
+	line-height:35px;
 	text-align:center;
 }
 
@@ -180,8 +191,9 @@ searchFormContainer Styles
 
 #searchFormContainer {
 	margin-bottom: 10px;
-	border:1px solid #dfdfdf;
-	border-top:0;
+	border:1px solid #3b7f6b;
+	background-color: #fff;
+	margin-top: 10px;
 }
 
 #standardFields {
@@ -192,38 +204,53 @@ searchFormContainer Styles
 #searchFormContainer .column{
 	float:left;
 	width:291px;
-	padding:12px 4px 0px 4px;
+	padding: 11px 11px 0px 11px;
 }
 
 #searchFormContainer .ctrlHolder{
 	float:left;
 	padding-bottom:12px;
 	margin:0 9px;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	color: #224444;
 }
 
 #searchFormContainer label{
 	display:block;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #224444;
 	padding-bottom:6px;
 }
 
 #searchFormContainer select, #searchFormContainer input{
 	width:127px;
-	height:23px;
-	line-height:23px;
+	height:25px;
+	line-height:25px;
 	background:#fff;
-	color:#a4a4a4;
-	border:1px solid #8ba6bf;
+	color:#224444;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	border:1px solid #386c61;
 	padding:1px 1px 1px 5px;
+	font-weight: 500;
 }
 
 #searchFormContainer input{
 	width:119px;
-	height:19px;
-	border: 1px solid #ddd;
-	border-top: 1px solid #949494;
-	border-left: 1px solid #949494;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
+	height:21px;
+	line-height: 21px;
+}
+
+#searchFormContainer input::-webkit-input-placeholder{
+	color: #224444;
+}
+
+#searchFormContainer input::-moz-placeholder{
+	color: #224444;
 }
 
 #searchFormContainer .tinySearchSelect{
@@ -236,6 +263,7 @@ searchFormContainer Styles
 }
 
 #searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
+	width: 127px;
 }
 
 #searchFormContainer #minListPrice{
@@ -247,7 +275,6 @@ searchFormContainer Styles
 }
 
 #searchFormContainer #minAcres{
-	width:125px;
 }
 
 #searchFormContainer #yearBuilt{
@@ -267,6 +294,9 @@ searchFormContainer Styles
 
 #searchFormContainer .ctrlHolder .triggerLabel{
 	padding-bottom:4px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #224444;
 }
 
 #propertyStyleHolder label:first-child{
@@ -274,12 +304,12 @@ searchFormContainer Styles
 }
 
 #standardFields #stdColumn2 {
-	border-left:1px solid #e6e6e6;
-	border-right:1px solid #e6e6e6;
+	border-left:1px solid #dde5e8;
+	border-right:1px solid #dde5e8;
 }
 
 #advancedExtra {
-	border-top: 1px solid #e6e6e6;
+	border-top: 1px solid #dadada;
 	width: 100%;
 	overflow: hidden;
 }
@@ -288,19 +318,21 @@ searchFormContainer Styles
 Search Form Links Styles
 ******************/
 #searchFormLinks {
-	height: 24px;
-	line-height: 24px;
-	background-color: #666;
-	padding:0 10px;
+	height: 23px;
+	line-height: 23px;
+	background-color: #3b7f6b;
+	padding:0 19px;
 }
 
 #searchFormLinks small {
-	font-size:11px;
+	font-size:12px;
 }
 
 #searchFormLinks a {
 	color: #fff;
+	font-size: 12px;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 
@@ -318,25 +350,18 @@ Search Form Links Styles
 
 #searchLinksThree {
 	float: right;
-	width:256px;
+	width:257px;
 }
 
 #searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
 	display: block;
 	float: right;
-	height: 24px;
-	line-height: 24px;
+	height: 23px;
+	line-height: 23px;
 	width: 123px;
 	text-indent: 13px;
-	color: #fff;
-	font-weight: 700;
-	text-decoration: none;
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
-}
-
-#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
-	text-decoration:underline;
 }
 
 #saveSearchLink span, #searchformResetter span {
@@ -344,12 +369,12 @@ Search Form Links Styles
 }
 
 #saveSearchLink {
-	background-image: url('http://displet.com/images/displetorange/saveback.png');
+	background-image: url('http://displet.com/images/sarasotadreamliving/saveback.png');
 }
 
 #searchformResetter {
-	background-image: url('http://displet.com/images/displetorange/resetback.png');
-	margin-right:10px;
+	background-image: url('http://displet.com/images/sarasotadreamliving/resetback.png');
+	margin-right:11px;
 }
 
 /******************
@@ -379,21 +404,22 @@ Map and Listings Styles
 
 #leftColumn{
 	height:413px;
-	color: #000;
 	font-size: 13px;
-	font-family: Tahoma, sans-serif;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	background-color: #fff;
 }
 
 
 #leftColumn, #listLoader {
-	width: 445px;
+	width: 451px;
 }
 
 #resultsNav {
 	text-align: center;
-	height: 29px;
-	line-height: 29px;
-	border:1px solid #ddd;
+	height: 28px;
+	line-height: 28px;
+	border:1px solid #3b7f6b;
 	border-bottom:0;
 }
 
@@ -407,13 +433,21 @@ Map and Listings Styles
 }
 
 #prePage a {
-	background-image: url('http://displet.com/images/displetorange/leftarrow.png');
+	background-image: url('http://displet.com/images/sarasotadreamliving/leftarrow.png');
 	margin-right: 4px;
 }
 
 #nextPage a {
-	background-image: url('http://displet.com/images/displetorange/rightarrow.png');
+	background-image: url('http://displet.com/images/sarasotadreamliving/rightarrow.png');
 	margin-left: 4px;
+}
+
+#prePage a:hover {
+	background-image: url('http://displet.com/images/sarasotadreamliving/leftarrowhov.png');
+}
+
+#nextPage a:hover {
+	background-image: url('http://displet.com/images/sarasotadreamliving/rightarrowhov.png');
 }
 
 span.resultsPaginationArrow{
@@ -423,26 +457,27 @@ span.resultsPaginationArrow{
 #resultsList {
 	height: 382px;
 	padding-left: 11px;
-	border: 1px solid #ddd;
+	border: 1px solid #3b7f6b;
 	border-top: none;
 	overflow-x: auto;
 }
 
 div.resultRow {
-	background: url('http://displet.com/images/displetorange/resultsback.png') 0 0 no-repeat;
+	background: url('http://displet.com/images/sarasotadreamliving/resultsback.png') 0 0 no-repeat;
 	height: 72px;
-	width: 410px;
+	width: 418px;
 	overflow: hidden;
-	font-weight: normal !important;
-	margin-bottom: 5px;
-	cursor: pointer;}
+	margin-bottom: 6px;
+	cursor: pointer;
+	line-height: 16px;
+}
 
 div.resultRow:hover {
 	background-position: 0px bottom;
 }
 
 #leftColumn div.resultRow a {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	display: block;
 }
@@ -468,18 +503,18 @@ div.propertyAddress {
 	float: left;
 	width: 155px;
 	padding:0 10px;
-	margin-top:3px;
+	margin-top:4px;
 }
 
 div.propertyAddress strong {
-	font-weight: normal;
+	font-weight: 700;
 }
 
 div.propertyPriceBedsSf {
 	float: left;
-	width: 94px;
-	padding:0 8px;
-	margin-top:3px;
+	width: 103px;
+	padding-left: 8px;
+	margin-top: 4px;
 }
 
 #resultsDiv .viewDetailsLink{
@@ -487,22 +522,22 @@ div.propertyPriceBedsSf {
 }
 
 #rightColumn {
-	width: 442px;
+	width: 478px;
 	float:right;
-	border:1px solid #ddd;
+	border:1px solid #3b7f6b;
 }
 
 #resultsMap {
 	height: 411px;
 }
 
-/* Already 2px from above image */
+/* Already 2px down from image above this element */
 .balloonWrapper .viewDetailsLink{
 	display: block;
 	text-indent: -9999px;
 	width: 103px;
-	height: 28px;
-	background: url('http://displet.com/images/displetorange/balloondetails.png') 0 0 no-repeat;
+	height: 29px;
+	background: url('http://displet.com/images/sarasotadreamliving/balloondetails.png') 0 0 no-repeat;
 	margin-top: 2px;
 }
 
@@ -513,57 +548,65 @@ div.propertyPriceBedsSf {
 	padding-right: 10px;
 }
 
+.balloonWrapper #stats{
+	line-height: 16px;
+}
+
 /******************
 Detail Page Styles
 ******************/
 
 #searchContextPagination{
-	line-height:8px;
-	padding-left:20px;
-	margin-top:20px;
-	font-size:10px;
-	background:url('http://displet.com/images/displetorange/backarrow.png') 0 0 no-repeat;
-	margin-left: 1px;
+	line-height:14px;
+	padding-left:25px;
+	margin-top:15px;
+	font-size:12px;
+	font-weight: bold;
+	color: #224444;
+	background:url('http://displet.com/images/sarasotadreamliving/backarrow.png') 0 0 no-repeat;
+	float: right;
+	text-shadow: 0px 1px 1px #fff;
 }
 
 #searchContextPagination a, #searchContextPagination a:visited{
-	color:#f47121;
-	text-decoration:underline;
+	color:#224444;
+	text-decoration:none;
 }
 
 #searchContextPagination a:hover{
-	text-decoration:none;
+	text-decoration:underline;
 }
 
 /* Begins with Showing & Fave buttons */
 #residentials_detail .col1 {
 	float: left;
-	margin-top:18px;
-  	width: 427px;
+	margin-top:35px;
+  	width: 457px;
 }
 
 #actions1 {
-	margin-left: 1px;
 }
 
 #actions1 #requestShowing, #actions1 #saveFaveLink {
-	float:left;
-	width:191px;
-	height:37px;
-	line-height:37px;
+	height:36px;
+	line-height:36px;
 	text-indent:15px;
 	font-weight:700;
-	text-transform:uppercase;
-	text-shadow:1px 1px 2px #000;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	text-shadow: 0px 1px 2px #111;
 }
 
 #actions1 #requestShowing{
-	background:url('http://displet.com/images/displetorange/requestshowing.png') 0 0 no-repeat;
-	margin-right:25px;
+	background:url('http://displet.com/images/sarasotadreamliving/requestshowing.png') 0 0 no-repeat;
+	width: 212px;
+	float: left;
 }
 
 #actions1 #saveFaveLink {
-	background: url('http://displet.com/images/displetorange/addtofavorites.png') 0 0 no-repeat;
+	background: url('http://displet.com/images/sarasotadreamliving/addtofavorites.png') 0 0 no-repeat;
+	width: 210px;
+	float: right;
 }
 
 #actions1 a, #actions1 a:visited {
@@ -577,17 +620,21 @@ Detail Page Styles
 }
 
 #actions2 {
-	margin:32px 0 31px 16px;
+	margin: 27px 0 30px 16px;
 }
 
 #actions2 #callUs, #actions2 #sendToFriend {
 	float: left;
 	height:26px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	color: #224444;
+	font-weight: bold;
 }
 
 #callUs {
 	line-height: 14px;
-	background: url('http://displet.com/images/austincityhomesearch/question.png') 0 0 no-repeat;
+	background: url('http://displet.com/images/sarasotadreamliving/question.png') 0 0 no-repeat;
 	margin-right: 74px;
 	padding-left:24px;
 }
@@ -597,13 +644,13 @@ Detail Page Styles
 }
 
 #sendToFriend {
-	background: url('http://displet.com/images/austincityhomesearch/email.png') 0 0 no-repeat;
+	background: url('http://displet.com/images/sarasotadreamliving/email.png') 0 0 no-repeat;
 	line-height: 24px;
 	padding-left: 47px;
 }
 
 #sendToFriend a{
-	color: #e63a3a;
+	color: #224444;
 	text-decoration:underline;
 }
 
@@ -611,43 +658,49 @@ Detail Page Styles
 	text-decoration: none;
 }
 
-/*#facebook_like {
+#facebook_like {
   width: 350px;
   padding: 10px;
   margin: 0px auto 20px auto;
-}*/
+}
 
 #detailsHeader {
-	line-height: 24px;
-	color: #333;
-	margin-bottom: 13px;
+	line-height: 30px;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #fff;
 }
 
 #detailsHeader .address {
-	line-height: 14px;
+	line-height: 46px;
+	height: 46px;
+	width: 457px;
 	font-size: 18px;
-	font-family: 'PT Sans', sans-serif;
-	border-bottom: 1px solid #eeebe1;
-	font-weight:500;
-	padding-bottom:14px;
+	font-family: 'PT Serif', serif;
+	text-align: center;
+	background: url('http://displet.com/images/sarasotadreamliving/detailsheader.png') 0px 0px no-repeat;
+	text-shadow: 2px 2px 4px #333;
+	color: #fff;
 }
 
 #detailsHeader .price {
-	 font-size: 18px;
-	 line-height:16px;
-	 font-weight: 500;
-	 color: #e63a3a;
-	 text-align: right;
-	 margin-top:24px;
-	 margin-bottom:13px;
+	font-size: 30px;
+	line-height:30px;
+	color: #00755f;
+	font-family: 'PT Sans', sans-serif;
+	text-align: right;
+	margin-top:29px;
+	margin-bottom:17px;
 }
 
 #propertyAge {
-	color: #595954;
+	font-size: 12px;
+	font-family: 'PT Sans', sans-serif;
 }
 
 #propertyAge .red {
-	color: #f47121;
+	color: #233f39;
 }
 
 body#residentials_detail .subColumnOne {
@@ -662,33 +715,23 @@ body#residentials_detail .subColumnTwo {
 }
 
 .tanBack {
-	padding: 16px 15px 10px 15px;
+	padding: 17px 19px 19px 19px;
 	line-height: 18px;
-	border: 1px solid #dfdfdf;
+	border: 1px solid #3b7f6b;
+	background-color: #fff;
 	margin-bottom: 20px;
-	color: #666;
+	color: #000;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
 }
 
 .tanBack .tanbacktit {
-	font-size: 14px;
-	line-height: 10px;
-	color: #343434;
-	text-transform:uppercase;
-	margin-bottom: 16px;
-	font-family: 'PT Sans', sans-serif;
-}
-
-/* MT/-MB = PB of parent element */
-.tanBack p.remarks {
-	width:100%;
-	padding:0 15px;
-	margin-left:-15px;
-	height: 29px;
-	line-height:29px;
-	background-color: #bfbfbf;
-	color:#555;
-	margin-top: 10px;
-	margin-bottom: -10px;
+	font-size: 16px;
+	line-height: 16px;
+	color: #00755f;
+	font-weight: bold;
+	margin-bottom: 11px;
+	font-family: 'PT Serif', sans-serif;
 }
 
 /* Begins with tabbed Map/Photo/Comment section */
@@ -696,7 +739,7 @@ body#residentials_detail .subColumnTwo {
 	float: right;
 	overflow:hidden;
 	width: 427px;
-	margin-top:14px;
+	margin-top:40px;
 }
 
 #detailTabs {
@@ -715,12 +758,13 @@ body#residentials_detail .subColumnTwo {
 	padding: 0px 25px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-	font-weight: bold;
-	font-size: 12px;
-	border: 1px solid #ddd;
+	font-size: 13px;
+	font-family: 'PT Sans', sans-serif;
+	border: 1px solid #509989;
 	border-bottom: 0;
-	color: #666;
-	background-color: #e5e6d4;
+	color: #fff;
+	background-color: #509989;
+	font-weight: bold;
 }
 
 #detailTabs li a:hover{
@@ -728,8 +772,8 @@ body#residentials_detail .subColumnTwo {
 }
 
 #detailTabs li a.active {
-	background-color: #f47121;
-	border-color: #f47121;
+	background-color: #233f39;
+	border-color: #233f39;
 	color: #fff;
 }
 
@@ -737,7 +781,8 @@ body#residentials_detail .subColumnTwo {
 	clear: both;
 	padding: 9px;
 	margin-bottom: 20px;
-	border: 1px solid #ddd;
+	border: 1px solid #3b7f6b;
+	background-color: #fff;
 }
 
 #detailPhotos{
@@ -751,7 +796,7 @@ body#residentials_detail .subColumnTwo {
 }
 
 #userCommentsContainer a, #userCommentsContainer a:visited{
-	color: #333;
+	color: #3b7f6b;
 }
 
 #userComments h3{
@@ -761,7 +806,7 @@ body#residentials_detail .subColumnTwo {
 img#largeImage {
 	display: block;
 	width: 408px !important;
-	border: 1px solid #a6a6a6;
+	border: 1px solid #a5a5a5;
 }
 
 /* Width same as img#largeImage (with border) */
@@ -781,7 +826,7 @@ img#largeImage {
 #horizontal_carousel .container img {
 	width: 100px;
 	height: 90px;
-	border: 1px solid #dedede;
+	border: 1px solid #959595;
 	margin: 0 8px 0 0;
 }
 
@@ -842,21 +887,25 @@ Search List Results Styles
 ******************/
 
 #resultsToolbar {
-	height: 37px;
-	line-height: 37px;
-	padding: 0px 10px;
-	border:1px solid #ddd;
-	border-top:0;
+	height: 42px;
+	line-height: 42px;
+	padding: 0px 18px;
+	border:1px solid #488976;
+	background-color: #fff;
+	margin-top: 10px;
 	margin-bottom:20px;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
 }
 
 #resultsToolbar a {
-	color: #464646;
-	font-weight:700;
+	color: #336767;
 }
 
 #resultsToolbar #totalRecords {
-	color: #e63a3a;
+	color: #336767;
 }
 
 #resultsToolbar table {
@@ -874,15 +923,19 @@ Search List Results Styles
 }
 
 .resultListContainer {
-	border: 1px solid #ddd;
-	background: url('http://displet.com/images/displetorange/listback.png') 0 0 repeat-x;
+	border: 1px solid #3b7f6b;
+	background-color: #fff;
 	height: 102px;
-	line-height: 18px;
+	line-height: 20px;
+	font-size: 13px;
+	font-family: 'PT Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
 	margin-bottom: 10px;
 }
 
 .resultListContainer table td {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #e6e8e8;
 }
 
 .resultListContainer table {
@@ -892,14 +945,14 @@ Search List Results Styles
 
 td.propertyPreviewPic {
 	border-right: none !important;
-	padding: 8px;
+	padding: 8px 8px 0px 8px;
 	width: 115px;
 }
 
 td.propertyPreviewPic img {
 	width: 114px;
 	height:82px;
-	border: 1px solid #7a7a7a;
+	border: 1px solid #fff;
 }
 
 /* Subtract td.propertyPreviewPic PR */
@@ -908,41 +961,41 @@ td.propertyAddress {
 }
 
 td.propertyAddress strong {
-	font-weight:500;
+	font-weight:700;
 }
 
 td.price {
-	width: 112px;
-	padding-left: 30px;
-	padding-right: 10px;
-	line-height: 20px;
+	width: 137px;
+	text-align: center;
 }
 
 td.price .price {
-	color: #e63a3a;
-	font-size: 24px;
-	line-height: 30px;
-	margin-top:10px;
+	color: #3b7f6b;
+	font-size: 20px;
+	line-height: 26px;
 }
 
 td.propertyBedsSf {
-	width: 98px;
-	padding-left:15px;
+	width: 115px;
+	padding-left:26px;
 }
 
 td.actions {
-	width: 134px;
+	width: 155px;
 }
 
 td.actions .addToFaves {
 	display: inline-block;
 	height: 16px;
 	line-height: 16px;
-	padding-left: 23px;
-	background: url('http://displet.com/images/displetorange/liststar.png') 0 0 no-repeat;
-	color: #f47121;
-	margin-left:10px;
-	margin-bottom:8px;
+	padding-left: 24px;
+	background: url('http://displet.com/images/sarasotadreamliving/liststar.png') 0 0 no-repeat;
+	color: #224444;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	margin-left:21px;
+	margin-bottom:10px;
 	text-decoration:underline;
 }
 
@@ -954,15 +1007,16 @@ td.actions .addToFaves:hover {
 td.actions .makeRequest {
 	display: block;
 	text-align:center;
-	width: 112px;
-	height: 24px;
-	line-height: 24px;
+	width: 116px;
+	height: 25px;
+	line-height: 25px;
 	text-decoration: none;
 	color: #fff;
 	font-size: 10px;
-	margin-left: 11px;
-	margin-top: 8px;
-	background:url('http://displet.com/images/displetorange/requestinfoback.png') 0 0 no-repeat;
+	font-family: Arial, sans-serif;
+	margin-left: 20px;
+	margin-top: 10px;
+	background:url('http://displet.com/images/sarasotadreamliving/requestinfoback.png') 0 0 no-repeat;
 }
 
 td.actions .makeRequest:hover {
@@ -971,14 +1025,14 @@ td.actions .makeRequest:hover {
 
 td.propertyActions {
 	border-right: none !important;
-	width: 122px;
+	width: 151px;
 }
 
 td.propertyActions .viewDetailsLink {
 	display: block;
-	height: 31px;
-	width: 82px;
-	background: url('http://displet.com/images/displetorange/view-details.png') 0 0 no-repeat;
+	height: 38px;
+	width: 90px;
+	background: url('http://displet.com/images/sarasotadreamliving/view-details.png') 0 0 no-repeat;
 	text-indent: -9999px;
 	margin: 0px auto;
 	border-radius: 6px;
@@ -992,19 +1046,16 @@ td.propertyActions .viewDetailsLink:hover{
 Footer Link / Disclaimer Styles
 ******************/
 
-#footerOuter, #disclaimer{
+#disclaimer{
+	line-height: 14px;
 	width: 960px;
 	margin: 0px auto;
-	margin-top: 10px;
+	margin-top: 30px;
+	padding-bottom: 10px;
 }
 
 #footerOuter{
-	height:10px;
-	line-height: 10px;
-}
-
-#disclaimer{
-	line-height: 14px;
+	margin-top: 30px;
 }
 
 #footerInner ul li{
@@ -1017,7 +1068,23 @@ Footer Link / Disclaimer Styles
 	margin-right:0;
 }
 
-#footerInner ul li a, #footerInner ul li a:visited{
+#footerInner #customFooter ul li:last-child{
+	float: left;
+}
+
+#footerInner ul{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+#footerInner #customFooter ul{
+	width: inherit;
+	margin: inherit;
+	margin-top: inherit;
+}
+
+#footerInner ul li a{
 	text-decoration: underline;
 	color: #666;
 }
@@ -1252,3 +1319,406 @@ p#loginErrorRow {
 /******************
 Site Specific Styles
 ******************/
+
+body{
+	background-color: #ccebe4;
+	background-image: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/bodyback.png');
+	background-position: center 211px;
+	background-repeat: no-repeat;
+}
+
+.ptsans{
+	font-family: 'PT Sans', sans-serif;
+}
+
+.ptserif{
+	font-family: 'PT Serif', serif;
+}
+
+.upper{
+	text-transform: uppercase;
+}
+
+.shadow{
+	text-shadow: 1px 1px 3px #111;
+}
+
+.shadow2{
+	text-shadow: 1px 1px 2px #fff;
+}
+
+.margin{
+	width:960px;
+	margin: 0px auto;
+}
+
+.ir{
+	text-indent: -9999px;
+}
+
+.wpcont ul li{
+	padding-left: 37px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ullidef.png') 0px center no-repeat;
+	line-height: 16px;
+	margin: 7px 0px;
+}
+
+.wpcont ol{
+	padding-left: 18px;
+}
+
+.wpcont ol li{
+	padding-left: 6px;
+	list-style-type: decimal;
+	line-height: 16px;
+	margin: 7px 0px;
+}
+
+.wpcont blockquote{
+	background-color: #add6cd;
+	padding: 20px;
+	color: #273633;
+	border: 1px solid #509989;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+.wpcont blockquote p{
+	margin: 0px;
+	padding: 0px;
+	text-shadow: none;
+}
+
+/******************
+Header Styles
+******************/
+
+#header {
+	height: 166px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/headerback.png') 0px 0px repeat-x;
+}
+
+#logo{
+	height: 166px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/logoback.png') center center no-repeat;
+	margin: 0px auto;
+}
+
+/******************
+Navigation Styles
+******************/
+
+#navigation {
+	height: 51px;
+	line-height: 51px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/navback.png') 0px 0px repeat-x;
+}
+
+#navigation ul li{
+	padding-right: 53px;
+	padding-left: 53px;
+	margin-right: -22px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ulli.png') left center no-repeat;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+}
+
+#navigation ul li:first-child{
+	background-image: none;
+}
+
+#navigation ul li a, #navigation ul li a:visited, #navigationtwo ul li a, #navigationtwo ul li a:visited{
+	color: #fff;
+	text-decoration:none;
+	display: block;
+}
+
+#navigation ul li a:hover, #navigationtwo ul li a:hover{
+	text-decoration: underline;
+}
+
+#navigationtwo{
+	height: 44px;
+	line-height: 44px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/nav2back.png') 0px 0px repeat-x;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 0 17px;
+}
+
+#navigationtwo, #navigationtwo div, #navigationtwo ul, #navigationtwo li, #navigation div, #navigation ul, #navigation li{
+	display:inline-block;
+}
+
+#navigationtwo ul li{
+	padding-right: 19px;
+	padding-left: 42px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ulli2.png') left center no-repeat;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#navigationtwo ul li:first-child{
+	padding-left: 0px;
+	background-image: none;
+}
+
+#navigationtwo ul li:last-child{
+	padding-right: 0px;
+}
+
+/******************
+Dropdown Menu Styles
+******************/
+
+#navigation .menu li, #featuredareas .menu li {
+	position: relative;
+	z-index: 11;
+	display: block;
+}
+#navigation li.parent a:hover{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ulliparenthov.png') center bottom no-repeat;
+}
+#featuredareas li.parent a:hover{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ullisideparenthov.png') left center no-repeat;
+}
+#navigation .menu .sub-menu{
+	position: absolute;
+	z-index: 11;
+	display: block;
+	visibility: hidden;
+	background: #192d2a;
+	padding: 20px 0px;
+	left:11px !important;
+	text-transform:none !important;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#featuredareas .menu .sub-menu{
+	position: absolute;
+	z-index: 11;
+	display: block;
+	visibility: hidden;
+	background-color: #3b7f6b;
+	width: 272px;
+	left: -278px !important;
+	top: 9px !important;
+	text-transform: none !important;
+	padding: 5px 0px;
+	border-top-left-radius:6px;
+	border-bottom-left-radius:6px;
+}
+#navigation .menu .sub-menu li{
+	height: 27px;
+	line-height: 27px;
+	text-indent:21px;
+	clear: both;
+	padding: 0px;
+	width: 100%;
+	background-image: none;
+	text-align: left;
+}
+#featuredareas .menu .sub-menu li{
+	line-height: 18px;
+	padding: 4px 0px;
+	margin: 0px;
+	width: 139px;
+	float: left;
+	text-align: left;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#navigation .menu .sub-menu li:hover{
+	background-color: #416c65;
+}
+#featuredareas .menu .sub-menu li:hover{
+	background-color: inherit;
+}
+#navigation .menu .sub-menu a {
+	display: block;
+	color: #86c8ae;
+	width: 100%;
+	font-size: 11px;
+	text-transform: none;
+}
+#featuredareas .menu .sub-menu a{
+	display: block;
+	color: #fff;
+	padding: 0px 15px;
+	margin: 0px;
+	width: 109px;
+}
+#navigation .menu .sub-menu a:hover{
+	color: #fff;
+	background-image: none;
+}
+#featuredareas .menu .sub-menu a:hover{
+	text-decoration: underline;
+	background: none;
+}
+#navigationtwo .sub-menu{
+	display: none;
+}
+
+/******************
+Footer Form Styles
+******************/
+
+#thefooter{
+	border-top: 1px solid #50786f;
+	border-bottom: 1px solid #50786f;
+	background-color: #476b63;
+	background-image: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/thefooter.png');
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	min-height: 198px;
+	padding-bottom: 15px;
+}
+
+#ullifoot{
+	float: left;
+	margin-top: 22px;
+	width: 158px;
+	padding-right: 20px;
+}
+
+#thefooter ul li{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ullifoot.png') 0px center no-repeat;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold;
+	padding: 5px 0px 5px 19px;
+}
+
+#thefooter ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#thefooter ul li a:hover{
+	text-decoration: underline;
+}
+
+#thefooter .sub-menu{
+	display: none;
+}
+
+#footicons{
+	float: left;
+	width: 188px;
+	margin-top: 25px;
+}
+
+.footicon{
+	padding-left: 40px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	height: 24px;
+	line-height: 24px;
+	display: inline-block;
+}
+
+.footicon:hover{
+	text-decoration: underline;
+}
+
+#footfb{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/footfb.png') 0px 0px no-repeat;
+}
+
+#footrss{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/footrss.png') 0px 0px no-repeat;
+}
+
+#footli{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/footli.png') 0px 0px no-repeat;
+}
+
+#footemail{
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/footemail.png') 0px 0px no-repeat;
+}
+
+#footaddy{
+	float: left;
+	width: 300px;
+	line-height: 18px;
+	margin-top: 27px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#footaddy p{
+	margin-bottom: 13px;
+}
+
+#logosfoot{
+	float: right;
+	width: 274px;
+	font-size: 11px;
+	color: #fff;
+}
+
+#logofoot{
+	margin-top: 22px;
+	float: right;
+	width: 217px;
+	height: 60px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/logo.png') 0px 0px no-repeat;
+}
+
+#copyfoot{
+	float: right;
+	text-align: right;
+	line-height: 14px;
+	margin-top: 26px;
+}
+
+#designedfoot{
+	float: right;
+	font-style: italic;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 10px;
+}
+
+#designedfoot a{
+	display: block;
+	height:18px;
+}
+
+#wordpress{
+	float: right;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+	margin-right: 9px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/wordpress.png') 0px 0px no-repeat;
+}
+
+#poweredby{
+	float: right;
+	margin-right: 10px;
+}
+
+#displet{
+	float: right;
+	height: 15px;
+	line-height:15px;
+	width: 74px;
+	margin-right: 8px;
+	margin-top: 2px;
+	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/displet.png') 0px 0px no-repeat;
+}
+
+#designedby{
+	float: right;
+	margin-right: 7px;
+}
