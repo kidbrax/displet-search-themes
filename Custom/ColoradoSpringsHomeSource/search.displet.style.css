@@ -1,0 +1,1857 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+}
+
+a, a:visited{
+}
+
+a:hover{
+}
+
+img {border: 0;}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Wrapper Styles
+******************/
+#exteriorWrapperThree{
+}
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#contentWrapper {
+	overflow: hidden;
+	margin: 40px 0px;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+	font-size: normal;
+	line-height: normal;
+}
+
+#columnsFooter {
+	clear: both;
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	font-weight: bold;
+	background:url('http://displet.com/images/coloradospringshomesource/globaltoolbarback.png') 0 0 repeat-x;
+	height: 41px;
+	line-height:41px;
+	color:#fff;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+#userToolbarLinks {
+	float: left;
+	margin-right: 21px;
+}
+
+#userToolbarLinks li {
+	float: left;
+	padding-left:21px;
+	padding-right: 21px;
+}
+
+#quickSearch {
+	float: left;
+}
+
+#quickSearch form {
+	float: left;
+	display: inline;
+	padding-top: 9px;
+}
+
+#quickSearch input {
+	display: inline;
+	float: left;
+	height: 24px;
+	border: 1px solid #535a5b;
+	margin:0 11px;
+	padding: 0px 5px;
+	line-height:24px;
+	background: url('http://displet.com/images/coloradospringshomesource/input.png') 0px 0px no-repeat;
+	color:#3e3638;
+	font-size: 11px;
+	font-family: Verdana, sans-serif;
+	width: 106px;
+}
+
+input#street_number {
+	width: 66px;
+}
+
+input#street_name {
+	width: 142px;
+}
+
+#quickSearch span#textQuick{
+	float: left;
+}
+
+#quickSearch span#textOr{
+	float: left;
+	text-transform: uppercase;
+}
+
+#loggedIn {
+	float: right;
+	display: inline-block;
+	color: #fff;
+	border-top-right-radius:6px;
+	background:url('http://displet.com/images/coloradospringshomesource/loginback.png') 0 0 repeat-x;
+	height:41px;
+	line-height:41px;
+	text-align:center;
+	padding: 0px 20px;
+}
+
+#loggedIn a {
+  color: #fff;
+  text-decoration: none;
+  margin:0 2px;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	margin-bottom: 10px;
+	border:1px solid #d3d3c1;
+	background-color: #fff;
+	color: #363530;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+}
+
+#standardFields {
+	overflow: hidden;
+}
+
+#standardFields, #advancedExtra{
+	padding: 0px 8px;
+}
+
+#searchFormContainer .column{
+	float:left;
+	width:305px;
+	padding:12px 4px 0px 4px;
+}
+
+#searchFormContainer .ctrlHolder{
+	float:left;
+	padding-bottom:12px;
+	margin:0 9px;
+}
+
+#searchFormContainer label{
+	display:block;
+	padding-bottom:6px;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	width:134px;
+	height:25px;
+	line-height:25px;
+	background:#fff;
+	color:#5f676c;
+	border:1px solid #8ba6bf;
+	padding:1px 1px 1px 5px;
+}
+
+#searchFormContainer input{
+	width:126px;
+	height:21px;
+	line-height: 21px;
+	border: 1px solid #b9c0c1;
+	background: url('http://displet.com/images/coloradospringshomesource/input.png') 0px 0px no-repeat;
+}
+
+#searchFormContainer .tinySearchSelect{
+	width:83px;
+}
+
+/* Make these tiny selects default size  */
+#searchFormContainer #area_mls_defined, #searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
+	width:134px;
+}
+
+#searchFormContainer #minListPrice{
+	margin-right:15px;
+}
+
+#searchFormContainer #bedHolder{
+	clear: both;
+}
+
+#searchFormContainer #minAcres{
+}
+
+#searchFormContainer #yearBuilt{
+}
+
+#zipHolder{
+	clear:none !important;
+}
+
+#searchFormContainer .triggerLabel input{
+	width:14px !important;
+    border:0 !important;
+	background: inherit !important;
+	position: relative;
+	top: 6px;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	padding-bottom:4px;
+}
+
+#propertyStyleHolder label:first-child{
+	margin-top:6px;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #dde5e8;
+	border-right:1px solid #dde5e8;
+}
+
+#advancedExtra {
+	border-top: 1px solid #dadada;
+	width: 100%;
+	overflow: hidden;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+#searchFormLinks {
+	height: 23px;
+	line-height: 23px;
+	background-color: #434343;
+	padding:0 20px;
+}
+
+#searchFormLinks small {
+	font-size:11px;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+#searchLinksOne{
+	display:none;
+}
+
+#searchLinksTwo {
+	float: left;
+}
+
+#searchLinksThree {
+	float: right;
+	width:256px;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	display: block;
+	float: right;
+	height: 23px;
+	line-height: 23px;
+	width: 123px;
+	text-indent: 13px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink span, #searchformResetter span {
+	display: none;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/coloradospringshomesource/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/coloradospringshomesource/resetback.png');
+	margin-right:10px;
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#listLoader, #mapLoader {
+	background: white;
+	opacity: .7;
+	background-image: url('/images/loader_small_dots.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+	display: block;
+	position: absolute;
+	height: 415px;
+	background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+	padding: 0;
+	height: 411px;
+	float:left;
+}
+
+#leftColumn{
+	height:413px;
+	font-size: 11px;
+	font-family: Verdana, sans-serif;
+}
+
+
+#leftColumn, #listLoader {
+	width: 451px;
+}
+
+#resultsNav {
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	border:1px solid #bdbdb6;
+	border-bottom:0;
+	font-size: 11px;
+	font-weight: bold;
+	color: #363530;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+}
+
+#resultsNav #displayingRecords{
+	color: #990000;
+}
+
+#prePage a, #nextPage a {
+	text-indent: -9999px;
+	display: inline-block;
+	width: 13px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/coloradospringshomesource/leftarrow.png');
+	margin-right: 4px;
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/coloradospringshomesource/rightarrow.png');
+	margin-left: 4px;
+}
+
+span.resultsPaginationArrow{
+	display:none;
+}
+
+#resultsList {
+	height: 382px;
+	padding-left: 11px;
+	border: 1px solid #bdbdb6;
+	border-top: none;
+	overflow-x: auto;
+	background-color: #fff;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/coloradospringshomesource/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 418px;
+	overflow: hidden;
+	font-weight: normal !important;
+	margin-bottom: 5px;
+	cursor: pointer;
+	line-height: 16px;
+	overflow: hidden;
+}
+
+div.resultRow:hover {
+	background-position: 0px bottom;
+}
+
+#leftColumn div.resultRow a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+#leftColumn div.resultRow:hover a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic {
+	float: left;
+	margin-left:6px;
+	margin-top:6px;
+}
+
+div.propertyPreviewPic img {
+	width: 58px;
+	height: 58px;
+	border: 1px solid #fff;
+}
+
+div.propertyAddress {
+	float: left;
+	width: 157px;
+	padding:0 10px;
+	margin-top:5px;
+}
+
+div.propertyAddress strong {
+	font-weight: normal;
+}
+
+div.propertyPriceBedsSf {
+	float: left;
+	width: 94px;
+	padding:0 8px;
+	margin-top:5px;
+}
+
+#resultsDiv .viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+	width: 478px;
+	float:right;
+	border:1px solid #bdbdb6;
+}
+
+#resultsMap {
+	height: 411px;
+}
+
+/* Already 2px from image above this item */
+.balloonWrapper .viewDetailsLink{
+	display: block;
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/coloradospringshomesource/balloondetails.png') 0 0 no-repeat;
+	margin-top: 2px;
+}
+
+/* Balloon thumbnail */
+#imagery img{
+	width: 103px;
+	border: 0;
+	padding-right: 10px;
+}
+
+#resultsMap #stats{
+	color: #363530;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	line-height: 18px;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#detailtop{
+	height: 53px;
+	border: 1px solid #d5d5c3;
+	background-color: #fff;
+}
+
+#detailtop a{
+	color: #a44d20;
+}
+
+#detailtop .first, #detailtop .second{
+	margin-top: 19px;
+	height: 14px;
+	line-height: 14px;
+	display: inline-block;
+}
+
+#detailtop #searchContextPagination{
+	background: url('http://displet.com/images/coloradospringshomesource/backarrow.png') 0px 0px no-repeat;
+	padding-left: 25px;
+	display: inline-block;
+	margin-left: 19px;
+	margin-right: 19px;
+}
+
+#detailtop .second{
+	background: url('http://displet.com/images/coloradospringshomesource/add.png') 0px 0px no-repeat;
+	padding-left: 24px;
+	margin-left: 15px;
+}
+
+#detailbar{
+	border: 1px solid #bcbcb5;
+	padding: 3px;
+	margin-top: 20px;
+}
+
+#detailbar .colone, #detailbar .col{
+	float: left;
+	height: 100px;
+}
+
+#detailbar .colone{
+	width: 194px;
+	margin-right: 3px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+#detailbar .col{
+	width: 148px;
+	margin-left: 2px;
+	border-right: 1px solid #d0d0c8;
+	border-bottom: 1px solid #d0d0c8;
+	background-color: #fff;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+#detailbar .price{
+	line-height: 65px;
+	color: #d5662c;
+	font-size: 24px;
+	text-shadow: 1px 1px 3px #fff;
+}
+
+#detailbar .status{
+	width: 194px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 2px 1px 2px #900;
+	background: url('http://displet.com/images/coloradospringshomesource/status.png') 0px 0px repeat-x;
+	text-transform: uppercase;
+}
+
+#detailbar .col .top{
+	font-size: 22px;
+	line-height: 22px;
+	color: #363530;
+	margin-top: 24px;
+}
+
+#detailbar .col .bottom{
+	font-size: 18px;
+	line-height: 18px;
+	color: #957d3a;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+#linksbar{
+	margin-top: 20px;
+}
+
+#linksbar .link{
+	width: 171px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	text-indent: 10px;
+	float: left;
+	margin-right: 10px;
+	padding:0;
+}
+
+#linksbar .link span{
+	padding: 0px;
+	line-height: 32px;
+}
+
+#linksbar .link a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+
+#linksbar .link a:hover{
+	text-decoration: underline;
+}
+
+#linksbar #requestshowing{
+	background: url('http://displet.com/images/coloradospringshomesource/requestshowing.png') 0px 0px no-repeat;
+}
+
+#linksbar #addtofavorites{
+	background: url('http://displet.com/images/coloradospringshomesource/addtofavorites.png') 0px 0px no-repeat;
+}
+
+#linksbar #emailproperty{
+	background: url('http://displet.com/images/coloradospringshomesource/emailproperty.png') 0px 0px no-repeat;
+}
+
+h1.address{
+	font-size: 24px;
+	line-height: 24px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	color: #28200e;
+	margin-top: 20px;
+	padding-bottom: 18px;
+	background: url('http://displet.com/images/coloradospringshomesource/addbot.png') left bottom repeat-x;
+	text-shadow: 1px 1px 2px #fff;
+	margin-bottom: 20px;
+}
+
+/* Begins with Showing & Fave buttons */
+#residentials_detail .col1 {
+	float: left;
+  	width: 454px;
+}
+
+#residentials_detail .col1 .contact .img{
+	width: 104px;
+	height: 134px;
+	padding: 3px;
+	background-color: #fff;
+	border: 1px solid #bcbcb5;
+	float: left;
+	background-image: url('http://displet.com/images/coloradospringshomesource/agent.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#residentials_detail .col1 .colr{
+	float: right;
+	width: 327px;
+}
+
+.col1 .colr{
+	font-family: Arial, sans-serif;
+}
+
+.col1 .colr .company{
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #333;
+}
+
+.col1 .colr .address{
+	font-size: 14px;
+	line-height: 17px;
+	color: #333;
+	margin-top: 7px;
+}
+
+.col1 .colr .phone{
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #d5662c;
+	margin-top: 9px;
+}
+
+.col1 .colr .link{
+	line-height: 16px;
+	font-size: 12px;
+	padding-left: 26px;
+}
+
+.col1 .colr .link a{
+	color: #d5662c;
+	text-decoration: none;
+}
+
+.col1 .colr .link a:hover{
+	color: #d5662c;
+	text-decoration: underline;
+}
+
+.col1 .colr .requestshowing{
+	margin-top: 13px;
+	background: url('http://displet.com/images/coloradospringshomesource/requestshowingicon.png') 0px 0px no-repeat;
+}
+
+.col1 .colr .addtofavorites{
+	margin-top: 10px;
+	background: url('http://displet.com/images/coloradospringshomesource/addtofavoritesicon.png') 0px 0px no-repeat;
+}
+
+#propdesc{
+	font-family: Arial, sans-serif;
+	margin-top: 17px;
+}
+
+#propdesc .tit{
+	font-size: 16px;
+	line-height: 16px;
+	color: #28200e;
+}
+
+#propdesc .cont{
+	font-size: 13px;
+	line-height: 24px;
+	color: #333;
+	margin-top: 17px;
+}
+
+.tanBack {
+	padding: 14px 19px;
+	border: 1px solid #d4d4c2;
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #333;
+	margin-top: 20px;
+}
+
+.tanBack .tanbacktit {
+	font-size: 13px;
+	line-height: 13px;
+	color: #28200e;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+#remarks .tanbacktit{
+	margin-bottom: 18px;
+}
+
+.tanBack .fieldName, .tanBack .fieldRight{
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.tanBack .fieldRight{
+	text-align: right;
+	float: right;
+}
+
+/* Begins with tabbed Map/Photo/Comment section */
+#residentials_detail .col2 {
+	float: right;
+	overflow:hidden;
+	width: 427px;
+}
+
+.notan{
+	margin-top: 20px;
+	padding: 9px 0px 0px 0px;
+	border-bottom: 1px solid #d3d3c1;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	color: #333;
+	line-height: 30px;
+}
+
+.notan .tit{
+	font-size: 14px;
+	line-height: 14px;
+	color: #28200e;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom: 13px;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+.notan ul{
+	padding-bottom: 10px;
+}
+
+.notan ul li{
+	padding-left: 40px;
+	background: url('http://displet.com/images/coloradospringshomesource/notanulli.png') 19px center no-repeat;
+}
+
+.notan span{
+	color: #a44d20;
+}
+
+.notan p{
+	margin-bottom: 30px;
+}
+
+#notandisclaimer{
+	border-bottom: 0px;
+}
+
+#notandisclaimer p:last-child{
+	margin-bottom: 0px;
+}
+
+#detailTabs {
+	padding-left: 11px;
+}
+
+#detailTabs li {
+	float: left;
+	padding-right: 10px;
+}
+
+#detailTabs li a {
+	display: block;
+	line-height: 29px;
+	text-decoration: none;
+	padding: 0px 25px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	font-size: 12px;
+	border: 1px solid #957d3a;
+	border-bottom: 0;
+	color: #fff;
+	background-color: #957d3a;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #28200e;
+	border-color: #28200e;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	clear: both;
+	padding: 9px;
+	border: 1px solid #d3d3c1;
+	background-color: #fff;
+}
+
+#detailPhotos{
+}
+
+#userCommentsContainer #userCommentsContainer{
+	display:block !important;
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+#userCommentsContainer a, #userCommentsContainer a:visited{
+	color: #333;
+}
+
+#userComments h3{
+	margin:5px 0;
+}
+
+img#largeImage {
+	display: block;
+	width: 408px !important;
+	border: 1px solid #a6a6a6;
+}
+
+/* Width same as img#largeImage (add border px) */
+#detailPhotos #horizontal_carousel {
+	width: 410px;
+	height: 425px;
+	padding:0;
+	margin-top:0;
+}
+
+#detailPhotos #horizontal_carousel .container {
+	width: 322px;
+	top: 334px;
+	left: 44px;
+}
+
+#horizontal_carousel .container img {
+	width: 100px;
+	height: 90px;
+	border: 1px solid #919191;
+	margin: 0 8px 0 0;
+}
+
+#detailPhotos #horizontal_carousel .next_button, #detailPhotos #horizontal_carousel .previous_button {
+	bottom: 27px;
+	width:29px;
+}
+
+/* Width same as #horizontal_carousel */
+#detailPhotos #imageNav {
+	width: 410px;
+}
+
+#detailMap {
+	height: 380px;
+}
+
+#residentials_detail .col2b {
+	float: right;
+	width: 454px;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	height: 53px;
+	line-height: 53px;
+	padding: 0px 10px;
+	border:1px solid #d5d5c3;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+}
+
+#resultsToolbar a {
+	color: #d5662c;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #333;
+}
+
+#resultsToolbar table {
+	width: 100%;
+	border-spacing:0;
+}
+
+#resultsToolbar td {
+	width: 50%;
+	text-align: right;
+}
+
+#resultsToolbar td:first-child {
+	text-align: left;
+}
+
+.resultListContainer {
+	border: 1px solid #d3d3c1;
+	background-color: #fff;
+	height: 280px;
+	margin-top: 20px;
+	color: #363530;
+	font-family: Arial, sans-serif;
+	clear: both;
+}
+
+.resultListContainer .coll{
+	float: left;
+	width: 282px;
+	padding-left: 19px;
+}
+
+.resultListContainer .coll .img{
+	margin-top: 20px;
+	border: 1px solid #cfcfcf;
+	padding: 3px;
+	background-color: #fff;
+}
+
+.resultListContainer .coll .img div{
+	overflow: hidden;
+	width: 272px;
+	height: 194px;
+}
+
+.resultListContainer .coll .img img{
+	width: 272px;
+}
+
+.resultListContainer .coll .price{
+	text-align: center;
+	font-size: 24px;
+	line-height: 58px;
+	font-weight: bold;
+	color: #d5662c;
+}
+
+.resultListContainer .colr{
+	float: right;
+	width: 627px;
+}
+
+.resultListContainer .colr .address{
+	font-size: 16px;
+	line-height: 16px;
+	margin: 28px 0px;
+}
+
+.resultListContainer .colr .cont{
+	height: 106px;
+	background-color: #e8e8df;
+	border: 1px solid #cfcfcf;
+	width: 607px;
+}
+
+.resultListContainer .colr .cont .col{
+	margin-top: 3px;
+	height: 100px;
+	width: 148px;
+	border-bottom: 1px solid #d0d0c8;
+	border-right: 1px solid #d0d0c8;
+	margin-left: 2px;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+}
+
+.resultListContainer .colr .cont .col:first-child{
+	margin-left: 3px;
+}
+
+.resultListContainer .colr .cont .col .top{
+	font-size: 22px;
+	line-height: 22px;
+	color: #363530;
+	margin-top: 24px;
+}
+
+.resultListContainer .colr .cont .col .bottom{
+	font-size: 18px;
+	line-height: 18px;
+	color: #957d3a;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.resultListContainer .colr .links{
+	margin-top: 20px;
+	line-height: 47px;
+	width: 607px;
+}
+
+.resultListContainer .colr .links .link{
+	font-size: 12px;
+	line-height: 16px;
+	padding-left: 26px;
+	margin-top: 14px;
+	float: left;
+	display: inline-block;
+}
+
+.resultListContainer .colr .links a{
+	color: #d5662c;
+	text-decoration: none;
+	display: block;
+}
+
+.resultListContainer .colr .links a:hover{
+	color: #d5662c;
+	text-decoration: underline;
+}
+
+.resultListContainer .colr .links .requestshowing{
+	background: url('http://displet.com/images/coloradospringshomesource/requestshowingicon.png') 0px 0px no-repeat;
+	margin-left: 25px;
+}
+
+.resultListContainer .colr .links .addtofavorites{
+	background: url('http://displet.com/images/coloradospringshomesource/addtofavoritesicon.png') 0px 0px no-repeat;
+}
+
+.resultListContainer .colr .links .viewdetails{
+	float: right;
+	height: 47px;
+	width: 150px;
+	background: url('http://displet.com/images/coloradospringshomesource/viewdetails.png') 0px 0px no-repeat;
+	text-indent: -9999px;
+}
+
+
+
+/******************
+Footer Link / Disclaimer Styles
+******************/
+
+#footerOuter{
+	padding-bottom: 150px;
+}
+
+#disclaimer{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: -120px;
+	color: #D3D3C1;
+}
+
+#footerInner{
+	width: 960px;
+	margin: 0px auto;
+	font-size: 11px;
+	color: #D3D3C1;
+}
+
+#disclaimer{
+	line-height: 14px;
+	font-size: 11px;
+}
+
+#footerInner ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#footerInner ul li:last-child{
+	float: right;
+	margin-right:0;
+}
+
+#footerInner ul.menu li:last-child{
+	float: left;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #D3D3C1;
+}
+
+#footerInner ul li a:hover{
+	color: #fff;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 14px;
+	overflow: hidden;
+	height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+	font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+	text-decoration: none;
+	color: #000;
+}
+
+#propertyInfoWindow img {
+	width: 105px;
+	display: block;
+	margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+	display: block;
+	float: right;
+	width: 10px;
+	height: 8px;
+	line-height: 8px;
+	background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+	width: 100%;
+}
+
+#propertyInfoWindow table td {
+	vertical-align: top;
+	padding: 5px;
+	font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+	width: 24px;
+	height: 20px;
+	background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/marchantteam/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+	height: 0px;
+	width: 0px;
+}
+
+/******************
+FB Login Stuff
+******************/
+
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+/******************
+Site Specific Styles
+******************/
+
+body {
+	background-color: #e8e8df;
+	background-image: url('http://displet.com/images/coloradospringshomesource/bodybackslimhead.png');
+	background-position: 0px 136px;
+	background-repeat: repeat-x;
+	color: #333;
+	font-size: 13px;
+	font-family: Arial;
+}
+
+a {
+	text-decoration: underline;
+	color: #a44d20;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.ir{
+	text-indent: -9999px;
+}
+
+.margin{
+	width: 960px;
+	margin: 0px auto;
+}
+
+.opensans{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.shadow{
+	text-shadow: 1px 1px 2px #000;
+}
+
+.shadow2{
+	text-shadow: 1px 1px 2px #4d401d;
+}
+
+.shadoww{
+	text-shadow: 1px 1px 3px #fff;
+}
+
+h1{
+	font-size: 18px;
+	font-family: Georgia, serif;
+	color: #28200e;
+}
+
+h2, h3, h4, h5, h6{
+	color: #28200e;
+	font-family: 'Open Sans';
+	font-weight: 600;
+}
+
+h2{
+	font-size: 16px;
+}
+
+h3{
+	font-size: 14px;
+}
+
+h4{
+	font-size: 13px;
+}
+
+/******************
+Header Styles
+******************/
+
+#header {
+	background: url('http://displet.com/images/coloradospringshomesource/headback.png') 0px 0px repeat-x;
+}
+#logo{
+	float: left;
+	margin-left: 34px;
+	margin-top: 19px;
+	width: 191px;
+	height: 71px;
+	background: url('http://displet.com/images/coloradospringshomesource/logo.png') 0px 0px no-repeat;
+}
+#socialcount{
+	float: left;
+	display: inline-block;
+	margin-left: 120px;
+	margin-top: 16px;
+	max-width: 210px;
+	overflow: hidden;
+}
+#contactsocial{
+	float: right;
+	display: inline-block;
+	margin-right: 34px;
+	margin-top: 20px;
+}
+#phone{
+	float: right;
+	display: inline-block;
+	height: 20px;
+	padding-top: 4px;
+	padding-left: 31px;
+	background: url('http://displet.com/images/coloradospringshomesource/phone.png') 0px 0px no-repeat;
+	line-height: 20px;
+	font-family: Georgia, serif;
+	color: #28200e;
+	font-size: 16px;
+}
+.socialicon{
+	float: right;
+	line-height: 21px;
+	height: 21px;
+	width: 21px;
+	margin-left: 6px;
+	margin-top: 22px;
+}
+.socialicon a{
+	display: block;
+}
+#contactsocial #rss{
+	background: url('http://displet.com/images/coloradospringshomesource/rss.png') 0px 0px no-repeat;
+	clear: both;
+}
+#linkedin{
+	background: url('http://displet.com/images/coloradospringshomesource/linkedin.png') 0px 0px no-repeat;
+}
+#twitter{
+	background: url('http://displet.com/images/coloradospringshomesource/twitter.png') 0px 0px no-repeat;
+}
+#facebook{
+	background: url('http://displet.com/images/coloradospringshomesource/facebook.png') 0px 0px no-repeat;
+}
+#domain{
+	float: right;
+	margin-top: 14px;
+	margin-right: 3px;
+	width: 226px;
+	height: 92px;
+	line-height: 85px;
+	background: url('http://displet.com/images/coloradospringshomesource/domain.png') 0px 0px no-repeat;
+	padding-left: 11px;
+	color: #d5662c;
+	font-size: 11px;
+	font-weight: bold;
+}
+.fb-like{
+	top: -3px;
+}
+
+/******************
+Navigation Styles
+******************/
+
+#navigation {
+	margin-top: 4px;
+	height: 55px;
+	background: url('http://displet.com/images/coloradospringshomesource/navback.png') 0px 0px repeat-x;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#navigation ul {
+	
+}
+
+#navigation ul li {
+	float: left;
+	line-height: 55px;
+}
+
+#navigation ul li:first-child{
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+#navigation ul li a {
+	display: block;
+	color: #eaead5;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0px 35px;
+}
+
+#navigation ul li a:hover{
+	text-decoration: underline;
+}
+
+#navigation ul li:hover, #navigation ul li.current-menu-item{
+	background: url('http://displet.com/images/coloradospringshomesource/navbackhov.png') 0px 0px repeat-x;
+}
+
+#navbelow{
+	height: 30px;
+	background: url('http://displet.com/images/coloradospringshomesource/navbelow.png') 0px 0px no-repeat;
+}
+
+/******************
+Dropdown Menu Styles
+******************/
+
+#navigation .menu li, #featuredareas .menu li {
+	position: relative;
+	z-index: 11;
+	display: block;
+}
+#navigation .menu .sub-menu, #featuredareas .menu .sub-menu{
+	position: absolute;
+	z-index: 11;
+	display: block;
+	visibility: hidden;
+}
+#navigation .menu .sub-menu li, #featuredareas .menu .sub-menu li{
+	clear: both;
+	width: 100%;
+}
+#navigation .menu .sub-menu{
+	background: #28210e;
+	padding: 4px 0px;
+	text-transform:none !important;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-top: -1px;
+}
+#navigation .menu .sub-menu li{
+	line-height: 26px;
+	text-indent:22px;
+	padding: 0px;
+	border-bottom: 1px solid #332c1a;
+	background-image:none;
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+#navigation .menu .sub-menu li:last-child{
+	border-bottom: 0px;
+}
+#navigation .menu .sub-menu li:hover{
+	background-color: #3d3216;
+}
+#navigation .menu .sub-menu a {
+	display: block;
+	padding: 5px 0px;
+	color: #d3d3c1;
+	width: 100%;
+	font-size: 10px;
+	font-family: Arial;
+	text-transform: none;
+}
+#navigation .menu .sub-menu a:hover{
+	color: #fff;
+	background-image: none;
+	text-decoration: none;
+}
+
+/******************
+Footer Styles
+******************/
+
+#footerOuter{
+	background-color: #221b0c;
+	background-image: url('http://displet.com/images/coloradospringshomesource/footerback.png');
+	background-position: 0px 0px;
+	background-repeat: repeat-x	;
+}
+
+#thefooter .margin{
+	background: url('http://displet.com/images/coloradospringshomesource/footerback2.png') center 0px no-repeat;
+	min-height:200px;
+}
+
+#thefooter .col{
+	width: 221px;
+	margin-right: 25px;
+	float: left;
+}
+
+#thefooter .collast{
+	width: 221px;
+	float: right;
+}
+
+#thefooter .tit{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 14px;
+	margin-top: 37px;
+	padding-bottom: 13px;
+	border-bottom: 1px solid #4e4427;
+}
+
+#thefooter .menu{
+	margin-top: 9px;
+}
+
+#thefooter .menu ul{
+	display: none;
+}
+
+#thefooter .menu li{
+	font-size: 11px;
+	line-height: 14px;
+	padding: 8px 0px;
+	font-family: Arial;
+	clear: both;
+}
+
+#thefooter .menu li a{
+	text-decoration: none;
+	color: #d3d3c1;
+}
+
+#thefooter .menu li a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+#thefooter .collast{
+	font-size: 11px;
+	font-family: Arial;
+	line-height: 18px;
+	color: #d3d3c1;
+}
+
+#thefooter .collast a{
+	color: #d3d3c1;
+}
+
+#thefooter .phone{
+	margin-top: 14px;
+}
+
+#thefooter .email, #thefooter .address{
+	margin-top: 12px;
+}
+
+#thefooter .address2{
+	margin-top: 6px;
+}
+
+#thefooter #contactustoday{
+	margin-top: 15px;
+	width: 123px;
+	height: 35px;
+	line-height: 35px;
+	background: url('http://displet.com/images/coloradospringshomesource/contactustoday.png') 0px 0px no-repeat;
+}
+
+#thefooter #contactustoday a{
+	display: block;
+}
+
+#thefooter .bold{
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+#footerbottom{
+	margin-top: 30px;
+	border-top: 1px solid #382d14;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	line-height: 18px;
+	font-size: 10px;
+	color: #d3d3c1;
+}
+
+#footerbottom .icon{
+	float: left;
+	line-height: 16px;
+	height: 16px;
+	width: 16px;
+	margin-right: 10px;
+}
+
+#footerbottom a{
+	display: block;
+}
+
+#footerbottom #fb{
+	background: url('http://displet.com/images/coloradospringshomesource/footfb.png') 0px 0px no-repeat;
+}
+
+#footerbottom #rss{
+	background: url('http://displet.com/images/coloradospringshomesource/footrss.png') 0px 0px no-repeat;
+}
+
+#footerbottom #li{
+	background: url('http://displet.com/images/coloradospringshomesource/footli.png') 0px 0px no-repeat;
+}
+
+#footerbottom #twitter{
+	background: url('http://displet.com/images/coloradospringshomesource/foottwitter.png') 0px 0px no-repeat;
+}
+
+#footerbottom #youtube{
+	background: url('http://displet.com/images/coloradospringshomesource/footyoutube.png') 0px 0px no-repeat;
+	margin-right: 20px;
+}
+
+#footerbottom #copytext{
+	float: left;
+	width: 550px;
+}
+
+#footerbottom #wordpress{
+	float: right;
+	height: 18px;
+	line-height: 18px;
+	width: 19px;
+	background: url('http://displet.com/images/coloradospringshomesource/wordpress.png') 0px 0px no-repeat;
+}
+
+#footerbottom .text{
+	padding-left: 8px;
+	padding-right: 7px;
+	float: right;
+}
+
+#footerbottom #displet{
+	height: 15px;
+	width: 73px;
+	margin-top: 2px;
+	line-height: 15px;
+	float: right;
+	background: url('http://displet.com/images/coloradospringshomesource/displet.png') 0px 0px no-repeat;
+}

@@ -1,0 +1,1560 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+	color: #000;
+	font-family: Arial;
+	font-size: 11px;
+	padding-top: 10px;
+}
+
+img {border: 0;}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+a, a:visited{
+	color: #4c4c4c;
+}
+a:hover{
+	text-decoration: none;
+}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Wrapper Styles
+******************/
+#exteriorWrapperThree{
+}
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+  width: 820px;
+  margin: 0px auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#contentWrapper {
+  padding: 0px;
+  overflow: hidden;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+  font-size: normal;
+  line-height: normal;
+}
+
+#columnsFooter {
+  clear: both;
+}
+
+#residentials_results #contentWrapper p {
+  padding: 10px;
+}
+
+/******************
+globalToolbar Styles
+******************/
+#globalToolbar {
+  height: 37px;
+  line-height:37px;
+  background:url('http://displet.com/images/820px/globaltoolbarback.png') 0 0 repeat-x;
+  color:#4c4c4c;
+  font-weight: bold;
+	border: 1px solid #dfdfde;
+	border-bottom: 0;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+}
+
+#globalToolbar a {
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+#userToolbarLinks {
+  float: left;
+}
+
+#userToolbarLinks li {
+	float: left;
+	margin-left:14px;
+	text-transform: uppercase;
+	text-shadow:1px 1px 1px #fff;
+}
+
+#userToolbarLinks li#dashboardList a {
+  
+}
+
+#quickSearch {
+  float: left;
+  margin-left: 14px;
+}
+
+#quickSearch form {
+  float: left; display: inline;
+  padding-top: 9px;
+}
+
+#quickSearch form#mlsSearchForm {
+  float: left;
+  display: inline;
+  padding-top:1px;
+}
+
+#quickSearch form input {
+  display: inline-block;
+  height: 18px;
+  border: 1px solid #404040;
+  border-right:0;
+  border-bottom:0;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 5px;
+  line-height:18px;
+  background:#fff;
+  color:#434343;
+	font-family: Tahoma, sans-serif;
+}
+
+#quickSearch input {
+  margin-right: 10px;
+  width: 91px;
+}
+
+#quickSearch span {
+  float: left;
+  display: inline;
+}
+#quickSearch span#textQuick{
+	color:#4b8835;
+	text-shadow:1px 1px 1px #fff;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+input#street_number{ 
+	float: left; display: inline;
+}
+input#street_name {
+	float: left; display: inline;
+}
+
+#quickSearch #textOr {
+	padding-right:10px;
+	text-shadow:1px 1px 2px #fff;
+	text-transform: uppercase;
+}
+
+#loggedIn {
+  float: right;
+  color: #fff;
+  margin: 7px 14px 0px 0px;
+  padding: 0px;
+  background:url('http://displet.com/images/820px/loginback.png') 0 0 no-repeat;
+  width:110px;
+  height:24px;
+  line-height:24px;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+#loggedIn a {
+  color: #fff;
+  text-decoration: none;
+  margin:0 2px;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+#searchFormContainer {
+	margin-bottom: 20px;
+	border:1px solid #dfdfde;
+	border-bottom: 0px;
+	border-top:0;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	background:#fff;
+}
+
+#searchFormContainer .column{
+	float:left;
+	width:258px;
+	padding:12px 7px 0px 7px;
+}
+
+#searchFormContainer .ctrlHolder{
+	float:left;
+	padding-bottom:12px;
+	margin:0 7px;
+}
+
+#searchFormContainer label{
+	display:block;
+	padding-bottom:6px;
+	font-weight: bold;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	width:115px;
+	height:23px;
+	line-height:23px;
+	background:#fff;
+	color:#999;
+	border:1px solid #bbbcab;
+	padding:1px 1px 1px 5px;
+}
+
+#searchFormContainer input{
+	width:107px;
+	height:19px;
+}
+
+#searchFormContainer .tinySearchSelect{
+	width:72px;
+}
+#searchFormContainer #keyword{
+	width: 94px;
+}
+
+#zipHolder{
+	clear:none !important;
+}
+
+#searchFormContainer #minAcres{
+	width:115px;
+}
+
+#searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
+	width:115px;
+}
+
+#searchFormContainer #minListPrice{
+	margin-right:10px;
+}
+
+#searchFormContainer .triggerLabel input{
+	width:14px !important;
+    border:0 !important;
+	background: inherit !important;
+	position: relative;
+	top: 5px;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	padding-bottom:5px;
+}
+
+#standardFields {
+  width: 100%;
+  overflow: hidden;
+}
+#propertyStyleHolder label:first-child{
+	margin-top:6px;
+}
+
+#propertyStyleHolder, #statusHolder{
+	font-weight: bold;
+}
+#propertyStyleHolder label, #statusHolder label{
+	font-weight: 500;
+}
+
+#standardFields .column {
+}
+
+#standardFields #stdColumn1 {
+}
+
+#standardFields label, #advancedExtra label {
+}
+
+#standardFields #stdColumn1 .ctrlHolder {
+}
+
+#bedHolder, #bathHolder, #minSquareFeetHolder {
+}
+
+#priceHolder.ctrlHolder {
+}
+
+#standardFields #stdColumn1 #bedHolder {
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #dfdfde;
+	border-right:1px solid #dfdfde;
+}
+
+#standardFields #stdColumn2 label {
+}
+
+#standardFields #stdColumn2 .ctrlHolder {
+}
+
+#standardFields #stdColumn2 #subdivisionHolder {
+}
+
+#standardFields #stdColumn3 {
+}
+
+#standardFields #stdColumn3 .ctrlHolder {
+}
+#standardFields #advColumn3 #statusHolder {
+}
+
+#advancedExtra {
+  border-top: 1px solid #dfdfde;
+  width: 100%;
+  overflow: hidden;
+}
+
+#advancedExtra .column {
+}
+
+#advancedExtra #advColumn1 {
+}
+
+#advancedExtra .column label {
+}
+
+#advancedExtra .ctrlHolder {
+}
+#advancedExtra advColumn1 .ctrlHolder{
+}
+
+#advancedExtra .column label.triggerLabel {
+}
+
+#advancedExtra #advColumn2 {
+}
+
+#advancedExtra #advColumn2 .ctrlHolder {
+}
+
+#minAcresHolder {
+}
+
+#propertyTypeHolder {
+}
+
+#storiesHolder {
+  
+}
+
+#advColumn3 {
+}
+
+#advColumn3 .ctrlHolder {
+}
+
+#schoolNameHolder {
+}
+
+#schoolNameHolder input {
+}
+
+#zipHolder {
+}
+
+#lastModifiedHolder {
+  
+}
+
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+  height: 24px;
+  line-height: 24px;
+  background-color: #e7e7e8;
+  padding:0 15px;
+  font-size:11px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+}
+
+#searchFormLinks small {
+	font-size:11px;
+}
+
+#searchFormLinks a {
+  color: #4c4c4c;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+
+#searchFormLinks a:hover {
+  text-decoration: underline;
+}
+
+#searchLinksOne{
+  display:none;
+}
+
+#searchLinksTwo {
+  float: left;
+}
+
+#searchLinksThree {
+  float: right;
+  width:257px;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+  display: block;
+  float: right;
+  height: 24px;
+  line-height: 24px;
+  width: 123px;
+  text-indent: 13px;
+  color: #fff;
+  text-decoration: none;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink span, #searchformResetter span {
+  display: none;
+}
+
+
+#saveSearchLink {
+  background-image: url('http://displet.com/images/820px/saveback.png');
+}
+
+#searchformResetter {
+  background-image: url('http://displet.com/images/820px/resetback.png');
+  margin-right:5px;
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+  background: white;
+  opacity: .7;
+  background-image: url('/images/loader_small_dots.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+  display: block;
+  position: absolute;
+  height: 415px;
+  background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+  padding: 0;
+  float:left;
+}
+#leftColumn{
+	height:405px;
+}
+#rightColumn{
+	height: 403px;
+}
+
+#leftColumn, #listLoader {
+  width: 435px;
+}
+
+#resultsNav {
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+  border:1px solid #dfdfde;
+  background:#fff;
+  border-bottom:0;
+	font-family: Tahoma, sans-serif;
+	color: #4c4c4c;
+	font-size: 13px;
+}
+
+
+#prePage a, #nextPage a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 12px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+#prePage a {
+  background-image: url('http://displet.com/images/820px/leftarrow.png');
+}
+
+#nextPage a {
+  background-image: url('http://displet.com/images/820px/rightarrow.png');
+}
+
+#resultsList {
+  height: 377px;
+  padding-left: 4px;
+  border: 1px solid #dfdfde;
+  background:#fff;
+  border-top: none;
+  overflow-x: auto;
+  font-size: 11px;
+  line-height:16px;
+}
+
+#resultsDiv a {
+  text-decoration: none;
+}
+
+div.resultRow {
+  background-image: url('http://displet.com/images/820px/resultback.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 409px;
+  padding-top:2px;
+  padding-left:1px;
+  overflow: hidden;
+  font-weight: normal !important;
+  margin-bottom:5px;
+	font-family: Tahoma, sans-serif;
+	font-size: 13px;
+}
+
+div.resultRow:hover {
+  background-position: 0px bottom;
+}
+
+#leftColumn div.resultRow a {
+  color: #4c4c4c;
+  text-decoration: none;
+  display: block;
+}
+
+#leftColumn div.resultRow:hover a {
+  color: #fff;
+}
+
+div.propertyPreviewPic {
+	float: left;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+div.propertyPreviewPic img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #fff;
+  padding:0 !important;
+}
+
+div.propertyAddress {
+  float: left;
+  width: 164px;
+  padding-left:10px;
+  margin-top:1px;
+}
+
+div.propertyAddress strong {
+  font-weight: normal;
+}
+
+div.propertyPriceBedsSf {
+  float: left;
+  width: 97px;
+  padding-left: 10px;
+  margin-top:1px;
+}
+
+div.resultRow:hover div.propertyPriceBedsSf {
+}
+
+div.propertyPriceBedsSf a {
+  
+}
+
+#resultsList p.viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+  width: 363px;
+  float:right;
+  border:1px solid #dfdfde;
+}
+
+#resultsMap {
+  height: 403px;
+}
+
+#resultsMap #imagery img{
+	width: 133px !important;
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+#resultsMap #imagery .viewDetailsLink{
+	display: block;
+	background: url('http://displet.com/images/820px/mapdetailsback.png') 0px 0px no-repeat;
+	width: 103px;
+	height: 28px;
+	text-indent: -9999px;
+}
+#resultsMap #stats{
+	vertical-align:top;
+	padding-top: 6px;
+	line-height: 14px;
+}
+
+#bydispletbox{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 49px;
+	width: 820px;
+	background-color: #f3f3f3;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#bydisplet{
+	margin: 0px auto;
+	padding-top: 10px;
+	width: 200px;
+	height: 27px;
+	background-image: url('http://displet.com/images/820px/displet.png');
+	background-position: 0px 10px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+#bydisplet a{
+	display: block;
+	line-height: 29px;
+}
+#footerOuter{
+	width: 820px;
+	margin: 0px auto;
+}
+#footerInner ul li{
+	float: left;
+	margin-right: 10px;
+	line-height: 11px;
+}
+#footerInner ul{
+	padding-bottom: 11px;
+}
+#disclaimer{
+	width: 820px;
+	padding:15px 0;
+	line-height: 14px;
+	margin: 0px auto;
+	color: #4C4C4C;
+}
+
+/******************
+Search Results Styles
+******************/
+#resultsToolbar {
+  height: 38px;
+  line-height: 38px;
+  font-size: 11px;
+  padding: 0px 14px;
+  background-color: #fff;
+  border:1px solid #dfdfde;
+	border-top:0;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+  margin-bottom:16px;
+	color: #4c4c4c;
+}
+
+#resultsToolbar a {
+  color: #4c4c4c;
+  font-weight:700;
+}
+
+#resultsToolbar table {
+  width: 100%;
+  border-spacing:0;
+}
+
+#resultsToolbar td {
+  width: 50%;
+  text-align: right;
+}
+
+#resultsToolbar #totalRecords {
+	color: #4b8835;
+}
+
+#resultsToolbar td:first-child {
+  text-align: left;
+}
+
+.resultListContainer {
+  border: 1px solid #dfdfde;
+  background:#f5f5f5;
+  height:104px;
+  font-size:14px;
+  line-height:16px;
+	margin-bottom: 5px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.resultListContainer table {
+  width: 100%;
+  border-spacing:0;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #dfdfde;
+}
+
+td.propertyPreviewPic {
+  padding: 10px;
+  width: 115px;
+  border-right: none !important;
+}
+
+td.propertyPreviewPic img {
+  width: 115px;
+  height:82px;
+	border: 1px solid #7c7c7c;
+}
+
+td.propertyAddress {
+  padding-left: 5px;
+}
+
+td.propertyAddress strong {
+  font-weight:500;
+}
+
+td.price {
+  width: 112px;
+  padding-left: 23px;
+  line-height: 14px;
+}
+
+td.price .mlsNumber{
+	display: block;
+	padding-bottom: 6px;
+}
+
+td.price .price {
+  color: #4b8835;
+  font-size: 24px;
+  line-height: 24px;
+	padding-top: 6px;
+}
+
+td.propertyBedsSf {
+  width: 94px;
+  padding-left:18px;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+td.actions {
+  width: 141px;
+}
+
+td.actions .addToFaves {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 23px;
+  background-image: url('http://displet.com/images/820px/liststar.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  color: #de2e2e;
+	font-size: 11px;
+  margin-left:18px;
+  margin-bottom:10px;
+  text-decoration:underline;
+}
+
+td.actions .addToFaves:hover {
+  text-decoration: none;
+}
+
+td.actions .makeRequest {
+  display: block;
+  text-align:center;
+  width: 112px;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+	margin-top: 10px;
+	margin-left: 19px;
+  background:url('http://displet.com/images/820px/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+  text-decoration: underline;
+}
+
+td.propertyActions {
+  border-right: none !important;
+  width: 114px;
+}
+
+td.propertyActions .viewDetailsLink {
+  display: block;
+  height: 31px;
+  width: 82px;
+  background-image: url('http://displet.com/images/820px/view-details.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  outline: none;
+  margin: 0px auto;
+  padding:0;
+}
+
+td.propertyActions .viewDetailsLink:hover {
+  background-position: 0px bottom;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination a{
+	padding-left: 20px;
+	color: #4b8835;
+	font-size: 10px;
+	line-height: 10px;
+	text-decoration: none;
+	background: url('http://displet.com/images/820px/backarrow.png') 0px 1px no-repeat;
+}
+#searchContextPagination a:hover{
+	text-decoration: underline;
+}
+#searchContextPagination{
+	margin-top: 15px;
+	margin-left: 3px;
+}
+
+#residentials_detail .col1, #residentials_detail .col2 {
+	font-size:11px;
+}
+
+#residentials_detail .col1 {
+	margin-top:24px;
+ 	float: left;
+  	width: 387px;
+}
+
+#residentials_detail .col2 {
+  float: right;
+  width: 401px;
+  margin-top:31px;
+  overflow:hidden;
+}
+#residentials_detail .col2second {
+  float: right;
+  width: 401px;
+}
+
+#actions1 {
+	margin-left: 1px;
+}
+
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	float:left;
+	width:158px;
+	height:34px;
+	line-height:34px;
+	text-indent:33px;
+	font-size: 10px;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/820px/requestshowing.png') 0 0 no-repeat;
+	margin-right:20px;
+	text-indent: 25px;
+}
+
+#actions1 a, #actions1 a:visited {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:underline;
+}
+
+#actions1 .redButton {
+}
+
+#actions1 #saveFaveLink {
+  background-image: url('http://displet.com/images/820px/addtofavorites.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions2 {
+  margin:30px 0 30px 9px;
+}
+
+#actions2 #callUs, #actions2 #sendToFriend {
+  float: left;
+  height:26px;
+}
+
+#callUs {
+  line-height: 14px;
+  background-image: url(http://displet.com/images/austincityhomesearch/question.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-right: 60px;
+  padding-left:24px;
+}
+
+#callUs span {
+  font-weight: bold;
+}
+
+#sendToFriend {
+  background-image: url(http://displet.com/images/austincityhomesearch/email.png);
+  background-position: 0px 1px;
+  background-repeat: no-repeat;
+  line-height: 26px;
+  padding-left: 45px;
+}
+
+#sendToFriend a{
+  color: #4b8835;
+  text-decoration:underline;
+}
+
+#sendToFriend a:hover{
+  text-decoration: none;
+}
+
+/*#facebook_like {
+  width: 350px;
+  padding: 10px;
+  margin: 0px auto 20px auto;
+}*/
+
+#detailsHeader {
+	border: 1px solid #dfdfde;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#detailsHeader .address {
+  line-height: 34px;
+  font-size: 14px;
+  border-bottom: 1px solid #dfdfde;
+	text-transform: uppercase;
+	color: #4c4c4c;
+	background-color: #f4f4f4;
+	padding: 0px 15px;
+}
+
+#detailsHeader .price {
+  font-size: 18px;
+  line-height:18px;
+  font-weight: 500;
+  color: #4b8835;
+  text-align: right;
+  padding:0;
+  margin-top:20px;
+	margin-bottom: 7px;
+}
+
+#detailsProperty {
+	line-height: 24px;
+	margin: 0px 15px 6px 15px;
+}
+
+#detailsProperty .subColumnOne, #detailsProperty .subColumnTwo {
+  float: left;
+  width: 50%;
+}
+body#residentials_detail #sco_first{
+	width: 70%;
+}
+body#residentials_detail #sct_first{
+	width: 25%;
+}
+
+.subColumnTwo {
+  text-align: right;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+  color: #4b8835;
+font-weight: bold;
+}
+
+.tanBack {
+  padding: 3px 15px 8px 15px;
+  border: 1px solid #dfdfde;
+-moz-border-radius: 6px; 
+-webkit-border-radius: 6px;
+border-radius: 6px;
+  margin-top: 22px;
+  color: #4c4c4c;
+	margin-top: 22px;
+	line-height: 18px;
+	background-color: #fff;
+}
+
+.tanbacktit{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+.tanBack.left, .tanBack.right {
+  width: 170px;
+}
+
+.tanBack p, .tanBack ul {
+}
+.tanBack p{
+}
+.tanBack li{
+}
+
+#remarksouter{
+	background-color: #dfdfde;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+p.remarks {
+  padding-left:15px;
+  padding-right:15px;
+	font-weight: bold;
+  height: 38px;
+  line-height:38px;
+}
+
+#detailsRemarks{
+	border-bottom:0;
+}
+
+.tanBack ul li {
+}
+
+#detailFooter {
+  clear: both;
+  text-align:right;
+  line-height:18px;
+  padding-right:18px;
+  font-size:11px;
+	margin-top: 22px;
+	color: #4c4c4c;
+}
+
+#detailTabs {
+  padding-left: 9px;
+}
+
+#detailTabs li {
+  float: left;
+  padding-right: 10px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#detailTabs li a {
+  display: block;
+  line-height: 30px;
+  color: #4c4c4c;
+	border: 1px solid #cacaca;
+	border-bottom: 0px;
+  text-decoration: none;
+  padding: 0px 29px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  background-color: #ededed;
+}
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background: url('http://displet.com/images/820px/activetabback.png') 0px 0px repeat-x;
+	line-height: 30px;
+  color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+  clear: both;
+  border: 1px solid #dfdfde;
+  background:#fff;
+  padding: 9px;
+}
+#userCommentsContainer #userCommentsContainer{
+	display:block !important;
+	border:0;
+	padding:0;
+	margin:0;
+}
+#userCommentsContainer a, #userCommentsContainer a:visited{
+}
+#userComments h3{
+	margin:5px 0;
+}
+
+img#largeImage {
+  width: 380px !important;
+	border: 1px solid #a5a5a5;
+  display: block;
+}
+
+#horizontal_carousel {
+  width: 382px !important;
+  height: 415px !important;
+  padding:0 !important;
+  margin-top:0 !important;
+}
+
+#horizontal_carousel .container {
+  width: 315px !important;
+  left: 27px !important;
+}
+
+#horizontal_carousel .container {
+  top: 313px !important;
+}
+
+#horizontal_carousel .container img {
+  width: 100px !important;
+  height: 90px !important;
+	border: 1px solid #dfdfde;
+}
+
+#horizontal_carousel .next_button, #horizontal_carousel .previous_button {
+  bottom: 41px !important;
+  width:29px !important;
+}
+#horizontal_carousel .next_button{
+	right:29px !important;
+}
+
+#horizontal_carousel .previous_button {
+  width: auto !important;
+}
+
+#imageNav {
+  width: 410px !important;
+}
+
+#detailMap {
+  height: 380px;
+}
+
+#dashboardActions {
+  float: left;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#dashOutput {
+  float: right;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#loginSignupFormcontainer {
+  padding: 10px;
+}
+
+#loginSignupFormcontainer table {
+  width: 100%;
+}
+
+#loginSignupFormcontainer table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#loginSignupFormcontainer input {
+  border: 1px solid #ccc;
+}
+
+#loginSignupFormcontainer p {
+  padding-bottom: 4px;
+}
+
+#loginSignupFormcontainer p.required input {
+  border: 1px solid red;
+}
+
+#loginSignupFormcontainer label {
+  display: block;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+  font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+  text-decoration: none;
+  color: #000;
+}
+
+#propertyInfoWindow img {
+  width: 105px;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+  display: block;
+  float: right;
+  width: 10px;
+  height: 8px;
+  line-height: 8px;
+  background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+  width: 100%;
+}
+
+#propertyInfoWindow table td {
+  vertical-align: top;
+  padding: 5px;
+  font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+  width: 24px;
+  height: 20px;
+  background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/marchantteam/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+  height: 0px;
+  width: 0px;
+}
+
+#headermargin{
+  width:948px;
+  height:90px;
+}
+#agentlogo{
+  margin-top:20px;
+  margin-left:11px;
+  float:left;
+  background:url('http://displet.com/images/pelhamrealestateblog/displet-logo.png') 0 0 no-repeat;
+  width:187px;
+  height:45px;
+}
+.headerlinks{
+  margin-top:35px;
+  margin-left:33px;
+  float:right;
+  border-bottom:3px solid #d0dd64;
+  font-family:AvenirLTStd;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+}
+.lastright{
+  margin-right:11px;
+}
+#userToolbarLinks li{
+}
+#dashboardlist{
+  border-left:0;
+}
+
+span.resultsPaginationArrow{
+  display:none;
+}
+#footerbar{
+  height:51px;
+  width:100%;
+  background:url('http://displet.com/images/pelhamrealestateblog/footerback.png') 0 0 repeat-x;
+  text-align:center;
+}
+#footerbar img{
+  margin-top:10px;
+}
+#footertext{
+  padding:10px 20px;
+  font-size:10px;
+  text-align:center;
+  line-height:18px;
+}
+
+body#residentials_detail .subColumnOne {
+
+  float: left;
+
+  width:60%;
+
+}
+body#residentials_detail .subColumnTwo {
+
+  float:right;
+
+  width:35%;
+
+  text-align:right;
+
+}
+#detailsSchool{
+  width:158px;
+  text-align:right;
+  float:right;
+}
+#financialInfo{
+  width:158px;
+  text-align:right;
+  float:left;
+}
+#lotArea{
+  text-align:right;
+}
+#financialInfo p:first-child, #detailsSchool p:first-child, #lotArea p:first-child{
+  text-align:left;
+}
+#detailsSchool .fieldName, #financialInfo .fieldName, #lotArea .fieldName{
+  float:left;
+}
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 124px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+#pricePerSqFeetHolder, squareFeetAvailableHolder{
+  clear:both;
+}

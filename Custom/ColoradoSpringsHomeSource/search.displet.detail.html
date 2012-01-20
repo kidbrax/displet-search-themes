@@ -1,0 +1,168 @@
+<div id="detailtop">
+	<div class="first">
+		{{ bottom_navigation }}
+	</div>
+	<div class="second">
+		<a href="/">New Search</a>
+	</div>
+</div>
+
+<div id="detailbar">
+	<div class="colone">
+		<div class="price">{{ list_price }}</div>
+		<div class="status">{{ status }}</div>
+	</div>
+	<div class="col">
+		<div class="top">{{ num_bedrooms }}</div>
+		<div class="bottom">Beds</div>
+	</div>
+	<div class="col">
+		<div class="top">{{ full_baths }}</div>
+		<div class="bottom">Baths</div>
+	</div>
+	<div class="col">
+		<div class="top">{{ age }}</div>
+		<div class="bottom">Days on Market</div>
+	</div>
+	<div class="col">
+		<div class="top">{{ square_feet }}</div>
+		<div class="bottom">Sq. Ft.</div>
+	</div>
+	<div class="col">
+		<div class="top">{{ acres }}</div>
+		<div class="bottom">Acres</div>
+	</div>
+	<div class="clear"><!-- --></div>
+</div>
+
+<div id="linksbar">
+	<div class="link" id="requestshowing">{{ request_showing }}</div>
+	<div class="link" id="addtofavorites">{{ add_to_favorites }}</div>
+	<div class="link" id="emailproperty">{{ email_to_friend }}</div>
+	<div class="clear"><!-- --></div>
+</div>
+
+<h1 class="address">{{ address }}, {{ city_state_zip }} - MLS# {{ mls_number }}</h1>
+
+<div class='col1'>
+	
+	<div class="contact">
+		<div class="img"></div>
+		<div class="colr">
+			<div class="company">Century 21</div>
+			<div class="address">4589 West Road Suite 400<BR>Irvine, California 714-329-5496</div>
+			<div class="phone">{{ website_phone }}</div>
+			<div class="link requestshowing">{{ request_showing }}</div>
+			<div class="link addtofavorites">{{ add_to_favorites }}</div>
+		</div>
+		<div class="clear"><!-- --></div>
+	</div>
+	
+	<div id="propdesc">
+		<div class="tit">Property Description</div>
+		<div class="cont">{{ property_description }}</div>
+	</div>
+	
+</div>
+
+<div class='col2'>
+  <ul id='detailTabs'>
+    <li><a class='active' href="javascript:void(0)" rel='detailPhotos'>Photos</a></li>
+    <li><a href="javascript:void(0)" rel='detailMapOuter'>Map</a></li>
+    <li><a href="javascript:void(0)" rel='userCommentsContainer'>Comments {{ comment_count }}</a></li>
+  </ul>
+
+  {{ photos }}
+
+  
+    {{ map }}
+  
+  <div class='largeDetailDisplay' id='userCommentsContainer' style='display: none'>
+  	{{ comments }}	
+  </div>
+</div>
+
+<div class="clear"><!-- --></div>
+
+<div class="tanBack" id="remarks">
+	<div class="tanbacktit">House Remarks</div>
+	<div class="cont">{{ remarks }}</div>
+</div>
+
+<div class="col1">
+	<div class="tanBack" id="facts">
+		<div class="tanbacktit">Important Facts</div>
+		<div><span class='fieldName'>Beds</span><span class='fieldRight'>&nbsp;{{ num_bedrooms }}</span></div>
+	    <div><span class='fieldName'>Bathrooms</span><span class='fieldRight'>&nbsp;{{ full_baths }}</span></div>
+	    <div><span class='fieldName'>Garage Spaces</span><span class='fieldRight'>&nbsp;{{ garage_spaces }}</span></div>
+	    <div><span class='fieldName'>Square Feet</span><span class='fieldRight'>&nbsp;{{ square_feet }}</span></div>
+		<div><span class='fieldName'>Stories</span><span class='fieldRight'>&nbsp;{{ stories }}</span></div>
+	    <div><span class='fieldName'>Basement</span><span class='fieldRight'>&nbsp;{{ basement }}</span></div>
+	    <div><span class='fieldName'>Is Foreclosure</span><span class='fieldRight'>&nbsp;{{ is_foreclosure }}</span></div>
+	</div>
+	<div class="notan">
+		<div class="tit">Property Features</div>
+		<ul>
+		<li>View: <span>{{ view }}</span></li>
+		<li>Appliances equipment: <span>{{ appliances_equipment }}</span></li>
+		<li>Fireplaces: <span>{{ fireplaces }}</span></li>
+		<li>Fence description: <span>{{ fence_description }}</span></li>
+		<li>Exterior features: <span>{{ exterior_features }}</span></li>
+		<li>Laundry location: <span>{{ laundry_location }}</span></li>
+		<li>Master on main: <span>{{ master_on_main }}</span></li>
+		<li>Area Amenities: <span>{{ area_amenities }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">School Information</div>
+		<ul>
+		<li>School district: <span>{{ school_district }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">Heating and Cooling Information</div>
+		<ul>
+		<li>Heat: <span>{{ heat }}</span></li>
+		<li>AC: <span>{{ ac }}</span></li>
+		</ul>
+	</div>
+</div>
+
+<div class="col2b">
+	<div class="notan">
+		<div class="tit">Property Information</div>
+		<ul>
+		<li>Subdivision: <span>{{ subdivision }}</span></li>
+		<li>County: <span>{{ county }}</span></li>
+		<li>Area MLS: <span>{{ area_mls_defined }}</span></li>
+		<li>Year built: <span>{{ year_built }}</span></li>
+		<li>Construction: <span>{{ construction }}</span></li>
+		<li>Property type: <span>{{ property_type }}</span></li>
+		<li>Property sub type: <span>{{ property_sub_type }}</span></li>
+		<li>Foundation: <span>{{ foundation }}</span></li>
+		<li>Is gated community: <span>{{ is_gated_community }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">Taxes, Utility & Fee Information</div>
+		<ul>
+		<li>Estimated Taxes: <span>{{ estimated_taxes }}</span></li>
+		<li>Utilities: <span>{{ utilities }}</span></li>
+		<li>Water: <span>{{ water }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">Lot Information</div>
+		<ul>
+		<li>Acres: <span>{{ acres }}</span></li>
+		<li>Lot size: <span>{{ lot_size }}</span></li>
+		<li>Lot description: <span>{{ lot_description }}</span></li>
+		</ul>
+	</div>
+</div>
+<div class="clear"></div>
+
+<div class="notan" id="notandisclaimer">
+	<div class="tit">Disclaimer</div>
+	<p>"The information being provided by SoCalMLS, CRISNet Regional MLS and/or CARETS is for the consumer's personal, non-commercial use and may not be used for any purpose other than to identify prospective properties consumer may be interested in purchasing. Any information relating to real estate for sale referenced on this web site comes from the Internet Data Exchange (IDX) program of the SoCalMLS, CRISNet Regional MLS and/or CARETS. This web site may reference real estate listing(s) held by a brokerage firm other than the broker and/or agent who owns this web site."</p><p>"The accuracy of all information, regardless of source, including but not limited to square footages and lot sizes, is deemed reliable but not guaranteed and should be personally verified through personal inspection by and/or with the appropriate professionals."</p><p>"Copyright © 2010 SoCalMLS®, CRISNet Regional MLS®, CARETS®" All Displays of Licensed Content shall include: "Property Information © 2010" SoCalMLS Inc. All rights reserved. Certain information contained herein is derived from information which is the licensed property of, and copyrighted by, SoCalMLS Inc."</p><p>Listing broker’s office: <span>{{ listing_office_name }}</span></p>
+</div>

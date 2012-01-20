@@ -1,0 +1,2439 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  	color: #818277;
+	font-family: Arial;
+	font-size: 11px;
+}
+
+img {border: 0;}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+.image_replace_anchor_span {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor_span a {
+  display: inline-block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+#logo_displet {
+  width: 187px;
+  height: 45px;
+  line-height: 45px;
+  background-image: url(http://displet.com/images/alderson-logo.png);
+}
+
+#logo_displet a {
+  width: 187px;
+  height: 45px;
+  line-height: 45px;
+  display:block;
+}
+
+#logo_displet_footer {
+  width: 200px;
+  height: 47px;
+  line-height: 47px;
+  background-image: url(http://displet.com/images/alderson/logo_displet_footer.png);
+  margin: 0px auto;
+}
+
+#logo_displet_footer a {
+  width: 200px;
+  height: 47px;
+  line-height: 47px;
+}
+
+/******************
+Wrapper Styles
+******************/
+#exteriorWrapperThree{
+}
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+  width: 960px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+#contentWrapper {
+  padding: 0px;
+  overflow: hidden;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+  font-size: normal;
+  line-height: normal;
+}
+
+#columnsFooter {
+  clear: both;
+}
+
+#residentials_results #contentWrapper p {
+  padding: 10px;
+}
+
+/******************
+globalToolbar Styles
+******************/
+#globalToolbar {
+  height: 42px;
+  font-weight: bold;
+  line-height:42px;
+  background:url('http://displet.com/images/okcmetro/globaltoolbarback.png') 0 0 repeat-x;
+  color:#e5e6d4;
+}
+
+#globalToolbar a {
+  color: #e5e6d4;
+  text-decoration: none;
+}
+
+#globalToolbar a:hover {
+  text-decoration: underline;
+}
+
+#userToolbarLinks {
+  float: left;
+}
+
+#userToolbarLinks li {
+  float: left;
+  margin:0 21px;
+}
+
+#userToolbarLinks li#dashboardList a {
+  
+}
+
+#quickSearch {
+  float: left;
+  margin-left: 21px;
+}
+
+#quickSearch form {
+  float: left; display: inline;
+  padding-top: 9px;
+}
+
+#quickSearch form#mlsSearchForm {
+  padding-right: 11px;
+  float: left;
+  display: inline;
+  padding-top:1px;
+}
+
+#quickSearch form input {
+  display: inline-block;
+  height: 24px;
+  border: 1px solid #454b49;
+  margin: 0px 7px 0px 0px;
+  padding: 0px 0px 0px 5px;
+  line-height:24px;
+  background:#fff;
+  color:#818277;
+}
+
+#quickSearch form#mlsSearchForm input {
+  margin-right: 0px;
+  width: 116px;
+}
+
+#quickSearch span {
+  float: left;
+  display: inline;
+  padding-right: 8px;
+}
+#quickSearch span#textQuick{
+	color:#fff;
+}
+input#street_number{ 
+	float: left; display: inline; 
+	width: 75px;
+	margin-right: 15px;
+}
+input#street_name {
+	float: left; display: inline; 
+	width: 147px;
+	margin-right: 15px;
+}
+
+#quickSearch #textOr {
+	padding-right:11px;
+}
+
+#loggedIn {
+  float: right;
+  color: #b49c76;
+  margin: 7px 20px 0px 0px;
+  padding: 0px;
+  background:url('http://displet.com/images/okcmetro/loginback.png') 0 0 no-repeat;
+  width:106px;
+  height:28px;
+  line-height:28px;
+	text-align:center;
+}
+
+#loggedIn a {
+  color: #fff;
+  text-decoration: none;
+  margin:0 2px;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+#searchFormContainer {
+	margin-bottom: 20px;
+	border:1px solid #bbbcab;
+	border-top:0;
+	background:#fff;
+}
+
+#searchFormContainer .column{
+	float:left;
+	width:292px;
+	padding:12px 6px 0px 6px;
+}
+
+#searchFormContainer .ctrlHolder{
+	float:left;
+	padding-bottom:12px;
+	margin:0 9px;
+}
+
+#searchFormContainer label{
+	display:block;
+	padding-bottom:6px;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	width:127px;
+	height:23px;
+	line-height:23px;
+	background:#fff;
+	color:#999;
+	border:1px solid #bbbcab;
+	padding:1px 1px 1px 5px;
+}
+
+#searchFormContainer input{
+	width:119px;
+	height:19px;
+}
+
+#searchFormContainer .tinySearchSelect{
+	width:79px;
+}
+#searchFormContainer #yearBuilt{
+	width: 275px;
+}
+
+#zipHolder{
+	clear:none !important;
+}
+
+#searchFormContainer #minAcres{
+	width:127px;
+}
+
+#searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
+	width:127px;
+}
+
+#searchFormContainer #minListPrice{
+	margin-right:17px;
+}
+
+#searchFormContainer .triggerLabel input{
+	width:14px !important;
+    border:0 !important;
+	background: inherit !important;
+	position: relative;
+	top: 5px;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	padding-bottom:5px;
+}
+
+#standardFields {
+  width: 100%;
+  overflow: hidden;
+  margin-top:2px;
+}
+#propertyStyleHolder label:first-child{
+	margin-top:6px;
+}
+
+#standardFields .column {
+}
+
+#standardFields #stdColumn1 {
+}
+
+#standardFields label, #advancedExtra label {
+}
+
+#standardFields #stdColumn1 .ctrlHolder {
+}
+
+#bedHolder, #bathHolder, #minSquareFeetHolder {
+}
+
+#priceHolder.ctrlHolder {
+}
+
+#standardFields #stdColumn1 #bedHolder {
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #bbbcab;
+	border-right:1px solid #bbbcab;
+}
+
+#standardFields #stdColumn2 label {
+}
+
+#standardFields #stdColumn2 .ctrlHolder {
+}
+
+#standardFields #stdColumn2 #subdivisionHolder {
+}
+
+#standardFields #stdColumn3 {
+}
+
+#standardFields #stdColumn3 .ctrlHolder {
+}
+#standardFields #advColumn3 #statusHolder {
+}
+
+#advancedExtra {
+  border-top: 1px solid #bbbcab;
+  width: 100%;
+  overflow: hidden;
+}
+
+#advancedExtra .column {
+}
+
+#advancedExtra #advColumn1 {
+}
+
+#advancedExtra .column label {
+}
+
+#advancedExtra .ctrlHolder {
+}
+#advancedExtra advColumn1 .ctrlHolder{
+}
+
+#advancedExtra .column label.triggerLabel {
+}
+
+#advancedExtra #advColumn2 {
+}
+
+#advancedExtra #advColumn2 .ctrlHolder {
+}
+
+#minAcresHolder {
+}
+
+#propertyTypeHolder {
+}
+
+#storiesHolder {
+  
+}
+
+#advColumn3 {
+}
+
+#advColumn3 .ctrlHolder {
+}
+
+#schoolNameHolder {
+}
+
+#schoolNameHolder input {
+}
+
+#zipHolder {
+}
+
+#lastModifiedHolder {
+  
+}
+
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+  height: 23px;
+  line-height: 23px;
+  background-color: #818277;
+  padding:0 15px;
+  font-size:11px;
+}
+
+#searchFormLinks small {
+	font-size:11px;
+}
+
+#searchFormLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+#searchFormLinks a:hover {
+  text-decoration: underline;
+}
+
+#searchLinksOne{
+  display:none;
+}
+
+#searchLinksTwo {
+  float: left;
+}
+
+#searchLinksThree {
+  float: right;
+  width:257px;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+  display: block;
+  float: right;
+  height: 23px;
+  line-height: 23px;
+  width: 123px;
+  text-indent: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink span, #searchformResetter span {
+  display: none;
+}
+
+
+#saveSearchLink {
+  background-image: url('http://displet.com/images/okcmetro/saveback.png');
+}
+
+#searchformResetter {
+  background-image: url('http://displet.com/images/okcmetro/resetback.png');
+  margin-right:5px;
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+  background: white;
+  opacity: .7;
+  background-image: url('/images/loader_small_dots.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+  display: block;
+  position: absolute;
+  height: 415px;
+  background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+  padding: 0;
+  height: 411px;
+  float:left;
+}
+#leftColumn{
+	height:413px;
+}
+
+
+#leftColumn, #listLoader {
+  width: 456px;
+}
+
+#resultsNav {
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  font-weight:700;
+  border:1px solid #bcbdad;
+  background:#fff;
+  border-bottom:0;
+}
+
+
+#prePage a, #nextPage a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 12px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+#prePage a {
+  background-image: url('http://displet.com/images/okcmetro/leftarrow.png');
+}
+
+#nextPage a {
+  background-image: url('http://displet.com/images/okcmetro/rightarrow.png');
+}
+
+#resultsList {
+  height: 377px;
+  padding-left: 17px;
+  border: 1px solid #bcbdad;
+  background:#fff;
+  border-top: none;
+  overflow-x: auto;
+  font-size: 11px;
+  line-height:16px;
+}
+
+#resultsDiv a {
+  text-decoration: none;
+}
+
+div.resultRow {
+  background-image: url('http://displet.com/images/okcmetro/resultsback.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 409px;
+  padding-top:2px;
+  padding-left:1px;
+  overflow: hidden;
+  font-weight: normal !important;
+  margin-bottom:5px;
+}
+
+div.resultRow:hover {
+  background-position: 0px bottom;
+}
+
+#leftColumn div.resultRow a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+#leftColumn div.resultRow:hover a {
+  color: #fff;
+}
+
+div.propertyPreviewPic {
+	float: left;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+div.propertyPreviewPic img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #fff;
+  padding:0 !important;
+}
+
+div.propertyAddress {
+  float: left;
+  width: 164px;
+  padding-left:10px;
+  margin-top:2px;
+}
+
+div.propertyAddress strong {
+  font-weight: normal;
+}
+
+div.propertyPriceBedsSf {
+  float: left;
+  width: 97px;
+  padding-left: 10px;
+  margin-top:2px;
+}
+
+div.resultRow:hover div.propertyPriceBedsSf {
+}
+
+div.propertyPriceBedsSf a {
+  
+}
+
+div.propertyActions, div.propertyActions .viewDetailsLink a {
+  float: left;
+  display: block;
+  width: 65px;
+  height: 65px;
+}
+
+div.propertyActions .viewDetailsLink a {
+  text-indent: -9999px;
+}
+
+#rightColumn {
+  width: 482px;
+  float:right;
+  border:1px solid #bbbcab;
+}
+
+#resultsMap {
+  height: 411px;
+}
+
+/******************
+Search Results Styles
+******************/
+#resultsToolbar {
+  height: 48px;
+  line-height: 48px;
+  font-size: 11px;
+  padding: 0px 20px;
+  background-color: #fff;
+  border:1px solid #bbbcab;
+  margin-bottom:20px;
+}
+
+#resultsToolbar a {
+  color: #454b49;
+  font-weight:700;
+}
+
+#resultsToolbar table {
+  width: 100%;
+  border-spacing:0;
+}
+
+#resultsToolbar td {
+  width: 50%;
+  text-align: right;
+}
+
+#resultsToolbar #totalRecords {
+	color: #955824;
+}
+
+#resultsToolbar td:first-child {
+  text-align: left;
+}
+
+.resultListContainer {
+  border: 1px solid #bbbcab;
+  background:#f2f2e9;
+  height:102px;
+  font-size:11px;
+  line-height:18px;
+	margin-bottom: 5px;
+}
+
+.resultListContainer table {
+  width: 100%;
+  border-spacing:0;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #d8d9cc;
+}
+
+td.propertyPreviewPic {
+  padding: 10px;
+  width: 115px;
+  border-right: none !important;
+}
+
+td.propertyPreviewPic img {
+  width: 115px;
+  height:82px;
+}
+
+td.propertyAddress {
+  padding-left: 5px;
+}
+
+td.propertyAddress strong {
+  font-weight:500;
+}
+
+td.price {
+  width: 125px;
+  padding-left: 25px;
+  line-height: 20px;
+}
+
+td.price .price {
+  color: #955824;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top:10px;
+}
+
+td.propertyBedsSf {
+  width: 112px;
+  padding-left:10px;
+}
+
+td.actions {
+  width: 155px;
+}
+
+td.actions .addToFaves {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 25px;
+  background-image: url('http://displet.com/images/pelhamrealestateblog/liststar.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  color: #955824;
+  margin-left:21px;
+  margin-bottom:15px;
+  text-decoration:none;
+}
+
+td.actions .addToFaves:hover {
+  text-decoration: none;
+}
+
+td.actions .makeRequest {
+  display: block;
+  text-align:center;
+  width: 116px;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  margin: 0px auto;
+  background:url('http://displet.com/images/okcmetro/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+  text-decoration: underline;
+}
+
+td.propertyActions {
+  border-right: none !important;
+  width: 138px;
+}
+
+td.propertyActions .viewDetailsLink {
+  display: block;
+  height: 54px;
+  line-height: 38px;
+  width: 100px;
+  background-image: url('http://displet.com/images/okcmetro/view-details.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  outline: none;
+  margin: 0px auto;
+  padding:0;
+	margin-top: 12px;
+}
+
+td.propertyActions .viewDetailsLink:hover {
+  background-position: 0px bottom;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#residentials_detail .col1, #residentials_detail .col2 {
+	font-size:11px;
+}
+
+#residentials_detail .col1 {
+	margin-top:26px;
+ 	float: left;
+  	width: 457px;
+	margin-left: 10px;
+}
+
+#residentials_detail .col2 {
+  float: right;
+  width: 430px;
+  margin-top:7px;
+  overflow:hidden;
+	margin-right: 10px;
+}
+#residentials_detail .col2second {
+  float: right;
+  width: 430px;
+  padding-right:2px;
+}
+
+#actions1 {
+}
+
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	float:left;
+	width:207px;
+	height:57px;
+	line-height:40px;
+	text-indent:15px;
+	font-weight:700;
+	text-transform:uppercase;
+	text-shadow:1px 1px 3px #666;
+}
+
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/okcmetro/requestshowing.png') 0 0 no-repeat;
+	margin-right:36px;
+}
+
+#content #actions1 a, #content #actions1 a:visited {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+#content #actions1 a:hover{
+	text-decoration:underline;
+}
+
+#actions1 .redButton {
+}
+
+#actions1 #saveFaveLink {
+  background-image: url('http://displet.com/images/okcmetro/addtofavorites.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions2 {
+  margin:13px 0 30px 13px;
+}
+
+#actions2 #callUs, #actions2 #sendToFriend {
+  float: left;
+  height:26px;
+}
+
+#callUs {
+  line-height: 14px;
+  background-image: url(http://displet.com/images/austincityhomesearch/question.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-right: 125px;
+  padding-left:24px;
+}
+
+#callUs span {
+  font-weight: bold;
+}
+
+#sendToFriend {
+  background-image: url(http://displet.com/images/austincityhomesearch/email.png);
+  background-position: 0px 1px;
+  background-repeat: no-repeat;
+  line-height: 26px;
+  padding-left: 45px;
+}
+
+#sendToFriend a{
+  color: #454B49;
+  text-decoration:underline;
+}
+
+#sendToFriend a:hover{
+  text-decoration: none;
+}
+
+/*#facebook_like {
+  width: 350px;
+  padding: 10px;
+  margin: 0px auto 20px auto;
+}*/
+
+#detailsHeader {
+  line-height: 16px;
+  margin-top:30px;
+}
+
+#detailsHeader .address {
+  line-height: 18px;
+  font-size: 18px;
+  font-family:'Cardo';
+  border-bottom: 1px solid #ddddd5;
+  font-weight:500;
+  padding-bottom:12px;
+}
+
+#detailsHeader .price {
+  font-size: 18px;
+  line-height:18px;
+  font-weight: 500;
+  color: #955824;
+  font-family:'Cardo';
+  text-align: right;
+  padding:0;
+  margin-top:20px;
+  margin-bottom:14px;
+}
+
+#detailsProperty {
+  font-size: 11px;
+  margin-bottom:27px;
+}
+
+#content #detailsProperty p {
+	line-height:24px;
+}
+
+#detailsProperty .subColumnOne, #detailsProperty .subColumnTwo {
+  float: left;
+  width: 50%;
+}
+
+.subColumnTwo {
+  text-align: right;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+  color: #955824;
+}
+
+.tanBack {
+  padding: 0 18px;
+  padding-bottom:14px;
+  border: 1px solid #bbbcab;
+  background-color: #f2f2e9;
+  margin-bottom: 20px;
+  color: #818277;
+}
+
+#propDesc{
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+.tanBack.left, .tanBack.right {
+  width: 170px;
+}
+
+.tanBack p, .tanBack ul {
+}
+.tanBack p{
+}
+.tanBack li{
+}
+
+#content .tanBack p.remarks {
+  width:100%;
+  padding-left:19px;
+  padding-right:19px;
+  margin-left:-19px;
+  margin-top:8px;
+  height: 32px;
+  line-height:32px;
+  background-color: #818277;
+  margin-bottom:-14px;
+  color:#fff;
+}
+
+#detailsRemarks{
+	border-bottom:0;
+}
+
+.tanBack p.remarks .red {
+  color: #fff;
+  padding-right: 5px;
+}
+
+.tanBack ul li {
+}
+
+#content .tanBack .tanbacktit {
+  font-size: 13px;
+  line-height: 13px;
+  color: #955824;
+  text-transform:uppercase;
+  margin-top:12px;
+	margin-bottom: 10px;
+  font-family:'Cardo';
+}
+
+#detailFooter {
+  clear: both;
+  text-align:right;
+  line-height:18px;
+  padding-right:18px;
+  font-size:11px;
+}
+
+#detailTabs {
+  padding-left: 10px;
+}
+
+#detailTabs li {
+  float: left;
+  padding-right: 10px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#detailTabs li a {
+  display: block;
+  line-height: 30px;
+  color: #242729;
+  text-decoration: none;
+  padding: 0px 25px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  background-color: #e5e6d4;
+}
+
+#detailTabs li a.active {
+  background-color: #955824;
+  color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+  clear: both;
+  border: 1px solid #bbbcab;
+  background:#fff;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+#detailPhotos{
+	padding-bottom:25px;
+}
+#userCommentsContainer #userCommentsContainer{
+	display:block !important;
+	border:0;
+	padding:0;
+	margin:0;
+}
+#userCommentsContainer a, #userCommentsContainer a:visited{
+	color: #818277;
+}
+#userComments h3{
+	margin:5px 0;
+}
+
+img#largeImage {
+  width: 412px !important;
+  display: block;
+}
+
+#horizontal_carousel {
+  width: 430px !important;
+  height: 415px !important;
+  padding:0 !important;
+  margin-top:0 !important;
+}
+
+#horizontal_carousel .container {
+  width: 340px !important;
+  left: 33px !important;
+}
+
+#horizontal_carousel .container {
+  top: 330px !important;
+}
+
+#horizontal_carousel .container img {
+  width: 100px !important;
+  height: 90px !important;
+  border: 0;
+}
+
+#horizontal_carousel .next_button, #horizontal_carousel .previous_button {
+  bottom: 27px !important;
+  width:29px !important;
+}
+
+#horizontal_carousel .previous_button {
+  width: auto !important;
+}
+
+#imageNav {
+  width: 410px !important;
+}
+
+#detailMap {
+  height: 380px;
+}
+
+#dashboardActions {
+  float: left;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#dashOutput {
+  float: right;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#loginSignupFormcontainer {
+  padding: 10px;
+}
+
+#loginSignupFormcontainer table {
+  width: 100%;
+}
+
+#loginSignupFormcontainer table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#loginSignupFormcontainer input {
+  border: 1px solid #ccc;
+}
+
+#loginSignupFormcontainer p {
+  padding-bottom: 4px;
+}
+
+#loginSignupFormcontainer p.required input {
+  border: 1px solid red;
+}
+
+#loginSignupFormcontainer label {
+  display: block;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+  font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+  text-decoration: none;
+  color: #000;
+}
+
+#propertyInfoWindow img {
+  width: 105px;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+  display: block;
+  float: right;
+  width: 10px;
+  height: 8px;
+  line-height: 8px;
+  background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+  width: 100%;
+}
+
+#propertyInfoWindow table td {
+  vertical-align: top;
+  padding: 5px;
+  font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+  width: 24px;
+  height: 20px;
+  background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/marchantteam/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+  height: 0px;
+  width: 0px;
+}
+
+#headermargin{
+  width:948px;
+  height:90px;
+}
+#agentlogo{
+  margin-top:20px;
+  margin-left:11px;
+  float:left;
+  background:url('http://displet.com/images/pelhamrealestateblog/displet-logo.png') 0 0 no-repeat;
+  width:187px;
+  height:45px;
+}
+.headerlinks{
+  margin-top:35px;
+  margin-left:33px;
+  float:right;
+  border-bottom:3px solid #d0dd64;
+  font-family:AvenirLTStd;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+}
+.lastright{
+  margin-right:11px;
+}
+#userToolbarLinks li{
+}
+#dashboardlist{
+  border-left:0;
+}
+
+span.resultsPaginationArrow{
+  display:none;
+}
+#footerbar{
+  height:51px;
+  width:100%;
+  background:url('http://displet.com/images/pelhamrealestateblog/footerback.png') 0 0 repeat-x;
+  text-align:center;
+}
+#footerbar img{
+  margin-top:10px;
+}
+#footertext{
+  padding:10px 20px;
+  font-size:10px;
+  text-align:center;
+  line-height:18px;
+}
+
+body#residentials_detail .subColumnOne {
+
+  float: left;
+
+  width:60%;
+
+}
+body#residentials_detail .subColumnTwo {
+
+  float:right;
+
+  width:35%;
+
+  text-align:right;
+
+}
+#detailsSchool{
+  width:174px;
+  text-align:right;
+  float:right;
+}
+#financialInfo{
+  width:174px;
+  text-align:right;
+  float:left;
+}
+#lotArea{
+  text-align:right;
+}
+#financialInfo p:first-child, #detailsSchool p:first-child, #lotArea p:first-child{
+  text-align:left;
+}
+#detailsSchool .fieldName, #financialInfo .fieldName, #lotArea .fieldName{
+  float:left;
+}
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 124px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+#pricePerSqFeetHolder, squareFeetAvailableHolder{
+  clear:both;
+}
+
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+	color: #818277;
+	font-family: Arial;
+	font-size: 11px;
+	background-image: url('http://okcmetroliving.com/wp-content/themes/okc/images/bg_body.png');
+}
+
+#mainHeaderOuter {
+	background: url('http://okcmetroliving.com/wp-content/themes/okc/images/bg_content.png') center bottom repeat-x;
+	padding-bottom: 3px;
+}
+#content{
+	color:#454b49;
+	padding-top:56px;
+	margin-bottom:30px;
+	font-size:11px;
+	background-image: url('http://okcmetroliving.com/wp-content/themes/okc/images/bg_content2.png');
+	background-position: center 0px;
+	background-repeat: no-repeat;
+}
+#contentWrapperOuter{
+	background:#fff;
+	border:1px solid #bbbcab;
+	padding:10px;
+}
+
+#content p{
+	line-height:18px;
+}
+
+a, a:visited {
+	text-decoration:none;
+	color:#fff;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#e2e770;
+}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+.dropshadow{text-shadow:1px 1px 2px #111;}
+
+.dropshadow2{text-shadow:1px 1px 2px #444;}
+
+.dropshadow3{text-shadow:1px 1px 2px #fff;}
+
+section,
+nav,
+the_footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+WordPress Styles
+******************/
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0 !important;
+	padding: 0 4px 5px !important;
+}
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+.image_replace_anchor_span {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor_span a {
+  display: inline-block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+/*Image Replacement Goes Here*/
+
+/******************
+Wrapper Styles
+******************/
+.margin{
+	width:960px;
+	margin:0 auto;
+}
+
+/******************
+Header Styles
+******************/
+
+
+/******************
+the_footer Styles
+******************/
+
+#the_footer{
+	padding-bottom:30px;
+}
+#the_footermargin{
+	width:960px;
+	margin:0 auto;
+	color:#fff;
+}
+#the_footermargin ul li{
+	float:left;
+	padding:0 5px;
+	border-left:1px solid #fff;
+}
+#the_footermargin ul li a, #the_footermargin ul li a:visited{
+	color:#fff;
+}
+#the_footermargin ul li:first-child{
+	padding-left:0;
+	border-left:0;
+}
+
+
+#searchContextPagination{
+	height:14px;
+	line-height:14px;
+	padding-left:25px;
+	margin-top:25px;
+	font-size:11px;
+	font-family:Verdana;
+	background:url('http://displet.com/images/okcmetro/backarrow.png') 0 0 no-repeat;
+	margin-left: 10px;
+}
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#955824;
+	text-decoration:underline;
+}
+#searchContextPagination a:hover{
+	text-decoration:none;
+}
+
+#stats{
+	font-size:11px;
+	font-family:Arial;
+	color:#454b49;
+	padding-left:10px;
+	line-height:16px;
+}
+#propertyInfoWindow .viewDetailsLink{
+	margin-top:4px;
+	display:block;
+	color:#fff;
+	width:93px;
+	height:28px;
+	line-height:28px;
+	background:url('http://displet.com/images/marchantteam/viewdetailslink.png') 0 0 no-repeat;
+	padding-left:10px;
+	font-size:11px;
+	font-family:Arial;
+	font-weight:700;
+}
+.balloonWrapper table{
+	height:115px;
+	width:200px;
+}
+#imagery img{
+	width:103px;
+	border:0;
+	padding:0;
+}
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 124px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+.image_replace_anchor_span {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor_span a {
+  display: inline-block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+#cta_vip_buyer_program_sidebar,
+#cta_vip_buyer_program_sidebar a {
+  width: 260px;
+  height: 80px;
+  line-height: 80px;
+}
+
+#cta_vip_buyer_program_sidebar {
+  margin-bottom: 30px;
+}
+
+#cta_vip_buyer_program_sidebar a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_vip_buyer_program_sidebar.png);
+}
+
+#cta_home_value_sidebar,
+#cta_home_value_sidebar a {
+  width: 260px;
+  height: 144px;
+  line-height: 144px;
+}
+
+#cta_home_value_sidebar {
+  margin-bottom: 30px;
+}
+
+#cta_home_value_sidebar a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_home_value_sidebar.png);
+}
+
+#cta_wordpress,
+#cta_wordpress a {
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+}
+
+#cta_wordpress a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_wordpress.png);
+}
+
+#cta_displet,
+#cta_displet a {
+  width: 77px;
+  height: 27px;
+  line-height: 27px;
+}
+
+#cta_displet {
+  margin-right: 10px;
+}
+
+#cta_displet a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_displet.png);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+}
+
+#logo_okc_footer,
+#logo_okc_footer a {
+  width: 335px;
+  height: 179px;
+  line-height: 179px;
+}
+
+#cta_top,
+#cta_top a {
+  width: 42px;
+  height: 25px;
+  line-height: 25px;
+}
+
+#cta_top a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_top.png);
+}
+
+#cta_home_value,
+#cta_home_value a {
+  width: 380px;
+  height: 144px;
+  line-height: 144px;
+}
+
+#cta_home_value {
+  margin-bottom: 30px;
+}
+
+#cta_home_value a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_home_value.png);
+}
+
+#cta_vip_buyer_program,
+#cta_vip_buyer_program a {
+  width: 380px;
+  height: 80px;
+  line-height: 80px;
+}
+
+#cta_vip_buyer_program a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_vip_buyer_program.png);
+}
+
+#cta_previous,
+#cta_previous a {
+  width: 21px;
+  height: 16px;
+  line-height: 16px;
+}
+
+#cta_previous,
+#cta_next {
+  margin-top: 17px;
+}
+
+#cta_previous a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_previous.png);
+}
+
+#cta_next,
+#cta_next a {
+  width: 21px;
+  height: 16px;
+  line-height: 16px;
+}
+
+#cta_next a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_next.png);
+}
+
+#title_search_thousands_of_listings {
+  width: 391px;
+  height: 47px;
+  line-height: 47px;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/title_search_thousands_of_listings.png);
+}
+
+#logo_okc_metro_living,
+#logo_okc_metro_living a {
+  width: 193px;
+  height: 66px;
+  line-height: 66px;
+}
+
+#logo_okc_metro_living a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/logo_okc_metro_living.png);
+}
+
+#cta_facebook_header,
+#cta_facebook_header a {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
+#cta_facebook_header a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_facebook_header.png);
+}
+
+#cta_rss_header,
+#cta_rss_header a {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
+#cta_rss_header a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_rss_header.png);
+}
+
+#cta_twitter_header,
+#cta_twitter_header a {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
+#cta_twitter_header a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_twitter_header.png);
+}
+
+#title_get_in_touch {
+  width: 150px;
+  height: 18px;
+  line-height: 18px;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/title_get_in_touch.png);
+  float: right;
+}
+
+#cta_read_more,
+#cta_read_more a {
+  width: 31px;
+  height: 125px;
+  line-height: 125px;
+}
+
+#cta_read_more a {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/cta_read_more.png);
+}
+
+/******************
+Wrapper Styles
+******************/
+#wrapper {
+  
+}
+
+.content {
+  width: 960px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/******************
+Header Styles
+******************/
+#header {
+  height: 126px;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/bg_header.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+}
+
+#header .left {
+  padding: 30px 0px 0px 6px;
+}
+
+#header .right {
+  padding: 9px 4px 0px 0px;
+}
+
+#header_social_media {
+  overflow: hidden;
+  height: 54px;
+}
+
+#header_social_media div.image_replace_anchor {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#header_links {
+  border: 1px solid #8D8E83;
+  float: right;
+}
+
+#header_links ul {
+  border: 1px solid #CBCCC5;
+  background-color: #ADAEA1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ADAEA1), to(#8D8E83));
+  background-image: -moz-linear-gradient(top, #ADAEA1, #8D8E83);
+  background-image: linear-gradient(top, #ADAEA1, #8D8E83);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ADAEA1', endColorstr='#8D8E83');
+  overflow: hidden;
+  padding: 0px 5px;
+}
+
+#header_links ul li {
+  float: left;
+}
+
+#header_links ul li a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  height: 22px;
+  line-height: 22px;
+  padding: 0px 5px;
+}
+
+#header_links ul li a:hover {
+  
+}
+
+#header_phone {
+  overflow: hidden;
+}
+
+#header_phone div {
+  clear: right;
+  text-align: right;
+  color: #8d8e83;
+  text-shadow: 0px 1px 1px #fff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/******************
+Navigation Styles
+******************/
+#navigation {
+  overflow: hidden;
+  height: 49px;
+  padding: 3px 0px 0px 0px;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/bg_navigation.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+}
+
+#navigation div {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/bg_navigation2.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+#navigation ul {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/border_navigation.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#navigation ul li {
+  float: left;
+}
+
+#navigation ul li a {
+  display: block;
+  width: 160px;
+  height: 49px;
+  line-height: 49px;
+  color: #E5E6D5;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/border_navigation.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#navigation ul li a:hover,
+#navigation ul li.current-menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/******************
+Footer Styles
+******************/
+#footer_wrapper {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/bg_footer_wrapper.png);
+}
+
+#footer {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/bg_footer.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  color: #fff;
+}
+
+#footer .content {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/logo_okc_footer.png);
+  background-position: right 4px;
+  background-repeat: no-repeat;
+}
+
+#footer_left {
+  float: left;
+  width: 135px;
+  padding: 15px 0px 0px 0px;
+}
+
+#footer_right {
+  float: right;
+  width: 780px;
+}
+
+/*Footer Nav*/
+#footer_navigation {
+  
+}
+
+#footer #footer_navigation ul {
+  border-top: 1px solid #616966;
+}
+
+#footer #footer_navigation ul li {
+  border-bottom: 1px solid #616966;
+}
+
+#footer #footer_navigation ul li a {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  color: #E5E6D5;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/icon_arrow_off_white.png);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#footer #footer_navigation ul li a:hover {
+  background-color: #454B49;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/icon_arrow_white.png);
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer_right_top {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+#footer_right_top h3 {
+  font-family: Georgia;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+#footer_social_media {
+  float: left;
+  margin-right: 100px;
+}
+
+#footer #footer_social_media ul {
+  
+}
+
+#footer #footer_social_media ul li {
+  padding: 0px 0px 10px 25px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#footer #footer_social_media ul li.icon_rss {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/icon_rss.png);
+}
+
+#footer #footer_social_media ul li.icon_twitter {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/icon_twitter.png);
+}
+
+#footer #footer_social_media ul li.icon_facebook {
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/icon_facebook.png);
+}
+
+#footer #footer_social_media ul li a {
+  color: #fff;
+}
+
+#footer_contact {
+  float: left;
+  font-weight: bold;
+  color: #fff;
+}
+
+#footer_contact a {
+  color: #E5E6D5;
+  text-decoration: underline;
+}
+
+#footer_contact a:hover {
+  text-decoration: none;
+}
+
+#footer_contact p {
+  line-height: 20px;
+}
+
+#footer_right_bottom {
+  line-height: 27px;
+  overflow: hidden;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/border_footer_right_bottom.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  padding-top: 15px;
+}
+
+#footer_copyright {
+  float: left;
+  padding-right: 5px;
+}
+
+#footer_links {
+  overflow: hidden;
+  float: left;
+}
+
+#footer #footer_links ul {
+  
+}
+
+#footer #footer_links ul li {
+  float: left;
+  padding: 0px 10px;
+  background-image: url(http://okcmetroliving.com/wp-content/themes/okc/images/border_footer_links.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#footer #footer_links ul li.last {
+  background: none;
+}
+
+#footer #footer_links ul li a {
+  color: #E5E6D5;
+  text-decoration: underline;
+}
+
+#footer #footer_links ul li a:hover {
+  text-decoration: none;
+}
+
+#footer_powered {
+  float: right;
+}
+
+div#footer2 ul, #disclaimer{
+	width:960px;
+	margin:0 auto;
+}
+div#footer2 ul li{
+	float:left;
+	margin-right:10px;
+}
+div#footer2 ul li a, div#footer ul li a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+div#footer2 ul li a:hover{
+	text-decoration:underline;
+}
+div#footer2, #footerOuter{
+	background: url(http://okcmetroliving.com/wp-content/themes/okc/images/bg_footer_wrapper.png) 0 0 repeat;
+}
+#disclaimer{
+	font-size:9px;
+	padding-top:25px;
+	padding-bottom:10px;
+}
+#disclaimer p{
+	margin-bottom:6px;
+}

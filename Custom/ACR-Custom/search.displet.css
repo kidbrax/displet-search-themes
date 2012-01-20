@@ -1,0 +1,2653 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  color: #000;
+  font-family: Arial;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+img {border: 0;}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+.image_replace_anchor_span {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor_span a {
+  display: inline-block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+#logo_displet {
+  width: 187px;
+  height: 45px;
+  line-height: 45px;
+  background-image: url(http://displet.com/images/alderson-logo.png);
+}
+
+#logo_displet a {
+  width: 187px;
+  height: 45px;
+  line-height: 45px;
+  display:block;
+}
+
+#logo_displet_footer {
+  width: 200px;
+  height: 47px;
+  line-height: 47px;
+  background-image: url(http://displet.com/images/alderson/logo_displet_footer.png);
+  margin: 0px auto;
+}
+
+#logo_displet_footer a {
+  width: 200px;
+  height: 47px;
+  line-height: 47px;
+}
+
+/******************
+Header Styles
+******************/
+#header {
+  width: 956px;
+  margin: 0px auto;
+  height: 82px;
+}
+
+#header_left {
+  float: left;
+  padding: 22px 0px 0px 33px;
+}
+
+#header_right {
+  float: right;
+  padding: 0px 15px 0px 0px;
+}
+
+/******************
+Navigation Styles
+******************/
+#navigation {
+  
+}
+
+#navigation ul {
+  border: 1px solid #DFDFDF;
+  overflow: hidden;
+}
+
+#navigation ul li {
+  float: left;
+}
+
+#navigation ul li a {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  padding: 0px 25px;
+  border-right: 1px solid #fff;
+}
+
+#navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+/******************
+Footer Styles
+******************/
+#footerOuter {
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+#footer_bar {
+  height: 47px;
+  line-height: 47px;
+  border: 1px solid #D1D1D1;
+  background-color: #F4F4F4;
+}
+
+#footer ul,
+#disclaimer {
+  display: none;
+}
+
+
+/******************
+Wrapper Styles
+******************/
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+  width: 960px;
+  margin: 0px auto;
+  overflow: hidden;
+	margin-top:-15px;
+}
+
+#contentWrapper {
+  padding: 0px 13px;
+  overflow: hidden;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+  font-size: normal;
+  line-height: normal;
+}
+
+#columnsFooter {
+  clear: both;
+}
+
+#residentials_results #contentWrapper p {
+  padding: 10px;
+}
+
+/******************
+globalToolbar Styles
+******************/
+#globalToolbar {
+  height: 42px;
+  width:930px;
+  margin:0 auto;
+  font-weight: bold;
+  line-height:42px;
+  color: #e5e6d4;
+  font-size: 11px;
+  background:url('http://displet.com/images/austincityhomesearch/globaltoolbarback.png') 0 0 no-repeat;
+  font-family:Arial;
+}
+
+#globalToolbar a {
+  color: #E5E6D4;
+  text-decoration: none;
+}
+
+#globalToolbar a:hover {
+  text-decoration: underline;
+}
+
+#userToolbarLinks {
+  float: left;
+}
+
+#userToolbarLinks li {
+  float: left;
+  margin:0 21px;
+}
+
+#userToolbarLinks li#dashboardList a {
+  
+}
+
+#quickSearch {
+  float: left;
+  margin-left: 21px;
+}
+
+#quickSearch form {
+  float: left; display: inline;
+  padding-top: 10px;
+}
+
+#quickSearch form#mlsSearchForm {
+  padding-right: 11px;
+  float: left;
+  display: inline;
+  padding-top:1px;
+}
+
+#quickSearch form input {
+  display: inline-block;
+  height: 11px;
+  border: 1px solid #454b49;
+  margin: 0px 7px 0px 0px;
+  padding: 5px 0px 5px 5px;
+  font-size: 11px;
+  line-height:11px;
+  color: #818277;
+  background-color: #fff;
+}
+
+#quickSearch form#mlsSearchForm input {
+  margin-right: 0px;
+  width: 118px;
+}
+
+#quickSearch span {
+  float: left;
+  display: inline;
+  padding-right: 8px;
+}
+#quickSearch span#textQuick{
+	color:#fff;
+}
+input#street_number{ 
+	float: left; display: inline; 
+	width: 78px;
+	margin-right: 15px;
+}
+input#street_name {
+	float: left; display: inline; 
+	width: 161px;
+	margin-right: 15px;
+}
+
+#quickSearch #textOr {
+	padding-right:11px;
+}
+
+#loggedIn {
+  float: right;
+  color: #b1b653;
+  margin: 10px 20px 0px 0px;
+  padding: 0px;
+  font-size: 11px;
+  background:url('http://displet.com/images/austincityhomesearch/loginback.png') 0 0 no-repeat;
+  height:21px;
+  width:106px;
+  line-height:21px;
+  text-align:center;
+}
+
+#loggedIn a {
+  color: #000;
+  text-decoration: none;
+  font-weight:500;
+  margin:0 2px;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+#searchFormContainer {
+	margin:0 2px;
+	margin-bottom: 20px;
+	font-size:11px;
+	color:#201c1d;
+}
+
+#searchFormContainer .column{
+	float:left;
+	width:292px;
+	padding:12px 6px 0px 6px;
+}
+
+#searchFormContainer .ctrlHolder{
+	float:left;
+	padding-bottom:12px;
+	margin:0 9px;
+}
+
+#searchFormContainer label{
+	display:block;
+	padding-bottom:6px;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	width:127px;
+	height:23px;
+	line-height:23px;
+	font-size:11px;
+	color:#999;
+	background:#fff;
+}
+
+#searchFormContainer input{
+	width:119px;
+	height:19px;
+}
+
+#searchFormContainer .tinySearchSelect{
+	width:79px;
+}
+
+#searchFormContainer #minListPrice, #searchFormContainer #maxListPrice, #searchFormContainer #minAcres{
+	width:127px;
+}
+
+#searchFormContainer #yearBuilt{
+	width:270px;
+}
+
+#searchFormContainer #minListPrice{
+	margin-right:17px;
+}
+
+#searchFormContainer .triggerLabel input{
+	width:inherit;
+}
+
+#searchFormContainer .triggerLabel{
+	color:#999;
+}
+
+#standardFields {
+  width: 100%;
+  overflow: hidden;
+  margin-top:2px;
+}
+
+#standardFields label.triggerLabel, #advancedExtra label.triggerLabel {
+}
+
+#standardFields .column {
+}
+
+#standardFields #stdColumn1 {
+}
+
+#standardFields label, #advancedExtra label {
+}
+
+#standardFields #stdColumn1 .ctrlHolder {
+}
+
+#bedHolder, #bathHolder, #minSquareFeetHolder {
+}
+
+#priceHolder.ctrlHolder {
+}
+
+#standardFields #stdColumn1 #bedHolder {
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+}
+
+#standardFields #stdColumn2 label {
+}
+
+#standardFields #stdColumn2 .ctrlHolder {
+}
+
+#standardFields #stdColumn2 #subdivisionHolder {
+}
+
+#standardFields #stdColumn3 {
+}
+
+#standardFields #stdColumn3 .ctrlHolder {
+}
+#standardFields #advColumn3 #statusHolder {
+}
+
+#advancedExtra {
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  overflow: hidden;
+}
+
+#advancedExtra .column {
+}
+
+#advancedExtra #advColumn1 {
+}
+
+#advancedExtra .column label {
+}
+
+#advancedExtra .ctrlHolder {
+}
+#advancedExtra advColumn1 .ctrlHolder{
+}
+
+#advancedExtra .column label.triggerLabel {
+}
+
+#advancedExtra #advColumn2 {
+}
+
+#advancedExtra #advColumn2 .ctrlHolder {
+}
+
+#minAcresHolder {
+}
+
+#propertyTypeHolder {
+}
+
+#storiesHolder {
+  
+}
+
+#advColumn3 {
+}
+
+#advColumn3 .ctrlHolder {
+}
+
+#schoolNameHolder {
+}
+
+#schoolNameHolder input {
+}
+
+#zipHolder {
+}
+
+#lastModifiedHolder {
+  
+}
+
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+  height: 23px;
+  line-height: 23px;
+  background-color: #d5d5d5;
+  padding-left:15px;
+  border-top-left-radius:6px;
+  border-bottom-left-radius:6px;
+  font-size:11px;
+}
+
+#searchFormLinks small {
+	font-size:11px;
+}
+
+#searchFormLinks a {
+  color: #626262;
+  text-decoration: none;
+}
+
+
+#searchFormLinks a:hover {
+  text-decoration: underline;
+}
+
+#searchLinksOne, #searchLinksTwo {
+  float: left;
+}
+
+#searchLinksThree {
+  float: right;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+  display: block;
+  float: left;
+  height: 23px;
+  line-height: 23px;
+  width: 123px;
+  text-indent: 13px;
+  color: #fff;
+  font-size:10px;
+  font-weight: 700;
+  text-decoration: none;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink span, #searchformResetter span {
+  display: none;
+}
+
+
+#saveSearchLink {
+  background-image: url(http://displet.com/images/austincityhomesearch/saveback.png);
+}
+
+#searchformResetter {
+  background-image: url(http://displet.com/images/austincityhomesearch/resetback.png);
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+  background: white;
+  opacity: .7;
+  background-image: url('/images/loader_small_dots.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+  display: block;
+  position: absolute;
+  height: 415px;
+  background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+  padding: 0;
+  height: 424px;
+  float:left;
+}
+
+
+#leftColumn, #listLoader {
+  width: 454px;
+}
+
+#resultsNav {
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  font-size: 11px;
+  color: #626262;
+  font-weight:700;
+  border:1px solid #d5d5d5;
+  border-bottom:0;
+}
+
+#displayingRecords {
+	color:#6a7029;
+}
+
+#prePage a, #nextPage a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 12px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+#prePage a {
+  background-image: url(http://displet.com/images/austincityhomesearch/leftarrow.png);
+}
+
+#nextPage a {
+  background-image: url(http://displet.com/images/austincityhomesearch/rightarrow.png);
+}
+
+#resultsList {
+  height: 389px;
+  padding-left: 16px;
+  border: 1px solid #d5d5d5;
+  border-top: none;
+  overflow-x: auto;
+  font-size: 11px;
+  line-height:16px;
+}
+
+#resultsDiv a {
+  text-decoration: none;
+}
+
+div.resultRow {
+  background-image: url(http://displet.com/images/austincityhomesearch/resultback.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  height: 66px;
+  width: 405px;
+  padding: 6px 0px 0px 6px;
+  overflow: hidden;
+  font-weight: normal !important;
+  margin-bottom:5px;
+}
+
+div.resultRow:hover {
+  background-position: 0px bottom;
+}
+
+#leftColumn div.resultRow a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+#leftColumn div.resultRow:hover a {
+  color: #fff;
+}
+
+div.propertyPreviewPic {
+  float: left;
+}
+
+div.propertyPreviewPic img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #fff;
+  padding:0 !important;
+}
+
+div.propertyAddress {
+  float: left;
+  width: 170px;
+  padding-left:10px;
+  margin-top:-2px;
+}
+
+div.propertyAddress strong {
+  font-weight: normal;
+}
+
+div.propertyPriceBedsSf {
+  float: left;
+  width: 97px;
+  padding-left: 10px;
+  margin-top:-2px;
+}
+
+div.resultRow:hover div.propertyPriceBedsSf {
+}
+
+div.propertyPriceBedsSf a {
+  
+}
+
+div.propertyActions, div.propertyActions .viewDetailsLink a {
+  float: left;
+  display: block;
+  width: 65px;
+  height: 65px;
+}
+
+div.propertyActions .viewDetailsLink a {
+  text-indent: -9999px;
+}
+
+#rightColumn {
+  width: 466px;
+  border:1px solid #d5d5d5;
+  margin-left:10px;
+}
+
+#resultsMap {
+  height: 424px;
+}
+
+/******************
+Search Results Styles
+******************/
+#resultsToolbar {
+  height: 23px;
+  line-height: 23px;
+  font-size: 11px;
+  padding: 0px 20px;
+  background-color: #d5d5d5;
+  color: #626262;
+  margin: 5px 2px 10px 2px;
+  border-radius: 6px;
+}
+
+#resultsToolbar a {
+  color: #626262;
+  font-weight:700;
+}
+
+#resultsToolbar table {
+  width: 100%;
+  border-spacing:0;
+}
+
+#resultsToolbar td {
+  width: 50%;
+  text-align: right;
+}
+
+#resultsToolbar #totalRecords {
+  color: #6a7029;
+}
+
+#resultsToolbar td:first-child {
+  text-align: left;
+}
+
+.resultListContainer {
+  border: 1px solid #d5d5d5;
+  margin-bottom: 10px;
+  background:#eee;
+  height:104px;
+  font-size:11px;
+  color:#626262;
+  line-height:18px;
+}
+
+.resultListContainer table {
+  width: 100%;
+  border-spacing:0;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #d5d5d5;
+  padding-bottom:7px;
+}
+
+td.propertyPreviewPic {
+  padding: 10px;
+  width: 115px;
+  border-right: none !important;
+}
+
+td.propertyPreviewPic img {
+  width: 115px;
+  height:82px;
+}
+
+td.propertyAddress {
+  padding-left: 5px;
+}
+
+td.propertyAddress strong {
+  font-weight:500;
+}
+
+td.price {
+  width: 125px;
+  padding-left: 25px;
+  line-height: 20px;
+}
+
+td.price .price {
+  color: #6a7029;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top:10px;
+}
+
+td.propertyBedsSf {
+  width: 112px;
+  padding-left:10px;
+}
+
+td.actions {
+  width: 155px;
+}
+
+td.actions .addToFaves {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 25px;
+  background-image: url(http://displet.com/images/pelhamrealestateblog/liststar.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  color: #6a7029;
+  margin-left:21px;
+  margin-bottom:15px;
+}
+
+td.actions .addToFaves:hover {
+  text-decoration: none;
+}
+
+td.actions .makeRequest {
+  display: block;
+  text-indent: 20px;
+  width: 117px;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #626262;
+  font-size: 10px;
+  margin: 0px auto;
+  background:url('http://displet.com/images/austincityhomesearch/requestmoreinfo.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+  text-decoration: underline;
+}
+
+td.propertyActions {
+  border-right: none !important;
+  width: 138px;
+}
+
+td.propertyActions .viewDetailsLink {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  width: 90px;
+  background-image: url(http://displet.com/images/austincityhomesearch/viewdetails.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  outline: none;
+  margin: 0px auto;
+  padding:0;
+}
+
+td.propertyActions .viewDetailsLink:hover {
+  background-position: 0px bottom;
+}
+
+/******************
+Detail Page Styles
+******************/
+#back_link {
+  display: none;
+}
+
+#back_link a {
+  display: block;
+  margin-bottom: 20px;
+  background-image: url(http://displet.com/images/alderson/arrow.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: #359D55;
+}
+
+#residentials_detail .col1, #residentials_detail .col2 {
+	font-size:11px;
+}
+
+#residentials_detail .col1 {
+	margin-top:29px;
+	padding-right:21px;
+ 	float: left;
+  	width: 479px;
+}
+
+#residentials_detail .col2 {
+  float: right;
+  width: 430px;
+  padding-right:2px;
+  margin-top:7px;
+  overflow:hidden;
+}
+#residentials_detail .col2second {
+  float: right;
+  width: 430px;
+  padding-right:2px;
+}
+
+#actions1 {
+	padding-left:21px;
+}
+
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	float:left;
+	width:207px;
+	height:51px;
+	line-height:35px;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/austincityhomesearch/listhomes.png') 0 0 no-repeat;
+	margin-right:27px;
+}
+
+#content #actions1 a, #content #actions1 a:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+#actions1 .redButton {
+}
+
+#actions1 #saveFaveLink {
+  background-image: url(http://displet.com/images/austincityhomesearch/addtofavorites.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions2 {
+  margin:16px 0 30px 13px;
+  padding-left:21px;
+}
+
+#actions2 #callUs, #actions2 #sendToFriend {
+  float: left;
+  height:26px;
+}
+
+#callUs {
+  line-height: 14px;
+  background-image: url(http://displet.com/images/austincityhomesearch/question.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-right: 92px;
+  color: #626262;
+  padding-left:24px;
+}
+
+#callUs span {
+  font-weight: bold;
+}
+
+#sendToFriend {
+  background-image: url(http://displet.com/images/austincityhomesearch/email.png);
+  background-position: 0px 1px;
+  background-repeat: no-repeat;
+  line-height: 26px;
+  padding-left: 45px;
+}
+
+#sendToFriend a{
+  color: #626262;
+  text-decoration:underline;
+}
+#searchContextPagination a{
+}
+
+#sendToFriend a:hover, #searchContextPagination a:hover {
+  text-decoration: none;
+}
+
+/*#facebook_like {
+  width: 350px;
+  padding: 10px;
+  margin: 0px auto 20px auto;
+}*/
+
+#detailsHeader {
+  font-size: 11px;
+  line-height: 16px;
+  margin-top:30px;
+  padding-left:21px;
+}
+
+#detailsHeader .address {
+  line-height: 18px;
+  font-size: 18px;
+  color: #626262;
+  border-bottom: 1px solid #eee;
+  font-weight:500;
+  padding-bottom:12px;
+}
+
+#detailsHeader .price {
+  font-size: 16px;
+  line-height:16px;
+  font-weight: lighter;
+  color: #6a7029;
+  text-align: right;
+  padding:0;
+  margin-top:20px;
+  margin-bottom:14px;
+}
+
+#detailsProperty {
+  font-size: 11px;
+  margin-bottom:27px;
+}
+
+#content #detailsProperty p {
+	line-height:24px;
+}
+
+#detailsProperty .subColumnOne, #detailsProperty .subColumnTwo {
+  float: left;
+  width: 50%;
+}
+
+.subColumnTwo {
+  text-align: right;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+  font-weight: bold;
+}
+
+.tanBack {
+  padding: 0 18px;
+  padding-bottom:14px;
+  border: 1px solid #d5d5d5;
+  background-color: #eee;
+  margin-bottom: 16px;
+  color: #626262;
+}
+
+.tanBack.left, .tanBack.right {
+  width: 170px;
+}
+
+.tanBack p, .tanBack ul {
+}
+.tanBack p{
+}
+.tanBack li{
+}
+
+#content .tanBack p.remarks {
+  width:100%;
+  padding-left:18px;
+  padding-right:43px;
+  margin-left:-18px;
+  margin-top:8px;
+  height: 32px;
+  line-height:32px;
+  background-color: #d5d5d5;
+  margin-bottom:-14px;
+}
+
+.tanBack p.remarks .red {
+  color: #578839;
+  padding-right: 5px;
+}
+
+.tanBack ul li {
+}
+
+#content .tanBack .tanbacktit {
+  font-size: 14px;
+  line-height: 14px;
+  color: #6a7029;
+  margin:12px 0;
+  font-family:'Oswald', sans-serif;
+}
+
+#detailFooter {
+  clear: both;
+  text-align:right;
+  color:#626262;
+  line-height:18px;
+  padding-right:18px;
+  font-size:11px;
+}
+
+#detailTabs {
+  padding-left: 10px;
+}
+
+#detailTabs li {
+  float: left;
+  padding-right: 10px;
+}
+
+#detailTabs li a {
+  display: block;
+  line-height: 30px;
+  color: #242729;
+  text-decoration: none;
+  padding: 0px 25px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  background-color: #d5d5d5;
+}
+
+#detailTabs li a.active {
+  background-color: #626262;
+  color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+  clear: both;
+  border: 1px solid #dadada;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+#detailPhotos{
+	padding-bottom:25px;
+}
+#userCommentsContainer #userCommentsContainer{
+	display:block !important;
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+img#largeImage {
+  width: 412px !important;
+  display: block;
+}
+
+#horizontal_carousel {
+  width: 430px !important;
+  height: 415px !important;
+  padding:0 !important;
+  margin-top:0 !important;
+}
+
+#horizontal_carousel .container {
+  width: 340px !important;
+  left: 33px !important;
+}
+
+#horizontal_carousel .container {
+  top: 330px !important;
+}
+
+#horizontal_carousel .container img {
+  width: 100px !important;
+  height: 90px !important;
+  border: 0px solid #d7d7d7;
+}
+
+#horizontal_carousel .next_button, #horizontal_carousel .previous_button {
+  bottom: 27px !important;
+  width:29px !important;
+}
+
+#horizontal_carousel .previous_button {
+  width: auto !important;
+}
+
+#imageNav {
+  width: 410px !important;
+}
+
+#detailMap {
+  height: 380px;
+}
+
+#dashboardActions {
+  float: left;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#dashOutput {
+  float: right;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#loginSignupFormcontainer {
+  padding: 10px;
+}
+
+#loginSignupFormcontainer table {
+  width: 100%;
+}
+
+#loginSignupFormcontainer table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#loginSignupFormcontainer input {
+  border: 1px solid #ccc;
+}
+
+#loginSignupFormcontainer p {
+  padding-bottom: 4px;
+}
+
+#loginSignupFormcontainer p.required input {
+  border: 1px solid red;
+}
+
+#loginSignupFormcontainer label {
+  display: block;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+  font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+  text-decoration: none;
+  color: #000;
+}
+
+#propertyInfoWindow img {
+  width: 105px;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+  display: block;
+  float: right;
+  width: 10px;
+  height: 8px;
+  line-height: 8px;
+  background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+  width: 100%;
+}
+
+#propertyInfoWindow table td {
+  vertical-align: top;
+  padding: 5px;
+  font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+  width: 24px;
+  height: 20px;
+  background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/alderson/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+  height: 0px;
+  width: 0px;
+}
+
+#headermargin{
+  width:948px;
+  height:90px;
+}
+#agentlogo{
+  margin-top:20px;
+  margin-left:11px;
+  float:left;
+  background:url('http://displet.com/images/pelhamrealestateblog/displet-logo.png') 0 0 no-repeat;
+  width:187px;
+  height:45px;
+}
+.headerlinks{
+  margin-top:35px;
+  margin-left:33px;
+  float:right;
+  border-bottom:3px solid #d0dd64;
+  font-family:AvenirLTStd;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+}
+.lastright{
+  margin-right:11px;
+}
+#userToolbarLinks li{
+}
+#dashboardlist{
+  border-left:0;
+}
+
+span.resultsPaginationArrow{
+  display:none;
+}
+#footerbar{
+  height:51px;
+  width:100%;
+  background:url('http://displet.com/images/pelhamrealestateblog/footerback.png') 0 0 repeat-x;
+  text-align:center;
+}
+#footerbar img{
+  margin-top:10px;
+}
+#footertext{
+  padding:10px 20px;
+  font-size:10px;
+  text-align:center;
+  line-height:18px;
+}
+
+body#residentials_detail .subColumnOne {
+
+  float: left;
+
+  width:60%;
+
+}
+body#residentials_detail .subColumnTwo {
+
+  float:right;
+
+  width:35%;
+
+  text-align:right;
+
+}
+#detailsProperty2{
+  padding-right:43px;
+}
+#detailsRemarks{
+	padding-right:43px;
+}
+#detailsSchool{
+  width:174px;
+  text-align:right;
+  float:right;
+}
+#financialInfo{
+  width:174px;
+  text-align:right;
+  float:left;
+}
+#lotArea{
+  text-align:right;
+}
+#financialInfo p:first-child, #detailsSchool p:first-child, #lotArea p:first-child{
+  text-align:left;
+}
+#detailsSchool .fieldName, #financialInfo .fieldName, #lotArea .fieldName{
+  float:left;
+}
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 124px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+#pricePerSqFeetHolder, squareFeetAvailableHolder{
+  clear:both;
+}
+#contentInnerWrapperOne a, #contentInnerWrapperOne a:visited{
+  color:#626262;
+}
+
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+	background-color:#808080;
+	background-image:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/bodyback.png');
+	background-position:0 0;
+	background-repeat:repeat-x; 
+	font-family:Arial, sans-serif;
+}
+
+.oswald, h1, h2, h3, h4, h5, h6{
+	font-family: 'Oswald', sans-serif;
+}
+
+#content{
+	color:#626262;
+}
+
+#content p{
+	line-height:18px;
+	font-size:11px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:500;
+}
+
+h1{
+	font-size:22px;
+	margin:14px 0;
+}
+
+h2{
+	font-size:18px;
+	margin:12px 0;
+}
+
+h3{
+	font-size:14px;
+	color:#6a7029;
+	margin:10px 0;
+}
+
+h4, h5, h6{
+	text-transform:uppercase;
+	margin:8px 0;
+}
+
+h4{
+	font-size:12px;
+}
+
+h5{
+	font-size:11px;
+}
+
+h6{
+	font-size:10px;
+}
+
+#contentinner li{
+	font-size:11px;
+	line-height:20px;
+	padding:4px 0;
+}
+#contentinner li:first-child{
+	color:#6a7029;
+}
+#contentinner ol li{
+	list-style-type:decimal;
+}
+#contentinner ul li{
+	list-style-type:disc;
+}
+#contentinner ol, #contentinner ul{
+	padding-left:30px;
+	margin:10px 0;
+}
+#content cite{
+	line-height:18px;
+	color:#eee;
+	background:#999;
+	padding:5px 16px;
+	display:block;
+	margin:10px 0;
+	font-style:inherit;
+}
+#content blockquote{
+	margin:10px 0;
+	line-height:18px;
+	padding-left:47px;
+	padding-right:20px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/blockquote.png') 0 0 no-repeat;
+	display:block;
+	font-style:italic;
+}
+#contentinner a, #contentinner a:visited{
+	color:#6a7029;
+	text-decoration:none;
+}
+#contentinner a:hover{
+	text-decoration:underline;
+}
+
+a, a:visited {
+	text-decoration:none;
+	color:#fff;
+	cursor: url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/hand.png'), default;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#e2e770;
+}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+.dropshadow{text-shadow:1px 1px 2px #111;}
+
+.dropshadow2{text-shadow:1px 1px 2px #444;}
+
+.dropshadow3{text-shadow:1px 1px 2px #fff;}
+
+section,
+nav,
+the_footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+WordPress Styles
+******************/
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0 !important;
+	padding: 0 4px 5px !important;
+}
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+.image_replace_anchor_span {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor_span a {
+  display: inline-block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+/*Image Replacement Goes Here*/
+
+/******************
+Wrapper Styles
+******************/
+.margin{
+	width:960px;
+	margin:0 auto;
+}
+
+/******************
+Header Styles
+******************/
+#logo {
+	width:246px;
+	height:111px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/austin-city-realty.png') 0 0 no-repeat;
+	margin-left:49px;
+	float:left;
+	position:relative;
+	z-index:10;
+}
+#contactsocialbar, #headernav{
+	width:618px;
+	margin-right:20px;
+	float:right;
+}
+#contactsocialbar{
+	margin-top:20px;
+}
+#headernav{
+	margin-top:15px;
+}
+.icon{
+	width:24px;
+	height:24px;
+	float:right;
+	margin-left:10px;
+}
+#youtube{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/youtube.png');
+}
+#twitter{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/twitter.png');
+}
+#facebook{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/facebook.png');
+}
+#phone{
+	margin-right:30px;
+	padding-left:27px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/phone.png') 0 4px no-repeat;
+	height:24px;
+	line-height:24px;
+	color:#eee;
+	font-size:18px;
+	float:right;
+}
+
+/******************
+Navigation Styles
+******************/
+
+/* Walker Navigation */
+
+#top-menu ul li {position: relative; z-index: 3; float: left;}
+#top-menu ul li.first, #top-menu ul li:first-child {margin-left:0 !important;}
+#top-menu ul li.last, #top-menu ul li:last-child {margin-right:0 !important;}
+#top-menu ul.sub-menu {position: absolute; left: 0; z-index: 3; display: block; visibility: hidden;}
+#top-menu ul.sub-menu a {display: block; background: none !important; white-space: nowrap; margin: 0; padding-right: 0 !important;}
+
+/* Header Menu Styles */
+
+#headernav ul li{
+	font-family: 'Oswald', sans-serif;
+	font-size:13px;
+	text-transform:uppercase;
+	margin:0 16px;
+	height:59px;
+	line-height:59px;
+	text-shadow:1px 1px 2px #111;
+}
+#headernav ul li a, #headernav ul li a:visited{
+	color:#eee;
+	text-decoration:none;
+	display:block;
+}
+#headernav ul li a:hover, #headernav ul li.active a{
+	color:#e2e770;
+}
+#headernav ul li ul li a, #headernav ul li ul li a:visited{
+	color:#eee;
+	display:block;
+	width:111px;
+}
+#headernav ul{
+	float:right;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/headermenutopborder.png') 0 0 repeat-x;
+}
+#headernav ul li:hover, #headernav ul li.active{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/headermenuhover.png') center 1px no-repeat;
+}
+#headernav ul li ul{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/shade.png') 0 0 repeat;
+	border:1px solid #3c3c3c;
+	border-radius:6px;
+	padding:10px 0;
+	overflow:hidden;
+}
+#headernav ul li ul li{
+	height:26px;
+	line-height:26px;
+	margin:0;
+	padding:0 20px;
+	padding-right:30px;
+	font-family:Arial;
+	font-size:11px;
+	width:100%;
+	text-transform:none;
+	text-shadow:none;
+	border-top:1px solid #5e5e5e;
+}
+#headernav ul li ul li:first-child{
+	border-top:0;
+}
+#headernav ul li ul li:hover{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/headersubmenuhover.png') 0 0 repeat-x;
+}
+#headernav ul li ul li a:hover{
+	color:#fff;
+}
+.sub-menu ul{
+	margin-left:2px;
+}
+
+#featuredareas ul li{
+	float:none;
+}
+#featuredareas ul li a{
+	width:229px;
+	padding-right:14px;
+}
+#featuredareas .sub-menu{
+	margin-left:243px;
+	padding:14px 0;
+	padding-right:24px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/shade2.png') 0 0 repeat;
+	border-radius:6px;
+	margin-top:-25px;
+}
+#featuredareas .sub-menu li{
+	background-image:none;
+	width:50%;
+	text-indent:14px;
+	float:left;
+	margin-top:0;
+	height:22px;
+	line-height:22px;
+}
+#featuredareas .sub-menu li:hover{
+	background-image:none;
+}
+#featuredareas .sub-menu li a, #featuredareas .sub-menu li a:visited{
+	color:#fff;
+}
+#featuredareas .sub-menu li a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+#featuredareas .sub-menu li ul{
+	margin-left:22px;
+	margin-top:-14px;
+}
+
+
+/******************
+Quick Search / Slideshow Styles
+******************/
+
+#searchframe{
+	width:977px;
+	margin:0 auto;
+	margin-top:-9px;
+}
+#searchframeleft{
+	width:17px;
+	height:361px;
+	float:left;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/searchframeleft.png') 0 0 no-repeat;
+}
+#searchframemiddle{
+	width:943px;
+	float:left;
+	background:#595959;
+	background-image:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/searchframemiddle.png');
+	background-repeat:repeat-x;
+	background-position:0 0;
+	margin-top:-1px;
+	padding-top:25px;
+	position:relative;
+	z-index:1;
+}
+#searchframemiddlecontent{
+	height:326px;
+}
+#searchframemiddlebottom{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/searchframemiddlebottom.png') -1px 0 repeat-x;
+	height:11px;
+}
+#searchframeright{
+	width:17px;
+	height:361px;
+	float:left;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/searchframeright.png') 0 0 no-repeat;
+}
+#quicksearchbox{
+	width:331px;
+	float:left;
+}
+#quicksearchheader{
+	padding-top:14px;
+	height:53px;
+	width:331px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/quicksearchheader.png') 0 0 no-repeat;
+	text-align:center;
+	color:#fff;
+	font-size:24px;
+}
+#quicksearchleft{
+	float:left;
+	width:2px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/quicksearchleft.png') 0 0 repeat-y;
+}
+#quicksearchcontent{
+	float:left;
+	width:325px;
+	background:#fff;
+	overflow:hidden;
+}
+#quick_search_fields{
+	padding:8px 3px 0 3px;
+}
+select, input{
+	border:1px solid #d5d5d5;
+	padding:1px 1px 1px 5px;
+	height:19px;
+	color:#666;
+	font-size:10px;
+}
+#quicksearchcontent select, #quicksearchcontent input{
+	margin:8px 12px;
+}
+#quicksearchcontent select{
+	width:133px;
+	height:21px;
+}
+#quicksearchcontent input{
+	width:287px;
+	height:19px;
+}
+.quicksearchbutton{
+	font-size:11px;
+	line-height:34px;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:center;
+	width:90px;
+	height:34px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/quicksearchsubmit.png') 0 0 no-repeat;
+}
+#quicksearchcontent .quicksearchbutton{
+	margin:8px 0 8px 15px;
+	float:left;
+}
+.quicksearchbutton:hover{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/quicksearchsubmithover.png') 0 0 no-repeat;
+}
+#quicksearchcontent #quicksearchbutton2{
+	margin-left:10px;
+	margin-right:15px;
+}
+.quicksearchbutton a{
+	display:block;
+}
+.quicksearchbutton a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+#quicksearchcontent #advsearch{
+	float:left;
+	font-size:11px;
+	margin-top:8px;
+	line-height:34px;
+}
+#advsearch a, #advsearch a:visited{
+	color:#626262;
+}
+#quicksearchright{
+	float:left;
+	width:4px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/quicksearchright.png') 0 0 repeat-y;
+}
+#quicksearchleft, #quicksearchcontent, #quicksearchright{
+	height:245px;
+}
+#quicksearchbottom{
+	width:331px;
+	height:14px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/quicksearchbottom.png') 0 0 no-repeat;
+}
+#slideshowbox{
+	width:610px;
+	float:right;
+}
+#slideshowheader{
+	width:610px;
+	height:14px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/slideshowheader.png') 0 0 no-repeat;
+}
+#slideshowleft{
+	float:left;
+	width:4px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/slideshowleft.png') 0 0 repeat-y;
+}
+#slideshowcontent{
+	float:left;
+	background:#fff;
+	width:582px;
+	padding:0 11px;
+}
+#slideshowright{
+	float:left;
+	width:2px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/slideshowright.png') 0 0 repeat-y;
+}
+#slideshowleft,#slideshowcontent,#slideshowright{
+	height:298px;
+}
+#slideshowbottom{
+	width:610px;
+	height:14px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/slideshowbottom.png') 0 0 no-repeat;
+}
+
+/******************
+Featured Areas / Map Search / Popular Searches Styles
+******************/
+
+#triframetop{
+	width:959px;
+	height:22px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframetop.png') 0 0 no-repeat;
+	margin-top:34px;
+}
+#triframeleft, #triframeright{
+	float:left;
+	width:5px;
+	height:303px;
+}
+#triframeleft{
+	background-image:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeleft.png');
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+#triframeright{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeright.png');
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+#triframecontent{
+	float:left;
+	width:948px;
+	min-height:303px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeback.png') 0 0 repeat-x;
+}
+.triframebox{
+	width:288px;
+	margin:0 14px;
+	float:left;
+}
+.triframeboxtop{
+	width:288px;
+	height:58px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeboxtop.png') 0 0 no-repeat;
+	color:#fff;
+	line-height:62px;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:14px;
+}
+.triframeboxleft, .triframeboxright{
+	float:left;
+	width:5px;
+	height:208px;
+}
+.triframeboxleft{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeboxleft.png') 0 0 no-repeat;
+}
+.triframeboxright{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeboxright.png') 0 0 no-repeat;
+}
+.triframeboxcontent{
+	float:left;
+	width:278px;
+	min-height:208px;
+	background:#fff;
+}
+.triframeboxbottom{
+	width:288px;
+	height:37px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/triframeboxbottom.png') 0 0 no-repeat;
+}
+#mapsearch{
+	width:240px;
+	height:190px;
+	margin:0 auto;
+	margin-top:17px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/map-search.png') 0 0 no-repeat;
+}
+#triframecontent ul{
+	margin:20px 0 13px 24px;
+}
+#contentsidebar ul{
+	margin:16px 0 35px 24px;
+}
+#triframecontent ul li, #contentsidebar ul li{
+	margin-top:7px;
+	width:229px;
+	height:24px;
+	line-height:24px;
+	text-indent:15px;
+	font-size:11px;
+}
+#featuredareas ul li{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/featareali.png') 0 0 no-repeat;
+}
+#featuredareas ul li:hover{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/featarealihover.png') 0 0 no-repeat;
+}
+#popularsearches ul li, #contentsidebar ul li{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/popsearchli.png') 0 0 no-repeat;
+	text-indent:28px;
+}
+#popularsearches ul li:hover, #contentsidebar ul li:hover{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/popsearchlihover.png') 0 0 no-repeat;
+}
+#triframecontent ul li a, #triframecontent ul li a:visited, #contentsidebar ul li a, #contentsidebar ul li a:visited{
+	color:#626262;
+	display:block;
+}
+#triframecontent ul li a:hover, #contentsidebar ul li a:hover{
+	text-decoration:none;
+	color:#6a7029;
+}
+
+/******************
+Article Styles
+******************/
+
+#content{
+	margin-top:54px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/contentbackwithsidebar.png') 0 0 repeat-y;
+}
+#contentinner{
+	padding-left:35px;
+	padding-right:28px;
+	width:610px;
+	float:left;
+}
+#contentheader{
+	width:960px;
+	height:15px;
+	position:relative;
+	top:-15px;
+}
+#contentthe_footer{
+	width:960px;
+	height:14px;
+	margin:0 auto;
+}
+#contentsidebar{
+	padding-right:5px;
+	float:right;
+	width:279px;
+}
+#contentinner, #contentsidebar{
+	margin-top:-15px;
+}
+.sidetit{
+	width:279px;
+	height:35px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/sidetit.png') 0 0 no-repeat;
+	color:#fff;
+	font-size:14px;
+	text-transform:uppercase;
+	text-indent:25px;
+	line-height:25px;
+}
+#contentsidebar input, #contentsidebar textarea{
+	width:207px;
+	border:1px solid #d5d5d5;
+	border-radius:6px;
+	background:#fff;
+	margin-left:24px;
+	margin-bottom:10px;
+	padding:0 10px;
+	font-size:11px;
+	color:#999;
+	
+}
+#contentsidebar input{
+	line-height:21px;
+}
+#contentsidebar textarea{
+	padding:5px 10px;
+}
+#contentsidebar .wpcf7-submit{
+	width:70px;
+	padding:0;
+	text-align:center;
+	line-height:22px;
+	color:#fff;
+	background:#626262;
+	border-radius:6px;
+	cursor: url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/hand.png'), default;
+}
+#contentsidebar .wpcf7-not-valid-tip{
+	top:-1px !important;
+	left:25px !important;
+	width:221px !important;
+	border-radius:6px;
+	text-indent:10px;
+}
+#contentsidebar .wpcf7-response-output{
+	margin:0 24px;
+	padding:5px 10px;
+	font-size:12px;
+	background:#fff;
+}
+#content .excerpt p{
+	padding-bottom:0;
+}
+#tags{
+	float:left;
+	margin-right:50px;
+}
+#categories{
+	float:left;
+}
+#tagstit, #catstit{
+	font-size:14px;
+	line-height:16px;
+	color:#6a7029;
+	height:24px;
+}
+#tagstit{
+	padding-left:35px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/tags.png') 0 0 no-repeat;
+}
+#catstit{
+	padding-left:38px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/categories.png') 0 0 no-repeat;
+}
+
+
+/******************
+the_footer Styles
+******************/
+
+#the_footer {
+	width:100%;
+	background:#666;
+	background-image:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/footerheader.png');
+	background-position:0 0;
+	background-repeat:repeat-x;
+	padding:30px 0;		
+	font-size:11px;
+}
+#the_footermargin{
+	width:912px;
+	padding:0 24px;
+	margin:0 auto;
+}
+#the_footerleft{
+	float:left;
+	width:675px;
+}
+#the_footerright{
+	float:right;
+	width:235px;
+}
+#the_footer .face, #the_footer .twit, #the_footer .tube{
+	padding-left:22px;
+	margin:1px 18px 20px 0;
+	height:12px;
+	line-height:12px;
+	font-size:12px;
+	display:inline-block;
+	font-family:'PT Sans', sans-serif;
+}
+#the_footer .face{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/face.png') 0 0 no-repeat;
+}
+#the_footer .twit{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/twit.png') 0 0 no-repeat;
+}
+#the_footer .tube{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/tube.png') 0 0 no-repeat;
+}
+
+/*the_footer Nav*/
+
+#the_footernav{
+	margin-bottom:25px;
+}
+#the_footer ul li{
+	float:left;
+	padding-left:7px;
+	border-left:1px solid #818181;
+	margin-left:7px;
+	font-size:11px;
+	line-height:11px;
+	height:11px;
+	color:#d5d5d5;
+}
+#the_footer #the_footernav ul li{
+	color:#818181;
+}
+#the_footer ul li:first-child{
+	padding-left:0;
+	border-left:0;
+	margin-left:0;
+}
+#the_footercopy{
+	line-height:13px;
+	padding-bottom:38px;
+	color:#fff;
+	font-size:10px;
+}
+#the_footerlogo{
+	margin:0 20px 15px 0;
+	width:161px;
+	height:52px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/logo.png') 0 0 no-repeat;
+	float:right;
+}
+#the_footerwp{
+	float:right;
+	height:15px;
+	width:15px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/wordpress.png') 0 0 no-repeat;
+}
+.the_footerwptext{
+	float:right;
+	margin-right:4px;
+	font-size:10px;
+	color:#fff;
+	line-height:15px;
+	padding-bottom:33px;
+}
+#the_footerdisplet{
+	float:right;
+	width:63px;
+	height:13px;
+	margin-top:1px;
+	margin-right:7px;
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/displet.png') 0 0 no-repeat;
+}
+
+#content{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/contentbacknosidebar.png') 0 0 repeat-y;
+}
+#contentheader{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/contentheadernosidebar.png') 0 0 no-repeat;
+}
+#contentinner{
+	padding:0 30px;
+	width:900px;
+}
+#contentthe_footer{
+	background:url('http://austincityhomesearch.com/wp-content/themes/ACR-Custom/images/contentfooternosidebar.png') 0 0 no-repeat;
+	margin-bottom:50px;
+}
+
+#searchContextPagination{
+	height:14px;
+	line-height:14px;
+	padding-left:25px;
+	margin-top:18px;
+	margin-left:2px;
+	font-size:11px;
+	background:url('http://displet.com/images/austincityhomesearch/backarrow.png') 0 0 no-repeat;
+}
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#6a7029;
+	text-decoration:none;
+}
+#searchContextPagination a:hover{
+	text-decoration:underline;
+}
+
+#stats{
+	font-size:11px;
+	font-family:Arial;
+	color:#454b49;
+	padding-left:10px;
+	line-height:16px;
+}
+.viewDetailsLink{
+	margin-top:4px;
+	display:block;
+	color:#fff;
+	width:93px;
+	height:28px;
+	line-height:28px;
+	background:url('http://displet.com/images/austincityhomesearch/viewdetailslink.png') 0 0 no-repeat;
+	padding-left:10px;
+	font-size:11px;
+	font-family:Arial;
+	font-weight:700;
+}
+.balloonWrapper table{
+	height:115px;
+	width:200px;
+}
+#imagery img{
+	width:103px;
+	border:0;
+	padding:0;
+}
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
