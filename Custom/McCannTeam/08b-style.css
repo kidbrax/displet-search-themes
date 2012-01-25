@@ -1,0 +1,320 @@
+
+/******************
+Global Styles
+******************/
+
+body {
+  	color: #000;
+	font-family: Arial;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#0759a5;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+.sans{
+	font-family: 'PT Sans', sans-serif;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background-color: #fff;
+	font-weight: bold;
+	color:#333;
+	font-family: Arial, sans-serif;
+	border: 1px solid #ccc;
+}
+
+#globalToolbar a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+}
+
+#quickSearch input {
+	border: 1px solid #cdcdcd;
+	background:url('http://thebyob.com/images/mccann/input.png') 0 0 no-repeat;
+	background-color: #fff;
+	color:#666;
+	font-weight: bold;
+}
+
+#loggedIn {
+	color: #fff;
+	background:url('http://thebyob.com/images/mccann/loginback.png') 0 0 no-repeat;
+	width:121px;
+	height:38px;
+	line-height:38px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #ccc;
+	color: #333;
+	background-color: #ededed;
+	font-weight: bold;
+}
+
+#searchFormContainer a{
+	font-weight: bold;
+}
+
+#searchFormContainer .triggerLabel{
+	font-weight: normal;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#5f676c;
+	font-weight: bold;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	border: 1px solid #b0b7b8;
+	background:url('http://thebyob.com/images/mccann/input.png') 0 0 no-repeat;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #cdcdcd;
+	border-right:1px solid #cdcdcd;
+}
+
+#advancedExtra {
+	border-top: 1px solid #d6d6d6;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 23px;
+	line-height: 23px;
+	background-color: #666;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 23px;
+	line-height: 23px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://thebyob.com/images/mccann/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://thebyob.com/images/mccann/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #333;
+}
+
+#resultsNav {
+	border:1px solid #cecece;
+	background-color: #ededed;
+}
+
+#prePage a, #nextPage a {
+}
+
+div.resultRow {
+	background: #ededed;
+	border: 1px solid #ccc;
+}
+
+div.propertyPreviewPic{
+	border: 1px solid #c5c5c5;
+	background-color: #fff;
+}
+
+#footer .prudential{
+	top:0;
+}
+
+#footer li{
+	float: left;
+	margin-right: 10px;
+}
+
+#footer a{
+	color: #333;
+}
+
+#footer, #disclaimer{
+	line-height: 18px;
+	font-size: 11px;
+	clear: both;
+}
+
+#disclaimer{
+	padding-bottom: 10px;
+}
+
+#footer #footerInner li{
+	float: none;
+	margin-right: 0px;
+}
+
+#footer ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #000;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #e9e9ea;
+	background-color: #fdfdfd;
+	background-image: url('http://displet.com/images/kwred/resultstoolbarback.png');
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+#resultsToolbar a {
+	color: #b40101;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #b40101;
+}
+
+.resultListContainer {
+	border: 1px solid #dedede;
+	background: url('http://displet.com/images/kwred/listback.png') 0 0 repeat-x;
+	background-color: #d5d6d6;
+}
+
+.resultListContainer table td {
+	background: url('http://displet.com/images/kwred/listborder.png') right 0px repeat-y;
+}
+
+.resultListContainer td.propertyPreviewPic, .resultListContainer td.propertyActions {
+	background: none;
+}
+
+td.propertyPreviewPic img {
+	border: 1px solid #adaeae;
+}
+
+td.price .price {
+	color: #b40101;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/kwred/liststar.png') 0 0 no-repeat;
+	color: #b40101;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: underline;
+}
+
+td.actions .makeRequest {
+	width: 112px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #fff;
+	background:url('http://displet.com/images/kwred/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	height: 31px;
+	width: 92px;
+	background: url('http://displet.com/images/kwred/view-details.png') 0 0 no-repeat;
+	text-indent: -9999px;
+	border-radius: 6px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow:1px 1px 4px #666;
+}

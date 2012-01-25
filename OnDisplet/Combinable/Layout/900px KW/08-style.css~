@@ -87,7 +87,7 @@ globalToolbar Styles
 #userToolbarLinks li {
 	float: left;
 	font-size: 12px;
-	padding: 0px 21px;
+	padding: 0px 18px;
 }
 
 #quickSearch {
@@ -186,7 +186,6 @@ searchFormContainer Styles
 }
 
 #searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
-	width: 125px;
 }
 
 #searchFormContainer #minListPrice{
@@ -235,7 +234,7 @@ searchFormContainer Styles
 Search Form Links Styles
 ******************/
 #searchFormLinks {
-	padding:0 10px;
+	padding:0 11px;
 }
 
 #searchFormLinks small {
@@ -302,13 +301,13 @@ Map and Listings Styles
 
 
 #leftColumn, #listLoader {
-	width: 445px;
+	width: 443px;
 }
 
 #resultsNav {
 	text-align: center;
-	height: 29px;
-	line-height: 29px;
+	height: 28px;
+	line-height: 28px;
 	border-bottom:0 !important;
 }
 
@@ -332,9 +331,10 @@ span.resultsPaginationArrow{
 
 #resultsList {
 	height: 382px;
-	padding-left: 11px;
+	padding-left: 10px;
 	overflow-x: auto;
-	border-top: none !important;
+	line-height: 17px;
+	border-top: 0 !important;
 }
 
 div.resultRow {
@@ -352,8 +352,8 @@ div.resultRow:hover {
 
 div.propertyPreviewPic {
 	float: left;
-	margin-left:6px;
-	margin-top:6px;
+	margin-left:5px;
+	margin-top:2px;
 }
 
 div.propertyPreviewPic img {
@@ -365,14 +365,14 @@ div.propertyAddress {
 	float: left;
 	width: 155px;
 	padding:0 10px;
-	margin-top:4px;
+	margin-top:2px;
 }
 
 div.propertyPriceBedsSf {
 	float: left;
 	width: 94px;
 	padding:0 8px;
-	margin-top:4px;
+	margin-top:2px;
 }
 
 #resultsDiv .viewDetailsLink{
@@ -394,8 +394,9 @@ div.propertyPriceBedsSf {
 	margin-top: 2px;
 }
 
-.ballonWrapper #stats{
-	line-height: 18px;
+.balloonWrapper #stats{
+	font-size: 12px;
+	line-height: 16px;
 }
 
 /* Balloon pic */
@@ -413,19 +414,18 @@ Detail Page Styles
 	line-height:8px;
 	padding-left:20px;
 	margin-top:20px;
-	font-size:10px;
+	font-size:11px;
 	margin-left: 1px;
 }
 
 /* Begins with Showing & Fave buttons */
 #residentials_detail .col1 {
 	float: left;
-	margin-top:18px;
+	margin-top:20px;
   	width: 427px;
 }
 
 #actions1 {
-	margin-left: 1px;
 }
 
 #actions1 #requestShowing, #actions1 #saveFaveLink {
@@ -438,11 +438,12 @@ Detail Page Styles
 }
 
 #actions2 {
-	margin:32px 0 31px 16px;
+	margin:34px 0px 20px 0px;
 }
 
 #actions2 #callUs, #actions2 #sendToFriend {
 	float: left;
+	font-size: 12px;
 }
 
 #callUs {
@@ -451,7 +452,7 @@ Detail Page Styles
 	margin-right: 44px;
 	padding-left:24px;
 	min-width: 140px;
-	max-width:190px;
+	max-width:160px;
 }
 
 #sendToFriend {
@@ -462,43 +463,45 @@ Detail Page Styles
 
 #facebook_like {
   width: 350px;
-  padding: 10px;
+  padding-bottom: 8px;
   margin: 0px auto 20px auto;
 }
 
 #detailsHeader {
 	line-height: 24px;
 	margin-bottom: 13px;
+	font-size: 12px;
 }
 
 #detailsHeader .address {
-	line-height: 14px;
+	line-height: 18px;
 	font-size: 18px;
-	padding-bottom:14px;
+	padding-bottom:10px;
 }
 
 #detailsHeader .price {
 	 font-size: 18px;
-	 line-height:16px;
+	 line-height:18px;
 	 text-align: right;
 	 margin-top:24px;
-	 margin-bottom:13px;
+	 margin-bottom:12px;
 }
 
 body#residentials_detail .subColumnOne {
 	float: left;
-	width:60%;
+	width:68%;
 }
 
 body#residentials_detail .subColumnTwo {
 	float:right;
-	width:38%;
+	width:30%;
 	text-align:right;
 }
 
 .tanBack {
 	padding: 16px 15px 10px 15px;
 	line-height: 18px;
+	font-size: 12px;
 	margin-bottom: 20px;
 }
 
@@ -542,7 +545,6 @@ body#residentials_detail .subColumnTwo {
 	text-decoration: none;
 	padding: 0px 25px;
 	font-size: 12px;
-	border-bottom: 0 !important;
 }
 
 #detailPhotos, #detailMapOuter, #userCommentsContainer {
@@ -647,9 +649,10 @@ Search List Results Styles
 ******************/
 
 #resultsToolbar {
-	height: 37px;
-	line-height: 37px;
+	height: 39px;
+	line-height: 39px;
 	padding: 0px 10px;
+	border-top:0;
 	margin-bottom:20px;
 	border-top:0 !important;
 }
@@ -670,7 +673,8 @@ Search List Results Styles
 
 .resultListContainer {
 	height: 102px;
-	line-height: 18px;
+	font-size: 14px;
+	line-height: 17px;
 	margin-bottom: 10px;
 }
 
@@ -696,20 +700,19 @@ td.propertyAddress {
 }
 
 td.price {
-	width: 112px;
-	padding-left: 30px;
+	width: 113px;
+	padding-left: 29px;
 	padding-right: 10px;
 	line-height: 20px;
 }
 
 td.price .price {
 	font-size: 24px;
-	line-height: 30px;
-	margin-top:10px;
+	margin-top:5px;
 }
 
 td.propertyBedsSf {
-	width: 98px;
+	width:118px;
 	padding-left:15px;
 }
 
@@ -722,6 +725,7 @@ td.actions .addToFaves {
 	display: inline-block;
 	height: 16px;
 	line-height: 16px;
+	font-size: 11px;
 	padding-left: 23px;
 	margin: 0px auto;
 	margin-bottom:8px;
@@ -731,7 +735,7 @@ td.actions .addToFaves {
 td.actions .makeRequest {
 	display: block;
 	text-align:center;
-	font-size: 10px;
+	font-size: 11px;
 	margin: 0px auto;
 	margin-top: 8px;
 }
@@ -757,8 +761,8 @@ Footer Link / Disclaimer Styles
 }
 
 #footerOuter{
-	height:10px;
-	line-height: 10px;
+	height:12px;
+	line-height: 14px;
 }
 
 #disclaimer{
@@ -864,9 +868,7 @@ body#residentials_index .balloonInfo {
 /******************
 FB Login Stuff
 ******************/
-body .loginSignupDialog{
-  top:119px !important;
-}
+
 #localLoginLinkContainer {
   margin-top: 18px !important;
 }

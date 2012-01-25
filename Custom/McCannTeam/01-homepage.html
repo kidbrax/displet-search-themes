@@ -1,0 +1,29 @@
+<div rel='{{ mls_number }}' class="resultRow {{ mapped_class }}">
+	<div class='resultRowInner' id="row-{{ residential_id }}">
+		<div class="left">
+			<a href='{{ residential_url }}'>
+				<div class="propertyPreviewPic">{{ print_preview_image }}</div>
+			</a>
+			<div class="price sans">{{ price }}</div>
+		</div>
+		<div class="right">
+			<div class="propertyAddress sans">
+				<span class="address">{{ address }}</span>
+				<span class="cityStateZip">{{ city }}, {{ state }} {{ zip }}</span>
+				<span class="propertySubdivision">{{ subdivision }}</span>
+			</div>
+			<div class="propertyPriceBedsSf">
+				<div class="coll bedsBaths">{{ num_bedrooms }}<BR><span>Beds</span></div>
+				<div class="coll bedsBaths">{{ num_baths }}<BR><span>Baths</span></div>
+					<div class="coll mlsNumber colllast">{{ mls_number }}<BR><span>MLS</span></div>
+				<div class="colr propertySquareFeet">{{ square_feet }}<BR><span>Sq. Ft.</span></div>
+				<div class="clear"><!-- --></div>
+			</div>
+			<div class="viewDetailsLink"><a href='{{ residential_url }}'>View Details</a></div>
+			<div class="clear"><!-- --></div>
+			<div class="courtesyOf">Courtesy of {{ listing_office_name }}</div>
+			<div class="clear"><!-- --></div>
+		</div>
+		<div class="clear"><!-- --></div>
+	</div>
+</div>

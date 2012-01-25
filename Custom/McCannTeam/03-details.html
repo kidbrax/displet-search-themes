@@ -1,0 +1,194 @@
+<div id="topbar">
+	{{ bottom_navigation }}
+	<div class="new"><a href="http://mccannsearch.displetdev.com/#/searchType=default">New Search</a></div>
+	<div class="clear"><!-- --></div>
+</div>
+
+<div id="statbar">
+	<div class="coll sans">
+		<div class="price">{{ list_price }}</div>
+		<div class="status">{{ status }}</div>
+	</div>
+	<div class="colm">
+		{{ num_bedrooms }}<BR><span>Beds</span>
+	</div>
+	<div class="colm">
+		{{ full_baths }}<BR><span>Baths</span>
+	</div>
+	<div class="colm">
+		{{ age }}<BR><span>Days on Market</span>
+	</div>
+	<div class="colm">
+		{{ square_feet }}<BR><span>Sq. Ft.</span>
+	</div>
+	<div class="colr">
+		{{ acres }}<BR><span>Acres</span>
+	</div>
+	<div class="clear"><!-- --></div>
+</div>
+
+<div id="actions1">
+  <div id="requestShowing">{{ request_showing }}</div>
+  <div id="addToFavorites">{{ add_to_favorites }}</div>
+  <div id="sendToFriend">{{ email_to_friend }}</div>
+  <div class="clear"></div>
+</div>
+
+<h1 id="addressbar" class="sans">{{ address }} {{ city_state_zip }} - MLS# {{ mls_number }}</h1>
+
+<div class='col1'>
+	
+	<div class="contact">
+		<div class="img"></div>
+		<div class="colr">
+			<div class="company">Century 21</div>
+			<div class="address">4589 West Road Suite 400<BR>Irvine, California 714-329-5496</div>
+			<div class="phone">{{ website_phone }}</div>
+			<div class="link requestshowing">{{ request_showing }}</div>
+			<div class="link addtofavorites">{{ add_to_favorites }}</div>
+		</div>
+		<div class="clear"><!-- --></div>
+	</div>
+	
+	<div id="propdesc">
+		<div class="tit">Property Description</div>
+		<div class="cont">{{ property_description }}</div>
+	</div>
+	
+	<div class="tanBack" id="remarks">
+		<div class="tanbacktit">House Remarks</div>
+		<div class="cont">{{ remarks }}</div>
+	</div>
+	
+	<div class="tanBack" id="facts">
+		<div class="tanbacktit">Important Facts</div>
+		<div><span class='fieldName'>Beds</span><span class='fieldRight'>&nbsp;{{ num_bedrooms }}</span></div>
+	    <div><span class='fieldName'>Bathrooms (full/half)</span><span class='fieldRight'>&nbsp;{{ full_baths }}/{{ half_baths }}</span></div>
+	    <div><span class='fieldName'>Garage Spaces</span><span class='fieldRight'>&nbsp;{{ garage_spaces }}</span></div>
+	    <div><span class='fieldName'>Square Feet</span><span class='fieldRight'>&nbsp;{{ square_feet }}</span></div>
+		<div><span class='fieldName'>Floor</span><span class='fieldRight'>&nbsp;{{ stories }}</span></div>
+	    <div><span class='fieldName'>Basement</span><span class='fieldRight'>&nbsp;{{ basement }}</span></div>
+	    <div><span class='fieldName'>Is Foreclosure</span><span class='fieldRight'>&nbsp;{{ is_foreclosure }}</span></div>
+	</div>
+	
+	<div class="notan">
+		<div class="tit">Property Features</div>
+		<ul>
+		<li>Appliances equipment: <span>{{ appliances_equipment }}</span></li>
+		<li>Basement description: <span>{{ basement_description }}</span></li>
+		<li>Dining description: <span>{{ dining_description }}</span></li>
+		<li>Exterior: <span>{{ exterior_features }}</span></li>
+		<li>Fireplaces: <span>{{ fireplaces }}</span></li>
+		<li>Fireplaces description: <span>{{ fireplace_description }}</span></li>
+		<li>Green: <span>{{ green_features }}</span></li>
+		<li>Interior: <span>{{ interior_features }}</span></li>
+		<li>Laundry location: <span>{{ laundry_location }}</span></li>
+		<li>Master on main: <span>{{ master_on_main }}</span></li>
+		<li>Parking description: <span>{{ parking_description }}</span></li>
+		<li>Pool on property: <span>{{ pool_on_property }}</span></li>
+		<li>Pool description: <span>{{ pool_description }}</span></li>
+		<li>Roof: <span>{{ roof }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">School Information</div>
+		<ul>
+		<li>Elementary: <span>{{ elementary_a }}</span></li>
+		<li>High school: <span>{{ high_school }}</span></li>
+		<li>Middle school: <span>{{ middle_school }}</span></li>
+		<li>School district: <span>{{ school_district }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">Heating and Cooling Information</div>
+		<ul>
+		<li>Heat: <span>{{ heat }}</span></li>
+		<li>AC: <span>{{ ac }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">Lot Information</div>
+		<ul>
+		<li>Acres: <span>{{ acres }}</span></li>
+		<li>Lot size: <span>{{ lot_size }}</span></li>
+		<li>Lot description: <span>{{ lot_description }}</span></li>
+		<li>Lot dimensions: <span>{{ lot_dimensions }}</span></li>
+		</ul>
+	</div>
+	
+</div>
+
+<div class='col2'>
+  <ul id='detailTabs'>
+    <li><a class='active' href="javascript:void(0)" rel='detailPhotos'>Photos</a></li>
+    <li><a href="javascript:void(0)" rel='detailMapOuter'>Map</a></li>
+    <li><a href="javascript:void(0)" rel='userCommentsContainer'>Comments {{ comment_count }}</a></li>
+  </ul>
+
+  {{ photos }}
+
+  
+    {{ map }}
+  
+  <div class='largeDetailDisplay' id='userCommentsContainer' style='display: none'>
+  	{{ comments }}	
+  </div>
+</div>
+
+<div class="col2b">
+	<div class="notan">
+		<div class="tit">Property Information</div>
+		<ul>
+		<li>Area MLS: <span>{{ area_mls_defined }}</span></li>
+		<li>City: <span>{{ city }}</span></li>
+		<li>Construction: <span>{{ construction }}</span></li>
+		<li>County: <span>{{ county }}</span></li>
+		<li>Foundation: <span>{{ foundation }}</span></li>
+		<li>Is gated community: <span>{{ is_gated_community }}</span></li>
+		<li>List date: <span>{{ list_date }}</span></li>
+		<li>List price: <span>{{ list_price }}</span></li>
+		<li>Listing agent id: <span>{{ listing_agent_id }}</span></li>
+		<li>Listing office id: <span>{{ listing_office_id }}</span></li>
+		<li>Listing office name: <span>{{ listing_office_name }}</span></li>
+		<li>MLS number: <span>{{ mls_number }}</span></li>
+		<li>Modified: <span>{{ modified }}</span></li>
+		<li>Property type: <span>{{ property_type }}</span></li>
+		<li>Property sub type: <span>{{ property_sub_type }}</span></li>
+		<li>Short sale: <span>{{ short_sale }}</span></li>
+		<li>State: <span>{{ state }}</span></li>
+		<li>Status: <span>{{ status }}</span></li>
+		<li>Street name: <span>{{ street_name }}</span></li>
+		<li>Street number: <span>{{ street_number }}</span></li>
+		<li>Street post direction: <span>{{ street_post_dir }}</span></li>
+		<li>Street pre direction: <span>{{ street_pre_direction }}</span></li>
+		<li>Subdivision: <span>{{ subdivision }}</span></li>
+		<li>Sysid: <span>{{ sysid }}</span></li>
+		<li>Unit: <span>{{ unit }}</span></li>
+		<li>Year built: <span>{{ year_built }}</span></li>
+		<li>Zip: <span>{{ zip }}</span></li>
+		</ul>
+	</div>
+	<div class="notan">
+		<div class="tit">Taxes, Utility & Fee Information</div>
+		<ul>
+		<li>Estimated Taxes: <span>{{ estimated_taxes }}</span></li>
+		<li>HOA: <span>{{ hoa }}</span></li>
+		<li>HOA fee: <span>{{ hoa_fee }}</span></li>
+		<li>HOA fee includes: <span>{{ hoa_fee_includes }}</span></li>
+		<li>HOA frequency: <span>{{ hoa_frequency }}</span></li>
+		<li>Internet remarks: <span>{{ internet_remarks }}</span></li>
+		<li>Utilities: <span>{{ utilities }}</span></li>
+		<li>Water: <span>{{ water }}</span></li>
+		<li>Waterfront: <span>{{ waterfront }}</span></li>
+		</ul>
+	</div>
+</div>
+<div class="clear"></div>
+
+<div id="poweredby">
+	<div class="logo"><a href="http://displet.com" target="_blank">Displet</a></div>
+</div>
+
+<div id="copytext">
+Copyright TREND, 2011. All Rights Reserved. The data relating to real estate for sale on this website appears in part through the TREND Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which The McCann Team & Prudential Fox & Roach Realtors participate, and is pro vided by TREND through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have sold or are no longer being offered for sale. Some real estate firms do not participate in IDX and their listings do not appear on this website. Some properties listed with participating firms do not appear on this website at the request of the seller. Data last updated: 10/1/2011.
+</div>

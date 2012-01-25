@@ -868,7 +868,9 @@ body#residentials_index .balloonInfo {
 /******************
 FB Login Stuff
 ******************/
-
+body .loginSignupDialog{
+  top:119px !important;
+}
 #localLoginLinkContainer {
   margin-top: 18px !important;
 }
