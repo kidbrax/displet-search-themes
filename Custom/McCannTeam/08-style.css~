@@ -140,13 +140,6 @@ input#street_name {
   margin:0 2px;
 }
 
-#loginBox a:first-child{
-  display:inline-block;
-  max-width:44px;
-  height:38px;
-  overflow:hidden;
-}
-
 /******************
 searchFormContainer Styles
 ******************/

@@ -1,0 +1,20 @@
+#navigationtwo, #navigationtwo div, #navigationtwo ul, #navigationtwo li{
+	display: inline;
+}
+
+#navigation .menu li{
+	display: inline;
+}
+
+#navigation ul li a, #navigation ul li a:visited, #navigationtwo ul li a, #navigationtwo ul li a:visited{
+	display: block;
+}
+
+#navigation ul li{
+	display: inline;
+	/*float: none;*/
+}
+
+#navigation ul li .sub-menu li{
+	float:left;
+}

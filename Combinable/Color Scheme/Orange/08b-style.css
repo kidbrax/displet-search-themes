@@ -1,0 +1,436 @@
+/******************
+Global Styles
+******************/
+
+body {
+  	color: #464646;
+	font-family: Arial;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#666;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+	background:#fff;
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background:url('http://displet.com/images/displetorange/globaltoolbarback.png') 0 0 repeat-x;
+	font-weight: bold;
+	color:#fff;
+	font-family: 'PT Sans', sans-serif;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+#userToolbarLinks li {
+	background: url('http://displet.com/images/displetorange/globaltoolbarborder.png') right top repeat-y;
+}
+
+#quickSearch input {
+	border-top: 1px solid #404040;
+	border-left: 1px solid #404040;
+	background:#fff;
+	color:#a4a4a4;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+	text-transform: uppercase;
+}
+
+#loggedIn {
+	color: #757575;
+	background:url('http://displet.com/images/displetorange/loginback.png') 0 0 no-repeat;
+	width:108px;
+	height:25px;
+	line-height:25px;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+	max-width: 45px;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #dfdfdf;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#a4a4a4;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	border: 1px solid #ddd;
+	border-top: 1px solid #949494;
+	border-left: 1px solid #949494;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
+}
+
+#advancedExtra {
+	border-top: 1px solid #e6e6e6;
+}
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+	height: 24px;
+	line-height: 24px;
+	background-color: #666;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/displetorange/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/displetorange/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #000;
+	font-family: Tahoma, sans-serif;
+}
+
+#resultsNav {
+	border:1px solid #ddd;
+}
+
+#prePage a, #nextPage a {
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/displetorange/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/displetorange/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/displetorange/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 410px;
+	font-weight: normal !important;
+}
+
+#leftColumn #resultsDiv a {
+	color: #000;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #fff;
+}
+
+#rightColumn {
+	border:1px solid #ddd;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/displetorange/balloondetails.png') 0 0 no-repeat;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination{
+	background:url('http://displet.com/images/displetorange/backarrow.png') 0 0 no-repeat;
+}
+
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#f47121;
+	text-decoration:underline;
+}
+
+#searchContextPagination a:hover{
+	text-decoration:none;
+}
+
+/* Include width, height, line-height */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:191px;
+	height:37px;
+	line-height:37px;
+	font-weight:700;
+	text-transform:uppercase;
+	text-shadow:1px 1px 2px #000;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/displetorange/requestshowing.png') 0 0 no-repeat;
+	margin-right:25px;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/displetorange/addtofavorites.png') 0 0 no-repeat;
+}
+
+#actions1 a, #actions1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:underline;
+}
+
+#callUs span {
+	font-weight: bold;
+}
+
+#sendToFriend a{
+	color: #e63a3a;
+	text-decoration:underline;
+}
+
+#sendToFriend a:hover{
+	text-decoration: none;
+}
+
+#detailsHeader {
+	color: #333;
+}
+
+#detailsHeader .address {
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 1px solid #eeebe1;
+	font-weight:500;
+}
+
+#detailsHeader .price {
+	 font-weight: 500;
+	 color: #e63a3a;
+}
+
+#propertyAge {
+	color: #595954;
+}
+
+#propertyAge .red {
+	color: #f47121;
+}
+
+.tanBack {
+	border: 1px solid #dfdfdf;
+	color: #666;
+}
+
+.tanBack .tanbacktit {
+	color: #343434;
+	text-transform:uppercase;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.tanBack p.remarks {
+	background-color: #bfbfbf;
+	color:#555;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	color: #666;
+	background-color: #e5e6d4;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #f47121;
+	border-color: #f47121;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #ddd;
+}
+
+#userCommentsContainer a, #userCommentsContainer a:visited{
+	color: #333;
+}
+
+img#largeImage {
+	border: 1px solid #a6a6a6;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #dedede;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #ddd;
+}
+
+#resultsToolbar a {
+	color: #464646;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #e63a3a;
+}
+
+.resultListContainer {
+	border: 1px solid #ddd;
+	background: url('http://displet.com/images/displetorange/listback.png') 0 0 repeat-x;
+}
+
+.resultListContainer table td {
+	border-right: 1px solid #ddd;
+}
+
+td.propertyPreviewPic img {
+	width: 114px;
+	height:82px;
+	border: 1px solid #7a7a7a;
+}
+
+td.price .price {
+	color: #e63a3a;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/displetorange/liststar.png') 0 0 no-repeat;
+	color: #f47121;
+	text-decoration:underline;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: none;
+}
+
+td.actions .makeRequest {
+	width: 112px;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #fff;
+	background:url('http://displet.com/images/displetorange/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	height: 31px;
+	width: 82px;
+	background: url('http://displet.com/images/displetorange/view-details.png') 0 0 no-repeat;
+	text-indent: -9999px;
+	border-radius: 6px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow:1px 1px 4px #666;
+}
+
+/******************
+Footer Link / Disclaimer Styles
+******************/
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #666;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}

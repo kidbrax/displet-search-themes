@@ -1,0 +1,193 @@
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="col2">
+	
+  <ul id="detailTabs">
+    <li><a class="active" href="javascript:void(0)" rel="detailPhotos">Photos</a></li>
+    <li><a href="javascript:void(0)" rel="detailMapOuter">Map</a></li>
+    <li><a href="http://nwforeclosurenetwork.com/insider-info">Insider Info</a></li>
+  </ul>
+
+  {{ photos }}
+
+
+    {{ map }}
+
+  <div class="largeDetailDisplay" id="userCommentsContainer" style="display: none">
+  	{{ comments }}	
+  </div>
+
+  <div id="actions1">	
+  	<div id="sendToFriend">{{ email_to_friend }}</div>
+	<div id="print"><a href="javascript:void(0);" onclick="printpage()">Print</a></div>
+    <div id="addToFavorites">{{ add_to_favorites }}</div>
+	<div class="clear"></div>
+  </div>
+
+  <div id="actions2">
+	<div id="nameprice"><a href="http://nwforeclosurenetwork.com/name-your-price">Name<br>Your Price</a></div>
+	<div id="mortgagebundle"><a href="http://nwforeclosurenetwork.com/ipad">Mortgage Bundle<br>Realtor Discounts</a></div>
+	<div id="bestday"><a href="http://nwforeclosurenetwork.com/low-offer">Best Day<br>for Low Offers</a></div>
+	<div id="pricehistory"><a href="http://nwforeclosurenetwork.com/price-history">Price History &<br>Seller Bottom Line</a></div>
+	<div class="clear"></div>
+  </div>
+
+  <div id="actions3">
+	<div class="left">
+		<div class="price">{{ list_price }}</div>
+		<div class="propertyinfo ir">Property Info</div>
+		<div class="inner">
+			SF: {{ square_feet }}<BR>
+			Bed: {{ num_bedrooms }}<BR>
+			Bath: {{ full_baths }}<BR>
+			Year: {{ year_built }}<BR>
+			Lot size: {{ acres }}<BR>
+			Tax: {{ estimated_taxes }}<BR>
+		</div>
+	</div>
+	<div class="right">
+		<div id="preforeclosures" class="ir"><a href="http://nwforeclosurenetwork.com/pre-foreclosure-inventory">Pre-Foreclosures</a></div>
+		<div id="bankowned" class="ir"><a href="http://nwforeclosurenetwork.com/bank-owned-inventory">Bank Owned</a></div>
+		<div id="hudhomes" class="ir"><a href="http://nwforeclosurenetwork.com/HUD-homes-inventory">HUD Homes</a></div>
+		<div class="clear"><!-- --></div>
+		<div class="address"><span>Address:</span> {{ address }} {{ city_state_zip }}</div>
+		<div class="description"><span>Description:</span> {{ remarks }}</div>
+		<div class="mdfs">
+			<span>Refer a friend & get <span>FREE INSPECTION</span><BR>at closing</span> (details below)
+		</div>
+	</div>
+	<div class="clear"><!-- --></div>
+  </div>
+
+  <div id="likeprop">
+	<div class="left">
+		<div>Do you like this property?</div>
+		Don't drive by it before you text<BR>{{ website_phone }} and ask about ...
+	</div>
+	<div class="right">
+		<div class="img"></div>
+	</div>
+	<div class="clear"><!-- --></div>
+  </div>
+
+  <div id="testform">
+	<div class="left">
+			<div class="tit">What people<BR>say about us</div>
+			<div class="text">We were just about full of looking for home after about 2 years. We had several times of waiting for something to close. There were many disappointments. Then I was looking again at NWForeclosureNetw<BR>ork.com listings. I went to their office the next morning. I showed them what we were looking for and by that afternoon I got a call. We went to look at the home and early evening signed on it. It’s beautiful. This all took less than 24 hours.</div>
+			<div class="readmore"><a href="http://nwforeclosurenetwork.com/testimonials">Read more</a></div>
+	</div>
+	<div class="right">
+		<script type="text/javascript" src="http://forms.aweber.com/form/47/1800871547.js"></script>
+		<!-- <script type="text/javascript" src="http://forms.aweber.com/form/44/1733116644.js"></script> -->
+	</div>
+	<div class="clear"><!-- --></div>
+  </div>
+
+	<div class="courtesy">Listing courtesy {{ listing_office_name }}</div>
+
+</div>
+
+<div class="col1">
+	{{ bottom_navigation }}
+	
+	<div id="firstvid">
+<object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="312">
+   <param name="movie" value="http://www.youtube.com/v/aWheraTF3AE?version=3&feature=player_embedded" />
+   <param name="wmode" value="opaque" />
+
+   <!--[if !IE]>-->
+   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/aWheraTF3AE?version=3&feature=player_embedded" width="388" height="312">
+   <param name="wmode" value="opaque" />
+   <!--<![endif]-->
+
+      <p>Please update your Flash Player</p>
+
+   <!--[if !IE]>-->
+   </object>
+   <!--<![endif]-->
+
+</object>
+	</div>
+	
+	<div id="likes">
+		<div class="left">
+			<div class="center">
+				<div>
+					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="225"></div>
+					<div class="fb-like" data-send="false" data-layout="button_count" data-width="225" data-show-faces="false" data-font="arial"></div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<span>LIKE this & get $100 card</span> (details below)
+		</div>
+		<div class="clear"><!-- --></div>
+	</div>
+	
+	<div id="box">
+		<script type="text/javascript" src="http://forms.aweber.com/form/14/871605214.js"></script>
+	</div>
+	
+	<div id="watchthese">
+		Watch these 2 videos & avoid buyer's<BR>biggest home finance mistake
+	</div>
+	
+	<div id="secondvid">
+		<object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="278">
+		   <param name="movie" value="http://www.youtube.com/v/kg-AihbTr-g?version=3&feature=player_embedded" />
+		   <param name="wmode" value="opaque" />
+
+		   <!--[if !IE]>-->
+		   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/kg-AihbTr-g?version=3&feature=player_embedded" width="388" height="278">
+		   <param name="wmode" value="opaque" />
+		   <!--<![endif]-->
+
+		      <p>Please update your Flash Player</p>
+
+		   <!--[if !IE]>-->
+		   </object>
+		   <!--<![endif]-->
+
+		</object>	
+	</div>
+	
+	<div id="mortgageq">
+		<span>Mortgage Questions?</span> Call {{ website_phone }}
+	</div>
+	
+	<div id="thirdvid">
+		<object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="263">
+		   <param name="movie" value="http://www.youtube.com/v/Ms3q-Rhnq6A?version=3&feature=player_embedded" />
+		   <param name="wmode" value="opaque" />
+
+		   <!--[if !IE]>-->
+		   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/Ms3q-Rhnq6A?version=3&feature=player_embedded" width="388" height="263">
+		   <param name="wmode" value="opaque" />
+		   <!--<![endif]-->
+
+		      <p>Please update your Flash Player</p>
+
+		   <!--[if !IE]>-->
+		   </object>
+		   <!--<![endif]-->
+
+		</object>
+	</div>
+	
+</div>
+
+<div class="clear"></div>

@@ -1,0 +1,504 @@
+/******************
+Global Styles
+******************/
+
+body {
+  	color: #000;
+	font-family: Arial;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background-color: #6c8db5;
+	border-left: 1px solid #86a1c2;
+	border-right: 1px solid #86a1c2;
+	font-weight: bold;
+	color:#fff;
+	font-family: Tahoma, sans-serif;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+	background: url('http://displet.com/images/blue/globaltoolbarborder.png') right top repeat-y;
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+	padding-right: 2px;
+}
+
+#quickSearch input {
+	border:0;
+	border-top: 1px solid #404040;
+	border-left: 1px solid #404040;
+	background:#fff;
+	color:#434343;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+}	
+
+#quickSearch span#textOr{
+	text-transform: uppercase;
+}
+
+#loggedIn {
+	color: #fff;
+	background:url('http://displet.com/images/blue/loginback.png') 0 0 no-repeat;
+	width:108px;
+	height:25px;
+	line-height:25px;
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 0px 2px #333;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#loggedIn a:first-child{
+	max-width: 38px;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #7594b9;
+	background:#b0c2d8;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fefefe;
+	color:#a4a4a4;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	border: 1px solid #99a8bb;
+	border-top: 1px solid #949494;
+	border-left: 1px solid #949494;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #9eafc3;
+	border-right:1px solid #9eafc3;
+}
+
+#advancedExtra {
+	border-top: 1px solid #9eafc3;
+}
+
+#searchFormContainer .ctrlHolder{
+	font-weight: bold;
+	color: #3e4d68;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	font-weight: normal;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 24px;
+	line-height: 24px;
+	background-color: #6c8db5;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/blue/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/blue/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #000;
+	background-color: #b0c2d8;
+}
+
+#resultsNav {
+	border:1px solid #6f8fb6;
+	font-family: Tahoma, sans-serif;
+	font-size: 13px;
+}
+
+#prePage a, #nextPage a {
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/blue/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/blue/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #6f8fb6;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/blue/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 410px;
+	font-weight: normal !important;
+}
+
+#leftColumn #resultsDiv a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #fff;
+}
+
+#rightColumn {
+	border:1px solid #6f8fb6;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/blue/balloondetails.png') 0 0 no-repeat;
+}
+
+.balloonWrapper #stats{
+	line-height: 16px;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #000;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination{
+	background:url('http://displet.com/images/displetorange/backarrow.png') 0 0 no-repeat;
+}
+
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#3e4d68;
+	text-decoration:none;
+}
+
+#searchContextPagination a:hover{
+	text-decoration:underline;
+}
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:188px;
+	height:34px;
+	line-height:34px;
+	text-indent: 37px;
+	font-size: 14px;
+	font-family: Tahoma, sans-serif;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/blue/requestshowing.png') 0 0 no-repeat;
+	margin-right:10px;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/blue/addtofavorites.png') 0 0 no-repeat;
+}
+
+#actions1 a, #actions1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:underline;
+}
+
+#callUs{
+	color: #3e4d68;
+	background-image: url('http://displet.com/images/blue/question.png');
+}
+
+#callUs span {
+	font-weight: bold;
+}
+
+#sendToFriend{
+	background-image: url('http://displet.com/images/blue/email.png');
+}
+
+#sendToFriend a{
+	color: #3e4d68;
+	text-decoration:underline;
+}
+
+#sendToFriend a:hover{
+	text-decoration: none;
+}
+
+#detailsHeader {
+	color: #3e4d68;
+	background-color: #d7e0eb;
+	border: 1px solid #6c8db5;
+	border-top:0;
+}
+
+#detailsHeader .address {
+	font-family: Tahoma, sans-serif;
+	color: #fff;
+	background-color: #6c8db5;
+	text-transform: uppercase;
+}
+
+#detailsHeader .price {
+	 font-weight: 500;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+	font-weight: bold;
+}
+
+.tanBack {
+	border: 1px solid #6c8db5;
+	background-color: #d7e0eb;
+	color: #3e4d68;
+}
+
+.tanBack .tanbacktit {
+	color: #5170a2;
+	font-weight: bold;
+	font-family: Tahoma, sans-serif;
+}
+
+.tanBack p.remarks {
+	background-color: #99aec9;
+	color:#3e4d68;
+	font-weight: bold;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #cacaca;
+	color: #3e4d68;
+	background-color: #d7e0eb;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #6c8db5;
+	border-color: #6c8db5;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #6c8db5;
+	background-color: #d7e0eb;
+}
+
+img#largeImage {
+	border: 1px solid #a5a5a6;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #d7e0eb;
+}
+
+#imageNav .previous_button img, #imageNav .next_button img{
+	visibility: hidden;
+}
+
+#imageNav .previous_button{
+	background: url('http://displet.com/images/blue/navprev.png') 0px 0px no-repeat;
+}
+
+#imageNav .next_button{
+	background: url('http://displet.com/images/blue/navnext.png') 0px 0px no-repeat;
+}
+
+#imageNav .previous_button_disabled img, #imageNav .next_button_disabled img{
+	visibility: visible !important;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #6c8db5;
+	background-color: #b0c2d8;
+	font-weight: bold;
+	color: #3e4d68;
+}
+
+#resultsToolbar a {
+	color: #3e4d68;
+}
+
+#resultsToolbar #totalRecords {
+	color: #fff;
+}
+
+.resultListContainer {
+	border: 1px solid #536d8d;
+	background: url('http://displet.com/images/blue/listback.png') 0 0 repeat-x;
+	background-color: #7c9ec0;
+}
+
+.resultListContainer a{
+	color: #fff;
+}
+
+.resultListContainer table td {
+	background: url('http://displet.com/images/blue/listborder.png') right 0px repeat-y;
+}
+
+.resultListContainer td.propertyPreviewPic, .resultListContainer td.propertyActions {
+	background: none;
+}
+
+td.propertyPreviewPic img {
+	border: 1px solid #314157;
+}
+
+td.price .price {
+	color: #3e4d68;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/blue/liststar.png') 0 0 no-repeat;
+	color: #fce68e;
+	font-size: 11px;
+	text-decoration:underline;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: none;
+}
+
+td.actions .makeRequest {
+	width: 112px;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #3e4d68;
+	background:url('http://displet.com/images/blue/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	height: 31px;
+	width: 82px;
+	background: url('http://displet.com/images/blue/view-details.png') 0 0 no-repeat;
+	text-indent: -9999px;
+	border-radius: 6px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow:1px 1px 4px #666;
+}

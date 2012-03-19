@@ -42,19 +42,19 @@ Wrapper Styles
   
 }
 
-#mainHeaderInner {
-  
+#mainHeaderInner #defheader .margin{
+	width:937px;
+	margin: 0px auto;
 }
 
 #contentWrapperOuter {
-	width: 980px;
+	width: 937px;
 	margin: 0px auto;
 	overflow: hidden;
 }
 
 #contentWrapper {
 	overflow: hidden;
-	margin-top: 21px;
 }
 
 #contentWrapper h1, 
@@ -76,19 +76,20 @@ globalToolbar Styles
 ******************/
 
 #globalToolbar {
-	height: 48px;
-	line-height:48px;
-	font-size: 13px;
+	height: 49px;
+	line-height:49px;
+	font-size: 12px;
 }
 
 #userToolbarLinks {
 	float: left;
-	margin-right: 19px;
+	margin-right: 22px;
 }
 
 #userToolbarLinks li {
 	float: left;
-	padding: 0px 19px;
+	font-size: 12px;
+	padding: 0px 22px;
 }
 
 #quickSearch {
@@ -98,26 +99,21 @@ globalToolbar Styles
 #quickSearch form {
 	float: left;
 	display: inline;
-	padding-top: 9px;
+	padding-top: 12px;
 }
 
 #quickSearch input {
 	display: inline;
 	float: left;
-	height: 28px;
-	line-height:28px;
+	height: 25px;
+	line-height:25px;
 	margin:0 11px;
 	padding: 0px 5px;
-	width: 106px;
-	font-size: 11px;
+	width: 91px;
 }
 
-input#street_number {
-	width: 66px;
-}
 input#street_name {
-	width: 146px;
-	margin-left: 0px;
+	width: 101px;
 }
 
 #quickSearch span#textQuick{
@@ -131,20 +127,16 @@ input#street_name {
 #loggedIn {
 	float: right;
 	text-align:center;
-	padding: 0px;
-	margin: 5px 5px 0px 0px;
-	font-size: 11px;
+	padding: 0px 12px;
+	margin: 12px 8px 0px 0px;
+	max-width:105px;
+	overflow:hidden;
+	height: 27px;
+	line-height: 27px;
 }
 
 #loggedIn a {
   margin:0 2px;
-}
-
-#loginBox a:first-child{
-  display:inline-block;
-  max-width:44px;
-  height:38px;
-  overflow:hidden;
 }
 
 /******************
@@ -154,7 +146,6 @@ searchFormContainer Styles
 #searchFormContainer {
 	margin-bottom: 10px;
 	border-top:0 !important;
-	font-size: 12px;
 }
 
 #standardFields {
@@ -164,18 +155,14 @@ searchFormContainer Styles
 
 #searchFormContainer .column{
 	float:left;
-	width:289px;
-	padding:12px 8px 0px 8px;
-}
-
-#searchFormContainer #stdColumn3, #searchFormContainer #advColumn3{
-	width: 339px;
+	width:285px;
+	padding:12px 13px 0px 13px;
 }
 
 #searchFormContainer .ctrlHolder{
 	float:left;
 	padding-bottom:12px;
-	margin:0 11px;
+	margin:0 9px;
 }
 
 #searchFormContainer label{
@@ -184,32 +171,31 @@ searchFormContainer Styles
 }
 
 #searchFormContainer select, #searchFormContainer input{
-	width:122px;
+	width:124px;
 	height:23px;
 	line-height:23px;
 	padding:1px 1px 1px 5px;
-	font-size: 11px;
 }
 
 #searchFormContainer input{
-	width:114px;
+	width:116px;
 	height:19px;
 }
 
 #searchFormContainer .tinySearchSelect{
-	width:74px;
+	width:77px;
 }
 
 /* Make these tiny selects default size  */
 #searchFormContainer #area_mls_defined{
+	width:124px;
 }
 
 #searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
-	width:122px;
 }
 
 #searchFormContainer #minListPrice{
-	margin-right:19px;
+	margin-right:15px;
 }
 
 #searchFormContainer #bedHolder{
@@ -254,11 +240,7 @@ searchFormContainer Styles
 Search Form Links Styles
 ******************/
 #searchFormLinks {
-	padding:0 19px;
-}
-
-#searchFormLinks a{
-	font-weight: bold;
+	padding:0 18px;
 }
 
 #searchFormLinks small {
@@ -275,7 +257,7 @@ Search Form Links Styles
 
 #searchLinksThree {
 	float: right;
-	width:256px;
+	width:257px;
 }
 
 #searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
@@ -286,7 +268,7 @@ Search Form Links Styles
 }
 
 #searchformResetter {
-	margin-right:10px;
+	margin-right:11px;
 }
 
 #saveSearchLink span, #searchformResetter span {
@@ -308,45 +290,45 @@ Map and Listings Styles
 #listLoader.on, #mapLoader.on {
 	display: block;
 	position: absolute;
-	height: 55px;
-	width: 980px;
+	height: 415px;
 	background-color: #fff;
 }
 
-#leftColumn{
+#leftColumn, #rightColumn {
 	padding: 0;
-	margin-top: 20px;
-	min-height:200px;
+	height: 411px;
+	float:left;
 }
 
-#rightColumn{
-	position: absolute;
-	left: -9999px;
-	width: 980px;
+#leftColumn{
+	height:413px;
+	font-size: 13px;
+}
+
+
+#leftColumn, #listLoader {
+	width: 461px;
 }
 
 #resultsNav {
 	text-align: center;
-	height: 53px;
-	line-height: 53px;
-	font-size: 12px;
+	height: 27px;
+	line-height: 27px;
+	border-bottom:0 !important;
 }
 
 #prePage a, #nextPage a {
+	text-indent: -9999px;
 	display: inline-block;
 	cursor: pointer;
 }
 
-#prePage {
-	margin-right: 22px;
+#prePage a {
+	margin-right: 4px;
 }
 
-#nextPage {
-	margin-left: 22px;
-}
-
-#totalRecords{
-	color: #085AA5;
+#nextPage a {
+	margin-left: 4px;
 }
 
 span.resultsPaginationArrow{
@@ -354,272 +336,134 @@ span.resultsPaginationArrow{
 }
 
 #resultsList {
-	margin-top: 20px;
+	height: 382px;
+	padding-left: 13px;
+	overflow-x: auto;
+	line-height: 17px;
+	border-top: 0 !important;
 }
 
 div.resultRow {
 	overflow: hidden;
-	padding-bottom: 9px;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 }
 
-#resultsList .resultRow .left{
-	float: left;
-	margin-top: 20px;
-	margin-left: 19px;
-	width: 282px;
+div.resultRow:hover {
+	background-position: 0px bottom;
 }
 
-#resultsList .resultRow .left .propertyPreviewPic{
-	padding: 3px;
-	height: 196px;
-}
-
-#resultsList .resultRow .left .propertyPreviewPic img{
-	width: 274px;
-	height: 196px;
-}
-
-#resultsList .resultRow .left .price{
-	margin-top: 10px;
-	text-align: center;
-	font-size: 30px;
-	line-height: 30px;
-	color: #0759a5;
-	font-weight: bold;
-}
-
-#resultsList .resultRow .right{
-	float: right;
-	margin-right: 38px;
-	width: 609px;
-}
-
-#resultsList .resultRow .right .propertyAddress{
-	font-size: 24px;
-	line-height: 24px;
-	margin-top: 30px;
-	font-weight: bold;
-	color: #333;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf{
-	margin-top: 18px;
-	padding: 3px;
-	height: 100px;
-	border: 1px solid #c0c0c0;
-	background-color: #e4e4e4;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll, #resultsList .resultRow .right .propertyPriceBedsSf .colr{
-	width: 148px;
-	height: 83px;
-	padding-top: 17px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 0px #cdcdcd;
-	font-size: 22px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll span, #resultsList .resultRow .right .propertyPriceBedsSf .colr span{
-	font-size: 18px;
-	font-weight: normal;
-	color: #0759a5;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll{
-	float: left;
-	margin-right: 3px;
-}
-
-body #resultsList .resultRow .right .propertyPriceBedsSf .colllast{
-	margin-right: 0px;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .colr{
-	float: right;
-}
-
-#resultsList .resultRow .right .addToFavorites, #resultsList .resultRow .right .requestInfo{
-	float: left;
-	margin-top: 34px;
-	line-height: 16px;
-	padding-left: 25px;
-	font-size: 12px;
-}
-
-#resultsList .resultRow .right .addToFavorites{
-	margin-right: 28px;
-}
-
-#resultsList .resultRow .right .viewDetailsLink{
-	float: right;
-	margin-top: 20px;
-	width: 152px;
-	height: 50px;
-	line-height: 50px;
-	text-indent: -9999px;
-	background: url('http://thebyob.com/images/mccann/view-details.png') 0px 0px no-repeat;
-}
-
-#resultsList .resultRow .right .viewDetailsLink:hover{
-	box-shadow:1px 1px 3px #333;
-	-moz-border-radius: 6px; 
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}
-
-#resultsList .resultRow .right .viewDetailsLink a{
+#leftColumn div.resultRow a {
 	display: block;
 }
 
-#resultsList .resultRow .right .courtesyOf{
-	float: right;
-	margin-top: 13px;
-	font-size: 8px;
-	line-height: 8px;
-	text-transform: uppercase;
-	color: #717171;
+div.propertyPreviewPic {
+	float: left;
+	margin-left:5px;
+	margin-top:2px;
+}
+
+div.propertyPreviewPic img {
+	width: 58px;
+	height: 58px;
+}
+
+div.propertyAddress {
+	float: left;
+	width: 155px;
+	padding:0 10px;
+	margin-top:2px;
+}
+
+div.propertyPriceBedsSf {
+	float: left;
+	width: 94px;
+	padding:0 8px;
+	margin-top:2px;
+}
+
+#resultsDiv .viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+	width: 457px;
+	float:right;
+}
+
+#resultsMap {
+	height: 411px;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	display: block;
+	margin-top: 2px;
+}
+
+.balloonWrapper #stats{
+	font-size: 12px;
+	line-height: 16px;
+	color: #292926;
+}
+
+/* Balloon pic */
+#imagery img{
+	width: 102px;
+	border: 0;
+	padding-right: 10px;
 }
 
 /******************
 Detail Page Styles
 ******************/
 
-#topbar{
-	height: 32px;
-	padding-top: 16px;
-	border: 1px solid #ccc;
-	border-top:0;
-	background-color: #ededed;
-	font-size: 12px;
-	line-height: 16px;
-	font-family: Arial, sans-serif;
-}
-
-#topbar a{
-	color: #0759a5;
-	text-decoration: none;
-}
-
-#topbar a:hover{
-	text-decoration: underline;
-}
-
 #searchContextPagination{
+	line-height:14px;
+	padding-left:20px;
+	margin-top:20px;
+	font-size:11px;
+}
+
+/* Begins with Showing & Fave buttons */
+#residentials_detail .col1 {
 	float: left;
-	padding-left:25px;
-	margin-left: 19px;
-	background: url('http://thebyob.com/images/mccann/backarrow.png') 0px -1px no-repeat;
-}
-
-#topbar .new a{
-	float: left;
-	margin-left: 20px;
-	padding-left: 25px;
-	background: url('http://thebyob.com/images/mccann/newsearch.png') 0px 0px no-repeat;
-}
-
-#statbar{
-	margin-top: 20px;
-	border: 1px solid #b5b5b5;
-	padding: 3px;
-	background-color: #e4e4e4;
-	color: #333;
-}
-
-#statbar .coll{
-	float: left;
-	width: 217px;
-	height: 100px;
-}
-
-#statbar .coll .price{
-	line-height: 65px;
-	text-align: center;
-	font-size: 30px;
-	color: #0759a5;
-	text-shadow:1px 1px 2px #fff;
-}
-
-#statbar .coll .status{
-	width: 217px;
-	height: 35px;
-	line-height: 35px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-	text-shadow: 1px 1px 1px #f4da84;
-	background: url('http://thebyob.com/images/mccann/statusback.png') 0px 0px no-repeat;
-}
-
-#statbar .colm, #statbar .colr{
-	width: 148px;
-	height: 83px;
-	padding-top: 17px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 0px #cdcdcd;
-	font-size: 22px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-#statbar .colm span, #statbar .colr span{
-	font-size: 18px;
-	font-weight: normal;
-	color: #0759a5;
-}
-
-#statbar .colm{
-	float: left;
-	margin-left: 3px;
-}
-
-#statbar .colr{
-	float: right;
+	margin-top:30px;
+  	width: 485px;
 }
 
 #actions1 {
-	margin-top: 20px;
 }
 
-#actions1 #requestShowing, #actions1 #addToFavorites, #actions1 #sendToFriend {
+#actions1 #requestShowing, #actions1 #saveFaveLink {
 	float:left;
-	width: 170px;
-	height: 32px;
-	line-height: 32px;
-	text-indent:11px;
-	font-size: 12px;
-	font-weight: bold;
-	margin-right: 10px;
+	text-indent:15px;
 }
 
-#actions1 a{
+#actions1 a, #actions1 a:visited {
 	display: block;
-	text-decoration: none;
+}
+
+#actions2 {
+	margin:26px 0px 20px 16px;
+}
+
+#actions2 #callUs, #actions2 #sendToFriend {
+	float: left;
+	font-size: 11px;
 	color: #fff;
-	font-weight: bold;
 }
 
-#actions1 a:hover{
-	text-decoration: underline;
-}
-
-#requestShowing {
-	background: url('http://thebyob.com/images/mccann/requestshowing.png') 0 0 no-repeat;
-}
-
-#addToFavorites {
-	background: url('http://thebyob.com/images/mccann/addtofavorites.png') 0 0 no-repeat;
+#callUs {
+	line-height: 14px;
+	background: url('http://displet.com/images/sloanmilby/question.png') 0 0 no-repeat;
+	margin-right: 64px;
+	padding-left:24px;
 }
 
 #sendToFriend {
-	background: url('http://thebyob.com/images/mccann/email.png') 0 0 no-repeat;
+	background: url('http://displet.com/images/sloanmilby/email.png') 0 0 no-repeat;
+	line-height: 24px;
+	padding-left: 47px;
 }
 
 #facebook_like {
@@ -628,195 +472,67 @@ Detail Page Styles
   margin: 0px auto 20px auto;
 }
 
-h1#addressbar{
-	font-size: 24px;
+#detailsHeader {
 	line-height: 24px;
-	color: #333;
-	text-transform: uppercase;
-	margin-top: 20px;
-	text-shadow: 1px 1px 1px #fff;
-	padding-bottom: 17px;
-	background: url('http://thebyob.com/images/mccann/h1bot.png') 0px bottom repeat-x;
-}
-
-/* Begins with Showing & Fave buttons */
-#residentials_detail .col1 {
-	float: left;
-  	width: 454px;
-	margin-top: 20px;
-}
-
-#residentials_detail .col1 .contact .img{
-	width: 104px;
-	height: 134px;
-	padding: 3px;
-	background-color: #fff;
-	border: 1px solid #b5b5b5;
-	float: left;
-	background-image: url('http://thebyob.com/images/mccann/agent.png');
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-#residentials_detail .col1 .colr{
-	float: right;
-	width: 327px;
-}
-
-.col1 .colr{
-	font-family: Arial, sans-serif;
-}
-
-.col1 .colr .company{
-	font-size: 16px;
-	line-height: 16px;
-	font-weight: bold;
-	color: #333;
-}
-
-.col1 .colr .address{
+	margin-bottom: 20px;
 	font-size: 14px;
-	line-height: 17px;
-	color: #333;
-	margin-top: 7px;
 }
 
-.col1 .colr .phone{
-	font-size: 14px;
-	line-height: 14px;
-	font-weight: bold;
-	color: #333;
-	margin-top: 9px;
-}
-
-.col1 .colr .link{
-	line-height: 16px;
-	font-size: 12px;
-	padding-left: 26px;
-	text-transform: uppercase;
-}
-
-.col1 .colr .link a{
-	color: #0759a5;
-	text-decoration: none;
-}
-
-.col1 .colr .link a:hover{
-	text-decoration: underline;
-}
-
-.col1 .colr .requestshowing{
-	margin-top: 13px;
-	background: url('http://displet.com/images/coloradospringshomesource/requestshowingicon.png') 0px 0px no-repeat;
-}
-
-.col1 .colr .addtofavorites{
-	margin-top: 10px;
-	background: url('http://displet.com/images/coloradospringshomesource/addtofavoritesicon.png') 0px 0px no-repeat;
-}
-
-#propdesc{
-	font-family: Arial, sans-serif;
-	margin-top: 17px;
-}
-
-#propdesc .tit{
+#detailsHeader .address {
+	line-height: 38px;
 	font-size: 16px;
-	line-height: 16px;
-	color: #0759a5;
 }
 
-#propdesc .cont{
-	font-size: 13px;
-	line-height: 24px;
-	color: #333;
-	margin-top: 17px;
+#detailsHeader .price {
+	 font-size: 24px;
+	 line-height:24px;
+	 text-align: right;
+	font-family: Arial, sans-serif;
+	 margin-top:27px;
+	 margin-bottom:11px;
+}
+
+body#residentials_detail .subColumnOne {
+	float: left;
+	width:68%;
+}
+
+body#residentials_detail .subColumnTwo {
+	float:right;
+	width:30%;
+	text-align:right;
 }
 
 .tanBack {
-	padding: 14px 19px;
-	border: 1px solid #d4d4c3;
-	background-color: #fff;
-	font-family: Arial, sans-serif;
-	font-size: 11px;
+	padding: 12px 29px;
 	line-height: 18px;
-	color: #333;
-	margin-top: 20px;
+	font-size: 12px;
+	margin-bottom: 20px;
 }
 
 .tanBack .tanbacktit {
-	font-size: 13px;
-	line-height: 13px;
-	color: #0759a5;
-	margin-bottom: 15px;
-	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 16px;
 }
 
-#remarks .tanbacktit{
-	margin-bottom: 18px;
-}
-
-.tanBack .fieldName, .tanBack .fieldRight{
-	font-weight: bold;
-	line-height: 24px;
-}
-
-.tanBack .fieldRight{
-	text-align: right;
-	float: right;
+/* MT/-MB = PB of parent element */
+.tanBack p.remarks {
+	width:100%;
+	padding:0 29px;
+	margin-left:-29px;
+	height: 29px;
+	line-height:29px;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 /* Begins with tabbed Map/Photo/Comment section */
 #residentials_detail .col2 {
 	float: right;
 	overflow:hidden;
-	width: 427px;
-	margin-top: 22px;
-}
-
-.notan{
-	margin-top: 20px;
-	padding: 9px 0px 0px 0px;
-	border-bottom: 1px solid #d3d3c1;
-	font-size: 13px;
-	font-family: Arial, sans-serif;
-	color: #333;
-	line-height: 30px;
-}
-
-.notan .tit{
-	font-size: 14px;
-	line-height: 14px;
-	color: #0759a5;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	margin-bottom: 13px;
-	text-shadow: 1px 1px 2px #fff;
-}
-
-.notan ul{
-	padding-bottom: 10px;
-}
-
-.notan ul li{
-	padding-left: 40px;
-	background: url('http://displet.com/images/coloradospringshomesource/notanulli.png') 19px 13px no-repeat;
-}
-
-.notan span{
-	color: #0759a5;
-}
-
-.notan p{
-	margin-bottom: 30px;
-}
-
-#notandisclaimer{
-	border-bottom: 0px;
-}
-
-#notandisclaimer p:last-child{
-	margin-bottom: 0px;
+	width: 407px;
+	margin-top:7px;
 }
 
 #detailTabs {
@@ -833,29 +549,13 @@ h1#addressbar{
 	line-height: 29px;
 	text-decoration: none;
 	padding: 0px 25px;
-	font-weight: bold;
-	font-size: 11px;
-	border: 1px solid #333;
-	border-bottom: 0;
-	color: #fff;
-	background-color: #333;
-}
-
-#detailTabs li a:hover{
-	text-decoration: underline;
-}
-
-#detailTabs li a.active {
-	background-color: #0759a5;
-	border-color: #0759a5;
-	color: #fff;
+	font-size: 12px;
 }
 
 #detailPhotos, #detailMapOuter, #userCommentsContainer {
 	clear: both;
 	padding: 9px;
-	border: 1px solid #ccc;
-	background-color: #fff;
+	margin-bottom: 20px;
 }
 
 #detailPhotos{
@@ -868,88 +568,77 @@ h1#addressbar{
 	margin:0;
 }
 
-#userCommentsContainer a, #userCommentsContainer a:visited{
-	color: #333;
-}
-
 #userComments h3{
 	margin:5px 0;
 }
 
 img#largeImage {
 	display: block;
-	width: 408px !important;
-	border: 1px solid #a5a5a5;
+	width: 387px !important;
 }
 
-/* Width same as img#largeImage (add border px) */
+/* Width same as img#largeImage (with border) */
 #detailPhotos #horizontal_carousel {
-	width: 410px;
-	height: 425px;
+	width: 387px;
+	height: 387px;
 	padding:0;
 	margin-top:0;
 }
 
 #detailPhotos #horizontal_carousel .container {
-	width: 322px;
-	top: 334px;
-	left: 44px;
+	width: 311px;
+	top: 306px;
+	left: 38px;
 }
 
 #horizontal_carousel .container img {
-	width: 100px;
-	height: 90px;
-	border: 1px solid #919191;
+	width: 96px;
+	height: 70px;
 	margin: 0 8px 0 0;
 }
 
 #detailPhotos #horizontal_carousel .next_button, #detailPhotos #horizontal_carousel .previous_button {
-	bottom: 27px;
+	bottom: 30px;
 	width:29px;
 }
 
 /* Width same as #horizontal_carousel */
 #detailPhotos #imageNav {
-	width: 410px;
+	width: 387px;
 }
 
 #detailMap {
 	height: 380px;
 }
 
-#residentials_detail .col2b {
+#residentials_detail .col2second {
 	float: right;
-	width: 454px;
+	width: 407px;
 }
 
-#poweredby{
-	border: 1px solid #ccc;
-	background-color: #ededed;
-	height: 47px;
-	margin-top: 20px;
+/* Width minus .tanBack padding/border */
+#detailsSchool, #financialInfo{
+	width:136px;
 }
 
-#poweredby .logo{
-	text-indent: -9999px;
-	margin: 0px auto;
-	margin-top: 10px;
-	width: 202px;
-	height: 27px;
-	line-height: 27px;
-	background: url('http://thebyob.com/images/mccann/displet.png') 0px 0px no-repeat;
+#detailsSchool{
+	float: right;
 }
 
-#poweredby .logo a{
-	display: block;
+#financialInfo{
+	float: left;
 }
 
-#copytext{
-	text-align: center;
-	line-height: 21px;
-	font-size: 12px;
-	color: #333;
-	padding-top: 5px;
-	padding-bottom: 5px;
+#lotArea{
+	text-align:right;
+}
+
+#lotArea p:first-child{
+	text-align:left;
+}
+
+#lotArea .fieldName{
+	float:left;
 }
 
 /* Courtesy of / Last updated */
@@ -957,7 +646,6 @@ img#largeImage {
 	clear: both;
 	text-align:right;
 	line-height:18px;
-	color: #333;
 }
 
 /******************
@@ -965,12 +653,13 @@ Search List Results Styles
 ******************/
 
 #resultsToolbar {
-	height: 39px;
-	line-height: 39px;
+	height: 38px;
+	line-height: 38px;
 	padding: 0px 10px;
 	border-top:0;
 	margin-bottom:20px;
 	border-top:0 !important;
+	border-bottom:0 !important;
 }
 
 #resultsToolbar table {
@@ -988,9 +677,9 @@ Search List Results Styles
 }
 
 .resultListContainer {
-	height: 102px;
-	font-size: 14px;
-	line-height: 17px;
+	height: 104px;
+	font-size: 13px;
+	line-height: 16px;
 	margin-bottom: 10px;
 }
 
@@ -1033,7 +722,7 @@ td.propertyBedsSf {
 }
 
 td.actions {
-	width: 134px;
+	width: 144px;
 	text-align: center;
 }
 
@@ -1058,11 +747,15 @@ td.actions .makeRequest {
 
 td.propertyActions {
 	border-right: none !important;
-	width: 122px;
+	width: 144px;
 }
 
 td.propertyActions .viewDetailsLink {
-	display: block;
+	text-indent: -9999px;
+	background: url('http://displet.com/images/sloanmilby/view-details.png') 0px 0px no-repeat;
+	height: 39px;
+	line-height: 39px;
+	width: 110px;
 	margin: 0px auto;
 }
 
@@ -1071,9 +764,9 @@ Footer Link / Disclaimer Styles
 ******************/
 
 #footerOuter, #disclaimer{
-	width: 980px;
+	width: 937px;
 	margin: 0px auto;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #footerOuter{
@@ -1081,7 +774,19 @@ Footer Link / Disclaimer Styles
 }
 
 #disclaimer{
-	line-height: 14px;
+	line-height: 16px;
+	margin-bottom: 20px;
+	color: #414040;
+}
+
+#footerInner ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#footerInner ul li:last-child{
+	float: right;
+	margin-right:0;
 }
 
 /******************
@@ -1173,7 +878,9 @@ body#residentials_index .balloonInfo {
 /******************
 FB Login Stuff
 ******************/
-
+body .loginSignupDialog{
+  top:119px !important;
+}
 #localLoginLinkContainer {
   margin-top: 18px !important;
 }
@@ -1310,3 +1017,270 @@ p#loginErrorRow {
 /******************
 Site Specific Styles
 ******************/
+
+
+@font-face {
+    font-family: 'GoudyOldStyleRegular';
+    src: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudos-webfont.eot');
+    src: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudos-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudos-webfont.woff') format('woff'),
+         url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudos-webfont.ttf') format('truetype'),
+         url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudos-webfont.svg#GoudyOldStyleRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GoudyOldStyleBold';
+    src: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudosb-webfont.eot');
+    src: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudosb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudosb-webfont.woff') format('woff'),
+         url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudosb-webfont.ttf') format('truetype'),
+         url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/goudosb-webfont.svg#GoudyOldStyleBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img {border: 0;}
+
+.clear {clear:both;}
+
+.ir {text-indent: -9999px;}
+
+body {
+	background-color: #000;
+}
+
+.serif{
+	font-family: 'GoudyOldStyleRegular', serif;
+}
+
+.serifb{
+	font-family: 'GoudyOldStyleBold', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'GoudyOldStyleBold', serif;
+	margin-bottom: 12px;
+	font-weight: normal;
+}
+
+h1{
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+/******************
+Header Styles
+******************/
+
+#defheader{
+	padding-top: 38px;
+}
+
+#defheader .left{
+	float: left;
+	width: 378px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+#defheader .left .logo{
+	height: 65px;
+	line-height: 65px;
+	width: 378px;
+	background: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/images/logo.png') 0px 0px no-repeat;
+	margin-bottom: 3px;
+}
+
+#defheader .left a{
+	text-decoration: none;
+}
+
+#defheader .left .text{
+	margin-top: 16px;
+	font-size: 22px;
+}
+
+#defheader .right{
+	float: right;
+	width: 291px;
+}
+
+/******************
+Navigation Styles
+******************/
+
+#navigation ul, #navigation li, #navigation a{
+	display: inline-block;
+}
+
+#navigation ul li{
+	line-height: 18px;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0px 19px;
+}
+
+#navigation .sub-menu{
+	display: none;
+}
+
+#defheader{
+	padding-bottom: 20px;
+}
+
+#defheader #navigation{
+	margin-top: 26px;
+}
+
+#defheader #navigation .margin{
+	padding: 13px 0px;
+}
+
+#defheader #navigation ul li{
+	border-left:2px solid #000;
+} 
+
+#defheader #navigation ul li:first-child{
+	border-left:0;
+}
+
+#defheader #navigation ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+#defheader #navigation ul li a:hover{
+	text-decoration: none;
+	color: #3399cc;
+}
+
+#defheader #navigation{
+	background: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/images/contback.png') 0px 0px repeat;
+	color: #000;
+}
+
+#defheader #navigation .inner{
+	background: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/images/inner.png') 0px 0px repeat-x;
+	padding-top: 5px;
+}
+
+#defheader #navigation .inner2{
+	background: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/images/inner2.png') 0px bottom repeat-x;
+	padding-bottom: 5px;
+}
+
+/******************
+Quick Search Header Styles
+******************/
+
+#quicksearchheader{
+	width: 291px;
+	height: 129px;
+	background: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/images/quicksearchheaderback.png') 0px 0px no-repeat;
+	position: relative;
+}
+
+#quicksearchheader #quick_search_fields{
+	padding-top: 40px;
+	font-size: 11px;
+}
+
+#quicksearchheader label{
+	display: inline-block;
+	width: 55px;
+	text-align: right;
+}
+
+#quicksearchheader select{
+	width: 98px;
+	height: 16px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#quicksearchheader .submit{
+	position:absolute;
+	right: 10px;
+	bottom: 15px;
+	width: 100px;
+	height: 16px;
+	line-height: 16px;
+	background: url('http://sloanmilbyrealestate.com/wordpress/wp-content/themes/SloanMilby/images/quicksearchheadersubmitback.png') 0px 0px no-repeat;
+}
+
+#quicksearchheader .submit a{
+	display: block;
+	text-indent: -9999px;
+}
+
+/******************
+Footer Styles
+******************/
+
+#thefooter{
+	padding: 30px 0px;
+}
+
+#thefooter .bar{
+	line-height: 36px;
+	background-color: #00a48b;
+	padding-left: 16px;
+	padding-right: 3px;
+	font-size: 18px;
+	color: #fff;
+}
+
+#thefooter .bar .left{
+	float: left;
+	width: 55%;
+}
+
+#thefooter .bar .right{
+	float: right;
+	width: 45%;
+}
+
+#thefooter .bar .right ul, #thefooter .bar .right li, #thefooter .bar .right a{
+	display: inline-block;
+}
+
+#thefooter .bar .right ul li{
+	border-left: 1px solid #fff;
+	padding-left: 13px;
+	padding-right: 10px;
+	line-height: 16px;
+	height: 16px;
+	margin-top: 10px;
+}
+
+#thefooter .bar .right ul li:first-child{
+	border-left: 0;
+	padding-left: 0px;
+}
+
+#thefooter .bar .right .sub-menu{
+	display: none;
+}
+
+#thefooter li a{
+	text-decoration: none;
+}
+
+#thefooter li a:hover{
+	text-decoration: underline;
+}
+
+#thefooter .bottom{
+	font-size: 15px;
+	line-height: 15px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}

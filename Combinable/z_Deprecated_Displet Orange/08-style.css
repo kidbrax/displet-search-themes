@@ -8,7 +8,18 @@ Global Styles
 }
 
 body {
+  	color: #464646;
+	font-family: Arial;
 	font-size: 11px;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#666;
+}
+
+a:hover{
+	text-decoration:underline;
 }
 
 img {border: 0;}
@@ -18,8 +29,6 @@ img {border: 0;}
 .left {float:left;}
 
 .clear {clear:both;}
-
-.ir{text-indent: -9999px;}
 
 section,
 nav,
@@ -34,10 +43,8 @@ figcaption {
 /******************
 Wrapper Styles
 ******************/
-
 #exteriorWrapperThree{
 }
-
 #mainHeaderOuter {
   
 }
@@ -47,14 +54,16 @@ Wrapper Styles
 }
 
 #contentWrapperOuter {
-	width: 980px;
+	width: 960px;
 	margin: 0px auto;
 	overflow: hidden;
 }
 
 #contentWrapper {
+	padding: 28px;
+	border:1px solid #ddd;
 	overflow: hidden;
-	margin-top: 21px;
+	background:#fff;
 }
 
 #contentWrapper h1, 
@@ -76,19 +85,34 @@ globalToolbar Styles
 ******************/
 
 #globalToolbar {
-	height: 48px;
-	line-height:48px;
-	font-size: 13px;
+	height: 45px;
+	font-weight: bold;
+	line-height:45px;
+	background:url('http://displet.com/images/displetorange/globaltoolbarback.png') 0 0 repeat-x;
+	color:#fff;
+	font-family: 'PT Sans', sans-serif;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
 }
 
 #userToolbarLinks {
 	float: left;
-	margin-right: 19px;
+	margin-right: 21px;
 }
 
 #userToolbarLinks li {
 	float: left;
-	padding: 0px 19px;
+	font-size: 12px;
+	padding-left:21px;
+	padding-right: 23px;
+	background: url('http://displet.com/images/displetorange/globaltoolbarborder.png') right top repeat-y;
 }
 
 #quickSearch {
@@ -104,20 +128,19 @@ globalToolbar Styles
 #quickSearch input {
 	display: inline;
 	float: left;
-	height: 28px;
-	line-height:28px;
+	height: 24px;
+	border-top: 1px solid #404040;
+	border-left: 1px solid #404040;
 	margin:0 11px;
 	padding: 0px 5px;
-	width: 106px;
-	font-size: 11px;
+	line-height:24px;
+	background:#fff;
+	color:#a4a4a4;
+	width: 91px;
 }
 
-input#street_number {
-	width: 66px;
-}
 input#street_name {
-	width: 146px;
-	margin-left: 0px;
+	width: 147px;
 }
 
 #quickSearch span#textQuick{
@@ -126,25 +149,29 @@ input#street_name {
 
 #quickSearch span#textOr{
 	float: left;
+	text-transform: uppercase;
 }
 
 #loggedIn {
 	float: right;
-	text-align:center;
+	color: #757575;
+	margin: 10px 10px 0px 0px;
 	padding: 0px;
-	margin: 5px 5px 0px 0px;
-	font-size: 11px;
+	background:url('http://displet.com/images/displetorange/loginback.png') 0 0 no-repeat;
+	width:108px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
 }
 
 #loggedIn a {
+  color: #fff;
+  text-decoration: none;
   margin:0 2px;
 }
 
-#loginBox a:first-child{
-  display:inline-block;
-  max-width:44px;
-  height:38px;
-  overflow:hidden;
+#loggedIn a:hover {
+  text-decoration: underline;
 }
 
 /******************
@@ -153,29 +180,25 @@ searchFormContainer Styles
 
 #searchFormContainer {
 	margin-bottom: 10px;
-	border-top:0 !important;
-	font-size: 12px;
+	border:1px solid #dfdfdf;
+	border-top:0;
 }
 
 #standardFields {
-	width: 100%;
-	overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 #searchFormContainer .column{
 	float:left;
-	width:289px;
-	padding:12px 8px 0px 8px;
-}
-
-#searchFormContainer #stdColumn3, #searchFormContainer #advColumn3{
-	width: 339px;
+	width:291px;
+	padding:12px 4px 0px 4px;
 }
 
 #searchFormContainer .ctrlHolder{
 	float:left;
 	padding-bottom:12px;
-	margin:0 11px;
+	margin:0 9px;
 }
 
 #searchFormContainer label{
@@ -184,32 +207,39 @@ searchFormContainer Styles
 }
 
 #searchFormContainer select, #searchFormContainer input{
-	width:122px;
+	width:127px;
 	height:23px;
 	line-height:23px;
+	background:#fff;
+	color:#a4a4a4;
+	border:1px solid #8ba6bf;
 	padding:1px 1px 1px 5px;
-	font-size: 11px;
 }
 
 #searchFormContainer input{
-	width:114px;
+	width:119px;
 	height:19px;
+	border: 1px solid #ddd;
+	border-top: 1px solid #949494;
+	border-left: 1px solid #949494;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
 }
 
 #searchFormContainer .tinySearchSelect{
-	width:74px;
+	width:79px;
 }
 
 /* Make these tiny selects default size  */
 #searchFormContainer #area_mls_defined{
+	width:127px;
 }
 
 #searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
-	width:122px;
 }
 
 #searchFormContainer #minListPrice{
-	margin-right:19px;
+	margin-right:15px;
 }
 
 #searchFormContainer #bedHolder{
@@ -217,6 +247,7 @@ searchFormContainer Styles
 }
 
 #searchFormContainer #minAcres{
+	width:125px;
 }
 
 #searchFormContainer #yearBuilt{
@@ -243,9 +274,12 @@ searchFormContainer Styles
 }
 
 #standardFields #stdColumn2 {
+	border-left:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
 }
 
 #advancedExtra {
+	border-top: 1px solid #e6e6e6;
 	width: 100%;
 	overflow: hidden;
 }
@@ -254,15 +288,24 @@ searchFormContainer Styles
 Search Form Links Styles
 ******************/
 #searchFormLinks {
-	padding:0 19px;
-}
-
-#searchFormLinks a{
-	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	background-color: #666;
+	padding:0 10px;
 }
 
 #searchFormLinks small {
 	font-size:11px;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
 }
 
 #searchLinksOne{
@@ -281,16 +324,32 @@ Search Form Links Styles
 #searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
 	display: block;
 	float: right;
-	text-indent: 13px;
+	height: 24px;
+	line-height: 24px;
 	width: 123px;
+	text-indent: 13px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
 }
 
-#searchformResetter {
-	margin-right:10px;
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
 }
 
 #saveSearchLink span, #searchformResetter span {
 	display: none;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/displetorange/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/displetorange/resetback.png');
+	margin-right:10px;
 }
 
 /******************
@@ -308,45 +367,53 @@ Map and Listings Styles
 #listLoader.on, #mapLoader.on {
 	display: block;
 	position: absolute;
-	height: 55px;
-	width: 980px;
+	height: 415px;
 	background-color: #fff;
 }
 
-#leftColumn{
+#leftColumn, #rightColumn {
 	padding: 0;
-	margin-top: 20px;
-	min-height:200px;
+	height: 411px;
+	float:left;
 }
 
-#rightColumn{
-	position: absolute;
-	left: -9999px;
-	width: 980px;
+#leftColumn{
+	height:413px;
+	color: #000;
+	font-size: 13px;
+	font-family: Tahoma, sans-serif;
+}
+
+
+#leftColumn, #listLoader {
+	width: 445px;
 }
 
 #resultsNav {
 	text-align: center;
-	height: 53px;
-	line-height: 53px;
-	font-size: 12px;
+	height: 29px;
+	line-height: 29px;
+	border:1px solid #ddd;
+	border-bottom:0;
 }
 
 #prePage a, #nextPage a {
+	text-indent: -9999px;
 	display: inline-block;
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
-#prePage {
-	margin-right: 22px;
+#prePage a {
+	background-image: url('http://displet.com/images/displetorange/leftarrow.png');
+	margin-right: 4px;
 }
 
-#nextPage {
-	margin-left: 22px;
-}
-
-#totalRecords{
-	color: #085AA5;
+#nextPage a {
+	background-image: url('http://displet.com/images/displetorange/rightarrow.png');
+	margin-left: 4px;
 }
 
 span.resultsPaginationArrow{
@@ -354,416 +421,274 @@ span.resultsPaginationArrow{
 }
 
 #resultsList {
-	margin-top: 20px;
+	height: 382px;
+	padding-left: 11px;
+	border: 1px solid #ddd;
+	border-top: none;
+	overflow-x: auto;
 }
 
 div.resultRow {
+	background: url('http://displet.com/images/displetorange/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 410px;
 	overflow: hidden;
-	padding-bottom: 9px;
-	margin-bottom: 10px;
+	font-weight: normal !important;
+	margin-bottom: 5px;
+	cursor: pointer;}
+
+div.resultRow:hover {
+	background-position: 0px bottom;
 }
 
-#resultsList .resultRow .left{
-	float: left;
-	margin-top: 20px;
-	margin-left: 19px;
-	width: 282px;
-}
-
-#resultsList .resultRow .left .propertyPreviewPic{
-	padding: 3px;
-	height: 196px;
-}
-
-#resultsList .resultRow .left .propertyPreviewPic img{
-	width: 274px;
-	height: 196px;
-}
-
-#resultsList .resultRow .left .price{
-	margin-top: 10px;
-	text-align: center;
-	font-size: 30px;
-	line-height: 30px;
-	color: #0759a5;
-	font-weight: bold;
-}
-
-#resultsList .resultRow .right{
-	float: right;
-	margin-right: 38px;
-	width: 609px;
-}
-
-#resultsList .resultRow .right .propertyAddress{
-	font-size: 24px;
-	line-height: 24px;
-	margin-top: 30px;
-	font-weight: bold;
-	color: #333;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf{
-	margin-top: 18px;
-	padding: 3px;
-	height: 100px;
-	border: 1px solid #c0c0c0;
-	background-color: #e4e4e4;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll, #resultsList .resultRow .right .propertyPriceBedsSf .colr{
-	width: 148px;
-	height: 83px;
-	padding-top: 17px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 0px #cdcdcd;
-	font-size: 22px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll span, #resultsList .resultRow .right .propertyPriceBedsSf .colr span{
-	font-size: 18px;
-	font-weight: normal;
-	color: #0759a5;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll{
-	float: left;
-	margin-right: 3px;
-}
-
-body #resultsList .resultRow .right .propertyPriceBedsSf .colllast{
-	margin-right: 0px;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .colr{
-	float: right;
-}
-
-#resultsList .resultRow .right .addToFavorites, #resultsList .resultRow .right .requestInfo{
-	float: left;
-	margin-top: 34px;
-	line-height: 16px;
-	padding-left: 25px;
-	font-size: 12px;
-}
-
-#resultsList .resultRow .right .addToFavorites{
-	margin-right: 28px;
-}
-
-#resultsList .resultRow .right .viewDetailsLink{
-	float: right;
-	margin-top: 20px;
-	width: 152px;
-	height: 50px;
-	line-height: 50px;
-	text-indent: -9999px;
-	background: url('http://thebyob.com/images/mccann/view-details.png') 0px 0px no-repeat;
-}
-
-#resultsList .resultRow .right .viewDetailsLink:hover{
-	box-shadow:1px 1px 3px #333;
-	-moz-border-radius: 6px; 
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}
-
-#resultsList .resultRow .right .viewDetailsLink a{
+#leftColumn div.resultRow a {
+	color: #000;
+	text-decoration: none;
 	display: block;
 }
 
-#resultsList .resultRow .right .courtesyOf{
-	float: right;
-	margin-top: 13px;
-	font-size: 8px;
-	line-height: 8px;
-	text-transform: uppercase;
-	color: #717171;
+#leftColumn div.resultRow:hover a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic {
+	float: left;
+	margin-left:6px;
+	margin-top:6px;
+}
+
+div.propertyPreviewPic img {
+	width: 58px;
+	height: 58px;
+	border: 1px solid #fff;
+}
+
+div.propertyAddress {
+	float: left;
+	width: 155px;
+	padding:0 10px;
+	margin-top:3px;
+}
+
+div.propertyAddress strong {
+	font-weight: normal;
+}
+
+div.propertyPriceBedsSf {
+	float: left;
+	width: 94px;
+	padding:0 8px;
+	margin-top:3px;
+}
+
+#resultsDiv .viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+	width: 442px;
+	float:right;
+	border:1px solid #ddd;
+}
+
+#resultsMap {
+	height: 411px;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	display: block;
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/displetorange/balloondetails.png') 0 0 no-repeat;
+	margin-top: 2px;
+}
+
+/* Balloon pic */
+#imagery img{
+	width: 102px;
+	border: 0;
+	padding-right: 10px;
 }
 
 /******************
 Detail Page Styles
 ******************/
 
-#topbar{
-	height: 32px;
-	padding-top: 16px;
-	border: 1px solid #ccc;
-	border-top:0;
-	background-color: #ededed;
-	font-size: 12px;
-	line-height: 16px;
-	font-family: Arial, sans-serif;
-}
-
-#topbar a{
-	color: #0759a5;
-	text-decoration: none;
-}
-
-#topbar a:hover{
-	text-decoration: underline;
-}
-
 #searchContextPagination{
-	float: left;
-	padding-left:25px;
-	margin-left: 19px;
-	background: url('http://thebyob.com/images/mccann/backarrow.png') 0px -1px no-repeat;
+	line-height:8px;
+	padding-left:20px;
+	margin-top:20px;
+	font-size:10px;
+	background:url('http://displet.com/images/displetorange/backarrow.png') 0 0 no-repeat;
+	margin-left: 1px;
 }
 
-#topbar .new a{
-	float: left;
-	margin-left: 20px;
-	padding-left: 25px;
-	background: url('http://thebyob.com/images/mccann/newsearch.png') 0px 0px no-repeat;
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#f47121;
+	text-decoration:underline;
 }
 
-#statbar{
-	margin-top: 20px;
-	border: 1px solid #b5b5b5;
-	padding: 3px;
-	background-color: #e4e4e4;
-	color: #333;
-}
-
-#statbar .coll{
-	float: left;
-	width: 217px;
-	height: 100px;
-}
-
-#statbar .coll .price{
-	line-height: 65px;
-	text-align: center;
-	font-size: 30px;
-	color: #0759a5;
-	text-shadow:1px 1px 2px #fff;
-}
-
-#statbar .coll .status{
-	width: 217px;
-	height: 35px;
-	line-height: 35px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-	text-shadow: 1px 1px 1px #f4da84;
-	background: url('http://thebyob.com/images/mccann/statusback.png') 0px 0px no-repeat;
-}
-
-#statbar .colm, #statbar .colr{
-	width: 148px;
-	height: 83px;
-	padding-top: 17px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 0px #cdcdcd;
-	font-size: 22px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-#statbar .colm span, #statbar .colr span{
-	font-size: 18px;
-	font-weight: normal;
-	color: #0759a5;
-}
-
-#statbar .colm{
-	float: left;
-	margin-left: 3px;
-}
-
-#statbar .colr{
-	float: right;
-}
-
-#actions1 {
-	margin-top: 20px;
-}
-
-#actions1 #requestShowing, #actions1 #addToFavorites, #actions1 #sendToFriend {
-	float:left;
-	width: 170px;
-	height: 32px;
-	line-height: 32px;
-	text-indent:11px;
-	font-size: 12px;
-	font-weight: bold;
-	margin-right: 10px;
-}
-
-#actions1 a{
-	display: block;
-	text-decoration: none;
-	color: #fff;
-	font-weight: bold;
-}
-
-#actions1 a:hover{
-	text-decoration: underline;
-}
-
-#requestShowing {
-	background: url('http://thebyob.com/images/mccann/requestshowing.png') 0 0 no-repeat;
-}
-
-#addToFavorites {
-	background: url('http://thebyob.com/images/mccann/addtofavorites.png') 0 0 no-repeat;
-}
-
-#sendToFriend {
-	background: url('http://thebyob.com/images/mccann/email.png') 0 0 no-repeat;
-}
-
-#facebook_like {
-  width: 350px;
-  padding-bottom: 8px;
-  margin: 0px auto 20px auto;
-}
-
-h1#addressbar{
-	font-size: 24px;
-	line-height: 24px;
-	color: #333;
-	text-transform: uppercase;
-	margin-top: 20px;
-	text-shadow: 1px 1px 1px #fff;
-	padding-bottom: 17px;
-	background: url('http://thebyob.com/images/mccann/h1bot.png') 0px bottom repeat-x;
+#searchContextPagination a:hover{
+	text-decoration:none;
 }
 
 /* Begins with Showing & Fave buttons */
 #residentials_detail .col1 {
 	float: left;
-  	width: 454px;
-	margin-top: 20px;
+	margin-top:18px;
+  	width: 427px;
 }
 
-#residentials_detail .col1 .contact .img{
-	width: 104px;
-	height: 134px;
-	padding: 3px;
-	background-color: #fff;
-	border: 1px solid #b5b5b5;
-	float: left;
-	background-image: url('http://thebyob.com/images/mccann/agent.png');
-	background-position: center center;
-	background-repeat: no-repeat;
+#actions1 {
+	margin-left: 1px;
 }
 
-#residentials_detail .col1 .colr{
-	float: right;
-	width: 327px;
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	float:left;
+	width:191px;
+	height:37px;
+	line-height:37px;
+	text-indent:15px;
+	font-weight:700;
+	text-transform:uppercase;
+	text-shadow:1px 1px 2px #000;
 }
 
-.col1 .colr{
-	font-family: Arial, sans-serif;
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/displetorange/requestshowing.png') 0 0 no-repeat;
+	margin-right:25px;
 }
 
-.col1 .colr .company{
-	font-size: 16px;
-	line-height: 16px;
-	font-weight: bold;
-	color: #333;
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/displetorange/addtofavorites.png') 0 0 no-repeat;
 }
 
-.col1 .colr .address{
-	font-size: 14px;
-	line-height: 17px;
-	color: #333;
-	margin-top: 7px;
-}
-
-.col1 .colr .phone{
-	font-size: 14px;
-	line-height: 14px;
-	font-weight: bold;
-	color: #333;
-	margin-top: 9px;
-}
-
-.col1 .colr .link{
-	line-height: 16px;
-	font-size: 12px;
-	padding-left: 26px;
-	text-transform: uppercase;
-}
-
-.col1 .colr .link a{
-	color: #0759a5;
+#actions1 a, #actions1 a:visited {
+	display: block;
+	color: #fff;
 	text-decoration: none;
 }
 
-.col1 .colr .link a:hover{
-	text-decoration: underline;
+#actions1 a:hover{
+	text-decoration:underline;
 }
 
-.col1 .colr .requestshowing{
-	margin-top: 13px;
-	background: url('http://displet.com/images/coloradospringshomesource/requestshowingicon.png') 0px 0px no-repeat;
+#actions2 {
+	margin:32px 0 31px 16px;
 }
 
-.col1 .colr .addtofavorites{
-	margin-top: 10px;
-	background: url('http://displet.com/images/coloradospringshomesource/addtofavoritesicon.png') 0px 0px no-repeat;
+#actions2 #callUs, #actions2 #sendToFriend {
+	float: left;
+	height:26px;
 }
 
-#propdesc{
-	font-family: Arial, sans-serif;
-	margin-top: 17px;
+#callUs {
+	line-height: 14px;
+	background: url('http://displet.com/images/austincityhomesearch/question.png') 0 0 no-repeat;
+	margin-right: 74px;
+	padding-left:24px;
 }
 
-#propdesc .tit{
-	font-size: 16px;
-	line-height: 16px;
-	color: #0759a5;
+#callUs span {
+	font-weight: bold;
 }
 
-#propdesc .cont{
-	font-size: 13px;
+#sendToFriend {
+	background: url('http://displet.com/images/austincityhomesearch/email.png') 0 0 no-repeat;
+	line-height: 24px;
+	padding-left: 47px;
+}
+
+#sendToFriend a{
+	color: #e63a3a;
+	text-decoration:underline;
+}
+
+#sendToFriend a:hover{
+	text-decoration: none;
+}
+
+/*#facebook_like {
+  width: 350px;
+  padding: 10px;
+  margin: 0px auto 20px auto;
+}*/
+
+#detailsHeader {
 	line-height: 24px;
 	color: #333;
-	margin-top: 17px;
+	margin-bottom: 13px;
+}
+
+#detailsHeader .address {
+	line-height: 14px;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 1px solid #eeebe1;
+	font-weight:500;
+	padding-bottom:14px;
+}
+
+#detailsHeader .price {
+	 font-size: 18px;
+	 line-height:16px;
+	 font-weight: 500;
+	 color: #e63a3a;
+	 text-align: right;
+	 margin-top:24px;
+	 margin-bottom:13px;
+}
+
+#propertyAge {
+	color: #595954;
+}
+
+#propertyAge .red {
+	color: #f47121;
+}
+
+body#residentials_detail .subColumnOne {
+	float: left;
+	width:60%;
+}
+
+body#residentials_detail .subColumnTwo {
+	float:right;
+	width:38%;
+	text-align:right;
 }
 
 .tanBack {
-	padding: 14px 19px;
-	border: 1px solid #d4d4c3;
-	background-color: #fff;
-	font-family: Arial, sans-serif;
-	font-size: 11px;
+	padding: 16px 15px 10px 15px;
 	line-height: 18px;
-	color: #333;
-	margin-top: 20px;
+	border: 1px solid #dfdfdf;
+	margin-bottom: 20px;
+	color: #666;
 }
 
 .tanBack .tanbacktit {
-	font-size: 13px;
-	line-height: 13px;
-	color: #0759a5;
-	margin-bottom: 15px;
-	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 10px;
+	color: #343434;
+	text-transform:uppercase;
+	margin-bottom: 16px;
+	font-family: 'PT Sans', sans-serif;
 }
 
-#remarks .tanbacktit{
-	margin-bottom: 18px;
-}
-
-.tanBack .fieldName, .tanBack .fieldRight{
-	font-weight: bold;
-	line-height: 24px;
-}
-
-.tanBack .fieldRight{
-	text-align: right;
-	float: right;
+/* MT/-MB = PB of parent element */
+.tanBack p.remarks {
+	width:100%;
+	padding:0 15px;
+	margin-left:-15px;
+	height: 29px;
+	line-height:29px;
+	background-color: #bfbfbf;
+	color:#555;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 /* Begins with tabbed Map/Photo/Comment section */
@@ -771,52 +696,7 @@ h1#addressbar{
 	float: right;
 	overflow:hidden;
 	width: 427px;
-	margin-top: 22px;
-}
-
-.notan{
-	margin-top: 20px;
-	padding: 9px 0px 0px 0px;
-	border-bottom: 1px solid #d3d3c1;
-	font-size: 13px;
-	font-family: Arial, sans-serif;
-	color: #333;
-	line-height: 30px;
-}
-
-.notan .tit{
-	font-size: 14px;
-	line-height: 14px;
-	color: #0759a5;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	margin-bottom: 13px;
-	text-shadow: 1px 1px 2px #fff;
-}
-
-.notan ul{
-	padding-bottom: 10px;
-}
-
-.notan ul li{
-	padding-left: 40px;
-	background: url('http://displet.com/images/coloradospringshomesource/notanulli.png') 19px 13px no-repeat;
-}
-
-.notan span{
-	color: #0759a5;
-}
-
-.notan p{
-	margin-bottom: 30px;
-}
-
-#notandisclaimer{
-	border-bottom: 0px;
-}
-
-#notandisclaimer p:last-child{
-	margin-bottom: 0px;
+	margin-top:14px;
 }
 
 #detailTabs {
@@ -833,12 +713,14 @@ h1#addressbar{
 	line-height: 29px;
 	text-decoration: none;
 	padding: 0px 25px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 	font-weight: bold;
-	font-size: 11px;
-	border: 1px solid #333;
+	font-size: 12px;
+	border: 1px solid #ddd;
 	border-bottom: 0;
-	color: #fff;
-	background-color: #333;
+	color: #666;
+	background-color: #e5e6d4;
 }
 
 #detailTabs li a:hover{
@@ -846,16 +728,16 @@ h1#addressbar{
 }
 
 #detailTabs li a.active {
-	background-color: #0759a5;
-	border-color: #0759a5;
+	background-color: #f47121;
+	border-color: #f47121;
 	color: #fff;
 }
 
 #detailPhotos, #detailMapOuter, #userCommentsContainer {
 	clear: both;
 	padding: 9px;
-	border: 1px solid #ccc;
-	background-color: #fff;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
 }
 
 #detailPhotos{
@@ -879,10 +761,10 @@ h1#addressbar{
 img#largeImage {
 	display: block;
 	width: 408px !important;
-	border: 1px solid #a5a5a5;
+	border: 1px solid #a6a6a6;
 }
 
-/* Width same as img#largeImage (add border px) */
+/* Width same as img#largeImage (with border) */
 #detailPhotos #horizontal_carousel {
 	width: 410px;
 	height: 425px;
@@ -899,7 +781,7 @@ img#largeImage {
 #horizontal_carousel .container img {
 	width: 100px;
 	height: 90px;
-	border: 1px solid #919191;
+	border: 1px solid #dedede;
 	margin: 0 8px 0 0;
 }
 
@@ -917,39 +799,35 @@ img#largeImage {
 	height: 380px;
 }
 
-#residentials_detail .col2b {
+#residentials_detail .col2second {
 	float: right;
-	width: 454px;
+	width: 427px;
 }
 
-#poweredby{
-	border: 1px solid #ccc;
-	background-color: #ededed;
-	height: 47px;
-	margin-top: 20px;
+/* Width minus .tanBack padding/border */
+#detailsSchool, #financialInfo{
+	width:169px;
+	text-align:right;
 }
 
-#poweredby .logo{
-	text-indent: -9999px;
-	margin: 0px auto;
-	margin-top: 10px;
-	width: 202px;
-	height: 27px;
-	line-height: 27px;
-	background: url('http://thebyob.com/images/mccann/displet.png') 0px 0px no-repeat;
+#detailsSchool{
+	float: right;
 }
 
-#poweredby .logo a{
-	display: block;
+#financialInfo{
+	float: left;
 }
 
-#copytext{
-	text-align: center;
-	line-height: 21px;
-	font-size: 12px;
-	color: #333;
-	padding-top: 5px;
-	padding-bottom: 5px;
+#lotArea{
+	text-align:right;
+}
+
+#financialInfo p:first-child, #detailsSchool p:first-child, #lotArea p:first-child{
+	text-align:left;
+}
+
+#detailsSchool .fieldName, #financialInfo .fieldName, #lotArea .fieldName{
+	float:left;
 }
 
 /* Courtesy of / Last updated */
@@ -957,7 +835,6 @@ img#largeImage {
 	clear: both;
 	text-align:right;
 	line-height:18px;
-	color: #333;
 }
 
 /******************
@@ -965,12 +842,21 @@ Search List Results Styles
 ******************/
 
 #resultsToolbar {
-	height: 39px;
-	line-height: 39px;
+	height: 37px;
+	line-height: 37px;
 	padding: 0px 10px;
+	border:1px solid #ddd;
 	border-top:0;
 	margin-bottom:20px;
-	border-top:0 !important;
+}
+
+#resultsToolbar a {
+	color: #464646;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #e63a3a;
 }
 
 #resultsToolbar table {
@@ -988,10 +874,15 @@ Search List Results Styles
 }
 
 .resultListContainer {
+	border: 1px solid #ddd;
+	background: url('http://displet.com/images/displetorange/listback.png') 0 0 repeat-x;
 	height: 102px;
-	font-size: 14px;
-	line-height: 17px;
+	line-height: 18px;
 	margin-bottom: 10px;
+}
+
+.resultListContainer table td {
+	border-right: 1px solid #ddd;
 }
 
 .resultListContainer table {
@@ -1008,6 +899,7 @@ td.propertyPreviewPic {
 td.propertyPreviewPic img {
 	width: 114px;
 	height:82px;
+	border: 1px solid #7a7a7a;
 }
 
 /* Subtract td.propertyPreviewPic PR */
@@ -1015,45 +907,66 @@ td.propertyAddress {
 	padding-left: 6px;
 }
 
+td.propertyAddress strong {
+	font-weight:500;
+}
+
 td.price {
-	width: 113px;
-	padding-left: 29px;
+	width: 112px;
+	padding-left: 30px;
 	padding-right: 10px;
 	line-height: 20px;
 }
 
 td.price .price {
+	color: #e63a3a;
 	font-size: 24px;
-	margin-top:5px;
+	line-height: 30px;
+	margin-top:10px;
 }
 
 td.propertyBedsSf {
-	width:118px;
+	width: 98px;
 	padding-left:15px;
 }
 
 td.actions {
 	width: 134px;
-	text-align: center;
 }
 
 td.actions .addToFaves {
 	display: inline-block;
 	height: 16px;
 	line-height: 16px;
-	font-size: 11px;
 	padding-left: 23px;
-	margin: 0px auto;
+	background: url('http://displet.com/images/displetorange/liststar.png') 0 0 no-repeat;
+	color: #f47121;
+	margin-left:10px;
 	margin-bottom:8px;
+	text-decoration:underline;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: none;
 }
 
 /* MT should equal .addToFaves MT */
 td.actions .makeRequest {
 	display: block;
 	text-align:center;
-	font-size: 11px;
-	margin: 0px auto;
+	width: 112px;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+	margin-left: 11px;
 	margin-top: 8px;
+	background:url('http://displet.com/images/displetorange/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
 }
 
 td.propertyActions {
@@ -1063,7 +976,16 @@ td.propertyActions {
 
 td.propertyActions .viewDetailsLink {
 	display: block;
+	height: 31px;
+	width: 82px;
+	background: url('http://displet.com/images/displetorange/view-details.png') 0 0 no-repeat;
+	text-indent: -9999px;
 	margin: 0px auto;
+	border-radius: 6px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow:1px 1px 4px #666;
 }
 
 /******************
@@ -1071,17 +993,37 @@ Footer Link / Disclaimer Styles
 ******************/
 
 #footerOuter, #disclaimer{
-	width: 980px;
+	width: 960px;
 	margin: 0px auto;
 	margin-top: 10px;
 }
 
 #footerOuter{
-	line-height: 14px;
+	height:10px;
+	line-height: 10px;
 }
 
 #disclaimer{
 	line-height: 14px;
+}
+
+#footerInner ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#footerInner ul li:last-child{
+	float: right;
+	margin-right:0;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #666;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
 }
 
 /******************

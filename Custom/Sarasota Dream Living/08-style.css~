@@ -1412,14 +1412,14 @@ Navigation Styles
 #navigation {
 	height: 51px;
 	line-height: 51px;
-	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/navback.png') 0px 0px repeat-x;
+	background: url('images/navback.png') 0px 0px repeat-x;
 }
 
 #navigation ul li{
 	padding-right: 53px;
 	padding-left: 53px;
 	margin-right: -22px;
-	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ulli.png') left center no-repeat;
+	background: url('images/ulli.png') left center no-repeat;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1447,7 +1447,7 @@ Navigation Styles
 #navigationtwo{
 	height: 44px;
 	line-height: 44px;
-	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/nav2back.png') 0px 0px repeat-x;
+	background: url('images/nav2back.png') 0px 0px repeat-x;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	padding: 0 17px;
@@ -1478,7 +1478,7 @@ Navigation Styles
 #navigationtwo ul li{
 	padding-right: 19px;
 	padding-left: 42px;
-	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ulli2.png') left center no-repeat;
+	background: url('images/ulli2.png') left center no-repeat;
 	font-size: 13px;
 	font-weight: bold;
 	height: 44px;
@@ -1508,10 +1508,10 @@ Dropdown Menu Styles
 	/*display: block;*/
 }
 #navigation li.parent a:hover{
-	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ulliparenthov.png') center bottom no-repeat;
+	background: url('images/ulliparenthov.png') center bottom no-repeat;
 }
 #featuredareas li.parent a:hover{
-	background: url('http://sarasotadreamliving.com/wp-content/themes/SarasotaDreamLiving/images/ullisideparenthov.png') left center no-repeat;
+	background: url('images/ullisideparenthov.png') left center no-repeat;
 }
 #navigation .menu .sub-menu{
 	position: absolute;

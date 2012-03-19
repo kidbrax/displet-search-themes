@@ -1,0 +1,452 @@
+/******************
+Global Styles
+******************/
+
+body {
+  	color: #000;
+	font-family: Arial;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background:url('http://displet.com/images/kwred/globaltoolbarback.png') 0 0 repeat-x;
+	font-weight: bold;
+	color:#fff;
+	font-family: 'PT Sans', sans-serif;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+	background: url('http://displet.com/images/kwred/globaltoolbarborder.png') right top repeat-y;
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+	padding-right: 2px;
+}
+
+#quickSearch input {
+	border-top: 1px solid #404040;
+	border-left: 1px solid #404040;
+	background:#fff;
+	color:#333;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+	text-transform: uppercase;
+}
+
+#loggedIn {
+	color: #fff;
+	background:url('http://displet.com/images/kwred/loginback.png') 0 0 no-repeat;
+	width:108px;
+	height:25px;
+	line-height:25px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 0px 2px #333;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+	max-width: 45px;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #dedede;
+	background:#fff;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#333;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	border: 1px solid #ddd;
+	border-top: 1px solid #949494;
+	border-left: 1px solid #949494;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
+}
+
+#advancedExtra {
+	border-top: 1px solid #e6e6e6;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 24px;
+	line-height: 24px;
+	background-color: #666;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/kwred/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/kwred/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #000;
+	background-color: #fff;
+}
+
+#resultsNav {
+	border:1px solid #dedede;
+}
+
+#prePage a, #nextPage a {
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/kwred/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/kwred/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #dedede;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/kwred/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 410px;
+	font-weight: normal !important;
+}
+
+#leftColumn #resultsDiv a {
+	color: #000;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #fff;
+}
+
+#rightColumn {
+	border:1px solid #dedede;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/kwred/balloondetails.png') 0 0 no-repeat;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #000;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination{
+	background:url('http://displet.com/images/kwred/backarrow.png') 0 0 no-repeat;
+}
+
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#b40101;
+	text-decoration:none;
+}
+
+#searchContextPagination a:hover{
+	text-decoration:underline;
+}
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:186px;
+	height:32px;
+	line-height:32px;
+	font-weight:700;
+	text-transform:uppercase;
+	text-shadow:1px 0px 2px #333;
+	text-indent: 15px;
+	font-size: 11px;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/kwred/requestshowing.png') 0 0 no-repeat;
+	margin-right:10px;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/kwred/addtofavorites.png') 0 0 no-repeat;
+}
+
+#actions1 a, #actions1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:underline;
+}
+
+#callUs span {
+	font-weight: bold;
+}
+
+#sendToFriend a{
+	color: #b40101;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+#sendToFriend a:hover{
+	text-decoration: underline;
+}
+
+#detailsHeader {
+	color: #000;
+}
+
+#detailsHeader .address {
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 3px double #e7e7e7;
+	font-weight:700;
+}
+
+#detailsHeader .price {
+	 font-weight: 500;
+	 color: #b40101;
+}
+
+#propertyAge {
+	color: #000;
+}
+
+#propertyAge .red {
+	color: #b40101;
+	font-weight: bold;
+}
+
+.tanBack {
+	border: 1px solid #dfdfdf;
+}
+
+.tanBack .tanbacktit {
+	color: #000;
+	text-transform:uppercase;
+	font-weight: bold;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.tanBack p.remarks {
+	background-color: #e5e5e5;
+	color:#000;
+	font-weight: bold;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #e7e7e8;
+	color: #fff;
+	background-color: #000;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #b40101;
+	border-color: #b40101;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #dedede;
+}
+
+img#largeImage {
+	border: 1px solid #a6a6a6;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #dedede;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #e9e9ea;
+	background-color: #fdfdfd;
+	background-image: url('http://displet.com/images/kwred/resultstoolbarback.png');
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+#resultsToolbar a {
+	color: #b40101;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #b40101;
+}
+
+.resultListContainer {
+	border: 1px solid #dedede;
+	background: url('http://displet.com/images/kwred/listback.png') 0 0 repeat-x;
+	background-color: #d5d6d6;
+}
+
+.resultListContainer table td {
+	background: url('http://displet.com/images/kwred/listborder.png') right 0px repeat-y;
+}
+
+.resultListContainer td.propertyPreviewPic, .resultListContainer td.propertyActions {
+	background: none;
+}
+
+td.propertyPreviewPic img {
+	border: 1px solid #adaeae;
+}
+
+td.price .price {
+	color: #b40101;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/kwred/liststar.png') 0 0 no-repeat;
+	color: #b40101;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: underline;
+}
+
+td.actions .makeRequest {
+	width: 112px;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #fff;
+	background:url('http://displet.com/images/kwred/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	height: 31px;
+	width: 92px;
+	background: url('http://displet.com/images/kwred/view-details.png') 0 0 no-repeat;
+	text-indent: -9999px;
+	border-radius: 6px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow:1px 1px 4px #666;
+}

@@ -1,0 +1,1698 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/bodyback.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  color: #000;
+  font-family: Arial;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+img {border: 0;}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+.image_replace_anchor_span {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor_span a {
+  display: inline-block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+#logo_displet {
+  width: 187px;
+  height: 45px;
+  line-height: 45px;
+  background-image: url(http://displet.com/images/alderson-logo.png);
+}
+
+#logo_displet a {
+  width: 187px;
+  height: 45px;
+  line-height: 45px;
+  display:block;
+}
+
+#logo_displet_footer {
+  width: 200px;
+  height: 47px;
+  line-height: 47px;
+  background-image: url(http://displet.com/images/alderson/logo_displet_footer.png);
+  margin: 0px auto;
+}
+
+#logo_displet_footer a {
+  width: 200px;
+  height: 47px;
+  line-height: 47px;
+}
+
+/******************
+Header Styles
+******************/
+#header {
+  width: 956px;
+  margin: 0px auto;
+  height: 82px;
+}
+
+#header_left {
+  float: left;
+  padding: 22px 0px 0px 33px;
+}
+
+#header_right {
+  float: right;
+  padding: 0px 15px 0px 0px;
+}
+
+/******************
+Navigation Styles
+******************/
+#navigation {
+  
+}
+
+#navigation ul {
+  border: 1px solid #DFDFDF;
+  overflow: hidden;
+}
+
+#navigation ul li {
+  float: left;
+}
+
+#navigation ul li a {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  padding: 0px 25px;
+  border-right: 1px solid #fff;
+}
+
+#navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+/******************
+Footer Styles
+******************/
+#footerOuter {
+  background:#fff;
+  width: 948px;
+  margin: 0px auto;
+  overflow: hidden;
+  margin-top:-120px;
+  margin-bottom:30px;
+}
+
+#footer {
+  background:#fff;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+
+#footer_bar {
+  height: 47px;
+  line-height: 47px;
+  border: 1px solid #D1D1D1;
+  background-color: #F4F4F4;
+}
+
+#footer ul,
+#disclaimer {
+  display: none;
+}
+
+
+/******************
+Wrapper Styles
+******************/
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+  width: 948px;
+  margin: 0px auto;
+  background-image: url(http://displet.com/images/pelhamrealestateblog/topcorners.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  overflow: hidden;
+  box-shadow:0 0 10px #aaa;
+  -moz-box-shadow:0 0 10px #aaa; /* Firefox */
+  -webkit-box-shadow:0 0 10px #aaa; /* Safari */
+  padding-bottom:120px;
+  border-radius:6px;
+  -moz-border-radius: 6px; /* Firefox */
+  -webkit-border-radius: 6px; /* Safari */
+}
+
+#contentWrapper {
+  background:#fff;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+  font-size: normal;
+  line-height: normal;
+}
+
+#columnsFooter {
+  clear: both;
+}
+
+#residentials_results #contentWrapper p {
+  padding: 10px;
+}
+
+/******************
+globalToolbar Styles
+******************/
+#globalToolbar {
+  height: 45px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+  background:url('http://displet.com/images/pelhamrealestateblog/toolbarback.png') 0 0 repeat-x;
+  font-family:Tahoma;
+}
+
+#globalToolbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#globalToolbar a:hover {
+  text-decoration: underline;
+}
+
+#userToolbarLinks {
+  float: left;
+}
+
+#userToolbarLinks li {
+  float: left;
+}
+
+#userToolbarLinks li a {
+  display: block;
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  padding:0 20px 0 18px;
+  background:url('http://displet.com/images/pelhamrealestateblog/tbarlinksborder.png') 0 0 repeat-y;
+  background-position:right;
+}
+
+#userToolbarLinks li#dashboardList a {
+  
+}
+
+#textQuick {
+}
+
+#quickSearch {
+  float: left;
+  padding-left: 18px;
+  border-left:1px solid #a4cc78;
+}
+
+#quickSearch form {
+  float: left; display: inline;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+#quickSearch form#streetSearchForm {
+	width: 258px;
+}
+
+#quickSearch form#mlsSearchForm {
+  padding-right: 10px;
+  float: left; display: inline; 
+  width: 84px;
+}
+
+#quickSearch form input {
+  display: inline-block;
+  height: 14px;
+  border: 1px solid #404040;
+  border-right: none;
+  border-bottom: none;
+  margin: 0px 10px 0px 0px;
+  padding: 5px 0px 5px 5px;
+  font-size: 11px;
+  font-family:Tahoma;
+  color: #A4A4A4;
+  background-color: #fff;
+}
+
+#quickSearch form#mlsSearchForm input {
+  margin-right: 0px;
+  width: 78px;
+}
+
+#quickSearch span {
+  float: left; display: inline;
+  padding-right: 10px;
+  line-height: 45px;
+}
+input#street_number{ 
+	float: left; display: inline; 
+	width: 78px;
+	margin-right: 15px;
+}
+input#street_name {
+	float: left; display: inline; 
+	width: 144px;
+	margin-right: 15px;
+}
+
+#textOr {
+  text-transform: uppercase;
+}
+
+#loggedIn {
+  float: right;
+  color: #fff;
+  margin: 10px 15px 0px 0px;
+  padding: 0px;
+  font-size: 11px;
+  background:url('http://displet.com/images/pelhamrealestateblog/loginback.png') 0 0 no-repeat;
+  height:25px;
+  width:108px;
+  text-align:center;
+}
+
+#loggedIn #loginBox {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 11px;
+  font-family:Tahoma;
+}
+
+#loggedIn a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px !important;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+#searchFormContainer {
+  font-size: 11px;
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #79aa59;
+  border-top: none;
+}
+
+#standardFields {
+  width: 100%;
+  overflow: hidden;
+}
+
+#standardFields label.triggerLabel, #advancedExtra label.triggerLabel {
+  font-weight: normal !important;
+  color:#000;
+  padding-bottom:5px;
+}
+
+#standardFields .column {
+  float: left;
+}
+
+#standardFields #stdColumn1 {
+  padding: 5px 10px 20px 10px;
+  border-right: 1px solid #DDE5E8;
+}
+
+#standardFields label, #advancedExtra label {
+  display: block;
+  padding: 0 0 5px 0;
+  font-weight: bold;
+  color:#3e5660;
+}
+
+#standardFields #stdColumn1 .ctrlHolder {
+ padding-right: 10px; 
+}
+
+#bedHolder, #bathHolder, #minSquareFeetHolder {
+  float: left;
+}
+
+#priceHolder.ctrlHolder {
+  padding-right: 0px;
+}
+
+#standardFields #stdColumn1 #bedHolder {
+  clear: left;
+}
+
+#standardFields #stdColumn2 {
+  padding: 16px 0 10px 18px;
+  border-right: 1px solid #DDE5E8;
+  width:306px;
+}
+
+#standardFields #stdColumn2 label {
+  display: block;
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+}
+
+#standardFields #stdColumn2 .ctrlHolder {
+  float: left;
+  width: 131px;
+}
+
+#standardFields #stdColumn2 #subdivisionHolder {
+  clear: left;
+}
+
+#standardFields #stdColumn3 {
+  padding: 15px 0px 20px 10px;
+  float: right !important;
+}
+
+#standardFields #stdColumn3 .ctrlHolder {
+  float: left;
+  padding: 0px 10px 0px 0px;
+}
+#standardFields #advColumn3 #statusHolder {
+  padding-right:39px !important;
+}
+
+
+
+/*#propertyStyleHolder label {
+  padding-right: 5px;
+  width: 55px;
+  display: inline-block !important;
+}
+
+#propertyStyleHolder label:first-child {
+  width: 120px;
+}
+
+#propertyStyleHolder label:nth-child(even) {
+  float: left;
+}*/
+
+#advancedExtra {
+  border-top: 1px solid #DDE5E8;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px 0 10px 0;
+}
+
+#advancedExtra .column {
+  float: left;
+}
+
+#advancedExtra #advColumn1 {
+  padding: 0px 18px;
+}
+
+#advancedExtra .column label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#advancedExtra .ctrlHolder {
+  padding: 0px 20px 10px 0px;
+}
+#advancedExtra advColumn1 .ctrlHolder{
+  padding-right:10px;
+}
+
+#advancedExtra .column label.triggerLabel {
+  font-weight: normal !important;
+}
+
+#advancedExtra #advColumn2 {
+  padding: 0;
+}
+
+#advancedExtra #advColumn2 .ctrlHolder {
+  float: left;
+}
+
+#minAcresHolder {
+  float: left;
+}
+
+#propertyTypeHolder {
+  float: left;
+}
+
+#storiesHolder {
+  
+}
+
+#advColumn3 {
+  float: right !important;
+  padding-right:18px;
+}
+
+#advColumn3 .ctrlHolder {
+  float: left;
+}
+
+#schoolNameHolder {
+  clear: left;
+}
+
+#schoolNameHolder input {
+  width: 150px;
+}
+
+#zipHolder {
+  float: left;
+}
+
+#lastModifiedHolder {
+  
+}
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+  height: 24px;
+  line-height: 24px;
+  background-color: #79aa59;
+  padding: 0px 20px;
+}
+
+#searchFormLinks small {
+  font-size: 11px;
+  font-family:Arial;
+  font-weight:500 !important;
+}
+
+#searchFormLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+  text-decoration: underline;
+}
+
+#searchLinksOne, #searchLinksTwo {
+  float: left;
+}
+
+#searchLinksThree {
+  float: right;
+}
+
+#saveSearchLink, #searchformResetter {
+  display: block;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 10px;
+  width: 110px;
+  padding-left: 13px;
+  color: #fff !important;
+  font-weight: normal !important;
+  text-decoration: none;
+  background-position: 0px 1px;
+  background-repeat: no-repeat;
+}
+
+#saveSearchLink span, #searchformResetter span {
+  display: none;
+}
+
+#saveSearchLink {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/saveback.png);
+}
+
+#searchformResetter {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/resetback.png);
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+  background: white;
+  opacity: .7;
+  background-image: url('/images/loader_small_dots.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+  display: block;
+  position: absolute;
+  height: 415px;
+  background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+  padding: 0;
+  margin-bottom:21px;
+  height: 415px;
+}
+
+#leftColumn {
+  float: left;
+}
+
+#leftColumn, #listLoader {
+  width: 461px;
+}
+
+#resultsNav {
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #7cac5c;
+  background-color: #fff;
+  border-bottom: none;
+  font-size: 14px;
+  color: #000;
+}
+
+#displayingRecords {
+}
+
+#prePage span, #nextPage span, #prePage a, #nextPage a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 12px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#prePage span, #nextPage span{
+  display:none;
+}
+
+#prePage span, #prePage a {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/leftarrow.png);
+}
+
+#nextPage span, #nextPage a {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/rightarrow.png);
+}
+
+#resultsList {
+  height: 389px;
+  padding-left: 10px;
+  border: 1px solid #7cac5c;
+  background-color: #fff;
+  border-top: none;
+  overflow: scroll;
+  font-size: 12px;
+}
+
+#resultsDiv a {
+  text-decoration: none;
+}
+
+div.resultRow {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/resultback.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 417px;
+  padding: 8px 0px 0px 8px;
+  overflow: hidden;
+  font-weight: normal !important;
+}
+
+div.resultRow:hover {
+  background-position: 0px bottom;
+}
+
+div.resultRow a {
+  color: #000 !important;
+  text-decoration: none !important;
+  display: block;
+}
+
+div.resultRow:hover a {
+  color: #fff !important;
+}
+
+div.propertyPreviewPic {
+  float: left;
+}
+
+div.propertyPreviewPic img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #fff;
+}
+
+div.propertyAddress {
+  float: left;
+  width: 170px;
+  padding: 2px 0 0 10px;
+  color: #000;
+}
+
+div.resultRow:hover div.propertyAddress {
+  color: #fff;
+}
+
+div.propertyAddress a {
+  color: #000;
+}
+
+div.resultRow:hover div.propertyAddress a {
+  color: #fff;
+}
+
+div.propertyAddress strong {
+  font-weight: normal;
+  color: #000;
+}
+
+div.resultRow:hover strong {
+  color: #fff;
+}
+
+div.propertyPriceBedsSf {
+  float: left;
+  width: 97px;
+  padding-left: 10px;
+  padding-top: 2px;
+  color: #000;
+}
+
+div.resultRow:hover div.propertyPriceBedsSf {
+  color: #fff;
+}
+
+div.propertyPriceBedsSf a {
+  
+}
+
+div.propertyActions, div.propertyActions .viewDetailsLink a {
+  float: left;
+  display: block;
+  width: 65px;
+  height: 65px;
+}
+
+div.propertyActions .viewDetailsLink a {
+  text-indent: -9999px;
+}
+
+#rightColumn {
+  float: right;
+  width: 436px;
+  border:1px solid #7CAC5C;
+}
+
+#resultsMap {
+  height: 415px;
+}
+
+/******************
+Search Results Styles
+******************/
+#resultsToolbar {
+  height: 36px;
+  line-height: 36px;
+  font-size: 11px;
+  padding: 0px 20px;
+  background-color: #d0dd64;
+  color: #578839;
+  margin: 10px 0px 20px 0px;
+  border: 1px solid #aeb953;
+  font-weight:700;
+}
+
+#resultsToolbar a {
+  color: #578839;
+}
+
+#resultsToolbar table {
+  width: 100%;
+  border-spacing:0;
+}
+
+#resultsToolbar td {
+  width: 50%;
+  text-align: right;
+}
+
+#resultsToolbar #totalRecords {
+  color: #619ceb;
+}
+
+#resultsToolbar td:first-child {
+  text-align: left;
+}
+
+.resultListContainer {
+  border: 1px solid #46702e;
+  margin-bottom: 1px;
+  background: url('http://displet.com/images/pelhamrealestateblog/resultlistback.png') 0 0 repeat-x;
+  height:104px;
+}
+
+.resultListContainer table {
+  width: 100%;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #78b14f;
+}
+
+td.propertyPreviewPic {
+  padding: 10px;
+  width: 115px;
+  border-right: none !important;
+}
+
+td.propertyPreviewPic img {
+  width: 115px;
+  height:82px;
+  border: 1px solid #334f22;
+}
+
+td.propertyAddress {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 5px;
+  color: #fff;
+}
+
+td.propertyAddress strong {
+  font-weight:500;
+}
+
+td.price {
+  width: 125px;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+td.price .price {
+  color: #d0dd64;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top:10px;
+}
+
+td.propertyBedsSf {
+  width: 112px;
+  padding-left:10px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+td.actions {
+  width: 155px;
+}
+
+td.actions .addToFaves {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 25px;
+  background-image: url(http://displet.com/images/pelhamrealestateblog/liststar.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  color: #fce68e;
+  margin-left:18px;
+  margin-bottom:15px;
+}
+
+td.actions .addToFaves:hover {
+  text-decoration: none;
+}
+
+td.actions .makeRequest {
+  display: block;
+  text-align: center;
+  width: 112px;
+  height: 24px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #384f2a;
+  font-size: 11px;
+  margin: 0px auto;
+  background:url('http://displet.com/images/pelhamrealestateblog/listrequestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+  text-decoration: underline;
+}
+
+td.propertyActions {
+  border-right: none !important;
+  width: 138px;
+}
+
+td.propertyActions .viewDetailsLink {
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  width: 102px;
+  background-image: url(http://displet.com/images/pelhamrealestateblog/listviewdetailsback.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  outline: none;
+  margin: 0px auto;
+}
+
+td.propertyActions .viewDetailsLink:hover {
+  background-position: 0px bottom;
+}
+
+/******************
+Detail Page Styles
+******************/
+#back_link {
+  display: none;
+}
+
+#back_link a {
+  display: block;
+  margin-bottom: 20px;
+  background-image: url(http://displet.com/images/alderson/arrow.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: #359D55;
+}
+
+#residentials_detail .col1, #residentials_detail .col2 {
+  padding-top: 30px;
+}
+
+#residentials_detail .col1 {
+  float: left;
+  width: 455px;
+}
+
+#residentials_detail .col2 {
+  float: right;
+  width: 440px;
+  height:495px;
+  overflow:hidden;
+}
+#residentials_detail .col2second {
+  float: right;
+  width: 440px;
+  margin-top:17px;
+}
+
+#actions1 {
+  height: 60px;
+  width:398px;
+}
+
+#actions1 div {
+  float: right;
+}
+
+#actions1 div:first-child {
+  float: left;
+}
+
+#actions1 a {
+  display: block;
+  float: left;
+  width: 151px;
+  padding-left: 37px;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#actions1 .redButton {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/requestinfoback.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions1 #saveFaveLink {
+  background-image: url(http://displet.com/images/pelhamrealestateblog/favoritesback.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions2 {
+  height: 45px;
+}
+
+#actions2 div {
+  float: left;
+}
+
+#callUs {
+  width: 186px;
+  padding: 0 0px 0 32px;
+  line-height: 14px;
+  background-image: url(http://displet.com/images/alderson/bg_callUs.png);
+  background-position: 7px 0px;
+  background-repeat: no-repeat;
+  height: 31px;
+  margin-right: 15px;
+  color: #333;
+  font-size:11px;
+}
+
+#callUs span {
+  font-weight: bold;
+  color: #333;
+}
+
+#sendToFriend {
+  background-image: url(http://displet.com/images/alderson/bg_sendToFriend.png);
+  background-position: 0px 1px;
+  background-repeat: no-repeat;
+  line-height: 30px;
+  padding-left: 45px;
+}
+
+#sendToFriend a{
+  color: #437ecd;
+  font-size:11px;
+}
+#searchContextPagination a{
+  color: #437ecd;
+  font-size:12px;
+}
+
+#sendToFriend a:hover, #searchContextPagination a:hover {
+  text-decoration: none;
+}
+
+/*#facebook_like {
+  width: 350px;
+  padding: 10px;
+  margin: 0px auto 20px auto;
+}*/
+
+#detailsHeader {
+  font-size: 16px;
+  line-height: 18px;
+  border-bottom: none;
+  margin-top: 10px;
+}
+
+#detailsHeader .address {
+  line-height: 36px;
+  font-size: 16px;
+  padding-left: 14px;
+  background-color: #79aa59;
+  color: #fff;
+  border-bottom: 1px solid #79aa59;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
+
+#detailsHeader .price {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #666;
+  text-align: right;
+  padding:0;
+  background-color: #fff;
+}
+
+#detailsProperty {
+  font-size: 14px;
+  padding: 25px 14px;
+  color: #666;
+  border-top: none;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #79aa59;
+  border-top: none;
+}
+
+#detailsProperty p {
+  margin-top:5px;
+}
+
+#detailsProperty .subColumnOne, #detailsProperty .subColumnTwo {
+  float: left;
+  width: 50%;
+  margin-top:10px;
+}
+
+.subColumnTwo {
+  text-align: right;
+}
+
+#propertyAge {
+  padding-bottom: 0px;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+#propertyAge .red {
+  color: #333;
+  font-weight: bold;
+}
+
+.tanBack {
+  padding: 0 12px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.tanBack.left, .tanBack.right {
+  width: 170px;
+}
+
+.tanBack p, .tanBack ul {
+  padding-bottom: 10px;
+}
+.tanBack p{
+  line-height:18px;
+}
+.tanBack li{
+  line-height:14px;
+}
+
+.tanBack p.remarks {
+  padding: 0px 0px 0px 12px;
+  height: 29px;
+  border-top:1px solid #dedede;
+  line-height: 30px;
+  margin: 0px -12px;
+  background-color: #bfbfbf;
+  color: #fff;
+  font-weight:700;
+}
+
+.tanBack p.remarks .red {
+  color: #578839;
+  padding-right: 5px;
+}
+
+.tanBack ul li {
+  padding-bottom: 2px;
+}
+
+.tanBack p:first-child {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #578839;
+  padding:12px 0 0 0;
+  margin-bottom:16px;
+}
+
+#detailFooter {
+  clear: both;
+  font-size: 12px;
+  padding: 10px 0px 10px 0px;
+  color:#666;
+}
+
+#detailTabs {
+  padding-left: 10px;
+}
+
+#detailTabs li {
+  float: left;
+  padding-right: 10px;
+}
+
+#detailTabs li a {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 25px;
+  border: 1px solid #CACACA;
+  border-bottom: none;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  background-color: #d0dd64;
+}
+
+#detailTabs li a.active {
+  border: 1px solid #529cff;
+  border-bottom: none;
+  background-color: #529cff;
+  color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+  clear: both;
+  border: 1px solid #dedede;
+  padding: 9px 6px;
+  padding-bottom:25px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+img#largeImage {
+  width: 401px !important;
+  display: block;
+  margin: 0px auto;
+}
+
+#horizontal_carousel {
+  width: 401px !important;
+  height: 415px !important;
+}
+
+#horizontal_carousel .container {
+  width: 340px !important;
+  left: 33px !important;
+}
+
+#horizontal_carousel .container {
+  top: 330px !important;
+}
+
+#horizontal_carousel .container img {
+  width: 100px !important;
+  height: 90px !important;
+  border: 0px solid #d7d7d7;
+}
+
+#horizontal_carousel .next_button, #horizontal_carousel .previous_button {
+  bottom: 37px !important;
+}
+
+#horizontal_carousel .previous_button {
+  width: auto !important;
+}
+
+#imageNav {
+  width: 410px !important;
+}
+
+#detailMap {
+  width: 400px;
+  height: 380px;
+}
+
+#dashboardActions {
+  float: left;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#dashOutput {
+  float: right;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#loginSignupFormcontainer {
+  padding: 10px;
+}
+
+#loginSignupFormcontainer table {
+  width: 100%;
+}
+
+#loginSignupFormcontainer table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#loginSignupFormcontainer input {
+  border: 1px solid #ccc;
+}
+
+#loginSignupFormcontainer p {
+  padding-bottom: 4px;
+}
+
+#loginSignupFormcontainer p.required input {
+  border: 1px solid red;
+}
+
+#loginSignupFormcontainer label {
+  display: block;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+  font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+  text-decoration: none;
+  color: #000;
+}
+
+#propertyInfoWindow img {
+  width: 105px;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+  display: block;
+  float: right;
+  width: 10px;
+  height: 8px;
+  line-height: 8px;
+  background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+  width: 100%;
+}
+
+#propertyInfoWindow table td {
+  vertical-align: top;
+  padding: 5px;
+  font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+  width: 24px;
+  height: 20px;
+  background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/alderson/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+  height: 0px;
+  width: 0px;
+}
+
+#standardFields select,
+#advancedExtra select { padding: 1px; border: 1px solid #8ba6bf; height: 22px; width: 78px; line-height: 22px; background:#fff; color:#a4a4a4; font-size:12px;}
+#standardFields #stdColumn2 input{ padding: 2px 5px 3px; border: 1px solid #949494; border-right-color:#ddd; border-bottom-color:#ddd; height: 16px; width: 119px !important; } 
+#advancedExtra #advColumn1 input{ padding: 2px 5px 3px; border: 1px solid #8ba6bf; height: 16px; width: 119px !important; }
+#standardFields #stdColumn1 { width: 274px; padding: 16px 0 10px 18px; }
+#standardFields #stdColumn2, , #advancedExtra #advColumn1 { width: 306px; padding: 16px 0 10px 18px; }
+#standardFields #stdColumn3 { width: 290px; padding: 16px 0 10px 0; float: right; }
+
+#standardFields #stdColumn1 .ctrlHolder { padding-right: 0; }
+#minListPrice, #maxListPrice { float: left; display: inline; margin: 0 9px 10px 0; width: 78px !important; }
+
+#standardFields #stdColumn1 label,
+#standardFields #stdColumn2 label { padding-top: 0; }
+#standardFields #stdColumn2 .ctrlHolder { float: left; display: inline; width: 131px; margin: 0 22px 10px 0; }
+#standardFields #stdColumn2 #cityHolder,
+#standardFields #stdColumn2 #keywordHolder { margin-right: 0; }
+#standardFields #stdColumn2 #keywordHolder,
+#standardFields #stdColumn2 #subdivisionHolder { margin-bottom: 0; }
+#standardFields #stdColumn2 select, #advancedExtra select { width: 131px; }
+
+#bedHolder, #bathHolder, #minSquareFeetHolder { float: left; display: inline; width: 78px; padding: 0 10px 0 0 !important; }
+#bedHolder select,
+#bathHolder select,
+#minSquareFeetHolder select { width: 78px !important; }
+
+#standardFields #stdColumn3 .ctrlHolder { padding: 0 27px 0 0; }
+#standardFields #stdColumn3 .ctrlHolder label input { float: left; display: inline; width: 13px; height: 13px; margin: 2px 3px 0 0; }
+
+
+#headermargin{
+  width:948px;
+  height:90px;
+}
+#agentlogo{
+  margin-top:20px;
+  margin-left:11px;
+  float:left;
+  background:url('http://displet.com/images/pelhamrealestateblog/displet-logo.png') 0 0 no-repeat;
+  width:187px;
+  height:45px;
+}
+.headerlinks{
+  margin-top:35px;
+  margin-left:33px;
+  float:right;
+  border-bottom:3px solid #d0dd64;
+  font-family:AvenirLTStd;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+}
+.lastright{
+  margin-right:11px;
+}
+#userToolbarLinks li{
+}
+#dashboardlist{
+  border-left:0;
+}
+
+#standardFields #propertyStyleHolder, #advancedExtra #statusHolder {
+  color:#3e5660;
+}
+#propertyStyleHolder label:first-child, #statusHolder label:first-child{
+  padding-top:5px;
+}
+span.resultsPaginationArrow{
+  display:none;
+}
+#footerbar{
+  height:51px;
+  width:100%;
+  background:url('http://displet.com/images/pelhamrealestateblog/footerback.png') 0 0 repeat-x;
+  text-align:center;
+}
+#footerbar img{
+  margin-top:10px;
+}
+#footertext{
+  padding:10px 20px;
+  font-size:10px;
+  text-align:center;
+  line-height:18px;
+}
+
+body#residentials_detail .subColumnOne {
+
+  float: left;
+
+  width:40%;
+
+}
+#detailsProperty2 p:first-child{
+  padding: 12px 0 0 0;
+  margin-bottom:16px;
+}
+#detailsProperty2 .subColumnOne p:first-child, #detailsProperty2 .subColumnTwo p:first-child{
+  font-size:12px;
+  color:#666;
+  line-height:12px;
+  font-weight:500;
+  margin:0;
+  padding:0 0 2px 0;
+}
+#detailsProperty2 p{
+  padding:0;
+  margin-top:2px;
+}
+body#residentials_detail .subColumnTwo {
+
+  float:right;
+
+  width:40%;
+
+  text-align:right;
+
+}
+#detailsProperty2{
+  padding-bottom:10px;
+}
+#detailsSchool{
+  width:174px;
+  text-align:right;
+  float:right;
+}
+#financialInfo{
+  width:174px;
+  text-align:right;
+  float:left;
+}
+#lotArea{
+  text-align:right;
+}
+#financialInfo p:first-child, #detailsSchool p:first-child, #lotArea p:first-child{
+  text-align:left;
+}
+#detailsSchool .fieldName, #financialInfo .fieldName, #lotArea .fieldName{
+  float:left;
+}
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+#pricePerSqFeetHolder, squareFeetAvailableHolder{
+  clear:both;
+}
+#contentInnerWrapperOne p a, #contentInnerWrapperOne p a:visited{
+  color:#619CEB;
+}

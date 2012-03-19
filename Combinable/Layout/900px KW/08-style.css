@@ -47,14 +47,13 @@ Wrapper Styles
 }
 
 #contentWrapperOuter {
-	width: 980px;
+	width: 900px;
 	margin: 0px auto;
 	overflow: hidden;
 }
 
 #contentWrapper {
 	overflow: hidden;
-	margin-top: 21px;
 }
 
 #contentWrapper h1, 
@@ -76,19 +75,19 @@ globalToolbar Styles
 ******************/
 
 #globalToolbar {
-	height: 48px;
-	line-height:48px;
-	font-size: 13px;
+	height: 45px;
+	line-height:45px;
+	font-size: 12px;
 }
 
 #userToolbarLinks {
 	float: left;
-	margin-right: 19px;
+	margin-right: 21px;
 }
 
 #userToolbarLinks li {
 	float: left;
-	padding: 0px 19px;
+	padding: 0px 18px;
 }
 
 #quickSearch {
@@ -104,20 +103,16 @@ globalToolbar Styles
 #quickSearch input {
 	display: inline;
 	float: left;
-	height: 28px;
-	line-height:28px;
+	height: 24px;
+	line-height:24px;
 	margin:0 11px;
 	padding: 0px 5px;
-	width: 106px;
-	font-size: 11px;
+	width: 86px;
 }
 
-input#street_number {
-	width: 66px;
-}
 input#street_name {
-	width: 146px;
-	margin-left: 0px;
+	width: 142px;
+	margin: 0px;
 }
 
 #quickSearch span#textQuick{
@@ -132,19 +127,15 @@ input#street_name {
 	float: right;
 	text-align:center;
 	padding: 0px;
-	margin: 5px 5px 0px 0px;
-	font-size: 11px;
+	margin: 10px 10px 0px 0px;
 }
 
 #loggedIn a {
   margin:0 2px;
-}
-
-#loginBox a:first-child{
-  display:inline-block;
-  max-width:44px;
-  height:38px;
-  overflow:hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /******************
@@ -154,7 +145,6 @@ searchFormContainer Styles
 #searchFormContainer {
 	margin-bottom: 10px;
 	border-top:0 !important;
-	font-size: 12px;
 }
 
 #standardFields {
@@ -164,18 +154,14 @@ searchFormContainer Styles
 
 #searchFormContainer .column{
 	float:left;
-	width:289px;
-	padding:12px 8px 0px 8px;
-}
-
-#searchFormContainer #stdColumn3, #searchFormContainer #advColumn3{
-	width: 339px;
+	width:286px;
+	padding:12px 6px 0px 6px;
 }
 
 #searchFormContainer .ctrlHolder{
 	float:left;
 	padding-bottom:12px;
-	margin:0 11px;
+	margin:0 9px;
 }
 
 #searchFormContainer label{
@@ -184,32 +170,31 @@ searchFormContainer Styles
 }
 
 #searchFormContainer select, #searchFormContainer input{
-	width:122px;
+	width:125px;
 	height:23px;
 	line-height:23px;
 	padding:1px 1px 1px 5px;
-	font-size: 11px;
 }
 
 #searchFormContainer input{
-	width:114px;
+	width:117px;
 	height:19px;
 }
 
 #searchFormContainer .tinySearchSelect{
-	width:74px;
+	width:77px;
 }
 
 /* Make these tiny selects default size  */
 #searchFormContainer #area_mls_defined{
+	width:125px;
 }
 
 #searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
-	width:122px;
 }
 
 #searchFormContainer #minListPrice{
-	margin-right:19px;
+	margin-right:15px;
 }
 
 #searchFormContainer #bedHolder{
@@ -254,11 +239,7 @@ searchFormContainer Styles
 Search Form Links Styles
 ******************/
 #searchFormLinks {
-	padding:0 19px;
-}
-
-#searchFormLinks a{
-	font-weight: bold;
+	padding:0 11px;
 }
 
 #searchFormLinks small {
@@ -308,45 +289,45 @@ Map and Listings Styles
 #listLoader.on, #mapLoader.on {
 	display: block;
 	position: absolute;
-	height: 55px;
-	width: 980px;
+	height: 415px;
 	background-color: #fff;
 }
 
-#leftColumn{
+#leftColumn, #rightColumn {
 	padding: 0;
-	margin-top: 20px;
-	min-height:200px;
+	height: 411px;
+	float:left;
 }
 
-#rightColumn{
-	position: absolute;
-	left: -9999px;
-	width: 980px;
+#leftColumn{
+	height:413px;
+	font-size: 13px;
+}
+
+
+#leftColumn, #listLoader {
+	width: 443px;
 }
 
 #resultsNav {
 	text-align: center;
-	height: 53px;
-	line-height: 53px;
-	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	border-bottom:0 !important;
 }
 
 #prePage a, #nextPage a {
+	text-indent: -9999px;
 	display: inline-block;
 	cursor: pointer;
 }
 
-#prePage {
-	margin-right: 22px;
+#prePage a {
+	margin-right: 4px;
 }
 
-#nextPage {
-	margin-left: 22px;
-}
-
-#totalRecords{
-	color: #085AA5;
+#nextPage a {
+	margin-left: 4px;
 }
 
 span.resultsPaginationArrow{
@@ -354,272 +335,135 @@ span.resultsPaginationArrow{
 }
 
 #resultsList {
-	margin-top: 20px;
+	height: 382px;
+	padding-left: 10px;
+	overflow-x: auto;
+	line-height: 17px;
+	border-top: 0 !important;
 }
 
 div.resultRow {
 	overflow: hidden;
-	padding-bottom: 9px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
-#resultsList .resultRow .left{
-	float: left;
-	margin-top: 20px;
-	margin-left: 19px;
-	width: 282px;
+div.resultRow:hover {
+	background-position: 0px bottom;
 }
 
-#resultsList .resultRow .left .propertyPreviewPic{
-	padding: 3px;
-	height: 196px;
-}
-
-#resultsList .resultRow .left .propertyPreviewPic img{
-	width: 274px;
-	height: 196px;
-}
-
-#resultsList .resultRow .left .price{
-	margin-top: 10px;
-	text-align: center;
-	font-size: 30px;
-	line-height: 30px;
-	color: #0759a5;
-	font-weight: bold;
-}
-
-#resultsList .resultRow .right{
-	float: right;
-	margin-right: 38px;
-	width: 609px;
-}
-
-#resultsList .resultRow .right .propertyAddress{
-	font-size: 24px;
-	line-height: 24px;
-	margin-top: 30px;
-	font-weight: bold;
-	color: #333;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf{
-	margin-top: 18px;
-	padding: 3px;
-	height: 100px;
-	border: 1px solid #c0c0c0;
-	background-color: #e4e4e4;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll, #resultsList .resultRow .right .propertyPriceBedsSf .colr{
-	width: 148px;
-	height: 83px;
-	padding-top: 17px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 0px #cdcdcd;
-	font-size: 22px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll span, #resultsList .resultRow .right .propertyPriceBedsSf .colr span{
-	font-size: 18px;
-	font-weight: normal;
-	color: #0759a5;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .coll{
-	float: left;
-	margin-right: 3px;
-}
-
-body #resultsList .resultRow .right .propertyPriceBedsSf .colllast{
-	margin-right: 0px;
-}
-
-#resultsList .resultRow .right .propertyPriceBedsSf .colr{
-	float: right;
-}
-
-#resultsList .resultRow .right .addToFavorites, #resultsList .resultRow .right .requestInfo{
-	float: left;
-	margin-top: 34px;
-	line-height: 16px;
-	padding-left: 25px;
-	font-size: 12px;
-}
-
-#resultsList .resultRow .right .addToFavorites{
-	margin-right: 28px;
-}
-
-#resultsList .resultRow .right .viewDetailsLink{
-	float: right;
-	margin-top: 20px;
-	width: 152px;
-	height: 50px;
-	line-height: 50px;
-	text-indent: -9999px;
-	background: url('http://thebyob.com/images/mccann/view-details.png') 0px 0px no-repeat;
-}
-
-#resultsList .resultRow .right .viewDetailsLink:hover{
-	box-shadow:1px 1px 3px #333;
-	-moz-border-radius: 6px; 
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}
-
-#resultsList .resultRow .right .viewDetailsLink a{
+#leftColumn div.resultRow a {
 	display: block;
 }
 
-#resultsList .resultRow .right .courtesyOf{
-	float: right;
-	margin-top: 13px;
-	font-size: 8px;
-	line-height: 8px;
-	text-transform: uppercase;
-	color: #717171;
+div.propertyPreviewPic {
+	float: left;
+	margin-left:5px;
+	margin-top:2px;
+}
+
+div.propertyPreviewPic img {
+	width: 58px;
+	height: 58px;
+}
+
+div.propertyAddress {
+	float: left;
+	width: 155px;
+	padding:0 10px;
+	margin-top:2px;
+}
+
+div.propertyPriceBedsSf {
+	float: left;
+	width: 94px;
+	padding:0 8px;
+	margin-top:2px;
+}
+
+#resultsDiv .viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+	width: 442px;
+	float:right;
+}
+
+#resultsMap {
+	height: 411px;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	display: block;
+	margin-top: 2px;
+}
+
+.balloonWrapper #stats{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/* Balloon pic */
+#imagery img{
+	width: 102px;
+	border: 0;
+	padding-right: 10px;
 }
 
 /******************
 Detail Page Styles
 ******************/
 
-#topbar{
-	height: 32px;
-	padding-top: 16px;
-	border: 1px solid #ccc;
-	border-top:0;
-	background-color: #ededed;
-	font-size: 12px;
-	line-height: 16px;
-	font-family: Arial, sans-serif;
-}
-
-#topbar a{
-	color: #0759a5;
-	text-decoration: none;
-}
-
-#topbar a:hover{
-	text-decoration: underline;
-}
-
 #searchContextPagination{
+	line-height:8px;
+	padding-left:20px;
+	margin-top:20px;
+	font-size:11px;
+	margin-left: 1px;
+}
+
+/* Begins with Showing & Fave buttons */
+#residentials_detail .col1 {
 	float: left;
-	padding-left:25px;
-	margin-left: 19px;
-	background: url('http://thebyob.com/images/mccann/backarrow.png') 0px -1px no-repeat;
-}
-
-#topbar .new a{
-	float: left;
-	margin-left: 20px;
-	padding-left: 25px;
-	background: url('http://thebyob.com/images/mccann/newsearch.png') 0px 0px no-repeat;
-}
-
-#statbar{
-	margin-top: 20px;
-	border: 1px solid #b5b5b5;
-	padding: 3px;
-	background-color: #e4e4e4;
-	color: #333;
-}
-
-#statbar .coll{
-	float: left;
-	width: 217px;
-	height: 100px;
-}
-
-#statbar .coll .price{
-	line-height: 65px;
-	text-align: center;
-	font-size: 30px;
-	color: #0759a5;
-	text-shadow:1px 1px 2px #fff;
-}
-
-#statbar .coll .status{
-	width: 217px;
-	height: 35px;
-	line-height: 35px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-	text-shadow: 1px 1px 1px #f4da84;
-	background: url('http://thebyob.com/images/mccann/statusback.png') 0px 0px no-repeat;
-}
-
-#statbar .colm, #statbar .colr{
-	width: 148px;
-	height: 83px;
-	padding-top: 17px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 0px #cdcdcd;
-	font-size: 22px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-#statbar .colm span, #statbar .colr span{
-	font-size: 18px;
-	font-weight: normal;
-	color: #0759a5;
-}
-
-#statbar .colm{
-	float: left;
-	margin-left: 3px;
-}
-
-#statbar .colr{
-	float: right;
+	margin-top:20px;
+  	width: 427px;
 }
 
 #actions1 {
-	margin-top: 20px;
 }
 
-#actions1 #requestShowing, #actions1 #addToFavorites, #actions1 #sendToFriend {
+#actions1 #requestShowing, #actions1 #saveFaveLink {
 	float:left;
-	width: 170px;
-	height: 32px;
-	line-height: 32px;
-	text-indent:11px;
-	font-size: 12px;
-	font-weight: bold;
-	margin-right: 10px;
+	text-indent:15px;
 }
 
-#actions1 a{
+#actions1 a, #actions1 a:visited {
 	display: block;
-	text-decoration: none;
-	color: #fff;
-	font-weight: bold;
 }
 
-#actions1 a:hover{
-	text-decoration: underline;
+#actions2 {
+	margin:34px 0px 20px 0px;
 }
 
-#requestShowing {
-	background: url('http://thebyob.com/images/mccann/requestshowing.png') 0 0 no-repeat;
+#actions2 #callUs, #actions2 #sendToFriend {
+	float: left;
+	font-size: 12px;
 }
 
-#addToFavorites {
-	background: url('http://thebyob.com/images/mccann/addtofavorites.png') 0 0 no-repeat;
+#callUs {
+	line-height: 14px;
+	background: url('http://displet.com/images/austincityhomesearch/question.png') 0 0 no-repeat;
+	margin-right: 44px;
+	padding-left:24px;
+	min-width: 140px;
+	max-width:160px;
 }
 
 #sendToFriend {
-	background: url('http://thebyob.com/images/mccann/email.png') 0 0 no-repeat;
+	background: url('http://displet.com/images/austincityhomesearch/email.png') 0 0 no-repeat;
+	line-height: 24px;
+	padding-left: 47px;
 }
 
 #facebook_like {
@@ -628,142 +472,59 @@ Detail Page Styles
   margin: 0px auto 20px auto;
 }
 
-h1#addressbar{
-	font-size: 24px;
+#detailsHeader {
 	line-height: 24px;
-	color: #333;
-	text-transform: uppercase;
-	margin-top: 20px;
-	text-shadow: 1px 1px 1px #fff;
-	padding-bottom: 17px;
-	background: url('http://thebyob.com/images/mccann/h1bot.png') 0px bottom repeat-x;
-}
-
-/* Begins with Showing & Fave buttons */
-#residentials_detail .col1 {
-	float: left;
-  	width: 454px;
-	margin-top: 20px;
-}
-
-#residentials_detail .col1 .contact .img{
-	width: 104px;
-	height: 134px;
-	padding: 3px;
-	background-color: #fff;
-	border: 1px solid #b5b5b5;
-	float: left;
-	background-image: url('http://thebyob.com/images/mccann/agent.png');
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-#residentials_detail .col1 .colr{
-	float: right;
-	width: 327px;
-}
-
-.col1 .colr{
-	font-family: Arial, sans-serif;
-}
-
-.col1 .colr .company{
-	font-size: 16px;
-	line-height: 16px;
-	font-weight: bold;
-	color: #333;
-}
-
-.col1 .colr .address{
-	font-size: 14px;
-	line-height: 17px;
-	color: #333;
-	margin-top: 7px;
-}
-
-.col1 .colr .phone{
-	font-size: 14px;
-	line-height: 14px;
-	font-weight: bold;
-	color: #333;
-	margin-top: 9px;
-}
-
-.col1 .colr .link{
-	line-height: 16px;
+	margin-bottom: 13px;
 	font-size: 12px;
-	padding-left: 26px;
-	text-transform: uppercase;
 }
 
-.col1 .colr .link a{
-	color: #0759a5;
-	text-decoration: none;
+#detailsHeader .address {
+	line-height: 18px;
+	font-size: 18px;
+	padding-bottom:10px;
 }
 
-.col1 .colr .link a:hover{
-	text-decoration: underline;
+#detailsHeader .price {
+	 font-size: 18px;
+	 line-height:18px;
+	 text-align: right;
+	 margin-top:24px;
+	 margin-bottom:12px;
 }
 
-.col1 .colr .requestshowing{
-	margin-top: 13px;
-	background: url('http://displet.com/images/coloradospringshomesource/requestshowingicon.png') 0px 0px no-repeat;
+body#residentials_detail .subColumnOne {
+	float: left;
+	width:68%;
 }
 
-.col1 .colr .addtofavorites{
-	margin-top: 10px;
-	background: url('http://displet.com/images/coloradospringshomesource/addtofavoritesicon.png') 0px 0px no-repeat;
-}
-
-#propdesc{
-	font-family: Arial, sans-serif;
-	margin-top: 17px;
-}
-
-#propdesc .tit{
-	font-size: 16px;
-	line-height: 16px;
-	color: #0759a5;
-}
-
-#propdesc .cont{
-	font-size: 13px;
-	line-height: 24px;
-	color: #333;
-	margin-top: 17px;
+body#residentials_detail .subColumnTwo {
+	float:right;
+	width:30%;
+	text-align:right;
 }
 
 .tanBack {
-	padding: 14px 19px;
-	border: 1px solid #d4d4c3;
-	background-color: #fff;
-	font-family: Arial, sans-serif;
-	font-size: 11px;
+	padding: 16px 15px 10px 15px;
 	line-height: 18px;
-	color: #333;
-	margin-top: 20px;
+	font-size: 12px;
+	margin-bottom: 20px;
 }
 
 .tanBack .tanbacktit {
-	font-size: 13px;
-	line-height: 13px;
-	color: #0759a5;
-	margin-bottom: 15px;
-	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 10px;
+	margin-bottom: 16px;
 }
 
-#remarks .tanbacktit{
-	margin-bottom: 18px;
-}
-
-.tanBack .fieldName, .tanBack .fieldRight{
-	font-weight: bold;
-	line-height: 24px;
-}
-
-.tanBack .fieldRight{
-	text-align: right;
-	float: right;
+/* MT/-MB = PB of parent element */
+.tanBack p.remarks {
+	width:100%;
+	padding:0 15px;
+	margin-left:-15px;
+	height: 29px;
+	line-height:29px;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 /* Begins with tabbed Map/Photo/Comment section */
@@ -771,52 +532,7 @@ h1#addressbar{
 	float: right;
 	overflow:hidden;
 	width: 427px;
-	margin-top: 22px;
-}
-
-.notan{
-	margin-top: 20px;
-	padding: 9px 0px 0px 0px;
-	border-bottom: 1px solid #d3d3c1;
-	font-size: 13px;
-	font-family: Arial, sans-serif;
-	color: #333;
-	line-height: 30px;
-}
-
-.notan .tit{
-	font-size: 14px;
-	line-height: 14px;
-	color: #0759a5;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	margin-bottom: 13px;
-	text-shadow: 1px 1px 2px #fff;
-}
-
-.notan ul{
-	padding-bottom: 10px;
-}
-
-.notan ul li{
-	padding-left: 40px;
-	background: url('http://displet.com/images/coloradospringshomesource/notanulli.png') 19px 13px no-repeat;
-}
-
-.notan span{
-	color: #0759a5;
-}
-
-.notan p{
-	margin-bottom: 30px;
-}
-
-#notandisclaimer{
-	border-bottom: 0px;
-}
-
-#notandisclaimer p:last-child{
-	margin-bottom: 0px;
+	margin-top:14px;
 }
 
 #detailTabs {
@@ -833,29 +549,14 @@ h1#addressbar{
 	line-height: 29px;
 	text-decoration: none;
 	padding: 0px 25px;
-	font-weight: bold;
-	font-size: 11px;
-	border: 1px solid #333;
-	border-bottom: 0;
-	color: #fff;
-	background-color: #333;
-}
-
-#detailTabs li a:hover{
-	text-decoration: underline;
-}
-
-#detailTabs li a.active {
-	background-color: #0759a5;
-	border-color: #0759a5;
-	color: #fff;
+	font-size: 12px;
+	border-bottom:0px !important;
 }
 
 #detailPhotos, #detailMapOuter, #userCommentsContainer {
 	clear: both;
 	padding: 9px;
-	border: 1px solid #ccc;
-	background-color: #fff;
+	margin-bottom: 20px;
 }
 
 #detailPhotos{
@@ -868,10 +569,6 @@ h1#addressbar{
 	margin:0;
 }
 
-#userCommentsContainer a, #userCommentsContainer a:visited{
-	color: #333;
-}
-
 #userComments h3{
 	margin:5px 0;
 }
@@ -879,10 +576,9 @@ h1#addressbar{
 img#largeImage {
 	display: block;
 	width: 408px !important;
-	border: 1px solid #a5a5a5;
 }
 
-/* Width same as img#largeImage (add border px) */
+/* Width same as img#largeImage (with border) */
 #detailPhotos #horizontal_carousel {
 	width: 410px;
 	height: 425px;
@@ -899,7 +595,6 @@ img#largeImage {
 #horizontal_carousel .container img {
 	width: 100px;
 	height: 90px;
-	border: 1px solid #919191;
 	margin: 0 8px 0 0;
 }
 
@@ -917,39 +612,35 @@ img#largeImage {
 	height: 380px;
 }
 
-#residentials_detail .col2b {
+#residentials_detail .col2second {
 	float: right;
-	width: 454px;
+	width: 427px;
 }
 
-#poweredby{
-	border: 1px solid #ccc;
-	background-color: #ededed;
-	height: 47px;
-	margin-top: 20px;
+/* Width minus .tanBack padding/border */
+#detailsSchool, #financialInfo{
+	width:169px;
+	text-align:right;
 }
 
-#poweredby .logo{
-	text-indent: -9999px;
-	margin: 0px auto;
-	margin-top: 10px;
-	width: 202px;
-	height: 27px;
-	line-height: 27px;
-	background: url('http://thebyob.com/images/mccann/displet.png') 0px 0px no-repeat;
+#detailsSchool{
+	float: right;
 }
 
-#poweredby .logo a{
-	display: block;
+#financialInfo{
+	float: left;
 }
 
-#copytext{
-	text-align: center;
-	line-height: 21px;
-	font-size: 12px;
-	color: #333;
-	padding-top: 5px;
-	padding-bottom: 5px;
+#lotArea{
+	text-align:right;
+}
+
+#financialInfo p:first-child, #detailsSchool p:first-child, #lotArea p:first-child{
+	text-align:left;
+}
+
+#detailsSchool .fieldName, #financialInfo .fieldName, #lotArea .fieldName{
+	float:left;
 }
 
 /* Courtesy of / Last updated */
@@ -957,7 +648,6 @@ img#largeImage {
 	clear: both;
 	text-align:right;
 	line-height:18px;
-	color: #333;
 }
 
 /******************
@@ -992,6 +682,7 @@ Search List Results Styles
 	font-size: 14px;
 	line-height: 17px;
 	margin-bottom: 10px;
+	overflow:hidden;
 }
 
 .resultListContainer table {
@@ -1013,6 +704,7 @@ td.propertyPreviewPic img {
 /* Subtract td.propertyPreviewPic PR */
 td.propertyAddress {
 	padding-left: 6px;
+	overflow: hidden;
 }
 
 td.price {
@@ -1071,17 +763,28 @@ Footer Link / Disclaimer Styles
 ******************/
 
 #footerOuter, #disclaimer{
-	width: 980px;
+	width: 900px;
 	margin: 0px auto;
 	margin-top: 10px;
 }
 
 #footerOuter{
+	height:12px;
 	line-height: 14px;
 }
 
 #disclaimer{
 	line-height: 14px;
+}
+
+#footerInner ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#footerInner ul li:last-child{
+	float: right;
+	margin-right:0;
 }
 
 /******************
@@ -1173,7 +876,9 @@ body#residentials_index .balloonInfo {
 /******************
 FB Login Stuff
 ******************/
-
+body .loginSignupDialog{
+  top:119px !important;
+}
 #localLoginLinkContainer {
   margin-top: 18px !important;
 }

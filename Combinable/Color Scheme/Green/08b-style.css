@@ -1,0 +1,488 @@
+/******************
+Global Styles
+******************/
+
+html{
+	background-image: url(http://displet.com/images/pelhamrealestateblog/bodyback.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+body {
+  	color: #000;
+	font-family: Arial;
+	padding: 30px;
+	padding-top: 20px;
+	width:900px;
+	margin: 30px auto 0px;
+	background-color: #fff;
+	background-image: url(http://displet.com/images/pelhamrealestateblog/topcorners.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	box-shadow:0 0 10px #aaa;
+	-moz-box-shadow:0 0 10px #aaa; /* Firefox */
+	-webkit-box-shadow:0 0 10px #aaa; /* Safari */
+	border-radius:6px;
+	-moz-border-radius: 6px; /* Firefox */
+	-webkit-border-radius: 6px; /* Safari */
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+	margin-top: 10px;
+}
+
+#contentWrapper {
+  background:#fff;
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+  font-weight: bold;
+  color: #fff;
+  background:url('http://displet.com/images/pelhamrealestateblog/toolbarback.png') 0 0 repeat-x;
+  font-family:Tahoma;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+  background:url('http://displet.com/images/pelhamrealestateblog/tbarlinksborder.png') right 0 repeat-y;
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+	padding-right: 2px;
+}
+
+#quickSearch input {
+  border: 1px solid #404040;
+  border-right: none;
+  border-bottom: none;
+  font-family:Tahoma;
+  color: #A4A4A4;
+  background-color: #fff;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+}
+
+#loggedIn {
+  color: #fff;
+  font-size: 11px;
+  background:url('http://displet.com/images/pelhamrealestateblog/loginback.png') 0 0 no-repeat;
+  height:25px;
+  width:108px;
+  line-height:25px;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+	max-width: 45px;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	color: #3e5660;
+	font-weight: bold;
+	border:1px solid #79aa59;
+	background:#fff;
+}
+
+#standardFields label.triggerLabel, #advancedExtra label.triggerLabel {
+	font-weight: normal !important;
+	color: #000 !important;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#a4a4a4;
+	border:1px solid #8ba6bf;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #DDE5E8;
+	border-right:1px solid #DDE5E8;
+}
+
+#advancedExtra {
+	border-top: 1px solid #DDE5E8;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 23px;
+	line-height: 23px;
+	background-color: #79aa59;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 23px;
+	line-height: 23px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/pelhamrealestateblog/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/pelhamrealestateblog/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #000;
+	background-color: #fff;
+}
+
+#resultsNav {
+	border:1px solid #7cac5c;
+}
+
+#prePage a, #nextPage a {
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/pelhamrealestateblog/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/pelhamrealestateblog/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #7cac5c;
+	padding-left: 2px;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/pelhamrealestateblog/resultback.png') 0 0 no-repeat;
+	height: 76px;
+	width: 422px;
+	font-weight: normal !important;
+}
+
+div.resultRow div.propertyPreviewPic{
+	margin-top:8px;
+	margin-left:8px;
+}
+
+div.propertyAddress, div.propertyPriceBedsSf {
+	margin-top:5px;
+}
+
+#leftColumn #resultsDiv a {
+	color: #000;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #fff;
+}
+
+#rightColumn {
+	border:1px solid #7CAC5C;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/kwred/balloondetails.png') 0 0 no-repeat;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #666;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+#disclaimer, #detailFooter, #footerInner{
+	color: #666;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination{
+	background:url('http://displet.com/images/kwred/backarrow.png') 0 0 no-repeat;
+}
+
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#666;
+	text-decoration:none;
+}
+
+#searchContextPagination a:hover{
+	text-decoration:underline;
+}
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:188px;
+	height:34px;
+	line-height:34px;
+	text-indent: 37px;
+	font-size: 11px;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/pelhamrealestateblog/requestinfoback.png') 0 0 no-repeat;
+	margin-right:20px;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/pelhamrealestateblog/favoritesback.png') 0 0 no-repeat;
+}
+
+#actions1 a, #actions1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:underline;
+}
+
+#callUs span {
+	font-weight: bold;
+}
+
+#sendToFriend a{
+	color: #437ecd;
+	text-decoration:none;
+}
+
+#sendToFriend a:hover{
+	text-decoration: underline;
+}
+
+#detailsHeader {
+	color: #666;
+}
+
+#detailsHeader .address {
+  padding-left: 14px;
+  background-color: #79aa59;
+  color: #fff;
+  line-height:36px;
+  text-transform:uppercase;
+  font-weight:lighter;
+  padding-bottom:0px;
+}
+
+#detailsHeader .price {
+  font-weight: lighter;
+  color: #666;
+}
+
+#detailsProperty{
+	border: 1px solid #79AA59;
+	padding-left:14px;
+	padding-right: 14px;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+	color: #333;
+	font-weight: bold;
+}
+
+.tanBack {
+	border: 1px solid #dedede;
+	color: #666;
+}
+
+.tanBack .tanbacktit {
+	color: #578839;
+	font-weight: bold;
+}
+
+.tanBack p.remarks {
+	background-color: #bfbfbf;
+	color:#fff;
+	font-weight: bold;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #CACACA;
+	color: #333;
+	background-color: #d0dd64;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #529cff;
+	border-color: #529cff;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #dedede;
+}
+
+img#largeImage {
+	border: 1px solid #a6a6a6;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #d7d7d7;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #aeb953;
+	background-color: #d0dd64;
+}
+
+#resultsToolbar a {
+	color: #578839;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #619ceb;
+}
+
+.resultListContainer {
+	border: 1px solid #46702e;
+	color: #fff;
+  background: url('http://displet.com/images/pelhamrealestateblog/resultlistback.png') 0 0 repeat-x;
+}
+
+.resultListContainer a{
+	color:#fff;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #78b14f;
+}
+
+.resultListContainer td.propertyPreviewPic, .resultListContainer td.propertyActions {
+	background: none;
+}
+
+td.propertyPreviewPic img {
+	border: 1px solid #334f22;
+}
+
+td.price .price {
+	color: #d0dd64;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/pelhamrealestateblog/liststar.png') 0 0 no-repeat;
+	color: #fce68e;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: underline;
+}
+
+td.actions .makeRequest {
+	width: 112px;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #384f2a;
+	background:url('http://displet.com/images/pelhamrealestateblog/listrequestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	height: 31px;
+	width: 102px;
+	background: url('http://displet.com/images/pelhamrealestateblog/listviewdetailsback.png') 0 0 no-repeat;
+	text-indent: -9999px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+  background-position: 0px bottom;
+}

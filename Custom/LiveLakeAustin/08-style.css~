@@ -1,0 +1,1464 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {border: 0;}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+.ir{text-indent: -9999px;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#exteriorWrapperThree{
+}
+
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#contentWrapper {
+	overflow: hidden;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+	font-size: normal;
+	line-height: normal;
+}
+
+#columnsFooter {
+	clear: both;
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	height: 50px;
+	line-height: 50px;
+	font-size: 13px;
+}
+
+#userToolbarLinks {
+	float: left;
+	margin-right: 16px;
+}
+
+#userToolbarLinks li {
+	float: left;
+	padding: 0px 16px;
+}
+
+#quickSearch {
+	float: left;
+}
+
+#quickSearch form {
+	float: left;
+	display: inline;
+	padding-top: 12px;
+}
+
+#quickSearch input {
+	display: inline;
+	float: left;
+	font-size: 11px;
+	height: 16px;
+	line-height:16px;
+	margin:0 13px;
+	padding: 4px 5px;
+	width: 106px;
+}
+
+input#street_number{
+	width: 66px;
+}
+
+input#street_name {
+	width: 142px;
+}
+
+#quickSearch span#textQuick{
+	float: left;
+}
+
+#quickSearch span#textOr{
+	float: left;
+}
+
+#loggedIn {
+	float: right;
+	text-align: right;
+	padding: 0px;
+	width: 170px;
+	font-size: 11px;
+	line-height: 16px;
+	height: 16px;
+	padding: 4px 0px;
+	margin: 12px 16px 0px 0px;
+}
+
+#loggedIn a {
+	margin:0 2px;
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#standardFields {
+	width: 100%;
+	overflow: hidden;
+}
+
+#searchFormContainer .column{
+	float:left;
+	width:306px;
+	padding:12px 6px 0px 6px;
+}
+
+#searchFormContainer .ctrlHolder{
+	float:left;
+	padding-bottom:12px;
+	margin: 0px 9px;
+}
+
+#searchFormContainer #stdColumn3 .ctrlHolder{
+	margin: 0px 12px 0px 9px;
+}
+
+#searchFormContainer label{
+	display:block;
+	padding-bottom:6px;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	width:135px;
+	height:23px;
+	line-height:23px;
+	padding:1px 1px 1px 5px;
+}
+
+#searchFormContainer input{
+	width:127px;
+	height:19px;
+}
+
+#searchFormContainer .tinySearchSelect{
+	width:84px;
+}
+
+/* Make these tiny selects default size  */
+#searchFormContainer #area_mls_defined{
+	width:135px;
+}
+
+#searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
+}
+
+#searchFormContainer #minListPrice{
+	margin-right:15px;
+}
+
+#searchFormContainer #bedHolder{
+	clear: both;
+}
+
+#searchFormContainer #minAcres{
+}
+
+#searchFormContainer #yearBuilt{
+}
+
+#zipHolder{
+	clear:none !important;
+}
+
+#searchFormContainer .triggerLabel input{
+	width:14px !important;
+    border:0 !important;
+	background: inherit !important;
+	position: relative;
+	top: 6px;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	padding-bottom:4px;
+}
+
+#propertyStyleHolder label:first-child{
+	margin-top:6px;
+}
+
+#standardFields #stdColumn2 {
+}
+
+#advancedExtra {
+	width: 100%;
+	overflow: hidden;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+#searchFormLinks {
+	padding-left: 20px;
+}
+
+#searchFormLinks small {
+	font-size:11px;
+}
+
+#searchLinksOne{
+	display:none;
+}
+
+#searchLinksTwo {
+	float: left;
+}
+
+#searchLinksThree {
+	float: right;
+	width:247px;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	display: block;
+	float: right;
+	text-indent: 13px;
+	width: 123px;
+}
+
+#searchformResetter {
+	margin-right:1px;
+}
+
+#saveSearchLink span, #searchformResetter span {
+	display: none;
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+	background: white;
+	opacity: .7;
+	background-image: url('/images/loader_small_dots.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+	display: block;
+	position: absolute;
+	height: 415px;
+	background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+	padding: 0;
+	height: 411px;
+	float:left;
+}
+
+#leftColumn{
+	height:413px;
+	font-size: 13px;
+}
+
+
+#leftColumn, #listLoader {
+	width: 451px;
+}
+
+#resultsNav {
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	border-bottom:0 !important;
+}
+
+#prePage a, #nextPage a {
+	text-indent: -9999px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#prePage a {
+	margin-right: 4px;
+}
+
+#nextPage a {
+	margin-left: 4px;
+}
+
+span.resultsPaginationArrow{
+	display:none;
+}
+
+#resultsList {
+	height: 382px;
+	padding-left: 9px;
+	overflow-x: auto;
+	line-height: 17px;
+	border-top: 0 !important;
+}
+
+div.resultRow {
+	overflow: hidden;
+	margin-bottom: 2px;
+	font-size: 11px;
+	line-height: 17px;
+}
+
+div.resultRow:hover {
+	background-position: 0px bottom;
+}
+
+#leftColumn div.resultRow a {
+	display: block;
+}
+
+div.propertyPreviewPic {
+	float: left;
+	margin-left: 7px;
+	margin-top: 8px;
+}
+
+div.propertyPreviewPic img {
+	width: 58px;
+	height: 58px;
+}
+
+div.propertyAddress {
+	float: left;
+	width: 163px;
+	padding:0 8px;
+	margin-top:3px;
+}
+
+div.propertyPriceBedsSf {
+	float: left;
+	width: 93px;
+	padding:0 8px;
+	margin-top:3px;
+}
+
+#resultsDiv .viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+	width: 480px;
+	float:right;
+}
+
+#resultsMap {
+	height: 411px;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	display: block;
+	margin-top: 2px;
+}
+
+.balloonWrapper #stats{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/* Balloon pic */
+#imagery img{
+	width: 102px;
+	border: 0;
+	padding-right: 10px;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#subtoolbar{
+	margin-top: 15px;
+	width: 960px;
+	height: 21px;
+	padding-top: 11px;
+	background: url('http://displet.com/images/livelakeaustin/subtoolbarback.png') 0px 0px no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#subtoolbar a{
+	color: #70afc4;
+	text-decoration: none;
+}
+
+#subtoolbar a:hover{
+	text-decoration: underline;
+}
+
+#subtoolbar #searchContextPagination, #subtoolbar .new{
+	float: left;
+	line-height: 9px;
+}
+
+#subtoolbar #searchContextPagination{
+	margin-left: 40px;
+	padding-left: 12px;
+	background: url('http://displet.com/images/livelakeaustin/backarrow.png') 0px 1px no-repeat;
+}
+
+#subtoolbar .new{
+	margin-left: 19px;
+	padding-left: 15px;
+	background: url('http://displet.com/images/livelakeaustin/newsearch.png') 0px 1px no-repeat;
+}
+
+/* Begins with Showing & Fave buttons */
+#residentials_detail .col1 {
+	float: left;
+	margin-top:28px;
+  	width: 454px;
+}
+
+#actions1 {
+}
+
+#actions1 #requestShowing, #actions1 #addToFavorites {
+	float:left;
+}
+
+#actions1 a, #actions1 a:visited {
+	display: block;
+}
+
+#actions2 {
+	margin:30px 0px 20px 0px;
+}
+
+#actions2 #callUs, #actions2 #sendToFriend {
+	float: left;
+	font-size: 11px;
+}
+
+#callUs {
+	line-height: 18px;
+	background: url('http://displet.com/images/livelakeaustin/question.png') 0px 3px no-repeat;
+	margin-right: 57px;
+	padding-left:26px;
+	margin-top: -3px;
+}
+
+#sendToFriend {
+	background: url('http://displet.com/images/livelakeaustin/email.png') 0 0 no-repeat;
+	line-height: 24px;
+	padding-left: 48px;
+}
+
+#detailsHeader {
+	line-height: 30px;
+	margin-bottom: 18px;
+	font-size: 13px;
+}
+
+#detailsHeader .address {
+	line-height: 18px;
+	font-size: 18px;
+	padding-bottom:13px;
+}
+
+#detailsHeader .price {
+	 font-size: 22px;
+	 line-height:22px;
+	 text-align: right;
+	 margin-top:22px;
+	 margin-bottom:5px;
+}
+
+body#residentials_detail .subColumnOne {
+	float: left;
+	width:68%;
+}
+
+body#residentials_detail .subColumnTwo {
+	float:right;
+	width:30%;
+	text-align:right;
+}
+
+.tanBack {
+	padding: 13px 15px 9px 15px;
+	line-height: 21px;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.tanBack .tanbacktit {
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 8px;
+}
+
+/* MT/-MB = PB of parent element */
+.tanBack p.remarks {
+	width:100%;
+	padding:0 15px;
+	margin-left:-15px;
+	height: 34px;
+	line-height: 34px;
+	margin-top: 5px;
+	margin-bottom: -9px;
+}
+
+/* Begins with tabbed Map/Photo/Comment section */
+#residentials_detail .col2 {
+	float: right;
+	overflow:hidden;
+	width: 429px;
+	margin-top:30px;
+}
+
+#detailTabs {
+	padding-left: 11px;
+}
+
+#detailTabs li {
+	float: left;
+	padding-right: 9px;
+}
+
+#detailTabs li a {
+	display: block;
+	line-height: 30px;
+	text-decoration: none;
+	padding: 0px 25px;
+	font-size: 11px;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	clear: both;
+	padding: 8px;
+	margin-bottom: 20px;
+}
+
+#detailPhotos{
+}
+
+#userCommentsContainer #userCommentsContainer{
+	display:block !important;
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+#userComments h3{
+	margin:5px 0;
+}
+
+img#largeImage {
+	display: block;
+	width: 407px !important;
+}
+
+/* Width same as img#largeImage (with border) */
+#detailPhotos #horizontal_carousel {
+	width: 409px;
+	height: 425px;
+	padding:0;
+	margin-top:0;
+}
+
+#detailPhotos #horizontal_carousel .container {
+	width: 328px;
+	top: 334px;
+	left: 41px;
+}
+
+#horizontal_carousel .container img {
+	width: 98px;
+	margin: 0 8px 0 0;
+}
+
+#detailPhotos #horizontal_carousel .next_button, #detailPhotos #horizontal_carousel .previous_button {
+	bottom: 36px;
+	width:29px;
+}
+
+/* Width same as #horizontal_carousel */
+#detailPhotos #imageNav {
+	width: 409px;
+}
+
+#detailMap {
+	height: 380px;
+}
+
+#residentials_detail .col2second {
+	float: right;
+	width: 429px;
+}
+
+/* Width minus .tanBack padding/border */
+#detailsSchool, #financialInfo{
+	width:169px;
+}
+
+#detailsSchool{
+	float: right;
+}
+
+#financialInfo{
+	float: left;
+}
+
+#lotArea{
+	text-align:right;
+}
+
+.tanBack{
+	text-align: right;
+}
+
+#detailsRemarks, #amenities{
+	text-align: left;
+}
+
+.tanBack .tanbacktit, .tanBack p:first-child{
+	text-align:left;
+}
+
+.tanBack .fieldName{
+	float:left;
+}
+
+/* Courtesy of / Last updated */
+#detailFooter {
+	clear: both;
+	text-align:right;
+	line-height:18px;
+	color: #4b4c44;
+	font-size: 11px;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	height: 39px;
+	line-height: 39px;
+	padding: 0px 30px;
+	border-top:0;
+	margin-bottom:20px;
+	border-top:0 !important;
+}
+
+#resultsToolbar table {
+	width: 100%;
+	border-spacing:0;
+}
+
+#resultsToolbar td {
+	width: 50%;
+	text-align: right;
+}
+
+#resultsToolbar td:first-child {
+	text-align: left;
+}
+
+
+
+/******************
+Footer Link / Disclaimer Styles
+******************/
+
+#footerOuter, #disclaimer{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+#footerOuter{
+	line-height: 14px;
+}
+
+#disclaimer{
+	font-size: 11px;
+	line-height: 16px;
+	color: #4b4c44;
+	margin-bottom: 20px;
+}
+
+#footerInner ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#footerInner ul li:last-child{
+	display: none;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 14px;
+	overflow: hidden;
+	height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+	font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+	text-decoration: none;
+	color: #000;
+}
+
+#propertyInfoWindow img {
+	width: 105px;
+	display: block;
+	margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+	display: block;
+	float: right;
+	width: 10px;
+	height: 8px;
+	line-height: 8px;
+	background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+	width: 100%;
+}
+
+#propertyInfoWindow table td {
+	vertical-align: top;
+	padding: 5px;
+	font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+	width: 24px;
+	height: 20px;
+	background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/marchantteam/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+	height: 0px;
+	width: 0px;
+}
+
+/******************
+FB Login Stuff
+******************/
+body .loginSignupDialog{
+  top:119px !important;
+}
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+/******************
+Site Specific Styles
+******************/
+
+img {border: 0;}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+.ir {text-indent: -9999px;}
+
+.none{display: none;}
+
+.margin{
+	width: 960px;
+	margin: 0px auto;
+}
+
+.sans{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ptsans{
+	font-family: 'PT Sans', sans-serif;
+}
+
+.serif{
+	font-family: 'Lobster', serif;
+}
+
+.shadow{
+	text-shadow: 1px 1px 2px #666;
+}
+
+.shadoww{
+	text-shadow: 1px 1px 2px #fff;
+}
+
+.hovertrans{
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+
+html{
+	background-color: #fff;
+	background-image: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/htmlback.png');
+	background-position: 0px 0px;
+	background-repeat: repeat;
+}
+
+body {
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/bodyslimheadback.png') 0px 91px repeat-x;
+	font-size: 12px;
+	color: #000;
+	font-family: Arial, sans-serif;
+	min-width: 1080px;
+}
+
+body.page-template-full-width-slimhead-php, body.page-template-two-col-slimhead-php, body.category, body.single{
+	background-image: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/bodyslimheadback.png');
+}
+
+a {
+	color: #4b4c44;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #C24040;
+	text-decoration: none;	
+}
+
+
+h1.tit{
+	margin-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #70afc4;
+	line-height: 24px;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+/******************
+Header Styles
+******************/
+
+#header{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/headerback.png') 0px 0px repeat-x;
+	height: 91px;
+}
+
+#header .logo{
+	margin-top: 16px;
+	height: 75px;
+	width: 293px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/live-lake-austin.png') 0px 0px no-repeat;
+	line-height: 75px;
+	position: relative;
+}
+
+#header .logo a{
+	display: block;
+}
+
+#header .logo .hovertrans{
+	line-height: 75px;
+	height: 75px;
+	width: 293px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/live-lake-austin-hover.png') 0px 0px no-repeat;
+}
+
+#header .right{
+	display: inline-block;
+	max-width: 650px;
+	margin-top: 17px;
+}
+
+/******************
+Navigation Styles
+******************/
+
+#navigation ul li{
+	display: inline-block;
+	height: 55px;
+	line-height: 18px;
+	margin-left: 25px;
+	position: relative;
+}
+
+#navigation ul li .hidden{
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	height: 55px;
+	width: 100%;
+}
+
+#navigation ul li a, #navigation ul li a:hover{
+	text-decoration: none;
+	display: block;
+	overflow: visible;
+	text-shadow: 1px 1px 2px #666;
+}	
+
+#navigation ul li a .top{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 800;
+	position: relative;
+	z-index: 9;
+	padding: 0px 10px;
+	padding-top: 9px;
+}
+
+#navigation ul li a .bottom{
+	color: #f1f6dc;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	position: relative;
+	z-index: 9;
+	padding: 0px 10px;
+	padding-top: 1px;
+	padding-bottom: 9px;
+}
+
+#navigation ul li .back{
+	position: absolute;
+	z-index: 8;
+	height: 55px;
+	width: 100%;
+	bottom: 0px;
+	display: none;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/navlihov.png') 0px 0px repeat;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#navigation ul li .sub-menu{
+	position: absolute;
+	top: 55px;
+	display: none;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: -15px;
+	padding-top: 10px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/submenutop.png') center 4px no-repeat;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	z-index:30;
+}
+
+#navigation ul li .sub-menu .sub-menu{
+	margin-left: 0px;
+}
+
+#navigation ul li .sub-menu ul, #navigation ul li .sub-menu ul .inner{
+	position: relative;
+	top:0px;
+	display: block;
+	padding: 0px;
+	background: none;
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+#navigation ul li .sub-menu .inner{
+	padding: 7px 15px;
+	background-color: #e5f6fb;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow:0px 2px 3px #999;
+	width: 100%;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+#navigation ul li .sub-menu .inner .inner{
+	width: inherit;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#navigation ul li .sub-menu li{
+	height: inherit;
+	display: block;
+	margin-left: 0px;
+	line-height: 16px;
+	padding-top:4px;
+	padding-bottom: 4px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#navigation ul li .sub-menu li a, #navigation ul li .sub-menu li a:hover{
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#navigation ul li .sub-menu li a{
+	color: #70afc4;
+}
+
+#navigation ul li .sub-menu li a:hover{
+	color: #c24040;
+}
+
+#navigation ul li .sub-menu .hidden{
+	display: none !important;
+}
+
+#navigation ul li .sub-menu li .sub-menu{
+	padding-left: 7px;
+	width: inherit;
+}
+
+#navigation ul li .sub-menu li .sub-menu li:first-child{
+	padding-top: 8px;
+}
+
+#navigation ul li .sub-menu li .sub-menu li:last-child{
+	padding-bottom: 0px;
+}
+
+
+/******************
+Footer Styles
+******************/
+
+#thefooter{
+	padding: 20px 0px;
+}
+
+#thefooter .bottom{
+	margin-top: 9px;
+	border-top: 1px solid #c5c8ba;
+	padding-top: 15px;
+}
+
+#thefooter .bottom .icon{
+	margin-top: 1px;
+	line-height: 16px;
+	height: 16px;
+	width: 16px;
+	margin-right: 10px;
+	position: relative;
+}
+
+#thefooter .bottom .icon .hovertrans{
+	line-height: 16px;
+	height: 16px;
+	width: 16px;
+}
+
+#thefooter .bottom .icon a{
+	display: block;
+}
+
+#thefooter .bottom .facebook{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/facebook.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .facebook .hovertrans{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/facebookhov.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .twitter{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/twitter.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .twitter .hovertrans{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/twitterhov.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .linkedin{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/linkedin.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .linkedin .hovertrans{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/linkedinhov.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .text{
+	margin-top: 2px;
+	font-size: 11px;
+	line-height: 16px;
+	color: #4b4c44;
+}
+
+#thefooter .bottom .copy{
+	margin-left: 11px;
+	max-width: 500px;
+}
+
+#thefooter .bottom .wordpress{
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/wordpress.png') 0px 0px no-repeat;
+	position: relative;
+}
+
+#thefooter .bottom .wordpress a{
+	display: block;
+}
+
+#thefooter .bottom .wordpress .hovertrans{
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/wordpresshov.png') 0px 0px no-repeat;
+}
+
+#thefooter .bottom .powered, #thefooter .bottom .designed{
+	margin-right: 9px;
+}
+
+#thefooter .bottom .displet{
+	margin-right: 7px;
+	margin-top: 2px;
+	width: 74px;
+	height: 15px;
+	line-height: 15px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/displet.png') 0px 0px no-repeat;
+	position: relative;
+}
+
+#thefooter .bottom .displet a{
+	display: block;
+}
+
+#thefooter .bottom .displet .hovertrans{
+	width: 74px;
+	height: 15px;
+	line-height: 15px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/displethov.png') 0px 0px no-repeat;
+}
+
+/******************
+Social Styles
+******************/
+
+#social{
+	position: fixed;
+	top: 180px;
+	right: 15px;
+}
+
+@media screen and (max-width: 1080px) {
+	#social {
+		position: absolute;
+		left: 15px;
+	}
+	body #social .icon .slideout{
+		left: -3px;
+		padding-right: 10px;
+		padding-left: 43px;
+		min-width: 77px;
+	}
+}
+
+#social .icon{
+	margin-bottom: 5px;
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/social.png') 0px 0px no-repeat;
+	position: relative;
+}
+
+#social .icon a{
+	display: block;
+}
+
+#social .icon .hoverbox{
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/socialhov.png') 0px 0px no-repeat;
+	z-index:21;
+}
+
+#social .twitter a{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/twitterbutton.png') center center no-repeat;
+}
+
+#social .facebook a{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/facebookbutton.png') center center no-repeat;
+}
+
+#social .google a{
+	background: url('http://livelakeaustin.com/wp-content/themes/LiveLakeAustin/images/googlebutton.png') 9px 11px no-repeat;
+}
+
+#social .icon .slideout{
+	display: none;
+	position: absolute;
+	right: -3px;
+	top: -3px;
+	padding-left: 10px;
+	padding-right: 33px;
+	height: 36px;
+	background-color: #fff;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	z-index:20;
+	box-shadow: 0px 0px 2px #bec2ac;
+	border: 1px solid #bec2ac;
+}
+
+#social .twitter .slideout div{
+	margin-top: 8px;
+}
+
+#social .twitter .slideout iframe{
+	width: 86px !important;
+}
+
+#social .facebook .slideout div{
+	margin-top: 6px;
+}
+
+#social .facebook .slideout iframe{
+	padding-right: 10px;
+}
+
+#social .google .slideout div{
+	margin-top: 8px;
+}
+
+#social .google .slideout #___plusone_0, #social .google .slideout #___plusone_0 iframe{
+	width: 69px !important;
+}

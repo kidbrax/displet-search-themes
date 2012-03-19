@@ -1,0 +1,442 @@
+/******************
+Global Styles
+******************/
+
+body {
+  	color: #fff;
+	font-family: Arial;
+}
+
+a, a:visited{
+	text-decoration:none;
+	color:#fff;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background-color: #1f1e1e;
+	font-weight: bold;
+	color:#fff;
+	font-family: Arial, sans-serif;
+}
+
+#globalToolbar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+	border-right:1px solid #262624;
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+}
+
+#quickSearch input {
+	border:0;
+	background:#fff;
+	color:#252520;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#quickSearch span#textQuick{
+	color: #ff0f18;
+}
+
+#quickSearch span#textOr{
+	text-transform: uppercase;
+}
+
+#loggedIn {
+	color: #fff;
+	background-color: #3399cc;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #2f2e2e;
+	background:#414040;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fefefe;
+	color:#858371;
+	border:1px solid #8ba6bf;
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#searchFormContainer input{
+	border: 1px solid #3e3d3d;
+	border-top: 1px solid #949494;
+	border-left: 1px solid #949494;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #2f2e2e;
+	border-right:1px solid #2f2e2e;
+}
+
+#advancedExtra {
+	border-top: 1px solid #2f2e2e;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	background-color: #1f1e1e;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/sloanmilby/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/sloanmilby/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #fff;
+	background-color: #414040;
+}
+
+#resultsNav {
+	border:1px solid #414040;
+}
+
+#prePage a, #nextPage a {
+	width: 11px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/sloanmilby/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/sloanmilby/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #414040;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/sloanmilby/resultsback.png') 0 0 no-repeat;
+	height: 74px;
+	width: 420px;
+	font-weight: normal !important;
+}
+
+#leftColumn #resultsDiv a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #fff;
+}
+
+#rightColumn {
+	border:1px solid #414040;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/sloanmilby/balloondetails.png') 0 0 no-repeat;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+	color: #fff;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination{
+	background:url('http://displet.com/images/sloanmilby/backarrow.png') 0 0 no-repeat;
+}
+
+#searchContextPagination a, #searchContextPagination a:visited{
+	color:#fff;
+	text-decoration:underline;
+}
+
+#searchContextPagination a:hover{
+	text-decoration:none;
+}
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:210px;
+	height:35px;
+	line-height:35px;
+	font-weight:700;
+	text-shadow:1px 0px 2px #333;
+	text-indent: 15px;
+	font-size: 13px;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/sloanmilby/requestshowing.png') 0 0 no-repeat;
+	margin-right:33px;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/sloanmilby/addtofavorites.png') 0 0 no-repeat;
+}
+
+#actions1 a, #actions1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:underline;
+}
+
+#callUs span {
+	font-weight: bold;
+}
+
+#sendToFriend a{
+	color: #fff;
+	text-decoration:underline;
+}
+
+#sendToFriend a:hover{
+	text-decoration: none;
+}
+
+#detailsHeader {
+	color: #fff;
+}
+
+#detailsHeader .address {
+	font-family: Arial, sans-serif;
+	font-weight:700;
+	background-color: #1f1e1e;
+	padding-left: 15px;
+}
+
+#detailsHeader .price {
+	 font-weight: 500;
+	 color: #00a48b;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+	color: #00a48b;
+	font-weight: bold;
+}
+
+.tanBack {
+	background-color: #1f1e1e;
+}
+
+.tanBack .tanbacktit {
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+.tanBack p.remarks {
+	background-color: #323030;
+	color:#fff;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #cbc9bd;
+	color: #000;
+	background-color: #fff;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #1f1e1e;
+	border-color: #1f1e1e;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #1f1e1e;
+	background-color: #1f1e1e;
+}
+
+img#largeImage {
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #cbc9bd;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #1f1e1e;
+	background-color: #414040;
+	color: #fff;
+}
+
+#resultsToolbar a {
+	color: #00a48b;
+	font-weight:700;
+}
+
+#resultsToolbar #totalRecords {
+	color: #00a48b;
+}
+
+.resultListContainer {
+	background-color: #1f1e1e;
+}
+
+.resultListContainer table td {
+	border-right:1px solid #3f3e3c;
+}
+
+.resultListContainer td.propertyPreviewPic, .resultListContainer td.propertyActions {
+	background: none;
+}
+
+td.propertyPreviewPic img {
+	border: 1px solid #22221f;
+}
+
+td.price .price {
+	color: #00a48b;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/sloanmilby/liststar.png') 0 0 no-repeat;
+	color: #fff;
+	text-decoration:underline;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: none;
+}
+
+td.actions .makeRequest {
+	width: 122px;
+	height: 28px;
+	line-height: 28px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background:url('http://displet.com/images/sloanmilby/requestinfoback.png') 0 0 no-repeat;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	display: block;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow: 1px 1px 3px #333;
+}
