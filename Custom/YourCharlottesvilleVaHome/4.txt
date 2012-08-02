@@ -1,0 +1,116 @@
+<div id="banner">
+<table border="0" cellpadding="0" cellspacing="0" width="984">
+<tbody>
+<tr>
+<td width="262">
+<a href="http://www.yourcharlottesvillevahome.com" target="_blank"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top-logo.jpg" alt="better homes and gardens real estate" width="262" height="121"/></a></td>
+<td style="padding-left: 16px;" valign="middle" width="308">
+<a href="about.php" title="Betsy Gunnels"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top-name.jpg" alt="Betsy Gunnels" width="274" height="29"/></a><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top-phone.jpg" alt="434-996-9797" style="padding: 7px 0pt;" width="122" height="18"/><br/>
+<a href="mailto:Betsy@GunnelsGroup.com%C2%A0%20" target="_blank"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top-email.jpg" alt="Betsy@GunnelsGroup.com" width="229" height="15"/></a></td>
+<td align="right" valign="top">
+<div class="float-right">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+
+<td align="right" valign="top">
+<a href="http://yourcharlottesvillevahome.com/index.php" title="Home"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top1.jpg" alt="home" width="41" height="31"/></a></td>
+<td align="right" valign="top">
+<a href="http://yourcharlottesvillevahome.com/contact.php" title="Contact"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top2.jpg" alt="contact" width="57" height="31"/></a></td>
+<td align="right" valign="top">
+<a title="Send to a Friend" href="mailto:betsy@gunnelsgroup.com?Subject=Visit%20Our%20Website"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top3.jpg" alt="send to a friend" width="105" height="31"/></a></td>
+<td align="right" valign="top">
+<img title="Bookmark" src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-top4.jpg" alt="Bookmark This Article" onclick="return addBookmark();" onmouseover="style.cursor='pointer'" width="63" height="31"/></td>
+</tr>
+</tbody>
+</table>
+<div style="padding-top: 25px;">
+<form id="top-login" method="post" action="/includes/forms/submit/access_listings.php" onsubmit="return checkform();">
+<input name="destination" value="http://www.yourcharlottesvillevahome.com/watch-the-market-p2560.html" type="hidden"/>
+<table border="0" cellpadding="0" cellspacing="0" width="224">
+<tbody>
+<tr>
+<td rowspan="2">
+<a href="http://www.facebook.com/pages/Charlottesville-and-Lake-Monticello-Communities/158727667506118?created" target="_blank"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/fb-img.png" border="0"/></a></td>
+<td>
+<map name="Map2" id="Map2">
+<area shape="rect" coords="97,2,221,23" href="http://yourcharlottesvillevahome.com/watch-the-market-p2560.html" title="Free Market Watch">
+<area shape="rect" coords="4,6,60,21" href="watch-the-market-p2560.html" title="Sign Up">
+</map></td>
+<td>
+<a href="http://yourcharlottesvillevahome.com/watch-the-market-p2560.html"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-topsignup.jpg" alt="Sign Up Free Market Watch" usemap="#Map2Map" border="0" width="224" height="26"/></a></td>
+</tr>
+<tr>
+<td>&nbsp;
+</td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top">
+<input name="name_first" value="Free" type="hidden"/>
+<td valign="top" width="64" style="text-align: center;">
+<a href="http://www.yourcharlottesvillevahome.com/account"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-toplogin.jpg" alt=""></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="left" valign="middle" height="60">
+<ul id="menu">
+<li><a href="http://search.yourcharlottesvillevahome.com"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-nav1.jpg" alt="advanced search" width="167" height="18"/></a></li>
+<li><a href="#"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-nav2.jpg" alt="for buyers"/>
+<!--[if gte IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]>
+<table><tr>
+<td>
+<![endif]-->
+<ul>
+<li><a href="http://www.yourcharlottesvillevahome.com/buying-road-map-c6506.html">Buying Road Map</a></li>
+<li><a href="http://www.yourcharlottesvillevahome.com/buyers.php">Buying Tips</a></li>
+<li><a href="http://www.yourcharlottesvillevahome.com/mortgage-guide-c6504.html">Mortgage Guide</a></li>
+<li><a href="http://www.yourcharlottesvillevahome.com/credit-guide-c6511.html">Credit Guide</a></li>
+</ul>
+<!--[if lte IE 6]></td>
+</tr>
+</table>
+</a><![endif]-->
+</li>
+<li><a href="#"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-nav3.jpg" alt="for sellers"/>
+<!--[if gte IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]>
+<table><tr>
+<td>
+<![endif]-->
+<ul>
+<li><a href="http://www.yourcharlottesvillevahome.com/selling-road-map-c6505.html">Selling Road Map</a></li>
+<li><a href="http://www.yourcharlottesvillevahome.com/sellers.php">Selling Tips</a></li>
+<li><a href="http://www.yourcharlottesvillevahome.com/home-staging-c6509.html">Home Staging</a></li>
+<li><a href="http://www.yourcharlottesvillevahome.com/moving-guide-c6510.html">Moving Guide</a></li>
+</ul>
+<!--[if lte IE 6]></td>
+</tr>
+</table>
+</a><![endif]-->
+</li>
+<li id="support"><a href="http://www.yourcharlottesvillevahome.com/new-construction-c27284.html" title="New Constuction"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-nav4.jpg" alt="new constuction"/></a></li>
+<li id="support"><a href="http://www.yourcharlottesvillevahome.com/communities.php" title="Community Guides"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-nav5.jpg" alt="community guides"/></a></li>
+<li id="support"><a href="http://www.yourcharlottesvillevahome.com/about.php" title="Betsy Gunnels"><img src="http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-nav6.jpg" alt="betsy gunnels"/></a></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--END banner-->

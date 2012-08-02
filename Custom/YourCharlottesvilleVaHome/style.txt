@@ -1,0 +1,1720 @@
+body {
+	padding: 0px;
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	color: #3c2d1a;
+	font-family: arial;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.float-left { float: left; }
+.float-right { float: right; }
+.clear { clear: both; }
+
+
+
+/* CSS Document */
+
+#wrapper {
+	width: 997px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#banner {
+	width: 984px;
+	margin: 0px auto;
+}
+#banner img {
+	margin: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding: 0px;
+}
+
+#secondrow {
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-mid-left-bg.jpg);
+	background-repeat: no-repeat;
+}
+#welcome { float: left; }
+
+.searchBox {
+	float: left;
+	width: 509px;
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-searchbox-bg.jpg);
+	background-repeat: repeat-x;
+	text-align: center;
+	background-color: #86b667;
+	margin-right: 17px;
+	margin-left: 8px;
+}
+.form-col1 {
+	float: left;
+	width: 95%;
+	color: #333333;
+	text-align: left;
+	padding-left: 15px;
+	font-size: 11px;
+	font-weight: bold;
+}
+.form-col1 p {
+	color: #0a576a;
+	font-weight: normal;
+	text-align: left;
+	padding-right: 20px;
+}
+
+.form-col1  input, .form-col1 select {
+	border: 1px solid #d4c7a5;
+	font-size: 11px;
+	font-weight: bold;
+	height: 20px;
+}
+.form-col1 label {
+	text-align: left;
+	display: block;
+	text-transform: uppercase;
+}
+.level3 {
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-box-bg.jpg);
+	background-repeat: repeat-y;
+}
+.level3-inner-bg {
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-boxin-bg.jpg);
+	background-repeat: repeat-x;
+}
+.level3-inner-bg p {
+	font-size: 14px;
+	color: #333333;
+	padding-left: 20px;
+}
+.level3-inner-bg  a:link, .level3-inner-bg  a:active, .level3-inner-bg  a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+.level3-inner-bg a:hover
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.green-box { }
+.green-boxinner {
+/*	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-green-innerbg.jpg);*/
+	background-repeat: repeat-x;
+/*	background-color: #86b667;*/
+	padding:0 0 0 15px;
+}
+.green-boxinner a {
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 16px;
+}
+
+.green-boxinner li {
+	text-align: left;
+	font-family: arial;
+	font-size: 14px;
+	font-weight: normal;
+	padding:7px 0 8px 0px;
+	margin:0px;
+}
+.green-boxinner li a { 
+	background:url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/arrow.gif) 0 5px no-repeat;
+	padding:0 0 0 15px;
+}
+.feed3 { margin:0px; padding:0px; }
+
+.green-boxinner ul { list-style-type:none; margin:10px 0 0 -30px; _margin:-1px 0 0 10px; *margin:-1px 0 0 10px; }
+
+.green2box {
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-green2-bg.jpg);
+	background-repeat: repeat-x;
+/*	background-color: #FEFEFE;*/
+}
+.rssBg {
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-rssfeed.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.mls-form {
+	
+}
+.mls-form td {
+	padding:2px 0;
+	line-height:18px;
+}
+.mls-form td label {
+	padding:0px;
+	margin:0px;
+}
+.mls-form td select {
+	padding:0px;
+	margin:0px;
+}
+.rss-feeds {
+	min-height: 130px;
+	margin:0px 0 0 0;
+	*margin:10px 0 0 0;
+	font-size:14px;
+	width:400px;
+	overflow:hidden;
+}
+.green-boxinner li {
+	margin:0 0 0 5px;
+	padding:5px 20px 5px 5px;
+}
+.green-boxinner a {
+	font-size:14px;
+}
+.social-network {
+	position:absolute;
+	width:188px;
+	margin:0px;
+	padding:0 0 0 25px;
+	background:url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/sidebg.jpg) 0 0 no-repeat;
+	text-align:left;
+	top:-10px;
+	*top:17px;
+	right:0px;
+}
+.social-network img {
+	margin:0 0 10px 0;
+}
+
+.home-content {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	float: left;
+	padding-left: 25px;
+	width: 950px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #3c2d1a;
+	background-attachment: scroll;
+	background-image: url(http://www.yourcharlottesvillevahome.com/files/images/9865/misc/home-footer-sep.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.home-content h1 {
+	color: #06414f;
+	font-size: 14pt;
+	font-weight: normal;
+	display: block;
+	margin: 0px;
+}
+.home-content h2 {
+	color: #06414f;
+	font-size: 13pt;
+	font-weight: bold;
+	display: block;
+	margin: 0px;
+}
+.home-content a { color: #06414f; text-decoration:underline; }
+.home-content a:hover { text-decoration:none; }
+.home-content p {
+	color: #06414f;
+}
+.home-content-col {
+	float: left;
+	width: 24%;
+	padding-left: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #06414f;
+}
+.home-content-col a {
+	color: #06414f;
+	text-decoration: none;
+}
+
+.home-content-col h2 {
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+.footer {
+	padding-top: 20px;
+	padding-bottom: 25px;
+	text-align: center;
+	width: 997px;
+	color: #908e8c;
+	font-size: 11px;
+	font-family: tahoma;
+	margin: 0px auto;
+}
+.footer a {
+	color: #908e8c;
+	text-decoration: none;
+}
+
+#menu {
+	padding:0;
+	margin:0;
+	list-style:none;
+	height:18px;
+	position:relative;
+	z-index:500;
+	font-family:arial;
+}
+#menu li {
+	float:left;
+	margin-right:0px;
+}
+#menu li a {
+	display:block;
+	float:left;
+	height:18px;
+	line-height:18px;
+	background:#333;
+	color:#ccc;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+	padding:0;
+}
+#menu table {
+	border-collapse:collapse;
+	width:0;
+	height:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#the_footer {
+  overflow: hidden;
+  width: 950px;
+  margin: 0px auto 20px auto !important;
+  padding: 25px 10px 20px 10px !important;
+  background-color: #fff;
+  border: 1px solid #B2AB9B;
+  border-top: none;
+}
+
+#footer_bar {
+  background-image: url(http://displet.com/images/charlottesville/bg_footer_bar.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  height: 51px;
+  line-height: 51px;
+  padding: 0px 20px;
+  overflow: hidden;
+  color: #fff;
+  border-left: 1px solid #409740;
+  border-right: 1px solid #409740;
+}
+
+#cta_displet {
+  width: 204px;
+  height: 51px;
+  line-height: 51px;
+  background-image: url(http://displet.com/images/charlottesville/cta_displet.png);
+  margin: 0px auto;
+  display: block;
+}
+
+#cta_displet a {
+  width: 204px;
+  height: 51px;
+  line-height: 51px;
+  display: block;
+  text-indent: -9999px;
+}
+
+#footer_bar a {
+  color: #fff;
+}
+
+#footer_bar_left {
+  float: left;
+}
+
+#footer_bar_right {
+  float: right;
+}
+
+#footer ul {
+  display: none;
+}
+
+#disclaimer {
+  display: none;
+}
+
+/* Default link styling */
+
+/* Style the list OR link hover. Depends on which browser is used */
+
+#menu li a:hover {
+	z-index:200;
+	position:relative;
+	color:#fff;
+	background-color:#c60;
+}
+#menu li:hover {
+	position:relative;
+	z-index:200;
+}
+#menu li:hover > a {
+	color:#fff;
+	background:#c60;
+}
+#menu li:hover > a.sub {
+	color:#fff;
+	background-color:#c60;
+}
+#menu li.current a {
+	color:#fff;
+	background:#840;
+}
+#menu li a.sub {
+	background: #333 url(../images/down-arrow.gif) no-repeat right center;
+}
+#menu li.current a.sub {
+	color:#fff;
+	background:#840 url(../images/down-arrow.gif) no-repeat right center;
+}
+#menu :hover ul {
+	left:0;
+	top:18px;
+	width:180px;
+	background:#444;
+}
+/* keep the 'next' level invisible by placing it off screen. */
+#menu ul, #menu :hover ul ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	width:0;
+	height:0;
+	margin:0;
+	padding:0 0 0 12px;
+	list-style:none;
+}
+#menu :hover ul :hover ul {
+	left:120px;
+	top:-1px;
+	background:#fff;
+	white-space:nowrap;
+	width:180px;
+	z-index:200;
+	height:auto;
+}
+#menu :hover ul li {
+	margin:0;
+	border-top:1px solid #666;
+}
+#menu :hover ul li a {
+	width:180px;
+	padding:0;
+	text-indent:5px;
+	background:#fff;
+	color:#227183;
+	height:23px;
+	line-height:23px;
+}
+#menu :hover ul li a.fly {
+	background:#fff;
+}
+#menu :hover ul :hover {
+	background-color:#fff;
+	color:#000;
+}
+#menu :hover ul :hover a.fly {
+	background-color:#fff;
+	color:#000;
+}
+#menu :hover ul li.currentsub a {
+	background:#fff;
+	color:#000;
+}
+#menu :hover ul li.currentsub a.fly {
+	background:#fff;
+	color:#000;
+}
+#menu :hover ul :hover ul li a {
+	width:180px;
+	padding:0;
+	text-indent:5px;
+	background:#3e3e3e;
+	color:#000;
+}
+#menu :hover ul :hover ul :hover {
+	background-color:#fff;
+	color:#000;
+}
+#menu :hover ul :hover ul li.currentfly a, #menu :hover ul :hover ul li.currentfly a:hover {
+	background:#fff;
+	color:#000;
+}
+
+/******************
+Wrapper Styles
+******************/
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  overflow: hidden;
+}
+
+#contentWrapperOuter {
+  overflow: hidden;
+  width: 950px;
+  margin: 0px auto 0px auto;
+  padding: 25px 10px 0px 10px;
+  background-color: #fff;
+  border: 1px solid #B2AB9B;
+  border-bottom: none;
+}
+
+#contentWrapper * {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+  font-size: normal;
+  line-height: normal;
+}
+
+#columnsFooter {
+  clear: both;
+}
+
+#residentials_results #contentWrapper p {
+  padding: 10px;
+}
+
+/******************
+globalToolbar Styles
+******************/
+#globalToolbar {
+  height: 45px;
+  font-weight: bold;
+  color: #fff;
+  background-image: url(http://displet.com/images/charlottesville/bg_globalToolbar.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+}
+
+#globalToolbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#globalToolbar a:hover {
+  text-decoration: underline;
+}
+
+#userToolbarLinks {
+  float: left;
+}
+
+#userToolbarLinks li {
+  float: left;
+}
+
+#userToolbarLinks li a {
+  display: block;
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  padding: 0px 20px;
+  background-image: url(http://displet.com/images/charlottesville/bg_userToolbarLinks.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+}
+
+#userToolbarLinks li#dashboardList a {
+  
+}
+
+#textQuick {
+  color: #fff;
+}
+
+#quickSearch {
+  float: left;
+  padding-left: 20px;
+}
+
+#quickSearch form {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+#quickSearch form#mlsSearchForm {
+  padding-right: 10px;
+}
+
+#quickSearch form input {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #404040;
+  border-right: none;
+  border-bottom: none;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 5px;
+  font-size: 14px;
+  color: #A4A4A4;
+  background-color: #fff;
+}
+
+#quickSearch form#mlsSearchForm input {
+  margin-right: 0px;
+}
+
+#quickSearch span {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#textOr {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#loggedIn {
+  float: right;
+  color: #fff;
+  margin: 10px 15px 0px 0px;
+  padding: 0px 15px 0px 0px;
+  font-size: 11px;
+  background-image: url(http://displet.com/images/charlottesville/bg_loggedIn.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+}
+
+#loggedIn #loginBox {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  padding-left: 15px;
+  background-image: url(http://displet.com/images/charlottesville/bg_loggedIn.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#loggedIn a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px !important;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+#searchFormContainer {
+  font-size: 11px;
+  color: #0B414F;
+  font-weight: bold;
+  border: 1px solid #5CA6B4;
+  border-top: none;
+}
+
+#standardFields {
+  width: 100%;
+  overflow: hidden;
+}
+
+#standardFields label.triggerLabel {
+  font-weight: normal !important;
+}
+
+#standardFields .column {
+  float: left;
+}
+
+#standardFields #stdColumn1 {
+  padding: 5px 10px 20px 10px;
+  border-right: 1px solid #E6E6E6;
+}
+
+#standardFields #stdColumn1 label {
+  display: block;
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+}
+
+#standardFields #stdColumn1 .ctrlHolder {
+ padding-right: 10px; 
+}
+
+#bedHolder, #bathHolder, #minSquareFeetHolder {
+  float: left;
+}
+
+#priceHolder.ctrlHolder {
+  padding-right: 0px;
+}
+
+#standardFields #stdColumn1 #bedHolder {
+  clear: left;
+}
+
+#standardFields #stdColumn2 {
+  padding: 5px 0px 20px 40px;
+  border-right: 1px solid #E6E6E6;
+}
+
+#standardFields #stdColumn2 label {
+  display: block;
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+}
+
+#standardFields #stdColumn2 .ctrlHolder {
+  float: left;
+  width: 155px;
+}
+
+#standardFields #stdColumn2 select, #standardFields #stdColumn2 input {
+  width: 135px;
+}
+
+#standardFields #stdColumn2 #subdivisionHolder {
+  clear: left;
+}
+
+#standardFields #stdColumn3 {
+  padding: 15px 0px 20px 10px;
+  float: right !important;
+}
+
+#standardFields #stdColumn3 .ctrlHolder {
+  float: left;
+  padding: 0px 20px 10px 0px;
+}
+
+#standardFields #stdColumn3 .ctrlHolder label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#advancedExtra {
+  border-top: 1px solid #E6E6E6;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+#advancedExtra .column {
+  float: left;
+}
+
+#advancedExtra #advColumn1 {
+  padding: 0px 20px;
+}
+
+#advancedExtra .column label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#advancedExtra .ctrlHolder {
+  padding: 0px 20px 20px 0px;
+}
+
+#advancedExtra #advColumn1 .ctrlHolder {
+  float: left;
+}
+
+#advancedExtra .column label.triggerLabel {
+  font-weight: normal !important;
+}
+
+#advancedExtra #advColumn2 {
+  padding: 0px 0px 0px 40px;
+}
+
+#advancedExtra #advColumn2 .ctrlHolder {
+  float: left;
+}
+
+#minAcresHolder {
+  float: left;
+}
+
+#keywordHolder {
+  clear: left;
+}
+
+#propertyTypeHolder {
+  float: left;
+}
+
+#storiesHolder {
+  
+}
+
+#advColumn3 {
+  float: right !important;
+}
+
+#advColumn3 .ctrlHolder {
+  float: left;
+}
+
+#schoolNameHolder {
+  
+}
+
+#schoolNameHolder input {
+  width: 150px;
+}
+
+#zipHolder {
+  clear: none !important;
+}
+
+#lastModifiedHolder {
+  clear: left;
+}
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+  height: 23px;
+  line-height: 23px;
+  background-color: #457D89;
+  padding: 0px 20px;
+  color: #fff;
+  border-top: 1px solid #5CA6B4;
+}
+
+#searchFormLinks small {
+  font-size: 12px;
+}
+
+#searchFormLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+  text-decoration: underline;
+}
+
+#searchLinksOne, #searchLinksTwo {
+  float: left;
+}
+
+#searchLinksThree {
+  float: right;
+}
+
+#saveSearchLink, #searchformResetter {
+  display: block;
+  float: left;
+  height: 23px;
+  line-height: 23px;
+  margin-left: 10px;
+  width: 110px;
+  padding-left: 15px;
+  color: #fff !important;
+  font-weight: normal !important;
+  text-decoration: none;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#saveSearchLink span, #searchformResetter span {
+  display: none;
+}
+
+#saveSearchLink {
+  background-image: url(http://displet.com/images/charlottesville/bg_saveSearchLw.png);
+}
+
+#searchformResetter {
+  background-image: url(http://displet.com/images/charlottesville/bg_searchformResetter.png);
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+  background: white;
+  opacity: .7;
+  background-image: url('/images/loader_small_dots.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+  display: block;
+  position: absolute;
+  height: 415px;
+  background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+  padding: 30px 0px;
+  height: 415px;
+}
+
+#leftColumn {
+  float: left;
+}
+
+#leftColumn, #listLoader {
+  width: 461px;
+}
+
+#resultsNav {
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #49808B;
+  background-color: #fff;
+  border-bottom: none;
+  font-size: 14px;
+  color: #0B414F;
+}
+
+#displayingRecords {
+  
+}
+
+#prePage span, #nextPage span, #prePage a, #nextPage a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 12px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#prePage span, #prePage a {
+  background-image: url(http://displet.com/images/charlottesville/bg_prePage.png);
+}
+
+#nextPage span, #nextPage a {
+  background-image: url(http://displet.com/images/charlottesville/bg_nextPage.png);
+}
+
+#resultsList {
+  height: 389px;
+  padding-left: 10px;
+  border: 1px solid #49808B;
+  background-color: #fff;
+  border-top: none;
+  overflow: scroll;
+  font-size: 12px;
+}
+
+div.resultRow {
+  background-image: url(http://displet.com/images/charlottesville/bg_resultRow.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 417px;
+  padding: 8px 0px 0px 8px !important;
+  overflow: hidden;
+}
+
+div.resultRow:hover {
+  background-position: 0px bottom;
+}
+
+div.resultRow a {
+  color: #0B414F !important;
+  text-decoration: none;
+  display: block;
+}
+
+div.resultRow:hover a {
+  color: #fff !important;
+}
+
+div.propertyPreviewPic {
+  float: left;
+}
+
+div.propertyPreviewPic img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #fff;
+}
+
+div.propertyAddress {
+  float: left;
+  width: 170px;
+  padding: 5px 0 0 10px !important;
+  color: #0B414F;
+}
+
+div.resultRow:hover div.propertyAddress {
+  color: #fff;
+}
+
+div.propertyAddress a {
+  color: #0B414F;
+}
+
+div.resultRow:hover div.propertyAddress a {
+  color: #fff;
+}
+
+div.propertyAddress strong {
+  font-weight: normal;
+  color: #0B414F;
+}
+
+div.resultRow:hover strong {
+  color: #fff;
+}
+
+div.propertyPriceBedsSf {
+  float: left;
+  width: 97px;
+  padding-left: 10px !important;
+  padding-top: 2px !important;
+  color: #0B414F;
+}
+
+div.resultRow:hover div.propertyPriceBedsSf {
+  color: #fff;
+}
+
+div.propertyPriceBedsSf a {
+  
+}
+
+div.propertyActions, div.propertyActions .viewDetailsLink a {
+  float: left;
+  display: block;
+  width: 65px;
+  height: 65px;
+}
+
+div.propertyActions .viewDetailsLink a {
+  text-indent: -9999px;
+}
+
+#rightColumn {
+  float: right;
+  width: 438px;
+}
+
+#resultsMap {
+  height: 415px;
+}
+
+/******************
+Search Results Styles
+******************/
+#resultsToolbar {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  padding: 0 15px;
+  margin: 20px 0 15px 0;
+  background-color: #fff;
+  border: 1px solid #457D89;
+  color: #457D89;
+  font-weight: bold;
+}
+
+#resultsToolbar a {
+  color: #457D89;
+}
+
+#resultsToolbar table {
+  width: 100%;
+}
+
+#resultsToolbar td {
+  text-align: right;
+}
+
+#resultsToolbar #totalRecords {
+  color: #409740;
+}
+
+#resultsToolbar td:first-child {
+  text-align: left;
+}
+
+.resultListContainer {
+  border: 1px solid #BAD2D8;
+  margin-bottom: 5px !important;
+  background-color: #D6E1E4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D6E1E4), to(#E1EAEC));
+  background-image: -moz-linear-gradient(top, #D6E1E4, #E1EAEC);
+  background-image: linear-gradient(top, #D6E1E4, #E1EAEC);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#D6E1E4', endColorstr='#E1EAEC');
+  color: #0B414F;
+}
+
+.resultListContainer table {
+  width: 100%;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+td.propertyPreviewPic {
+  padding: 10px !important;
+  width: 115px;
+  border-right: none !important;
+}
+
+td.propertyPreviewPic img {
+  width: 115px;
+  border: 1px solid #6F7475;
+}
+
+td.propertyAddress {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 10px !important;
+}
+
+td.propertyAddress strong {
+  font-weight: normal;
+}
+
+td.price {
+  width: 125px;
+  padding-left: 20px !important;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+td.price .price {
+  color: #409740;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+td.propertyBedsSf {
+  width: 110px;
+  padding-left: 10px !important;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+td.actions {
+  width: 155px;
+  padding-left: 10px !important;
+}
+
+td.actions .addToFaves {
+  display: block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 25px !important;
+  background-image: url(http://displet.com/images/charlottesville/icon_star.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  color: #0B414F;
+}
+
+td.actions .addToFaves:hover {
+  text-decoration: none;
+}
+
+td.actions .makeRequest {
+  display: block;
+  text-align: center;
+  width: 122px;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  background-image: url(http://displet.com/images/charlottesville/bg_makeRequest.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  color: #fff;
+  font-size: 10px;
+  margin: 0px auto !important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-decoration: none;
+}
+
+td.actions .makeRequest:hover {
+  text-decoration: underline;
+}
+
+td.propertyActions {
+  border-right: none !important;
+  width: 160px;
+  padding: 0px 10px !important;
+}
+
+td.propertyActions .viewDetailsLink {
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  width: 102px;
+  background-image: url(http://displet.com/images/charlottesville/bg_viewDetailsLink2.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  outline: none;
+  margin: 0px auto !important;
+}
+
+td.propertyActions .viewDetailsLink:hover {
+  background-position: 0px bottom;
+}
+
+/******************
+Detail Page Styles
+******************/
+#back_link {
+  
+}
+
+#back_link a {
+  display: block;
+  margin-bottom: 20px;
+  background-image: url(http://displet.com/images/charlottesville/arrow.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: #3E3638;
+}
+
+#residentials_detail .col1, #residentials_detail .col2 {
+  padding-top: 30px;
+}
+
+#residentials_detail .col1 {
+  float: left;
+  width: 470px;
+}
+
+#residentials_detail .col2 {
+  float: right;
+  width: 440px;
+}
+
+#actions1 {
+  height: 65px;
+}
+
+#actions1 div {
+  float: right;
+}
+
+#actions1 div:first-child {
+  float: left;
+}
+
+#actions1 a {
+  display: block;
+  float: left;
+  width: 140px;
+  padding-left: 48px !important;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#actions1 .redButton {
+  background-image: url(http://displet.com/images/charlottesville/bg_redButton.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions1 #saveFaveLink {
+  background-image: url(http://displet.com/images/charlottesville/bg_favoriteLink.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions2 {
+  height: 70px;
+  color: #0B414F;
+}
+
+#actions2 div {
+  float: left;
+}
+
+#callUs {
+  width: 186px;
+  padding: 0 0px 0 40px !important;
+  line-height: 14px;
+  background-image: url(http://displet.com/images/charlottesville/bg_callUs.png);
+  background-position: 15px 0px;
+  background-repeat: no-repeat;
+  height: 31px;
+  margin-right: 15px !important;
+}
+
+#callUs span {
+  font-weight: bold;
+}
+
+#sendToFriend {
+  background-image: url(http://displet.com/images/charlottesville/bg_sendToFriend.png);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  line-height: 30px;
+  padding-left: 45px !important;
+  margin-left: 30px !important;
+}
+
+#sendToFriend a {
+  color: #0B414F;
+}
+
+#sendToFriend a:hover {
+  text-decoration: none;
+}
+
+#facebook_like {
+  background-color: #fff;
+  width: 350px;
+  padding: 10px !important;
+  margin: 0px auto 20px auto !important;
+}
+
+#detailsHeader {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0px 0px 20px 0px !important;
+  border-bottom: none;
+}
+
+#detailsHeader .address {
+  line-height: 34px;
+  font-size: 20px;
+  padding-left: 20px !important;
+  background-color: #fff;
+  border: 1px solid #457D89;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #0B414F;
+}
+
+#detailsHeader .price {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: lighter;
+  color: #409740;
+  text-align: right;
+  padding-top: 10px !important;
+}
+
+#detailsProperty {
+  font-size: 14px;
+  padding: 10px 0px !important;
+  color: #0B414F;
+  border-top: none;
+  margin-bottom: 20px !important;
+}
+
+#detailsProperty p {
+  padding-bottom: 10px !important;
+}
+
+#detailsProperty .subColumnOne, #detailsProperty .subColumnTwo {
+  float: left;
+  width: 50%;
+}
+
+.subColumnTwo {
+  text-align: right;
+}
+
+#propertyAge {
+  padding-bottom: 0px !important;
+}
+
+#propertyAge .red {
+  color: #409740;
+  font-weight: bold;
+}
+
+.tanBack {
+  padding: 20px 20px 0px 20px !important;
+  border: 1px solid #0B414F;
+  background-color: #fff;
+  margin-bottom: 20px !important;
+  color: #409740;
+}
+
+.tanBack.left, .tanBack.right {
+  width: 170px;
+}
+
+.tanBack p, .tanBack ul {
+  padding-bottom: 20px !important;
+}
+
+.tanBack p.remarks {
+  padding: 0px 0px 0px 15px !important;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px -20px !important;
+  background-color: #CEDFE4;
+  color: #0B414F;
+}
+
+.tanBack p.remarks .red {
+  
+}
+
+.tanBack ul li {
+  padding-bottom: 3px !important;
+}
+
+.tanBack p:first-child {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  padding-bottom: 10px !important;
+  color: #56893E;
+}
+
+#searchContextPagination, #detailFooter {
+  clear: both;
+  font-size: 14px;
+  padding: 10px 0px 10px 20px !important;
+}
+
+#detailTabs {
+  padding-left: 10px !important;
+}
+
+#detailTabs li {
+  float: left;
+  padding-right: 10px !important;
+}
+
+#detailTabs li a {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 25px !important;
+  border: 1px solid #CACACA;
+  border-bottom: none;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  background-color: #408193;
+}
+
+#detailTabs li a.active {
+  border: 1px solid #0B414F;
+  border-bottom: none;
+  background-color: #0B414F;
+  color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+  clear: both;
+  border: 1px solid #CACACA;
+  padding: 9px 6px;
+  margin-bottom: 20px !important;
+  background-color: #fff;
+}
+
+img#largeImage {
+  width: 401px !important;
+  display: block;
+  margin: 0px auto !important;
+}
+
+#horizontal_carousel {
+  width: 401px !important;
+  height: 415px !important;
+}
+
+#horizontal_carousel .container {
+  width: 340px !important;
+  left: 33px !important;
+}
+
+#horizontal_carousel .container {
+  top: 330px !important;
+}
+
+#horizontal_carousel .container img {
+  width: 100px !important;
+  height: 90px !important;
+  border: 0px solid #d7d7d7;
+}
+
+#horizontal_carousel .next_button, #horizontal_carousel .previous_button {
+  bottom: 37px !important;
+}
+
+#horizontal_carousel .previous_button {
+  width: auto !important;
+}
+
+#imageNav {
+  width: 410px !important;
+}
+
+#detailMap {
+  width: 400px;
+  height: 380px;
+}
+
+#dashboardActions {
+  float: left;
+  width: 50%;
+  padding: 20px 0px !important;
+}
+
+#dashOutput {
+  float: right;
+  width: 50%;
+  padding: 20px 0px !important;
+}
+
+#loginSignupFormcontainer {
+  padding: 10px !important;
+}
+
+#loginSignupFormcontainer table {
+  width: 100%;
+}
+
+#loginSignupFormcontainer table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#loginSignupFormcontainer input {
+  border: 1px solid #ccc;
+}
+
+#loginSignupFormcontainer p {
+  padding-bottom: 4px;
+}
+
+#loginSignupFormcontainer p.required input {
+  border: 1px solid red;
+}
+
+#loginSignupFormcontainer label {
+  display: block;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/charlottesville/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear:both;
+}
+
+/* added by system 2011.03.11 */
+.loginSignupDialog { max-width: 560px; }
+
+
+
+/* added by system 2011.05.17 */
+#loginButton { cursor: pointer; }
+
+
+
+/* added by system 2011.05.18 */
+#signupButton { cursor: pointer; }
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}

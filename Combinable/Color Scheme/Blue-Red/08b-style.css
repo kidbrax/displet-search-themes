@@ -59,7 +59,7 @@ globalToolbar Styles
 	padding-right: 2px;
 }
 
-#quickSearch input {
+#quickSearch input, #quickTermsHolder input {
 	border:0;
 	border-top: 1px solid #404040;
 	border-left: 1px solid #404040;
@@ -419,6 +419,10 @@ img#largeImage {
 
 #imageNav .previous_button_disabled img, #imageNav .next_button_disabled img{
 	visibility: visible !important;
+}
+
+#detailFooter{
+	color: #3E4D68;
 }
 
 /******************

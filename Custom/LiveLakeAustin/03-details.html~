@@ -50,59 +50,60 @@
 
     <p class="tanbacktit">Property Information:</p>
 
-    <div class="subColumnOne">
+      <p>
+	<span class="fieldName">{{ num_bedrooms }} Bedrooms, {{ full_baths }} Full / {{ half_baths }} Half Bathrooms | Stories:</span> 
+	<span class="fieldRight">&nbsp;{{ stories }}</span>
+      </p>
 
-      <p><span class="fieldName">{{ num_bedrooms }} Bedrooms, {{ full_baths }} Full / {{ half_baths }} Half Bathrooms | Stories:</span> </p>
+      <p>
+	<span class="fieldName">Year Built:</span> 
+	<span class="fieldRight">&nbsp;{{ year_built }}</span>
+      </p>
 
-      <p><span class="fieldName">Year Built:</span> </p>
+      <p>
+	<span class="fieldName">Living Space:</span> 
+	<span class="fieldRight">&nbsp;{{ square_feet }} Sq. Ft.</span>
+      </p>
 
-      <p><span class="fieldName">Living Space:</span> </p>
+      <p>
+	<span class="fieldName">Pool:</span> 
+	<span class="fieldRight">&nbsp;{{ with_pool }}</span>
+      </p>
 
-      <p><span class="fieldName">Pool:</span> </p>
+      <p>
+	<span class="fieldName">Garage Spaces:</span> 
+	<span class="fieldRight">&nbsp;{{ garage_spaces }}</span>
+      </p>
 
-      <p><span class="fieldName">Garage Spaces:</span> </p>
+      <p>
+	<span class="fieldName">Living Room(s):</span> 
+	<span class="fieldRight">&nbsp;{{ living }}</span>
+      </p>
 
-      <p><span class="fieldName">Living Room(s):</span> </p>
+      <p>
+	<span class="fieldName">Dining Area(s):</span> 
+	<span class="fieldRight">&nbsp;{{ dining }}</span>
+      </p>
 
-      <p><span class="fieldName">Dining Area(s):</span> </p>
+      <p>
+	<span class="fieldName">Guest Accommodations:</span> 
+	<span class="fieldRight">&nbsp;{{ guest_accommodations }}</span>
+      </p>
 
-      <p><span class="fieldName">Guest Accommodations:</span> </p>
+      <p>
+	<span class="fieldName">Construction:</span> 
+	<span class="fieldRight">&nbsp;{{ construction }}</span>
+      </p>
 
-      <p><span class="fieldName">Construction:</span> </p>
+      <p>
+	<span class="fieldName">Roof Type:</span> 
+	<span class="fieldRight">&nbsp;{{ roof }}</span>
+      </p>
 
-      <p><span class="fieldName">Roof Type:</span> </p>
-
-      <p><span class="fieldName">Floors:</span> </p>
-
-    </div>
-
-    <div class="subColumnTwo">
-
-      <p><span class="fieldName">&nbsp;{{ stories }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ year_built }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ square_feet }} Sq. Ft.</p>
-
-      <p><span class="fieldName">&nbsp;{{ with_pool }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ garage_spaces }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ living }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ dining }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ guest_accommodations }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ construction }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ roof }}</p>
-
-      <p><span class="fieldName">&nbsp;{{ floor }}</p>
-
-    </div>
-
-    <div style="clear:both;"></div>    
+      <p>
+	<span class="fieldName">Floors:</span> 
+	<span class="fieldRight">&nbsp;{{ floor }}</span>
+      </p> 
 
 </div>
 
@@ -130,7 +131,7 @@
     <p class="tanbacktit">Financial Info:</p>
       <p><span class="fieldName">Price:</span><span class="fieldRight">&nbsp;{{ list_price }}</span></p>
       <p><span class="fieldName">Annual Tax:</span><span class="fieldRight">&nbsp;${{ estimated_taxes }}</p>
-      <p><span class="fieldName">HOA:</span><span class="fieldRight">&nbsp;{{ hoa }}</p>
+      <p><span class="fieldName">HOA:</span><span class="fieldRight">&nbsp;${{ hoa_fee }}</p>
       <p><span class="fieldName">HOA Freq:</span><span class="fieldRight">&nbsp;{{ hoa_frequency }}</p>
     <div style="clear:both;"></div>    
   </div>
@@ -160,3 +161,11 @@
   </div>
 </div>
 <div class="clear"></div>
+
+<div id="jqphotos">
+	<div class="white"></div>
+	<div class="slideshow">
+		{{ photos }}
+		<div class="exit"><a href="javascript:void(0);">Close</a></div>
+	</div>
+</div>

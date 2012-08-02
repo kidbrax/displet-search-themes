@@ -131,7 +131,7 @@
     <p class="tanbacktit">Financial Info:</p>
       <p><span class="fieldName">Price:</span><span class="fieldRight">&nbsp;{{ list_price }}</span></p>
       <p><span class="fieldName">Annual Tax:</span><span class="fieldRight">&nbsp;${{ estimated_taxes }}</p>
-      <p><span class="fieldName">HOA:</span><span class="fieldRight">&nbsp;{{ hoa }}</p>
+      <p><span class="fieldName">HOA:</span><span class="fieldRight">&nbsp;${{ hoa_fee }}</p>
       <p><span class="fieldName">HOA Freq:</span><span class="fieldRight">&nbsp;{{ hoa_frequency }}</p>
     <div style="clear:both;"></div>    
   </div>
@@ -161,3 +161,13 @@
   </div>
 </div>
 <div class="clear"></div>
+
+<div id="jqphotos">
+	<div class="white"></div>
+	<div class="inner">
+		<div class="slideshow">
+			{{ photos }}
+			<div class="exit"><a href="javascript:void(0);">Close</a></div>
+		</div>
+	</div>
+</div>

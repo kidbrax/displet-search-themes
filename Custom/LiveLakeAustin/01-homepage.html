@@ -1,6 +1,6 @@
-<a href='{{ residential_url }}'>
-	<div rel='{{ mls_number }}' class="resultRow {{ mapped_class }}">
-    	<div class='resultRowInner' id="row-{{ residential_id }}">
+<a href="{{ residential_url }}" class="listResultRow">
+	<div rel="{{ mls_number }}" class="resultRow {{ mapped_class }}">
+    	<div class="resultRowInner" id="row-{{ residential_id }}">
     	
     		<div class="propertyPreviewPic">
 				{{ print_preview_image }}
@@ -22,3 +22,33 @@
     	</div>
 	</div>
 </a>
+<a class="displet-tile-listing tileResultRow" href="{{ residential_url }}">
+	<div>
+				<div class="displet-tile-thumb-container">
+						{{ print_preview_image }}
+				</div>
+
+				<div class="displet-tile-price-container">
+					<span class="displet-tile-listing-price">{{ price }}</span>
+				</div>
+
+				<div class="displet-tile-info">
+					
+					<div class="displet-tile-address">
+						{{ address }}<br/>
+						{{ city }}, {{ state }} {{ zip }}<br/>
+						{{ subdivision }}
+					</div>
+
+					<div class="displet-tile-specs">
+						<div>Beds: <b>{{ num_bedrooms }}</b></div>
+						<div>Baths (Full/Half): <b>{{ full_baths }} / {{ half_baths }}</b></div>
+						<div>Property Type: <b>{{ property_type }}</b></div>
+						<div>Square Ft: <b>{{ square_feet }}</b></div>
+					</div>
+
+				</div>
+			<div class="hovertrans"></div>
+	</div>
+</a>
+<div class="lastclear"></div>

@@ -1,0 +1,19 @@
+#quickSearch form {
+zoom: 1;
+height: 0;
+float: left;
+}
+
+#textQuick, #textOr {
+float: left;
+display: block;
+line-height: 55px;
+}
+
+#keywordHolder {
+float: left;
+}
+
+#standardFields #stdColumn2 {
+width: 310px;
+}

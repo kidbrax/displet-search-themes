@@ -1,0 +1,228 @@
+<div id="leaf"><div class="inner"><div class="inner2"></div></div></div>
+<div id="leafwrap">
+	
+	{{ bottom_navigation }}
+	<div id="newsearch" class="left"><a href="http://search.westlake360.com/#priceSorter=desc/searchType=default">New Search</a></div>
+
+	<div class="social right">
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+	</div><!--// .social right -->
+	<div class="social right">
+		<g:plusone size="medium"></g:plusone>
+	</div><!--// .social right -->
+	<div class="social right">
+		<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+	</div><!--// .social right -->
+	<div class="clear"><!-- --></div>
+
+	<table id="detailsHeader">
+		<tr>
+			<td class="price"><div>{{ list_price }}</div></td>
+			<td class="address">{{ address }}<BR>{{ city_state_zip }}</td>
+			<td class="beds"><div>{{ num_bedrooms }}</div>Bedrooms</td>
+			<td class="baths"><div>{{ full_baths }}</div>Baths</td>
+			<td class="squarefeet"><div>{{ square_feet }}</div>Sq. Ft.</td>
+		</tr>
+	</table>
+
+	<div class="col1">
+		<div id="actions1">
+			<div id="requestShowing">{{ request_showing }}</div>
+			<div id="addToFavorites">{{ add_to_favorites }}</div>
+			<div class="clear"></div>
+		</div>
+		<div id="actions2">
+			<div id="callUs">Any questions?<br /><span>Call us at {{ website_phone }}</span></div>
+			<div id="sendToFriend">{{ email_to_friend }}</div>
+			<div class="clear"></div>
+		</div>
+		<table id="detailsProperty">
+			<tr>
+		  		<td class="propertytype">Listing Type: {{ property_type }}</td>
+		  		<td class="mls">MLS #: {{ mls_number }}</td>
+		  	</tr>
+		  	<tr>
+		  		<td class="subdivision" colspan="2">Community: {{ subdivision }}</td>
+			</tr>
+		  	<tr>
+		  		<td class="listdate" colspan="2">Original List Date: {{ list_date }}</td>
+			</tr>
+		</table>
+		<div id="detailsRemarks">
+			<h4 class="tanbacktit">Agent Description</h4>
+			<p>{{ remarks }}</p>
+		</div>
+	</div>
+
+	<div class="col2">
+	  <ul id="detailTabs">
+	    <li><a class="active" href="javascript:void(0)" rel="detailPhotos">Photos</a></li>
+	    <li><a href="javascript:void(0)" rel="detailMapOuter">Map</a></li>
+	    <li><a href="javascript:void(0)" rel="userCommentsContainer">Comments {{ comment_count }}</a></li>
+	  </ul>
+
+	  {{ photos }}
+
+
+	    {{ map }}
+
+	  <div class="largeDetailDisplay" id="userCommentsContainer" style="display: none">
+	  	{{ comments }}	
+	  </div>
+	</div>
+
+	<div class="clear"><!-- --></div>
+
+	<div class="tanBack">
+		<h4 class="tanbacktit">Property Information</h4>
+		<div class="left">
+			<table>
+				<tr><td class="fieldName">MLS #:</td><td class="fieldRight">&nbsp;{{ mls_number }}</td></tr>
+				<tr><td class="fieldName">Status:</td><td class="fieldRight">&nbsp;{{ status }}</td></tr>
+				<tr><td class="fieldName">Address:</td><td class="fieldRight">&nbsp;{{ address }}</td></tr>
+				<tr><td class="fieldName">City/State:</td><td class="fieldRight">&nbsp;{{ city }}/{{ state }}</td></tr>
+				<tr><td class="fieldName">County:</td><td class="fieldRight">&nbsp;{{ county }}</td></tr>
+				<tr><td class="fieldName">Community:</td><td class="fieldRight">&nbsp;{{ subdivision }}</td></tr>
+				<tr><td class="fieldName">List Price:</td><td class="fieldRight">&nbsp;{{ list_price }}</td></tr>
+				<tr><td class="fieldName">List Date:</td><td class="fieldRight">&nbsp;{{ list_date }}</td></tr>
+				<tr><td class="fieldName">Virtual Tour Non Branded:</td><td class="fieldRight">&nbsp;{{ virtual_tour_non_branded }}</td></tr>
+				<tr><td class="fieldName">Property Type:</td><td class="fieldRight">&nbsp;{{ property_type }}</td></tr>
+				<tr><td class="fieldName">Property Style:</td><td class="fieldRight">&nbsp;{{ property_sub_type }}</td></tr>
+			</table>
+		</div><!--// .left -->
+		<div class="right">
+			<table>
+				<tr><td class="fieldName">Year Built:</td><td class="fieldRight">&nbsp;{{ year_built }}</td></tr>
+				<tr><td class="fieldName">Stories:</td><td class="fieldRight">&nbsp;{{ stories }}</td></tr>
+				<tr><td class="fieldName">Bedrooms:</td><td class="fieldRight">&nbsp;{{ num_bedrooms }}</td></tr>
+				<tr><td class="fieldName">Full Baths:</td><td class="fieldRight">&nbsp;{{ full_baths }}</td></tr>
+				<tr><td class="fieldName">Half Baths:</td><td class="fieldRight">&nbsp;{{ half_baths }}</td></tr>
+				<tr><td class="fieldName">Total Square Footage:</td><td class="fieldRight">&nbsp;{{ square_feet }}</td></tr>
+				<tr><td class="fieldName">Square Footage Source:</td><td class="fieldRight">&nbsp;{{ square_feet_source }}</td></tr>
+				<tr><td class="fieldName">Foreclosure:</td><td class="fieldRight">&nbsp;{{ is_foreclosure }}</td></tr>
+				<tr><td class="fieldName">Foreclosure Type:</td><td class="fieldRight">&nbsp;{{ foreclosure_type }}</td></tr>
+				<tr><td class="fieldName">Short Sale:</td><td class="fieldRight">&nbsp;{{ short_sale }}</td></tr>
+				<tr><td class="fieldName">Area:</td><td class="fieldRight">&nbsp;{{ area_mls_defined }}</td></tr>
+			</table>
+		</div><!--// .right -->
+		<div class="clear"><!-- --></div>
+		<div class="separate"><!-- --></div>
+		<div class="left">
+			<table>
+				<tr><td class="fieldName">School District:</td><td class="fieldRight">&nbsp;{{ school_district }}</td></tr>
+				<tr><td class="fieldName">Elementary:</td><td class="fieldRight">&nbsp;{{ elementary_a }}</td></tr>
+				<tr><td class="fieldName">Middle School:</td><td class="fieldRight">&nbsp;{{ middle_school }}</td></tr>
+			</table>
+		</div><!--// .left -->
+		<div class="right">
+			<table>
+				<tr><td class="fieldName">Junior High School:</td><td class="fieldRight">&nbsp;{{ junior_high_school }}</td></tr>
+				<tr><td class="fieldName">High School:</td><td class="fieldRight">&nbsp;{{ high_school }}</td></tr>
+			</table>
+		</div><!--// .right -->
+		<div class="clear"><!-- --></div>
+		<div class="separate"><!-- --></div>
+		<div class="left">
+			<table>
+				<tr><td class="fieldName">Interior Features:</td><td class="fieldRight">&nbsp;{{ interior_features }}</td></tr>
+				<tr><td class="fieldName">Rooms:</td><td class="fieldRight">&nbsp;{{ rooms }}</td></tr>
+				<tr><td class="fieldName">Floor:</td><td class="fieldRight">&nbsp;{{ floor }}</td></tr>
+				<tr><td class="fieldName">Pool on Property:</td><td class="fieldRight">&nbsp;{{ pool_on_property }}</td></tr>
+				<tr><td class="fieldName">Pool Description:</td><td class="fieldRight">&nbsp;{{ pool_description }}</td></tr>
+				<tr><td class="fieldName">Appliances Equipment:</td><td class="fieldRight">&nbsp;{{ appliances_equipment }}</td></tr>
+				<tr><td class="fieldName">Fireplaces:</td><td class="fieldRight">&nbsp;{{ fireplaces }}</td></tr>
+				<tr><td class="fieldName">Fireplace Description:</td><td class="fieldRight">&nbsp;{{ fireplace_description }}</td></tr>
+				<tr><td class="fieldName">Laundry Location:</td><td class="fieldRight">&nbsp;{{ laundry_location }}</td></tr>
+				<tr><td class="fieldName">Living:</td><td class="fieldRight">&nbsp;{{ living }}</td></tr>
+				<tr><td class="fieldName">Dining:</td><td class="fieldRight">&nbsp;{{ dining }}</td></tr>
+				<tr><td class="fieldName">Dining Location:</td><td class="fieldRight">&nbsp;{{ dining_description}}</td></tr>
+			</table>
+		</div><!--// .left -->
+		<div class="right">
+			<table>
+				<tr><td class="fieldName">Kitchen:</td><td class="fieldRight">&nbsp;{{ kitchen }}</td></tr>
+				<tr><td class="fieldName">Guest Accommodations:</td><td class="fieldRight">&nbsp;{{ guest_accommodations }}</td></tr>
+				<tr><td class="fieldName">Foundation:</td><td class="fieldRight">&nbsp;{{ foundation }}</td></tr>
+				<tr><td class="fieldName">Construction Type:</td><td class="fieldRight">&nbsp;{{ construction }}</td></tr>
+				<tr><td class="fieldName">Air Conditioner:</td><td class="fieldRight">&nbsp;{{ ac }}</td></tr>
+				<tr><td class="fieldName">Heating Type:</td><td class="fieldRight">&nbsp;{{ heat }}</td></tr>
+				<tr><td class="fieldName">Sewer:</td><td class="fieldRight">&nbsp;{{ sewer }}</td></tr>
+				<tr><td class="fieldName">Water:</td><td class="fieldRight">&nbsp;{{ water }}</td></tr>
+				<tr><td class="fieldName">Garage:</td><td class="fieldRight">&nbsp;{{ garage_description }}</td></tr>
+				<tr><td class="fieldName">Garage Spaces:</td><td class="fieldRight">&nbsp;{{ garage_spaces }}</td></tr>
+				<tr><td class="fieldName">Parking:</td><td class="fieldRight">&nbsp;{{ parking_description }}</td></tr>
+			</table>
+		</div><!--// .right -->
+		<div class="clear"><!-- --></div>
+		<div class="separate"><!-- --></div>
+		<div class="left">
+			<table>
+				<tr><td class="fieldName">Acres:</td><td class="fieldRight">&nbsp;{{ acres }}</td></tr>
+				<tr><td class="fieldName">Lot Sq Meters:</td><td class="fieldRight">&nbsp;{{ lot_size }}</td></tr>
+				<tr><td class="fieldName">Exterior:</td><td class="fieldRight">&nbsp;{{ exterior_features }}</td></tr>
+				<tr><td class="fieldName">Area Amenities:</td><td class="fieldRight">&nbsp;{{ area_amenities }}</td></tr>
+				<tr><td class="fieldName">Gated:</td><td class="fieldRight">&nbsp;{{ is_gated_community }}</td></tr>
+				<tr><td class="fieldName">View:</td><td class="fieldRight">&nbsp;{{ view }}</td></tr>
+			</table>
+		</div><!--// .left -->
+		<div class="right">
+			<table>
+				<tr><td class="fieldName">Waterfront:</td><td class="fieldRight">&nbsp;{{ waterfront }}</td></tr>
+				<tr><td class="fieldName">Waterfront Description:</td><td class="fieldRight">&nbsp;{{ waterfront_description }}</td></tr>
+				<tr><td class="fieldName">Lot Description:</td><td class="fieldRight">&nbsp;{{ lot_description }}</td></tr>
+				<tr><td class="fieldName">Roof Type:</td><td class="fieldRight">&nbsp;{{ roof }}</td></tr>
+				<tr><td class="fieldName">Trees:</td><td class="fieldRight">&nbsp;{{ trees }}</td></tr>
+				<tr><td class="fieldName">Fence:</td><td class="fieldRight">&nbsp;{{ fence }}</td></tr>
+			</table>
+		</div><!--// .right -->
+		<div class="clear"><!-- --></div>
+		<div class="separate"><!-- --></div>
+		<div class="left">
+			<table>
+				<tr><td class="fieldName">Estimated Taxes:</td><td class="fieldRight">&nbsp;{{ estimated_taxes }}</td></tr>
+				<tr><td class="fieldName">HOA:</td><td class="fieldRight">&nbsp;{{ hoa }}</td></tr>
+				<tr><td class="fieldName">HOA Fee:</td><td class="fieldRight">&nbsp;{{ hoa_fee }}</td></tr>
+			</table>
+		</div><!--// .left -->
+		<div class="right">
+			<table>
+				<tr><td class="fieldName">HOA Requirement:</td><td class="fieldRight">&nbsp;{{ hoa_requirement }}</td></tr>
+				<tr><td class="fieldName">HOA Frequency:</td><td class="fieldRight">&nbsp;{{ hoa_frequency }}</td></tr>
+				<tr><td class="fieldName">HOA Fee Includes:</td><td class="fieldRight">&nbsp;{{ hoa_fee_includes }}</td></tr>
+			</table>
+		</div><!--// .right -->
+		<div class="clear"><!-- --></div>
+		<div class="separate"><!-- --></div>
+		<div class="left">
+			<table>
+				<tr><td class="fieldName">No of Images:</td><td class="fieldRight">&nbsp;{{ number_of_images }}</td></tr>
+				<tr><td class="fieldName">Listing Office Name:</td><td class="fieldRight">&nbsp;{{ listing_office_name }}</td></tr>
+				<tr><td class="fieldName">Tax Year:</td><td class="fieldRight">&nbsp;{{ tax_year }}</td></tr>
+				<tr><td class="fieldName">Listing Agent ID:</td><td class="fieldRight">&nbsp;{{ listing_agent_id }}</td></tr>
+			</table>
+		</div><!--// .left -->
+		<div class="right">
+			<table>
+				<tr><td class="fieldName">Listing Office ID:</td><td class="fieldRight">&nbsp;{{ listing_office_id }}</td></tr>
+				<tr><td class="fieldName">Feed Image Trans Date:</td><td class="fieldRight">&nbsp;{{ feed_image_trans_date }}</td></tr>
+				<tr><td class="fieldName">Modified:</td><td class="fieldRight">&nbsp;{{ modified }}</td></tr>
+			</table>
+		</div><!--// .right -->
+		<div class="clear"><!-- --></div>
+	</div>
+
+	<div id="detailFooter">
+		Courtesy of Listing Office: {{ listing_office_name }}
+	</div>
+
+	<div id="streetview">
+		<iframe width="791" height="378" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q={{ street_number }}+{{ street_name }},+{{ city }},+{{ state }}&amp;layer=c&amp;cbp=13,15.23,,0,0&amp;cbll={{ latitude }},{{ longitude }}&amp;t=m&amp;z=14&amp;iwloc=A&amp;source=embed&amp;output=svembed"></iframe>
+		<div class="link right"><a href="https://maps.google.com/maps?q={{ street_number }}+{{ street_name }},+{{ city }},+{{ state }}&amp;layer=c&amp;cbp=13,15.23,,0,0&amp;cbll={{ latitude }},{{ longitude }}&amp;t=m&amp;z=14&amp;iwloc=A" target="_blank">View in Google Maps</a></div>
+	</div><!--// #streetview -->
+	
+</div><!--// #leafwrap -->
+
+
+<!-- Required for Twitter Button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- End Required -->

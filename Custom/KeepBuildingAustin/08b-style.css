@@ -1,0 +1,627 @@
+/******************
+Global Styles
+******************/
+
+body {
+  	color: #000;
+	font-family: Arial, sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background: url('http://keepbuildingaustin.displetdev.com/wp-content/themes/KeepBuildingAustin/images/quicksearchback.png') 0px 0px repeat-x;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color:#ffbb28;
+	text-shadow: 1px 1px 2px #111;
+}
+
+#globalToolbar a {
+	color: #ffbb28;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+}
+
+#quickSearch input {
+	border:0;
+	color:#171615;
+	background: url('http://displet.com/images/keepbuildingaustin/inputback.png') 0px 0px no-repeat;
+}
+
+#quickSearch ::-webkit-input-placeholder {
+    color: #171615;
+}
+
+#quickSearch :-moz-placeholder {
+    color: #171615;
+}
+
+#quickSearch span#textQuick{
+	font-weight: bold;
+}
+
+#loggedIn {
+	color: #eae4d8;
+	min-width:128px;
+	max-width: 188px;
+	line-height: 40px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #111;
+}
+
+#loggedIn a {
+	color: #eae4d8;
+	text-decoration: none;
+	max-width: 45px;
+}
+
+#loggedIn a:hover {
+	color: #ffbb28;
+	text-decoration: none;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #b9b2a4;
+	background:#fff;
+	font-weight: bold;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	font-weight: normal;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#4b4c44;
+	border:1px solid #8ba6bf;
+	font-weight: normal;
+}
+
+#searchFormContainer input{
+	border: 1px solid #b9c0c1;
+	background: url('http://displet.com/images/keepbuildingaustin/inputback2.png') 0px 0px no-repeat;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #dde5e8;
+	border-right:1px solid #dde5e8;
+}
+
+#advancedExtra {
+	border-top: 1px solid #dadada;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 24px;
+	line-height: 24px;
+	background-color: #2a2928;
+	text-shadow: 1px 1px 2px #111;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 23px;
+	line-height: 23px;
+	text-indent: -9999px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	box-shadow: 0 0 3px #333;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/keepbuildingaustin/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/keepbuildingaustin/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #171615;
+	background-color: #fff;
+}
+
+#resultsNav {
+	border:1px solid #b7b0a2;
+	font-weight: bold;
+}
+
+#resultsNav .inactive{
+	display: none;
+}
+
+#resultsNav #displayingRecords{
+	color: #7c2509;
+}
+
+#prePage a, #nextPage a {
+	width: 13px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/keepbuildingaustin/leftarrow.png');
+	margin-right: 20px;
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/keepbuildingaustin/rightarrow.png');
+	margin-left: 20px;
+}
+
+#resultsList {
+	border: 1px solid #b7b0a2;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/keepbuildingaustin/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 418px;
+	font-weight: bold;
+	font-size: 11px;
+	text-shadow: 1px 1px 2px #111;
+}
+
+#leftColumn #resultsDiv a, #leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.resultRow .propertyPreviewPic{
+	border: 1px solid #475034;
+}
+
+.resultRow .propertyPreviewPic img {
+	border: 2px solid #fafafa;
+}
+
+#rightColumn {
+	border:1px solid #b6afa1;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/keepbuildingaustin/balloondetails.png') 0 0 no-repeat;
+}
+
+#footerInner, #disclaimer{
+	background: url('http://keepbuildingaustin.displetdev.com/wp-content/themes/KeepBuildingAustin/images/footerback.png') 0px 0px repeat;
+}
+
+#footerInner ul li{
+	color: #9B948C;
+	font-size: 11px;
+}
+
+#footerInner ul li a{
+	text-decoration: underline;
+	color: #9B948C;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#actions2{
+	font-weight: bold;
+	color: #171615;
+	text-transform: uppercase;
+}
+
+#callUs span {
+	font-weight: bold;
+}
+
+#sendToFriend a{
+	color: #171615;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+#sendToFriend a:hover{
+	text-decoration: underline;
+}
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:173px;
+	height:35px;
+	line-height:35px;
+	font-weight:700;
+	text-transform:uppercase;
+	text-shadow: -1px -1px 2px #222;
+	text-indent: 7px;
+	font-size: 11px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/keepbuildingaustin/requestshowing.png') 0 0 no-repeat;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/keepbuildingaustin/addtofavorites.png') 0 0 no-repeat;
+	margin-right:19px;
+}
+
+#actions1 #requestShowing:hover, #actions1 #saveFaveLink:hover{
+	box-shadow:0 2px 3px #222;
+}
+
+#actions1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 a:hover{
+	text-decoration:none;
+}
+
+#searchContextPagination{
+	margin: 3px 0 0 21px;
+	background:url('http://displet.com/images/keepbuildingaustin/backarrow.png') 0 0 no-repeat;
+	height: 30px;
+	line-height: 30px;
+	width: 107px;
+	text-align: center;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#searchContextPagination:hover{
+	box-shadow:0 2px 3px #222;
+}
+
+#searchContextPagination a{
+	color:#171615;
+	text-decoration:none;
+}
+
+#searchContextPagination a:hover{
+	text-decoration:none;
+}
+
+#inlineMap{
+	background-color: #fff;
+}
+
+#detailsHeader {
+	color: #171615;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#detailsHeader .address {
+	font-family: 'Josefin Sans', sans-serif;
+	border-bottom: 1px double #bec2ac;
+	font-weight:700;
+	text-transform: uppercase;
+}
+
+#detailsHeader .price {
+	 font-weight: 500;
+	font-family: 'Antic Slab', serif;
+	 color: #7c2509;
+}
+
+#propertyAge {
+}
+
+#propertyAge .red {
+	color: #7c2509;
+}
+
+.tanBack {
+	border: 1px solid #b6afa1;
+	background-color: #fff;
+}
+
+.tanBack .tanbacktit {
+	color: #171615;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+
+.tanBack p.remarks {
+	background-color: #b6afa1;
+	color:#171615;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #ae9b73;
+	color: #fff;
+	background-color: #ae9b73;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #7c2509;
+	border-color: #7c2509;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #b6afa1;
+	background-color: #fff;
+}
+
+img#largeImage {
+	border: 1px solid #a6a6a6;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #d0d0d0;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#residentials_results #contentWrapper, #residentials_results #contentWrapperOuter{
+	overflow: visible;
+}
+
+#resultsToolbar {
+	margin-top: 10px;
+	height: 27px;
+	background-color: #fff;
+	border: 1px solid #b6afa1;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 27px;
+	color: #171615;
+	margin-bottom: 10px;
+}
+
+#resultsToolbar a{
+	color: #7c2509;
+	text-decoration: none;
+}
+
+#resultsToolbar a:hover{
+	text-decoration: underline;
+}
+
+#resultsToolbar #totalRecords {
+	color: #7c2509;
+}
+
+.resultListContainer {
+	border: 1px solid #b6afa1;
+	background-color: #fff;
+	height: 282px;
+	margin-bottom: 10px;
+	color: #171615;
+	font-family: Arial, sans-serif;
+	clear: both;
+	overflow: hidden;
+}
+
+.resultListContainer a{
+	text-decoration: none;
+}
+
+.resultListContainer .coll{
+	float: left;
+	width: 282px;
+	padding-left: 21px;
+}
+
+.resultListContainer .coll .img{
+	margin-top: 21px;
+	border: 1px solid #cfcfcf;
+	padding: 2px;
+	background-color: #fff;
+}
+
+.resultListContainer .coll .img div{
+	overflow: hidden;
+	width: 276px;
+	height: 196px;
+}
+
+.resultListContainer .coll .img img{
+	width: 276px;
+}
+
+.resultListContainer .coll .price{
+	margin-top: 12px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 22px;
+	color: #7c2509;
+	font-family: 'Antic Slab', serif;
+}
+
+.resultListContainer .colr{
+	float: right;
+	width: 627px;
+}
+
+.resultListContainer .colr .address{
+	font-size: 18px;
+	line-height: 18px;
+	height: 18px;
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 32px;
+	margin-bottom: 22px;
+	color: #171615;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.resultListContainer .colr .cont{
+	height: 106px;
+	background-color: #eae4d8;
+	border: 1px solid #cfcfcf;
+	width: 607px;
+}
+
+.resultListContainer .colr .cont .col{
+	margin-top: 3px;
+	height: 100px;
+	width: 148px;
+	border-bottom: 1px solid #d2cdc2;
+	border-right: 1px solid #d2cdc2;
+	margin-left: 2px;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+}
+
+.resultListContainer .colr .cont .col:first-child{
+	margin-left: 3px;
+}
+
+.resultListContainer .colr .cont .col .top{
+	font-size: 22px;
+	line-height: 22px;
+	color: #171615;
+	margin-top: 24px;
+}
+
+.resultListContainer .colr .cont .col .bottom{
+	font-size: 18px;
+	line-height: 18px;
+	color: #7c2509;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.resultListContainer .colr .links{
+	margin-top: 25px;
+	line-height: 47px;
+	width: 607px;
+}
+
+.resultListContainer .colr .links .link{
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+	padding-left: 26px;
+	margin-top: 17px;
+	float: left;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.resultListContainer .colr .links a{
+	color: #7c2509;
+	text-decoration: none;
+	display: block;
+}
+
+.resultListContainer .colr .links a:hover{
+	text-decoration: underline;
+}
+
+.resultListContainer .colr .links .requestshowing{
+	background: url('http://displet.com/images/keepbuildingaustin/requestshowingicon.png') 0px 0px no-repeat;
+	margin-left: 25px;
+}
+
+.resultListContainer .colr .links .addtofavorites{
+	background: url('http://displet.com/images/keepbuildingaustin/addtofavoritesicon.png') 0px 0px no-repeat;
+}
+
+.resultListContainer .colr .links .viewdetails{
+	float: right;
+	line-height: 50px;
+	height: 50px;
+	width: 150px;
+	background: url('http://displet.com/images/keepbuildingaustin/viewdetails.png') 0px 0px no-repeat;
+	text-indent: -9999px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.resultListContainer .colr .links .viewdetails:hover{
+	box-shadow: 0px 2px 3px #999;
+}

@@ -1,0 +1,959 @@
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background: url('http://displet.com/images/westlake360/globaltoolbarback.png') 0px 0px repeat-x;
+	color:#e9e2d2;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px -1px 1px #111;
+}
+
+#globalToolbar a {
+	color: #e9e2d2;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+}
+
+#quickSearch input {
+	border:0;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+	text-transform: uppercase;
+	background:#fff;
+	color:#333;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+}
+
+quickSearch span#textQuick{
+	color: #ffdd8f;	
+}
+
+#quickSearch span#textOr{
+	text-transform: uppercase;
+	font-family: 'Georgia', serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#loggedIn {
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#loggedIn a:first-child{
+	max-width: 108px;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #b5b0a3;
+	background:#fff;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#a4a4a4;
+	font-family: 'Arial', sans-serif;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	border: 1px solid #b9c0c1;
+	background: url('http://displet.com/images/westlake360/inputback.png') 0px 0px no-repeat;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #cbc8be;
+	border-right:1px solid #cbc8be;
+}
+
+#advancedExtra {
+	border-top: 1px solid #cbc8be;
+}
+
+#searchFormContainer .ctrlHolder{
+	font-weight: bold;
+	color: #717f81;
+	text-transform: uppercase;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	font-weight: normal;
+	color: #3e3638;
+	text-transform: none;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 23px;
+	line-height: 23px;
+	background-color: #b5b0a3;
+	text-transform: uppercase;
+	text-shadow: 1px -1px 1px #777;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 23px;
+	line-height: 23px;
+	text-indent: -9999px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	box-shadow: 0px 1px 3px #111;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/westlake360/savesearch.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/westlake360/resetsearch.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #695e55;
+	background-color: #fff;
+}
+
+#resultsNav {
+	border:1px solid #b6b1a4;
+	font-weight: bold;
+}
+
+#resultsNav #displayingRecords{
+	color: #68462b;
+}
+
+#prePage a, #nextPage a {
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/westlake360/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/westlake360/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #b6b1a4;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/westlake360/resultsback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 418px;
+	font-weight: bold;
+}
+
+#leftColumn #resultsDiv a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 2px #111;
+}
+
+#rightColumn {
+	border:1px solid #b5b0a3;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/westlake360/balloondetails.png') 0 0 no-repeat;
+}
+
+.balloonWrapper #stats{
+	font-weight: bold;
+	color: #695e55;
+}
+
+#footerInner ul li a, #footerInner ul li a:visited{
+	text-decoration: underline;
+}
+
+#footerInner ul li a:hover{
+	text-decoration: none;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#searchContextPagination{
+	background:url('http://displet.com/images/westlake360/backarrow.png') 0 0 no-repeat;
+}
+
+#newsearch{
+	background:url('http://displet.com/images/westlake360/newsearch.png') 0 1px no-repeat;	
+}
+
+#searchContextPagination a, #newsearch a{
+	color:#68462b;
+	text-decoration:none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#searchContextPagination a:hover, #newsearch a:hover{
+	text-decoration:underline;
+}
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	width:192px;
+	height:31px;
+	line-height:31px;
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	text-shadow:1px -1px 2px #111;
+	text-indent: 15px;
+	font-size: 12px;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/westlake360/requestshowing.png') 0 0 no-repeat;
+	margin-right:20px;
+}
+
+#actions1 #saveFaveLink {
+	background: url('http://displet.com/images/westlake360/addtofavorites.png') 0 0 no-repeat;
+}
+
+#actions1 a, #actions1 a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#actions1 #requestShowing:hover, #actions1 #saveFaveLink:hover{
+	box-shadow: 0px 1px 3px #111;
+}
+
+#actions2{
+	color: #695e55;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#sendToFriend a{
+	color: #695e55;
+	text-decoration:none;
+}
+
+#sendToFriend a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid #9c6940;
+	color: #fff;
+	background-color: #9c6940;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #68462b;
+	border-color: #68462b;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #b5b0a3;
+	background-color: #fff;
+}
+
+img#largeImage {
+	border: 1px solid #fff;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #939393;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #695e55;
+	border: 1px solid #b5b0a3;
+	background-color: #fff;
+}
+
+#resultsToolbar a{
+	color: #68462b;
+	text-decoration: none;
+}
+
+#resultsToolbar a:hover{
+	text-decoration: underline;
+}
+
+#resultsToolbar #totalRecords {
+	color: #33615b;
+}
+
+.resultListContainer {
+	background-color: #fff;
+	border: 1px solid #b5b0a3;
+	border-top:0;
+	height: 214px;
+	clear: both;
+	overflow: hidden;
+}
+
+body#residentials_results #contentInnerWrapperOne p:last-child{
+	margin-top: 5px;
+}
+
+.resultListContainer a{
+	text-decoration: none;
+}
+
+.resultListContainer .coll{
+	float: left;
+	width: 277px;
+	padding-left: 20px;
+}
+
+.resultListContainer .coll .img{
+	margin-top: 19px;
+	padding: 3px;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px #666;
+	position: relative;
+}
+
+.resultListContainer .coll .img .inner{
+	overflow: hidden;
+	width: 271px;
+	height: 170px;
+}
+
+.resultListContainer .coll .img .inner img{
+	width: 271px;
+	height: 194px;
+	margin-top: -12px;
+}
+
+.resultListContainer .coll .price{
+	position: absolute;
+	top:-2px;
+	right:-2px;
+	width: 99px;
+	height: 104px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/featuredlistingsprice.png') 0px 0px no-repeat;
+	z-index:8;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.resultListContainer .coll .price div{
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* IE 9 */
+	-moz-transform:rotate(45deg); /* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari and Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+	margin: 32px 0px 0px 22px;
+}
+
+.resultListContainer .colr{
+	float: right;
+	width: 627px;
+}
+
+.resultListContainer .colr .address{
+	font-size: 16px;
+	line-height: 16px;
+	height: 16px;
+	margin-top: 32px;
+	margin-bottom: 22px;
+	color: #33615b;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: 'Georgia', serif;
+}
+
+.resultListContainer .colr .cont{
+	height: 88px;
+	background-color: #e9e2d2;
+	border: 1px solid #b7b2a6;
+	width: 607px;
+}
+
+.resultListContainer .colr .cont .col{
+	margin-top: 3px;
+	height: 81px;
+	width: 147px;
+	border: 1px solid #b7b2a6;
+	margin-left: 2px;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+}
+
+.resultListContainer .colr .cont .col:first-child{
+	margin-left: 3px;
+}
+
+.resultListContainer .colr .cont .col .top{
+	font-size: 18px;
+	line-height: 22px;
+	color: #68462b;
+	margin-top: 16px;
+}
+
+.resultListContainer .colr .cont .col .bottom{
+	font-size: 14px;
+	line-height: 18px;
+	color: #695e55;
+	text-transform: uppercase;
+	margin-top: 12px;
+}
+
+.resultListContainer .colr .links{
+	margin-top: 11px;
+	line-height: 47px;
+	width: 607px;
+}
+
+.resultListContainer .colr .links .link{
+	font-size: 10px;
+	line-height: 16px;
+	font-weight: bold;
+	padding-left: 26px;
+	margin-top: 6px;
+	float: left;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.resultListContainer .colr .links a{
+	color: #9c6940;
+	text-decoration: none;
+	display: block;
+}
+
+.resultListContainer .colr .links a:hover{
+	text-decoration: underline;
+}
+
+.resultListContainer .colr .links .requestshowing{
+	background: url('http://displet.com/images/westlake360/requestshowingicon.png') 0px 0px no-repeat;
+	margin-left: 25px;
+}
+
+.resultListContainer .colr .links .addtofavorites{
+	background: url('http://displet.com/images/westlake360/addtofavoritesicon.png') 0px 0px no-repeat;
+}
+
+.resultListContainer .colr .links .viewdetails{
+	float: right;
+	line-height: 28px;
+	height: 28px;
+	width: 89px;
+	background: url('http://displet.com/images/westlake360/view-details.png') 0px 0px no-repeat;
+	text-indent: -9999px;
+}
+
+.resultListContainer .colr .links .viewdetails a{
+	display: block;
+}
+
+.resultListContainer .colr .links .viewdetails:hover{
+	box-shadow: 0px 2px 3px #999;
+}
+
+/******************
+Tabs & Tile View
+******************/
+
+#viewTabs{
+	color: #68462b;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position:relative;
+	z-index:9;
+}
+
+#viewTabs li{
+	float: left;
+	padding: 0 10px;
+	line-height: 29px;
+	background-color: #b5b0a3;
+	border: 1px solid #b6b1a4;
+	margin-left:10px;
+	margin-bottom:-1px;
+}
+
+#viewTabs li a{
+	display:block;
+	color: #fff;
+	text-shadow: 1px -1px 1px #666;
+	text-decoration: none;
+}
+
+#viewTabs li a:hover{
+	text-decoration: underline;
+}
+
+#leftColumn #listLoader{
+	padding-top:30px;
+	margin-top:-30px;
+}
+
+#viewTabs li.active{
+	background-color: #fff;
+	border-bottom-color:#fff;
+}
+
+#rightColumn #resultsNav2{
+	display: none;
+}
+
+#rightColumn #resultsNav{
+	border: 0;
+}
+
+#rightColumn.large{
+	float: none;
+	width: 958px;
+	height: 447px;
+	background-color: #fff;
+	position: relative;
+}
+
+#rightColumn.large #rightColumnInner{
+	padding: 0 8px 8px 8px;
+}
+
+#rightColumn #mapLoader.on{
+	height: 411px;
+	width: 480px;
+}
+
+#rightColumn.large #mapLoader.on{
+	width: 960px;
+	height: 479px;
+	left: -1px;
+	top: -31px;
+}
+
+#tileView{
+	display:none;
+	font-size: 13px;
+	color: #4B4C44;
+	background-color: white;
+	position: relative;
+}
+
+#tileView #resultsList{
+	height: inherit;
+	background-color: white;
+	padding-left:0;
+}
+
+#listLoader, #mapLoader{
+	z-index:11;
+}
+
+#tileView #listLoader{
+	width:960px;
+	height: 5975px;
+	margin-top:-30px;
+	background-position: center 100px;
+}
+
+#tileView .listResultRow{
+	display:none;
+}
+
+#leftColumn .tileResultRow{
+	display:none;
+}
+
+#searchFeedback #sortingLinks{
+	display: block !important;
+	position: absolute;
+	top: -28px;
+	right: 0;
+	z-index: 99;
+}
+
+#leftColumn #searchFeedback #sortingLinks{
+	right: -507px;
+}
+
+.displet-tile-controls {
+	background-color: #E3F3F8;
+	padding: .25em .5em;
+	margin-bottom: 2em;
+}
+
+.displet-tile-controls a {
+	text-decoration: none;
+	margin-right: 1.5em;
+}
+
+.displet-tile-controls a:hover {
+	text-decoration: underline;
+}
+
+.displet-tile-counts {
+	display: inline;
+	margin-right: 1.5em;
+}
+
+.displet-tile-control-prev,
+.displet-tile-control-next {
+	color: #96390C;
+}
+
+.displet-tile-control-prev-icon,
+.displet-tile-control-next-icon {
+	font-weight: bold;
+}
+
+.displet-tile-controls form.displet-tile-sortby-form {
+	float: right;
+}
+
+.displet-tile-controls select.displet-tile-sortby {
+	font-size: .9em;
+	padding: .15em;
+	color: #074156;
+	background-color: #fff;
+	border: 1px solid #074156;
+	float: right;
+	height: 1.6em;
+}
+
+.displet-tile-listing {
+	width: 199px;
+	height: 25em;
+	margin-bottom: 1em;
+	position: relative;
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+
+	float: left;
+
+	border-bottom: 1px dotted #333;
+	margin-right: .25em;
+}
+
+.displet-tile-listing:hover {
+	background-color: #ddd;
+	-moz-box-shadow: 0 0 5px #333;
+	-webkit-box-shadow: 0 0 5px #333;
+	box-shadow: 0 0 5px #333;
+}
+
+.displet-tile-thumb-container {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-color: #fff;
+	width: 90%;
+	margin: .25em auto 0 auto;
+}
+
+.displet-tile-thumb-container img {
+	width: 100%;
+	margin: 0;
+}
+
+.displet-tile-price-container {
+	padding: .25em .5em;
+	border-bottom: 1px dotted #333;
+	font-weight: bold;
+}
+
+.displet-tile-info {
+	padding: .5em;
+	font-size: .75em;
+	height: 16em;
+}
+
+.displet-tile-address {
+	height: 5em;
+}
+
+.displet-tile-address a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.displet-tile-proptype {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.displet-tile-specs {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.displet-tile-detail-link {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: .5em 0;
+}
+
+.displet-tile-detail-link a {
+
+}
+
+.displet-tile-disclaimer {
+	border: 1px solid #999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: .25em .5em;
+	font-size: smaller;
+}
+
+
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+
+
+#tileView .tileResultRow img{
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 2px #999;
+}
+
+/******************
+Displet Tile Styles
+******************/
+
+.lastclear{display:none;}
+#tileView .lastclear:last-child{clear:both; display:block;}
+
+#tileView .displet-tile-controls{
+	height: 30px;
+	line-height: 30px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 13px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #695240;
+}
+
+#tileView .displet-tile-counts{
+	margin-left: 20px;
+	margin-right: 23px;
+	color: #fff;
+}
+
+#tileView .displet-tile-controls a, #tileView .displet-tile-control-prev, #tileView .displet-tile-control-next{
+	color: #fff;
+	text-decoration: none;
+}
+
+#tileView .displet-tile-controls a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+#tileView .displet-tile-controls select.displet-tile-sortby{
+	margin-top: 4px;
+	margin-right: 3px;
+	font-size: 11px;
+	padding: 1px 5px;
+	color: #695e55;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+	height: 22px;
+	line-height: 20px;
+	width: 115px;
+}
+
+#tileView .displet-tile-listings{
+	padding-top: 20px;
+}
+
+#tileView .displet-tile-listing{
+	width: 202px;
+	margin: 0px 18px 39px 19px;
+	height: 416px;
+	overflow: hidden;
+	background: none;
+	color: #695e55;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	border: 0px;
+	z-index: 3;
+}
+
+#tileView .displet-tile-listing:hover{
+	color: #000;
+}
+
+
+#tileView .displet-tile-thumb-container{
+	padding: 5px;
+	background: none;
+	width: 190px;
+	height: 190px;
+	border:1px solid #b5b0a3;
+	position: relative;
+	z-index: 3;
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#tileView .displet-tile-thumb-container .thumbnail{
+	display: block;
+	width: 190px;
+	height: 190px;
+	overflow: hidden;
+}
+
+#tileView .displet-tile-thumb-container img{
+	height: 190px;
+	width: 254px;
+	margin-left: -32px;
+}
+
+#tileView .displet-tile-listing .hovertrans{
+	background-color: #B5B0A3;
+	z-index: 2;
+	width: 202px;
+	height: 413px;
+}
+
+#tileView .displet-tile-listing:hover{
+	background: none;
+	box-shadow: 0px 0px 0px #fff;
+}
+
+#tileView .displet-tile-price-container{
+	padding: 0px;
+	border: 0px;
+	width: 202px;
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+	z-index: 3;
+	font-weight: normal;
+	font-size: 16px;
+	text-indent: 15px;
+	color: #fff;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/tilepriceback.png') 0px 0px no-repeat;
+	margin-bottom: 9px;
+}
+
+#tileView .displet-tile-info{
+	padding: 0px 14px;
+	line-height: 21px;
+	height: inherit;
+	position: relative;
+	z-index: 3;
+	font-size: 13px;
+	padding-bottom: 7px;
+}
+
+#tileView .displet-tile-specs{
+	margin: 0px;
+}
+
+#tileView .displet-tile-address{
+	height: 60px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	margin-bottom: 17px;
+}

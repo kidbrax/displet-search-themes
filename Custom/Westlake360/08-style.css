@@ -1,0 +1,1441 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {border: 0;}
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+.ir{text-indent: -9999px;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Wrapper Styles
+******************/
+
+#exteriorWrapperThree{
+}
+
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#contentWrapper {
+	margin-top: 22px;
+	overflow: hidden;
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+	font-size: normal;
+	line-height: normal;
+}
+
+#columnsFooter {
+	clear: both;
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	height: 40px;
+	line-height:40px;
+	font-size: 14px;
+	margin: 0px 1px;
+}
+
+#userToolbarLinks {
+	float: left;
+	margin-right: 17px;
+}
+
+#userToolbarLinks li {
+	float: left;
+	padding: 0px 17px;
+}
+
+#quickSearch {
+	float: left;
+}
+
+#quickSearch form {
+	float: left;
+	display: inline;
+	padding-top: 9px;
+}
+
+#quickSearch input {
+	display: inline;
+	float: left;
+	height: 22px;
+	line-height:22px;
+	margin:0 11px;
+	padding: 0px 5px;
+	width: 108px;
+}
+
+input#street_number{
+	width: 68px;
+	margin-right: 4px;
+}
+
+input#street_name{
+	width: 177px;
+}
+
+#quickSearch span#textQuick{
+	float: left;
+}
+
+#quickSearch span#textOr{
+	float: left;
+	font-size: 10px;
+}
+
+#loggedIn {
+	float: right;
+	text-align:center;
+	margin: 0px 11px;
+}
+
+#loggedIn a {
+	margin:0 8px;
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	margin-bottom: 20px;
+	border-bottom:0 !important;
+}
+
+#standardFields {
+	width: 100%;
+	overflow: hidden;
+}
+
+#searchFormContainer .column{
+	float:left;
+	width:294px;
+	padding:12px 12px 0px 12px;
+}
+
+#searchFormContainer .ctrlHolder{
+	float:left;
+	padding-bottom:12px;
+	margin:0 9px;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	font-size: 11px;
+	line-height: 13px;
+}
+
+#searchFormContainer label{
+	display:block;
+	padding-bottom:6px;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	width:129px;
+	height:25px;
+	font-size: 11px;
+	line-height:23px;
+	padding:1px 1px 1px 5px;
+}
+
+#searchFormContainer input{
+	width:121px;
+	height:21px;
+}
+
+#searchFormContainer .tinySearchSelect{
+	width:80px;
+}
+
+/* Make these tiny selects default size  */
+#searchFormContainer #area_mls_defined{
+	width:129px;
+}
+
+#searchFormContainer #minListPrice, #searchFormContainer #maxListPrice{
+	width: 129px;
+}
+
+#searchFormContainer #minListPrice{
+	margin-right:15px;
+}
+
+#searchFormContainer #bedHolder{
+	clear: both;
+}
+
+#zipHolder{
+	clear:none !important;
+}
+
+#searchFormContainer .triggerLabel input{
+	width:14px !important;
+    border:0 !important;
+	background: inherit !important;
+	position: relative;
+	top: 6px;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	padding-bottom:4px;
+}
+
+#propertyStyleHolder label:first-child{
+	margin-top:6px;
+}
+
+#standardFields #stdColumn2 {
+}
+
+#advancedExtra {
+	width: 100%;
+	overflow: hidden;
+}
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+	padding-left: 19px;
+}
+
+#searchFormLinks small {
+	font-size:10px;
+}
+
+#searchLinksOne{
+	display:none;
+}
+
+#searchLinksTwo {
+	float: left;
+}
+
+#searchLinksThree {
+	float: right;
+	width:246px;
+	margin-right: -1px;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	display: block;
+	float: right;
+	text-indent: 13px;
+	width: 123px;
+}
+
+#searchformResetter {
+}
+
+#saveSearchLink span, #searchformResetter span {
+	display: none;
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+	background: white;
+	opacity: .7;
+	background-image: url('/images/loader_small_dots.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+	display: block;
+	position: absolute;
+	height: 412px;
+	background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+	padding: 0;
+	height: 411px;
+	float:left;
+	position: relative;
+}
+
+#leftColumn{
+	height:412px;
+	font-size: 11px;
+}
+
+#leftColumn, #listLoader {
+	width: 451px;
+}
+
+#resultsNav {
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	border-bottom:0 !important;
+	font-size: 11px;
+}
+
+#prePage a, #nextPage a {
+	text-indent: -9999px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#prePage a {
+	margin-right: 24px;
+}
+
+#nextPage a {
+	margin-left: 24px;
+}
+
+span.resultsPaginationArrow{
+	display:none;
+}
+
+#resultsList {
+	height: 382px;
+	padding-left: 5px;
+	overflow-x: auto;
+	border-top: none !important;
+}
+
+div.resultRow {
+	overflow: hidden;
+	margin-bottom: 5px;
+	line-height: 15px;
+	font-size: 11px;
+}
+
+div.resultRow:hover {
+	background-position: 0px bottom;
+}
+
+#leftColumn div.resultRow a {
+	display: block;
+}
+
+div.propertyPreviewPic {
+	float: left;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+div.propertyPreviewPic img {
+	width: 56px;
+	height: 56px;
+}
+
+div.propertyAddress {
+	float: left;
+	width: 155px;
+	padding:0 10px;
+	margin-top:6px;
+}
+
+div.propertyPriceBedsSf {
+	float: left;
+	width: 99px;
+	padding-left: 14px;
+	margin-top:6px;
+}
+
+#resultsDiv .viewDetailsLink{
+	text-indent: -9999px;
+}
+
+#rightColumn {
+	width: 480px;
+	float:right;
+}
+
+#resultsMap {
+	height: 411px;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	display: block;
+	margin-top: 2px;
+}
+
+.balloonWrapper #stats{
+	font-size: 11px;
+	line-height: 18px;
+}
+
+/* Balloon pic */
+#imagery img{
+	width: 102px;
+	border: 0;
+	padding-right: 10px;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+body#residentials_detail #slimsearch{
+	display: none;
+}
+
+body#residentials_detail #contentWrapper{
+	margin-top: 13px;
+}
+
+body#residentials_detail #globalToolbarOuter{
+	padding-right: 23px;
+	background: url('http://displet.com/images/westlake360/globaltoolbarright.png') right 0px no-repeat;
+}
+
+body#residentials_detail #globalToolbar{
+	padding-left: 17px;
+	background: url('http://displet.com/images/westlake360/globaltoolbarleft.png') 0px 0px no-repeat;
+}
+
+body#residentials_detail #globalToolbarInner{
+	background: url('http://displet.com/images/westlake360/globaltoolbarback2.png') 0px 0px repeat-x;
+	overflow: auto;
+}
+
+body#residentials_detail #globalToolbar a{
+	color: #fff;
+}
+
+body#residentials_detail #loggedIn{
+	margin: 0px 0px 0px 11px;
+	padding-left: 2px;
+	background: url('http://displet.com/images/westlake360/loginleft.png') 0px 0px no-repeat;
+	height: 40px;
+}
+
+body#residentials_detail #loginBox{
+	display: block;
+	height: 40px;
+	background: url('http://displet.com/images/westlake360/loginback.png') 0px 0px repeat-x;
+}
+
+body#residentials_detail #loggedIn a{
+	margin: 0px 0px 0px 8px;
+}
+
+body#residentials_detail #loggedIn strong a{
+	margin-right: 8px;
+}
+
+#leaf{
+	margin-top: 20px;
+}
+
+#leafwrap{
+	background-color: #fff;
+	border: 1px solid #b5b0a3;
+	padding: 20px 30px;
+}
+
+#searchContextPagination{
+	float: left;
+	line-height:10px;
+	padding-left:17px;
+	font-size:10px;
+	margin-left: -8px;
+}
+
+#newsearch{
+	float: left;
+	line-height: 10px;
+	font-size: 10px;
+	padding-left: 14px;
+	margin-left: 12px;
+}
+
+#contentWrapper .social{
+	display: inline-block;
+	height: 22px;
+	margin: 0px 0px 0px 10px;
+}
+
+#detailsHeader{
+	border: 1px solid #b8b3a6;
+	background-color: #e9e2d2;
+	height: 80px;
+	margin-top: 13px;
+	font-size: 13px;
+	color: #4f3e30;
+	width: 100%;
+	border-spacing:0;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#detailsHeader td{
+	padding: 0px 29px;
+	border-right: 1px solid #b8b3a6;
+	height: 78px;
+	min-width: 73px;
+	text-align: center;
+}
+
+#detailsHeader td.squarefeet{
+	border-right:0;
+}
+
+#detailsHeader td.address{
+	font-family: 'Georgia', serif;
+	font-size: 16px;
+	text-align: left;
+	color: #33615b;
+}
+
+#detailsHeader td div{
+	font-size: 30px;
+	line-height: 30px;
+	color: #68462b;
+	margin-bottom: 8px;
+}
+
+#detailsHeader td.price div{
+	margin-bottom: 0px;
+	font-size: 26px;
+	font-family: 'Oswald', sans-serif;
+}
+
+/* Begins with Showing & Fave buttons */
+#residentials_detail .col1 {
+	float: left;
+	margin-top:20px;
+  	width: 444px;
+}
+
+#actions1 {
+}
+
+#actions1 #requestShowing, #actions1 #saveFaveLink {
+	float:left;
+	text-indent:15px;
+}
+
+#actions1 a, #actions1 a:visited {
+	display: block;
+}
+
+#actions2 {
+	margin: 18px 0px 21px 0px;
+}
+
+#actions2 #callUs, #actions2 #sendToFriend {
+	float: left;
+	font-size: 11px;
+}
+
+#callUs {
+	line-height: 18px;
+	background: url('http://displet.com/images/westlake360/question.png') 0 2px no-repeat;
+	margin-right: 13px;
+	padding-left:25px;
+	width: 175px;
+}
+
+#sendToFriend {
+	background: url('http://displet.com/images/westlake360/email.png') 0 0 no-repeat;
+	line-height: 24px;
+	padding-left: 47px;
+}
+
+#detailsProperty{
+	width: 100%;
+	border: 1px solid #dad7d1;
+	background-color: #f9f7f3;
+	font-size: 13px;
+	line-height: 26px;
+	color: #695e55;
+	border-spacing:0;
+}
+
+#detailsProperty td{
+	padding: 0px 9px;
+}
+
+#detailsProperty .propertytype, #detailsProperty .mls{
+	width: 50%;
+}
+
+#detailsProperty .propertytype{
+	border-right: 1px solid #dad7d1;
+}
+
+#detailsProperty .subdivision{
+	border-top: 1px solid #dad7d1;
+	border-bottom: 1px solid #dad7d1;
+}
+
+#detailsRemarks{
+	margin: 22px 0px;
+}
+
+#detailsRemarks .tanbacktit{
+	margin-bottom: 13px;
+}
+
+#detailsRemarks p{
+	font-size: 13px;
+	line-height: 21px;
+	color: #695e55;
+	font-family: 'Georgia', serif;
+}
+
+.tanBack {
+	border: 1px solid #dad7d1;
+	background-color: #f9f7f3;
+	padding: 18px 20px 10px 20px;
+	line-height: 16px;
+	font-size: 13px;
+	color: #695e55;
+	margin-bottom: 20px;
+}
+
+.tanBack .left, .tanBack .rig19ht{
+	width: 405px;
+}
+
+.tanBack table{
+	width: 405px !important;
+}
+
+.tanBack td{
+	padding: 4px 0px;
+	vertical-align: top;
+}
+
+.tanBack .fieldName{
+	font-weight: bold;
+}
+
+.tanBack .fieldRight{
+	text-align: right;
+}
+
+.tanbacktit {
+	font-size: 14px;
+	line-height: 14px;
+	font-family: 'Georgia', serif;
+	font-weight: bold;
+	color: #695e55;
+	margin-bottom: 17px;
+	text-transform: uppercase;
+}
+
+.tanBack .separate{
+	height: 1px;
+	background-color: #dad7d1;
+	margin: 19px 0px;
+}
+
+/* Begins with tabbed Map/Photo/Comment section */
+#residentials_detail .col2 {
+	float: right;
+	overflow:hidden;
+	width: 427px;
+	margin-top:20px;
+}
+
+#detailTabs {
+	padding-left: 11px;
+}
+
+#detailTabs li {
+	float: left;
+	padding-right: 10px;
+	font-size: 11px;
+}
+
+#detailTabs li a {
+	display: block;
+	line-height: 29px;
+	text-decoration: none;
+	padding: 0px 25px;
+	font-size: 12px;
+	border-bottom:0px !important;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	clear: both;
+	padding: 9px;
+	margin-bottom: 20px;
+}
+
+#detailPhotos{
+}
+
+#userCommentsContainer #userCommentsContainer{
+	display:block !important;
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+#userComments h3{
+	margin:5px 0;
+}
+
+img#largeImage {
+	display: block;
+	width: 408px !important;
+}
+
+/* Width same as img#largeImage (with border) */
+#detailPhotos #horizontal_carousel {
+	width: 410px;
+	height: 425px;
+	padding:0;
+	margin-top:0;
+}
+
+#detailPhotos #horizontal_carousel .container {
+	width: 322px;
+	top: 334px;
+	left: 44px;
+}
+
+#horizontal_carousel .container img {
+	width: 100px;
+	height: 90px;
+	margin: 0 8px 0 0;
+}
+
+#detailPhotos #horizontal_carousel .next_button, #detailPhotos #horizontal_carousel .previous_button {
+	bottom: 27px;
+	width:29px;
+}
+
+/* Width same as #horizontal_carousel */
+#detailPhotos #imageNav {
+	width: 410px;
+}
+
+#detailMap {
+	height: 380px;
+}
+
+/* Courtesy of / Last updated */
+#detailFooter {
+	font-size: 12px;
+	line-height: 12px;
+	color: #695e55;
+}
+
+#streetview{
+	margin: 23px auto 5px auto;
+	width: 863px;
+	height: 504px;
+	overflow: hidden;
+	background: url('http://displet.com/images/westlake360/streetview.png') 0px 0px no-repeat;
+}
+
+#streetview iframe{
+	margin: 35px 0px 12px 37px;
+	width: 791px;
+	height: 378px;
+}
+
+#streetview a{
+	padding-right: 9px;
+	background: url('http://displet.com/images/westlake360/viewingoogle.png') right 2px no-repeat;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #15C;
+	text-decoration: none;
+}
+
+#streetview a:hover{
+	text-decoration: underline;
+}
+
+#streetview .link{
+	margin-right: 52px;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	height: 49px;
+	line-height: 49px;
+	padding: 0px 19px;
+	font-size: 10px;
+}
+
+#resultsToolbar table {
+	width: 100%;
+	border-spacing:0;
+}
+
+#resultsToolbar td {
+	width: 50%;
+	text-align: right;
+}
+
+#resultsToolbar td:first-child {
+	text-align: left;
+}
+
+/******************
+Footer Link / Disclaimer Styles
+******************/
+
+#footerOuter, #disclaimer{
+	width: 960px;
+	margin: 0px auto;
+	margin-top: 20px;
+	color: #695e55;
+}
+
+#footerOuter{
+	line-height: 10px;
+}
+
+#disclaimer{
+	line-height: 14px;
+	margin-bottom: 20px;
+}
+
+#footerInner ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+#footerInner ul li:last-child{
+	float: right;
+	margin-right:0;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 14px;
+	overflow: hidden;
+	height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+	font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+	text-decoration: none;
+	color: #000;
+}
+
+#propertyInfoWindow img {
+	width: 105px;
+	display: block;
+	margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+	display: block;
+	float: right;
+	width: 10px;
+	height: 8px;
+	line-height: 8px;
+	background-image: url(http://displet.com/images/alderson/bg_closeBalloon.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+	width: 100%;
+}
+
+#propertyInfoWindow table td {
+	vertical-align: top;
+	padding: 5px;
+	font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+	width: 24px;
+	height: 20px;
+	background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/marchantteam/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+	height: 0px;
+	width: 0px;
+}
+
+/******************
+FB Login Stuff
+******************/
+body .loginSignupDialog{
+  top:119px !important;
+}
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
+
+/******************
+Site Specific Styles
+******************/
+
+.right {float: right;}
+
+.left {float:left;}
+
+.clear {clear:both;}
+
+.clearr{clear:right;}
+
+.ir {text-indent: -9999px;}
+
+.block{display: block;}
+
+
+.hovertrans, .slidetrans{
+	display: none;
+	position: absolute;
+}
+
+.hovertrans{
+	top: 0px;
+}
+
+.slidetrans{
+	bottom: 0px;
+}
+
+.margin{
+	width: 960px;
+	margin: 0px auto;
+}
+
+.sans{
+	font-family: 'Oswald', sans-serif;
+}
+
+.serif{
+	font-family: 'Georgia', serif
+}
+
+.bshadow{
+	box-shadow: 0 1px 2px #333;
+}
+
+.shadow{
+	text-shadow: 0 1px 2px #111;
+}
+
+.shadoww{
+	text-shadow: 0 1px 2px #fff;
+}
+
+html{
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/bodyback.png') 0px 0px repeat;
+}
+
+body {
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/bodyback2.png') center 0px no-repeat;
+	font-size: 12px;
+	color: #000;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	color: #33615b;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #33615b;
+	text-decoration: none;	
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Georgia', serif;
+}
+
+h1, h2, h4, h5{
+	color: #695e55;
+}
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	font-size: 24px;
+	color: #33615b;
+}
+
+h3{
+	font-size: 18px;
+}
+
+h4{
+	font-size: 14px;
+}
+
+h5{
+	font-size: 12px;
+}
+
+/******************
+Header Styles
+******************/
+
+#header .logo{
+	margin-left: 30px;
+	width: 220px;
+	height: 94px;
+	line-height: 94px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/westlake360.png') 0px 0px no-repeat;
+}
+
+#header .top{
+	margin: 18px 30px 0 0;
+}
+
+#header .contact{
+	margin-left: 28px;
+}
+
+#header .contact .text{
+	font-size: 11px;
+	line-height: 11px;
+	font-weight: bold;
+	color: #0a0608;
+	text-transform: uppercase;
+	margin: 0 0 12px 2px;
+}
+
+#header .contact td{
+	font-size: 14px;
+	line-height: 14px;
+	color: #33615b;
+	padding: 0;
+}
+
+#header .contact .phone{
+	padding-left: 14px;
+}
+
+#header .contact a{
+	color: #33615b;
+	text-decoration: underline;
+}
+
+#header .contact a:hover{
+	text-decoration: none;
+}
+
+#header .top .social{
+	margin: 2px 0 0 10px;
+}
+
+/******************
+Navigation Styles
+******************/
+
+#navigation{
+	margin: 28px 10px 0 0;
+}
+
+#navigation li{
+	float: left;
+	font-size: 14px;
+	text-transform: uppercase;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 5px;
+}
+
+#navigation a{
+	color: #4f3e30;
+	text-decoration: none;
+	display: block;
+	padding: 0px 20px;
+	position: relative;
+	z-index: 5;
+}
+
+#navigation a:hover{
+	color: #fff;
+	text-shadow: 0 1px 2px #111;
+}
+
+#navigation .hovertrans, #navigation .slidetrans{
+	z-index: 4;
+	width:100% !important;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/navhov.png') 0px 0px repeat-x;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#navigation .sub-menu{
+	display: none;
+}
+
+#slimsearch{
+	padding-left: 16px;
+	height: 40px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/slimsearchleft.png') 0px 0px no-repeat;
+	margin-top: 13px;
+}
+
+#slimsearch .inner{
+	padding-right: 58px;
+	height: 40px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/slimsearchright.png') right 0px no-repeat;
+}
+
+#slimsearch .inner2{
+	height: 40px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/slimsearchback.png') 0px 0px repeat-x;
+}
+
+#slimsearch .tit{
+	font-size: 18px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 13px;
+}
+
+#slimsearch select{
+	margin-top: 5px;
+	height: 30px;
+	width: 160px;
+	padding: 4px 4px 4px 9px;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	border: 1px solid #33615b;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/slimsearchselectback.png') 0px 0px no-repeat;
+}
+
+#slimsearch .or{
+	font-size: 10px;
+	line-height: 40px;
+	font-style: italic;
+	color: #fff;
+	margin: 0 9px;
+	text-transform: uppercase;
+}
+
+/******************
+Footer Styles
+******************/
+
+#thefooter{
+	padding: 28px 0 30px 0;
+	text-align: center;
+}
+
+#thefooter .nav{
+	margin: 0px auto;
+}
+
+#thefooter .nav ul, #thefooter .nav li{
+	display: inline-block;
+}
+
+#thefooter .nav li{
+	font-size: 12px;
+	line-height: 12px;
+	text-transform: uppercase;
+	margin-left: 14px;
+	padding-right: 23px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/footnavli.png') right 4px no-repeat;
+}
+
+#thefooter .nav li:last-child{
+	padding-right: 14px;
+	background-image: none;
+}
+
+#thefooter .nav a{
+	color: #4f3e30;
+	text-decoration: none;
+}
+
+#thefooter .nav a:hover{
+	color: #33615b;
+}
+
+#thefooter .nav .sub-menu{
+	display: none;
+}
+
+#thefooter .copy{
+	margin: 14px auto 0 auto;
+	line-height: 18px;
+	text-align: center;
+	font-size: 11px;
+	color: #695e55;
+}
+
+#thefooter .copy div{
+	display: inline-block;
+}
+
+#thefooter .wordpress{
+	width: 18px;
+	height: 19px;
+	line-height: 19px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/wordpress.png') 0px 0px no-repeat;
+}
+
+#thefooter .powered{
+	margin: 0px 5px 0px 3px;
+}
+
+#thefooter .displet{
+	margin-top: 2px;
+	width: 74px;
+	height: 15px;
+	line-height: 15px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/displet.png') 0px 0px no-repeat;
+}
+
+#thefooter .designed{
+	margin: 0px 4px 0px 3px;
+}
+
+#thefooter .bramres{
+	margin: 25px auto 0 auto;
+	width: 148px;
+	height: 104px;
+	line-height: 104px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/bramres.png') 0px 0px no-repeat;
+}
+
+/******************
+Leaf Styles
+******************/
+
+#leaf{
+	padding-left: 5px;
+	height: 6px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/leafleft.png') 0px 0px no-repeat;
+}
+
+#leaf .inner{
+	padding-right: 5px;
+	height: 6px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/leafright.png') right 0px no-repeat;
+}
+
+#leaf .inner2{
+	height: 6px;
+	background: url('http://westlake360.com/wp-content/themes/Westlake360/images/leafback.png') 0px 0px repeat-x;
+}

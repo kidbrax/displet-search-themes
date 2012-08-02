@@ -32,7 +32,7 @@
   </div>
 
   <div id="actions1">	
-  	<div id="sendToFriend">{{ email_to_friend }}</div>
+  	<div id="sendToFriend"><a href="http://nwforeclosurenetwork.com/refer">Refer a Friend & Get an iPad*</a></div>
 	<div id="print"><a href="javascript:void(0);" onclick="printpage()">Print</a></div>
     <div id="addToFavorites">{{ add_to_favorites }}</div>
 	<div class="clear"></div>
@@ -40,7 +40,7 @@
 
   <div id="actions2">
 	<div id="nameprice"><a href="http://nwforeclosurenetwork.com/name-your-price">Name<br>Your Price</a></div>
-	<div id="mortgagebundle"><a href="http://nwforeclosurenetwork.com/ipad">Mortgage Bundle<br>Realtor Discounts</a></div>
+	<div id="mortgagebundle"><a href="http://nwforeclosurenetwork.com/landing/ipad">Mortgage Bundle<br>Realtor Discounts</a></div>
 	<div id="bestday"><a href="http://nwforeclosurenetwork.com/low-offer">Best Day<br>for Low Offers</a></div>
 	<div id="pricehistory"><a href="http://nwforeclosurenetwork.com/price-history">Price History &<br>Seller Bottom Line</a></div>
 	<div class="clear"></div>
@@ -48,7 +48,7 @@
 
   <div id="actions3">
 	<div class="left">
-		<div class="price">{{ list_price }}</div>
+		<div class="price">{{ price_range_min }}  {{ list_price }}</div>
 		<div class="propertyinfo ir">Property Info</div>
 		<div class="inner">
 			SF: {{ square_feet }}<BR>
@@ -56,7 +56,9 @@
 			Bath: {{ full_baths }}<BR>
 			Year: {{ year_built }}<BR>
 			Lot size: {{ acres }}<BR>
-			Tax: {{ estimated_taxes }}<BR>
+			MLS: {{ mls_number }}<BR>
+			Status: {{ status }}<BR>
+
 		</div>
 	</div>
 	<div class="right">
@@ -67,16 +69,44 @@
 		<div class="address"><span>Address:</span> {{ address }} {{ city_state_zip }}</div>
 		<div class="description"><span>Description:</span> {{ remarks }}</div>
 		<div class="mdfs">
-			<span>Refer a friend & get <span>FREE INSPECTION</span><BR>at closing</span> (details below)
+			<!-- <span>Refer a friend & get <span>FREE INSPECTION</span><BR>at closing</span> (details below) -->
+                        {{ request_showing }}
 		</div>
 	</div>
 	<div class="clear"><!-- --></div>
   </div>
 
+  <div id="newbox">
+    <div class="gray">More Info</div>
+    <div class="left">
+      <div>List date: {{ list_date }}</div>
+      <div>Original price: {{ original_list_price }}</div>
+      <div>Heat: {{ heat }}</div>
+      <div>Fireplace: {{ fireplaces }}</div>
+      <div>Master on main: {{ master_on_main }}</div>
+      <div>Garage spaces: {{ garage_spaces }}</div>
+    </div>
+    <div class="right">
+      <div>Sewer: {{ sewer }}</div>
+      <div>View: {{ view }}</div>
+      <div>Estimated tax: {{ estimated_taxes }}</div>
+      <div>HOA fee: {{ hoa_fee }}</div>
+      <div>HOA frequency: {{ hoa_frequency }}</div>
+      <div>Price Range: Min:{{ price_range_min }} Max: {{ price_range_max }}</div>
+
+    </div>
+    <div class="clear"><!-- --></div>
+    <div class="green">Listed by: {{ listing_office_name }}</div>
+    <div class="tril">Elementary: {{ elementary_school }}</div>
+    <div class="tril extra">Middle: {{ middle_school }}</div>
+    <div class="tril">High: {{ high_school }}</div>
+    <div class="clear"><!-- --></div>
+  </div>
+
   <div id="likeprop">
 	<div class="left">
 		<div>Do you like this property?</div>
-		Don't drive by it before you text<BR>{{ website_phone }} and ask about ...
+		Call or text {{ website_phone }}<BR> and ask the 5 questions below…
 	</div>
 	<div class="right">
 		<div class="img"></div>
@@ -105,12 +135,12 @@
 	{{ bottom_navigation }}
 	
 	<div id="firstvid">
-<object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="312">
+<!-- <object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="344">
    <param name="movie" value="http://www.youtube.com/v/aWheraTF3AE?version=3&feature=player_embedded" />
    <param name="wmode" value="opaque" />
 
    <!--[if !IE]>-->
-   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/aWheraTF3AE?version=3&feature=player_embedded" width="388" height="312">
+   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/aWheraTF3AE?version=3&feature=player_embedded" width="388" height="344">
    <param name="wmode" value="opaque" />
    <!--<![endif]-->
 
@@ -120,7 +150,8 @@
    </object>
    <!--<![endif]-->
 
-</object>
+</object> -->
+<iframe width=”388” height=”344” src=”http://www.youtube.com/embed/aWheraTF3AE?rel=0”; frameborder=”0” allowfullscreen></iframe>
 	</div>
 	
 	<div id="likes">
@@ -133,7 +164,7 @@
 			</div>
 		</div>
 		<div class="right">
-			<span>LIKE this & get $100 card</span> (details below)
+			<span>Share this page with your friends</span>
 		</div>
 		<div class="clear"><!-- --></div>
 	</div>
@@ -147,12 +178,12 @@
 	</div>
 	
 	<div id="secondvid">
-		<object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="278">
+		<!-- <object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="344">
 		   <param name="movie" value="http://www.youtube.com/v/kg-AihbTr-g?version=3&feature=player_embedded" />
 		   <param name="wmode" value="opaque" />
 
 		   <!--[if !IE]>-->
-		   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/kg-AihbTr-g?version=3&feature=player_embedded" width="388" height="278">
+		   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/kg-AihbTr-g?version=3&feature=player_embedded" width="388" height="344">
 		   <param name="wmode" value="opaque" />
 		   <!--<![endif]-->
 
@@ -162,7 +193,8 @@
 		   </object>
 		   <!--<![endif]-->
 
-		</object>	
+		</object> -->
+<iframe width=”388” height=”344” src=”http://www.youtube.com/embed/0D5NJNSTbN8?rel=0”; frameborder=”0” allowfullscreen></iframe>	
 	</div>
 	
 	<div id="mortgageq">
@@ -170,12 +202,12 @@
 	</div>
 	
 	<div id="thirdvid">
-		<object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="263">
+		<!-- <object id="flashcontent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="388" height="344">
 		   <param name="movie" value="http://www.youtube.com/v/Ms3q-Rhnq6A?version=3&feature=player_embedded" />
 		   <param name="wmode" value="opaque" />
 
 		   <!--[if !IE]>-->
-		   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/Ms3q-Rhnq6A?version=3&feature=player_embedded" width="388" height="263">
+		   <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/Ms3q-Rhnq6A?version=3&feature=player_embedded" width="388" height="344">
 		   <param name="wmode" value="opaque" />
 		   <!--<![endif]-->
 
@@ -185,8 +217,11 @@
 		   </object>
 		   <!--<![endif]-->
 
-		</object>
+		</object> -->
+<iframe width=”388” height=”344” src=”http://www.youtube.com/embed/Ms3q-Rhnq6A?rel=0”; frameborder=”0” allowfullscreen></iframe>
 	</div>
+
+      
 	
 </div>
 

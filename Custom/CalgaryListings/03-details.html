@@ -1,0 +1,135 @@
+{{ bottom_navigation }}
+
+<div class="social right">
+	<div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+</div><!--// .social right -->
+<div class="social right">
+	<g:plusone size="medium"></g:plusone>
+</div><!--// .social right -->
+<div class="social right">
+	<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+</div><!--// .social right -->
+<div class="clear"><!-- --></div>
+
+<table id="detailsHeader">
+	<tr>
+		<td class="price"><div>{{ list_price }}</div></td>
+		<td class="address">{{ address }}<BR>{{ city_state_zip }}</td>
+		<td class="beds"><div>{{ num_bedrooms }}</div>Bedrooms</td>
+		<td class="baths"><div>{{ full_baths }}</div>Baths</td>
+		<td class="squarefeet"><div>{{ square_feet }}</div>Sq. Ft.</td>
+	</tr>
+</table>
+
+<div class="col1">
+	<div id="actions1">
+		<div id="requestShowing">{{ request_showing }}</div>
+		<div id="addToFavorites">{{ add_to_favorites }}</div>
+		<div class="clear"></div>
+	</div>
+	<div id="actions2">
+		<div id="callUs">Any questions?<br /><span>Call us at {{ website_phone }}</span></div>
+		<div id="sendToFriend">{{ email_to_friend }}</div>
+		<div class="clear"></div>
+	</div>
+	<table id="detailsProperty">
+		<tr>
+	  		<td class="propertytype">Listing Type: {{ property_type }}</td>
+	  		<td class="mls">MLS #: {{ mls_number }}</td>
+	  	</tr>
+	  	<tr>
+	  		<td class="subdivision" colspan="2">Community: {{ subdivision }}</td>
+		</tr>
+	</table>
+	<div id="detailsRemarks">
+		<h4 class="tanbacktit">Agent Description</h4>
+		<p>{{ remarks }}</p>
+	</div>
+</div>
+
+<div class="col2">
+  <ul id="detailTabs">
+    <li><a class="active" href="javascript:void(0)" rel="detailPhotos">Photos</a></li>
+    <li><a href="javascript:void(0)" rel="detailMapOuter">Map</a></li>
+    <li><a href="javascript:void(0)" rel="userCommentsContainer">Comments {{ comment_count }}</a></li>
+  </ul>
+
+  {{ photos }}
+
+  
+    {{ map }}
+  
+  <div class="largeDetailDisplay" id="userCommentsContainer" style="display: none">
+  	{{ comments }}	
+  </div>
+</div>
+
+<div class="clear"><!-- --></div>
+
+<div class="tanBack">
+	<h4 class="tanbacktit">Property Information</h4>
+	<div class="left">
+		<p><span class="fieldName">Property Type:</span><span class="fieldRight">&nbsp;{{ property_type }}</span></p>
+		<p><span class="fieldName">Style:</span><span class="fieldRight">&nbsp;{{ property_sub_type }}</span></p>
+		<p><span class="fieldName">MLS #:</span><span class="fieldRight">&nbsp;{{ mls_number }}</span></p>
+		<p><span class="fieldName">Community:</span><span class="fieldRight">&nbsp;{{ subdivision }}</span></p>
+		<p><span class="fieldName">Year Built:</span><span class="fieldRight">&nbsp;{{ year_built }}</span></p>
+		<p><span class="fieldName">Bedrooms:</span><span class="fieldRight">&nbsp;{{ num_bedrooms }}</span></p>
+		<p><span class="fieldName">Full Baths:</span><span class="fieldRight">&nbsp;{{ full_baths }}</span></p>
+		<p><span class="fieldName">Half Baths:</span><span class="fieldRight">&nbsp;{{ half_baths }}</span></p>
+		<p><span class="fieldName">Basement:</span><span class="fieldRight">&nbsp;{{ basement }}</span></p>
+		<p><span class="fieldName">Basement Development:</span><span class="fieldRight">&nbsp;{{ basement_description }}</span></p>
+		<p><span class="fieldName">Garage:</span><span class="fieldRight">&nbsp;{{ garage_description }}</span></p>
+	</div><!--// .left -->
+	<div class="right">
+		<p><span class="fieldName">Parking:</span><span class="fieldRight">&nbsp;{{ parking_description }}</span></p>
+		<p><span class="fieldName">Postal Code:</span><span class="fieldRight">&nbsp;{{ zip_code }}</span></p>
+		<p><span class="fieldName">Area:</span><span class="fieldRight">&nbsp;{{ area_mls_defined }}</span></p>
+		<p><span class="fieldName">Total Square Footage:</span><span class="fieldRight">&nbsp;{{ square_feet }}</span></p>
+		<p><span class="fieldName">Construction Type:</span><span class="fieldRight">&nbsp;{{ construction }}</span></p>
+		<p><span class="fieldName">Roof Type:</span><span class="fieldRight">&nbsp;{{ roof }}</span></p>
+		<p><span class="fieldName">Exterior:</span><span class="fieldRight">&nbsp;{{ exterior_features }}</span></p>
+		<p><span class="fieldName">Foundation:</span><span class="fieldRight">&nbsp;{{ foundation }}</span></p>
+		<p><span class="fieldName">Heating Type:</span><span class="fieldRight">&nbsp;{{ heat }}</span></p>
+		<p><span class="fieldName">Lot Dimensions:</span><span class="fieldRight">&nbsp;{{ lot_dimensions }}</span></p>
+		<p><span class="fieldName">Lot Sq Metres:</span><span class="fieldRight">&nbsp;{{ lot_size }}</span></p>
+	</div><!--// .right -->
+	<div class="clear"><!-- --></div>
+</div>
+
+<div class="tanBack">
+	<h4 class="tanbacktit">Condo Information</h4>
+	<div class="left">
+		<p><span class="fieldName">Condo Fee:</span><span class="fieldRight">&nbsp;{{ condo_fee }}</span></p>
+		<p><span class="fieldName">Condo Fee Includes:</span><span class="fieldRight">&nbsp;{{ condo_fee_includes }}</span></p>
+		<p><span class="fieldName">Condo Name:</span><span class="fieldRight">&nbsp;{{ building_name }}</span></p>
+	</div><!--// .left -->
+	<div class="clear"><!-- --></div>
+</div>
+
+<div id="detailFooter">
+	Courtesy of Listing Office: {{ listing_office_name }}
+</div>
+
+<!-- Required for Twitter Button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- End Required -->
+<!-- Required for Facebook Like Button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Required -->
+<!-- Required for Google Plus One Button -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<!-- End Required -->

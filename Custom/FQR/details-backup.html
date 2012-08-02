@@ -1,0 +1,155 @@
+	<div class='col1'>
+
+	<div id="back_link">
+	<script src="http://displet.com/images/ericbramlett/backlink.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	<!--
+	var bl = new backlink();
+	bl.write();
+	//-->
+	</script>
+	</div>
+
+	  <div id='actions1'>
+	    <div>
+	      {{ request_showing }}
+	    </div>
+	    <div>
+	      <span id="propertySaveAsFavorite_{{ residential_id }}">
+	        {{ add_to_favorites }}
+	      </span>
+	    </div>
+	  </div>
+
+	  <div id='actions2'>
+	    <div id='callUs'>Any questions?<br /><span>Call us at {{ website_phone }}</span></div>
+	    <div id='sendToFriend'>{{ email_to_friend }}</div>
+	  </div>
+
+	<div id="facebook_like">
+	<fb:like width="350"></fb:like>
+	</div>
+
+	  <div class='' id='detailsHeader'>
+	    <h2 class="address">{{ address }}</h2>
+	    <h3 class='price'>{{ list_price }}</h3>
+	  </div>
+
+	  <div id='detailsProperty'>
+	    <div class='subColumnOne'>
+	      <p>{{ address }}</p>
+	      <p>{{ city_state_zip }}</p>
+	      <p>MLS# {{ mls_number }}</p>
+	      <p>{{ subdivision }}</p>
+	      <p>Virtual Tour: <a href="{{ virtual_tour_non_branded }}" target="_blank">{{ virtual_tour_non_branded }}</a></p>
+	    </div>
+
+	    <div class='subColumnTwo'>
+	      <p><span class='fieldName'>Beds:</span> {{ num_bedrooms }} / Baths (Full/Half):</span> {{ full_baths }}/{{ half_baths }}</p>
+	      <p><span class='fieldName'># Stories:</span> {{ stories }}</p>
+	      <p><span class='fieldName'>{{ square_feet }} Sq. Ft.</span></p>
+	      <p><span class='fieldName'>Property Type:</span> {{ property_type }}</p>
+	      <p><span class='fieldName'>Year Built:</span> {{ year_built }}</p>
+
+	      <!-- <p><span class='fieldName'>Garage Capacity:</span> {{ garage_spaces }}</p>
+	      <p><span class='fieldName'>Pool:</span> {{ with_pool }}</p>
+	      <p><span class='fieldName'>Waterfront:</span> {{ waterfront_description }}</p>
+	      <p><span class='fieldName'>Property Status:</span> {{ property_status }}</p>
+	      <p><span class='fieldName'>Acres:</span> {{ acres }}</p> -->
+	    </div>
+
+	    <p class='clear' id='propertyAge'>Listed on {{ domain }} for <span class='red'>{{ age }}</span> days</p>
+	  </div>
+
+	  <div class='tanBack' id='detailsRemarks'>
+	    <p><strong>Agent Description</strong></p>
+	    <p>{{ remarks }}</p>
+	    <p class="remarks"><span class="red">*</span>These remarks entered by listing agent.</p>
+	  </div>
+
+	  <div class='tanBack'>
+	    <p><strong>Property Information:</strong></p>
+
+	    <ul class="titles">
+	      <li><span class="title">{{ num_bedrooms }} Bedrooms &amp; {{ full_baths }}/{{ half_baths }} Bathrooms | Stories:</span> <span class="right">{{ stories }}</span></li>
+	      <li><span class="title">Year Built:</span> <span class="right">{{ year_built }}</span></li>
+	      <li><span class="title">Living Space:</span> <span class="right">{{ square_feet }} Sq. Ft.</span></li>
+	      <li><span class="title">Pool:</span> <span class="right">{{ with_pool }}</span></li>
+	      <li><span class="title">Garage Spaces:</span> <span class="right">{{ garage_spaces }}</span></li>
+	      <li><span class="title">Living Room(s):</span> <span class="right">{{ living }}</span></li>
+	      <li><span class="title">Dining Area(s):</span> <span class="right">{{ dining }}</span></li>
+	      <li><span class="title">Guest Accommodations:</span> <span class="right">{{ guest_accommodations }}</span></li>
+	      <li><span class="title">Construction:</span> <span class="right">{{ construction }}</span></li>
+	      <li><span class="title">Roof Type:</span> <span class="right">{{ roof }}</span></li>
+	      <li><span class="title">Floors:</span> <span class="right">{{ floor }}</span></li>
+	    </ul>
+	  </div>
+
+	</div>
+
+	<div class='col2'>
+	  <ul id='detailTabs'>
+	    <li><a class='active' href="javascript:void(0)" rel='detailPhotos'>Photos</a></li>
+	    <li><a href="javascript:void(0)" rel='detailMapOuter'>Map</a></li>
+	    <li><a href="javascript:void(0)" rel='userCommentsContainer'>Comments {{ comment_count }}</a></li>
+	  </ul>
+
+	  {{ photos }}
+
+	    {{ map }}
+
+	  {{ comments }}
+
+	  <div class='tanBack right'>
+	    <p><strong>School Information</strong></p>
+	    <ul>
+	      <li><span class='fieldName'>School District:</span> {{ school_district }}</li>
+	      <li><span class='fieldName'>Elementary School:</span> {{ elementary_school }}</li>
+	      <li><span class='fieldName'>Ninth Grade School:</span> {{ high_school }}</li>
+	      <li><span class='fieldName'>Middle School:</span> {{ middle_school }}</li>
+	      <li><span class='fieldName'>High School:</span> {{ senior_high }}</li>
+	    </ul>
+	  </div>
+
+	  <div class='tanBack left'>
+	    <p><strong>Financial Info:</strong></p>
+	    <ul>
+	      <li>Price: {{ list_price }}</li>
+	      <li>Annual Tax: ${{ estimated_taxes }}/year</li>
+	      <li>HOA: {{ hoa }}</li>
+	      <li>HOA Freq: {{ hoa_frequency }}</li>
+	    </ul>
+	  </div>
+
+	  <div class="clear"><!-- --></div>
+
+	  <div class='tanBack'>
+	    <p><strong>Lot &amp; Area Information:</strong></p>
+
+	    <ul class="titles">
+	      <li><span class="title">Waterfront:</span> <span class="right">{{ waterfront }}</span></li>
+	      <li><span class="title">Waterfront Type:</span> <span class="right">{{ waterfront_description }}</span></li>
+	      <li><span class="title">View:</span> <span class="right">{{ view }}</span></li>
+	      <li><span class="title">Lot Size:</span> <span class="right">{{ acres }}</span></li>
+	    </ul>
+
+	  </div>
+
+	  <div class='tanBack'>
+	    <p><strong>Features:</strong></p>
+
+	    <p>{{ interior_features }} {{ exterior_features }}</p>
+
+	  </div>
+
+	</div>
+
+	<div class="clear"><!-- --></div>
+
+	<div class='tanBack' id='detailsPropertyDescription'>
+
+
+	<div class='grayBack' id='detailFooter'>
+	  Courtesy of {{ listing_office_name }}<br />
+	  Last updated {{ last_update }}
+	</div>

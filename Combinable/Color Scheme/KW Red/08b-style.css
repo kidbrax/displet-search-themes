@@ -57,7 +57,7 @@ globalToolbar Styles
 	padding-right: 2px;
 }
 
-#quickSearch input {
+#quickSearch input, #quickTermsHolder input {
 	border-top: 1px solid #404040;
 	border-left: 1px solid #404040;
 	background:#fff;

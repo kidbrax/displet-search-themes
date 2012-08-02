@@ -46,11 +46,9 @@ Wrapper Styles
 	width: 960px;
 	margin: 0px auto;
 	margin-top: 20px;
-	overflow: hidden;
 }
 
 #contentWrapper {
-	overflow: hidden;
 }
 
 #contentWrapper h1, 
@@ -70,6 +68,15 @@ Wrapper Styles
 /******************
 globalToolbar Styles
 ******************/
+
+div#notice{
+position: relative;
+top: -68px;
+height: 0;
+text-align: right;
+color:#4B4C44;
+font-size:11px;
+}
 
 #globalToolbar {
 	height: 50px;
@@ -303,6 +310,7 @@ Map and Listings Styles
 	position: absolute;
 	height: 415px;
 	background-color: #fff;
+	z-index:11;
 }
 
 #leftColumn, #rightColumn {
@@ -326,6 +334,16 @@ Map and Listings Styles
 	height: 28px;
 	line-height: 28px;
 	border-bottom:0 !important;
+  position:relative;
+}
+
+#sortingLinks{
+  display: block !important;
+  position: absolute;
+  top: -29px;
+  right: 0;
+  z-index:99;
+  font-weight:normal;
 }
 
 #prePage a, #nextPage a {
@@ -352,6 +370,10 @@ span.resultsPaginationArrow{
 	overflow-x: auto;
 	line-height: 17px;
 	border-top: 0 !important;
+}
+
+#resultsDiv{
+  margin-top:1px;
 }
 
 div.resultRow {
@@ -398,13 +420,14 @@ div.propertyPriceBedsSf {
 	text-indent: -9999px;
 }
 
-#rightColumn {
+#rightColumn, #mapLoader {
 	width: 480px;
 	float:right;
 }
 
 #resultsMap {
 	height: 411px;
+	width: 480px;
 }
 
 /* Already 2px from above image */
@@ -545,6 +568,10 @@ body#residentials_detail .subColumnTwo {
 	margin-bottom: 20px;
 }
 
+#detailsProperty2{
+	margin-bottom:0;
+}
+
 .tanBack .tanbacktit {
 	font-size: 14px;
 	line-height: 14px;
@@ -581,7 +608,7 @@ body#residentials_detail .subColumnTwo {
 
 #detailTabs li a {
 	display: block;
-	line-height: 29px;
+	line-height: 30px;
 	text-decoration: none;
 	padding: 0px 25px;
 	font-size: 11px;
@@ -607,9 +634,9 @@ body#residentials_detail .subColumnTwo {
 	margin:5px 0;
 }
 
-img#largeImage {
+#contentWrapper #horizontal_carousel #largeImage, #largeImageDuck {
 	display: block;
-	width: 407px !important;
+	width: 407px;
 }
 
 /* Width same as img#largeImage (with border) */
@@ -631,9 +658,15 @@ img#largeImage {
 	margin: 0 8px 0 0;
 }
 
+#horizontal_carousel .container li:last-child img{
+	margin-right:0;
+}
+
 #detailPhotos #horizontal_carousel .next_button, #detailPhotos #horizontal_carousel .previous_button {
 	bottom: 36px;
 	width:29px;
+	position: absolute;
+	z-index: 100;
 }
 
 /* Width same as #horizontal_carousel */
@@ -1462,3 +1495,1083 @@ Social Styles
 #social .google .slideout #___plusone_0, #social .google .slideout #___plusone_0 iframe{
 	width: 69px !important;
 }
+/******************
+Global Styles
+******************/
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+}
+
+#contentWrapper {
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background:url('http://displet.com/images/livelakeaustin/globaltoolbarback.png') 0 0 repeat-x;
+	font-weight: normal;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#globalToolbar a {
+	color: #333;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	color: #c24040;
+	text-decoration: none;
+}
+
+/* Apply border if needed to right side of li */
+#userToolbarLinks li {
+}
+
+/* PR = right border width of li */
+#userToolbarLinks li a{
+	display: inline-block;
+}
+
+#quickSearch input {
+	border: 1px solid #bec2ac;
+	background: url('http://displet.com/images/livelakeaustin/inputback.png') 0px 0px no-repeat;
+	color:#4b4c44;
+}
+
+input::-webkit-input-placeholder {
+    color: #4b4c44;
+}
+
+input:-moz-placeholder {
+    color: #4b4c44;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #4b4c44;
+}
+
+textarea:-moz-placeholder {
+    color: #4b4c44;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+	text-transform: uppercase;
+}
+
+#quickSearch span#textQuick{
+	color: #c24040;
+}
+
+#loggedIn {
+	color: #c24040;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+#loggedIn a {
+	color: #c24040;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #bec2ac;
+	background:#fff;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#4b4c44;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	background: url('http://displet.com/images/livelakeaustin/inputback.png') 0px 0px no-repeat;
+	border: 1px solid #b9c0c1;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #dde5e8;
+	border-right:1px solid #dde5e8;
+}
+
+#advancedExtra {
+	border-top: 1px solid #dadada;
+}
+
+#searchFormContainer .ctrlHolder{
+	font-weight: bold;
+	font-size: 11px;
+	color: #4b4c44;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel{
+	font-weight: normal;
+}
+
+/******************
+Search Form Links Styles
+******************/
+
+/* Include height and line-height */
+#searchFormLinks {
+	height: 23px;
+	line-height: 23px;
+	background-color: #bec2ac;
+}
+
+#searchFormLinks a {
+	color: #4b4c44;
+	text-decoration: none;
+	text-shadow: 0px 0px 2px white;
+	font-weight: bold;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+/* Include height and line-height */
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 23px;
+	line-height: 23px;
+	text-indent: -9999px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	box-shadow: 0px 0px 3px #666;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/livelakeaustin/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/livelakeaustin/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #4b4c44;
+	background-color: #fff;
+}
+
+#resultsNav {
+	border:1px solid #bec2ac;
+	color: #4b4c44;
+	font-weight: bold;
+}
+
+#prePage a, #nextPage a {
+	width: 13px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/livelakeaustin/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/livelakeaustin/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #bec2ac;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/livelakeaustin/resultsback.png') 0 0 no-repeat;
+	height: 76px;
+	width: 422px;
+	font-weight: bold;
+}
+
+#leftColumn #resultsDiv a {
+	color: #4b4c44;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0px -1px 2px #8c2826;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #afb0a9;
+}
+
+#rightColumn {
+	border:1px solid #bec2ac;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/livelakeaustin/balloondetails.png') 0 0 no-repeat;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+/* Include font-size and text-indent */
+#actions1 #requestShowing, #actions1 #addToFavorites {
+	width:183px;
+	height:35px;
+	line-height:35px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	position: relative;
+  text-align: center;
+}
+
+#actions1 #requestShowing a, #actions1 #addToFavorites a{	
+	position: relative;
+	z-index: 3;
+	text-indent: -9999px;
+}
+
+#actions1 #addToFavorites br{
+	display: none;
+}
+
+/* Include margin-right */
+#actions1 #requestShowing{
+	background:url('http://displet.com/images/livelakeaustin/requestshowing.png') 0 0 no-repeat;
+	margin-right:30px;
+}
+
+#actions1 #requestShowing .hovertrans, #actions1 #addToFavorites .hovertrans{
+	width:183px;
+	height:35px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 2px #999;
+	z-index:2;
+}
+
+#actions1 #addToFavorites a{
+	background: url('http://displet.com/images/livelakeaustin/addtofavorites.png') 0 0 no-repeat;
+}
+
+#actions1 #addToFavorites a.favoriteOn{
+	background: none;
+	text-indent: 0px;
+}
+
+#actions1 #requestShowing:hover, #actions1 #addToFavorites:hover{
+}
+
+#callUs, #sendToFriend {
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: #4b4c44;
+}
+
+#sendToFriend a{
+	color: #4b4c44;
+	text-decoration:none;
+}
+
+#sendToFriend a:hover{
+	text-decoration: underline;
+}
+
+#detailsHeader {
+	color: #4b4c44;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#detailsHeader .address {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	text-transform: uppercase;
+	border-bottom: 1px double #bec2ac;
+}
+
+#detailsHeader .price {
+	font-family: 'Lobster', serif;
+	font-weight: normal;
+	color: #c24040;
+}
+
+#propertyAge .red {
+	color: #c24040;
+	font-weight: bold;
+}
+
+.tanBack {
+	border: 1px solid #bec2ac;
+	background-color: #fff;
+}
+
+.tanBack .tanbacktit {
+	color: #333;
+	text-transform:uppercase;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.tanBack p.remarks {
+	background-color: #bec2ac;
+	color: #fff;
+}
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #bec2ac;
+	color: #fff;
+	background-color: #bec2ac;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #c24040;
+	border-color: #c24040;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer, #contentWrapper #jqphotos #detailPhotos {
+	border: 1px solid #bec2ac;
+	background-color: #fff;
+}
+
+#contentWrapper #largeImage, #largeImageDuck {
+	border: 1px solid #a6a6a6;
+}
+
+#horizontal_carousel .container img, #horizontal_carousel2 .container img {
+	border: 1px solid #cfcfcf;
+	background-color: #fff;
+	padding: 2px;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#residentials_results #contentWrapper, #residentials_results #contentWrapperOuter{
+	overflow: visible;
+}
+
+#resultsToolbar {
+	margin-top: 15px;
+	height: 21px;
+	padding-top: 11px;
+	background: url('http://displet.com/images/livelakeaustin/subtoolbarback.png') 0px 0px no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 9px;
+	color: #4b4c44;
+	margin-bottom: 13px;
+}
+
+#resultsToolbar a{
+	color: #c24040;
+	text-decoration: none;
+}
+
+#resultsToolbar a:hover{
+	text-decoration: underline;
+}
+
+#resultsToolbar #totalRecords {
+	color: #c24040;
+}
+
+.resultListContainer {
+	box-shadow: 1px 1px 1px #cbcdc0;
+	background-color: #fff;
+	height: 282px;
+	margin-bottom: 16px;
+	color: #4b4c44;
+	font-family: Arial, sans-serif;
+	clear: both;
+	overflow: hidden;
+}
+
+.resultListContainer a{
+	text-decoration: none;
+}
+
+.resultListContainer .coll{
+	float: left;
+	width: 282px;
+	padding-left: 21px;
+}
+
+.resultListContainer .coll .img{
+	margin-top: 21px;
+	border: 1px solid #cfcfcf;
+	padding: 2px;
+	background-color: #fff;
+}
+
+.resultListContainer .coll .img div{
+	overflow: hidden;
+	width: 276px;
+	height: 196px;
+}
+
+.resultListContainer .coll .img img{
+	width: 276px;
+}
+
+.resultListContainer .coll .price{
+	margin-top: 12px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 22px;
+	color: #c24040;
+	font-family: 'Lobster', serif;
+}
+
+.resultListContainer .colr{
+	float: right;
+	width: 627px;
+}
+
+.resultListContainer .colr .address{
+	font-size: 18px;
+	line-height: 18px;
+	height: 18px;
+	text-transform: uppercase;
+	font-style: italic;
+	margin-top: 32px;
+	margin-bottom: 22px;
+	color: #4b4c44;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.resultListContainer .colr .cont{
+	height: 106px;
+	background-color: #eef1e2;
+	border: 1px solid #cfcfcf;
+	width: 607px;
+}
+
+.resultListContainer .colr .cont .col{
+	margin-top: 3px;
+	height: 100px;
+	width: 148px;
+	border-bottom: 1px solid #d6d8cb;
+	border-right: 1px solid #d6d8cb;
+	margin-left: 2px;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+}
+
+.resultListContainer .colr .cont .col:first-child{
+	margin-left: 3px;
+}
+
+.resultListContainer .colr .cont .col .top{
+	font-size: 22px;
+	line-height: 22px;
+	color: #4b4c44;
+	margin-top: 24px;
+}
+
+.resultListContainer .colr .cont .col .bottom{
+	font-size: 18px;
+	line-height: 18px;
+	color: #c24040;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.resultListContainer .colr .links{
+	margin-top: 25px;
+	line-height: 47px;
+	width: 607px;
+}
+
+.resultListContainer .colr .links .link{
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: bold;
+	padding-left: 26px;
+	margin-top: 17px;
+	float: left;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.resultListContainer .colr .links a{
+	color: #c24040;
+	text-decoration: none;
+	display: block;
+}
+
+.resultListContainer .colr .links a:hover{
+	text-decoration: underline;
+}
+
+.resultListContainer .colr .links .requestshowing{
+	background: url('http://displet.com/images/livelakeaustin/requestshowingicon.png') 0px 0px no-repeat;
+	margin-left: 25px;
+}
+
+.resultListContainer .colr .links .addtofavorites{
+	background: url('http://displet.com/images/livelakeaustin/addtofavoritesicon.png') 0px 0px no-repeat;
+}
+
+.resultListContainer .colr .links .viewdetails{
+	float: right;
+	line-height: 50px;
+	height: 50px;
+	width: 150px;
+	background: url('http://displet.com/images/livelakeaustin/viewdetails.png') 0px 0px no-repeat;
+	text-indent: -9999px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.resultListContainer .colr .links .viewdetails a{
+	position: relative;
+	z-index:3;
+}
+
+.resultListContainer .colr .links .viewdetails .hovertrans{
+	height: 50px;
+	width: 150px;
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 3px #999;
+	z-index:2;
+}
+
+/************************
+Photo Slideshow Light Window
+************************/
+
+body.jqphotos{
+	overflow:hidden;
+}
+
+#horizontal_carousel #largeImage{
+	cursor:pointer;
+}
+
+#jqphotos{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:111;
+	width:100%;
+	height:100%;
+}
+
+#jqphotos .white{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:109;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+	margin-right: 15px;
+	margin-left: -15px;
+}
+
+#jqphotos .inner{
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+}
+
+#jqphotos .slideshow{
+	margin: 20px auto 20px auto;
+	position:relative;
+	width:662px;
+	padding:30px;
+	z-index:110;
+	background-color:#fff;
+	border-radius:6px;
+}
+
+#jqphotos #detailPhotos{
+	margin:0;
+	border: 1px solid #BEC2AC;
+	background-color: #fff;
+	padding: 8px;
+}
+
+#jqphotos .slideshow .exit{
+	position:absolute;
+	top:8px;
+	right:15px;
+	z-index:111;
+	font-size:12px;
+}
+
+#horizontal_carousel2 {
+	position: relative;
+	width: 642px;
+	padding:0;
+	margin-top:0;
+}
+
+#horizontal_carousel2 #largeImage{
+	width: 640px;
+	border: 1px solid #a6a6a6
+}
+
+#horizontal_carousel2 .container {
+	position: relative;
+	overflow: hidden;
+	width: 552px;
+	margin: 20px auto 0 auto;
+}
+
+#horizontal_carousel2 ul {
+	margin: 0;
+	padding: 0;
+	width: 100000px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#horizontal_carousel2 ul li {
+	margin: 0pt;
+	list-style: none;
+	float: left;
+}
+
+#horizontal_carousel2 .container img {
+	width: 98px;
+	margin: 0 8px 0 0;
+	border: 1px solid #CFCFCF;
+	background-color: white;
+	padding: 2px;
+	cursor: pointer;
+}
+
+#horizontal_carousel2 .container li:last-child img{
+	margin-right:0;
+}
+
+#horizontal_carousel2 #imageNav {
+	width: 100%;
+}
+
+#horizontal_carousel2 .next_button, #horizontal_carousel2 .previous_button {
+	bottom: 36px;
+	width:29px;
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+}
+
+#horizontal_carousel2 .previous_button_disabled, #horizontal_carousel2 .next_button_disabled {
+	cursor: default;
+	opacity: .2;
+}
+
+#horizontal_carousel2 .previous_button {
+	left: 0;
+}
+
+#horizontal_carousel2 .next_button {
+	right: 0;
+}
+
+/******************
+Tabs & Tile View
+******************/
+
+#viewTabs{
+	color: #4B4C44;
+	font-size: 13px;
+	position:relative;
+	z-index:9;
+}
+
+#viewTabs li{
+	float: left;
+	padding: 0 10px;
+	line-height: 28px;
+	background-color: #fff;
+	border: 1px solid #BEC2AC;
+	margin-left:10px;
+	margin-bottom:-1px;
+	font-weight:bold;
+}
+
+#viewtabs li a{
+	display:block;
+}
+
+#leftColumn #listLoader{
+	padding-top:29px;
+	margin-top:-29px;
+}
+
+#viewTabs li.active{
+	border-bottom-color:#fff;
+}
+
+#tileView{
+	display:none;
+	font-size: 13px;
+	color: #4B4C44;
+	background-color: white;
+}
+
+#tileView #resultsList{
+	height: inherit;
+	background-color: white;
+	padding-left:0;
+}
+
+#listLoader{
+	z-index:11;
+}
+
+#tileView #listLoader{
+	width:960px;
+	height:840px;
+	padding-top:59px;
+	margin-top:-29px;
+}
+
+#tileView .listResultRow{
+	display:none;
+}
+
+#leftColumn .tileResultRow{
+	display:none;
+}
+
+.displet-tile-controls {
+	background-color: #E3F3F8;
+	padding: .25em .5em;
+	margin-bottom: 2em;
+}
+
+.displet-tile-controls a {
+	text-decoration: none;
+	margin-right: 1.5em;
+}
+
+.displet-tile-controls a:hover {
+	text-decoration: underline;
+}
+
+.displet-tile-counts {
+	display: inline;
+	margin-right: 1.5em;
+}
+
+.displet-tile-control-prev,
+.displet-tile-control-next {
+	color: #96390C;
+}
+
+.displet-tile-control-prev-icon,
+.displet-tile-control-next-icon {
+	font-weight: bold;
+}
+
+.displet-tile-controls form.displet-tile-sortby-form {
+	float: right;
+}
+
+.displet-tile-controls select.displet-tile-sortby {
+	font-size: .9em;
+	padding: .15em;
+	color: #074156;
+	background-color: #fff;
+	border: 1px solid #074156;
+	float: right;
+	height: 1.6em;
+}
+
+.displet-tile-listing {
+	width: 199px;
+	height: 25em;
+	margin-bottom: 1em;
+	position: relative;
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+
+	float: left;
+
+	border-bottom: 1px dotted #333;
+	margin-right: .25em;
+}
+
+.displet-tile-listing:hover {
+	background-color: #ddd;
+	-moz-box-shadow: 0 0 5px #333;
+	-webkit-box-shadow: 0 0 5px #333;
+	box-shadow: 0 0 5px #333;
+}
+
+.displet-tile-thumb-container {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-color: #fff;
+	width: 90%;
+	margin: .25em auto 0 auto;
+}
+
+.displet-tile-thumb-container img {
+	width: 100%;
+	margin: 0;
+}
+
+.displet-tile-price-container {
+	padding: .25em .5em;
+	border-bottom: 1px dotted #333;
+	font-weight: bold;
+}
+
+.displet-tile-info {
+	padding: .5em;
+	font-size: .75em;
+	height: 16em;
+}
+
+.displet-tile-address {
+	height: 5em;
+}
+
+.displet-tile-address a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.displet-tile-proptype {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.displet-tile-specs {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.displet-tile-detail-link {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: .5em 0;
+}
+
+.displet-tile-detail-link a {
+
+}
+
+.displet-tile-disclaimer {
+	border: 1px solid #999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: .25em .5em;
+	font-size: smaller;
+}
+
+
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+
+
+#tileView .tileResultRow img{
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 2px #999;
+}
+
+/******************
+Displet Tile Styles
+******************/
+
+#tileView .displet-tile-counts{
+	margin-left: 36px;
+	margin-right: 23px;
+	color: #4b4c44;
+}
+
+#tileView .displet-tile-controls a, #tileView .displet-tile-control-prev, #tileView .displet-tile-control-next{
+	color: #c24040;
+	text-decoration: none;
+}
+
+#tileView .displet-tile-controls a:hover{
+	color: #c24040;
+	text-decoration: underline;
+}
+
+#tileView .displet-tile-controls select.displet-tile-sortby{
+	margin-top: 6px;
+	margin-right: 35px;
+	font-size: 11px;
+	padding: 1px 5px;
+	color: #4b4c44;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+	border: 1px solid #bec2ac;
+	height: 18px;
+	line-height: 14px;
+	width: 134px;
+}
+
+#tileView .displet-tile-listings{
+	padding-top: 22px;
+}
+
+#tileView .displet-tile-thumb-container{
+	padding: 0px;
+	border: 0px;
+	background: none;
+	width: 200px;
+	margin: 7px;
+	position: relative;
+	z-index: 3;
+}
+
+#tileView .displet-tile-listing{
+	width: 218px;
+	height: 366px;
+	overflow: hidden;
+	margin: 0px 8px 39px 8px;
+	background: none;
+	color: #4b4c44;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	border: 0px;
+	z-index: 3;
+	display:block;
+}
+
+#tileView .displet-tile-listing .hovertrans{
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 214px;
+	height: 363px;
+	background-color: #eee;
+	z-index: 2;
+	box-shadow: 0px 0px 2px #888;
+}
+
+#tileView .displet-tile-listing:hover{
+	background: #eee;
+	box-shadow: 0px 0px 2px #888;
+}
+
+#tileView .displet-tile-price-container{
+	padding: 0px;
+	border: 0px;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 22px;
+	color: #c24040;
+	font-family: 'Lobster', serif;
+	margin: 10px 7px;
+	position: relative;
+	z-index: 3;
+}
+
+#tileView .displet-tile-price-container span.money{
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #4b4c44;
+	vertical-align: text-top;
+	margin-right: 2px;
+}
+
+#tileView .displet-tile-address{
+	height: 60px;
+	overflow: hidden;
+	line-height: 20px;
+	padding: 0px 7px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#tileView .displet-tile-info{
+	padding: 0px;
+	font-size: 14px;
+	height: inherit;
+	position: relative;
+	z-index: 3;
+}
+
+#tileView .displet-tile-specs{
+	margin: 11px 2px 0px 2px;
+}
+
+#tileView .displet-tile-specs div{
+	height: 21px;
+	line-height: 21px;
+	background-color: #eee;
+	margin-bottom: 3px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #4b4c44;
+	padding: 0px 5px;
+}
+
+#tileView .displet-tile-specs div b{
+	font-weight: normal;
+	color: #c24040;
+}
+
+#tileView .displet-tile-sortby{display:none;}
+
+.lastclear{display:none;}
+#tileView .lastclear:last-child{clear:both; display:block;}

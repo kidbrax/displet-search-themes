@@ -94,13 +94,13 @@ globalToolbar Styles
 	float: left;
 }
 
-#quickSearch form {
+#quickSearch form, #quickTermsHolder {
 	float: left;
 	display: inline;
 	padding-top: 9px;
 }
 
-#quickSearch input {
+#quickSearch input, #quickTermsHolder input {
 	display: inline;
 	float: left;
 	height: 24px;
@@ -108,6 +108,10 @@ globalToolbar Styles
 	margin:0 11px;
 	padding: 0px 5px;
 	width: 86px;
+}
+
+#quickTermsHolder input{
+	width: 450px;
 }
 
 input#street_name {
@@ -765,16 +769,17 @@ Footer Link / Disclaimer Styles
 #footerOuter, #disclaimer{
 	width: 900px;
 	margin: 0px auto;
-	margin-top: 10px;
 }
 
 #footerOuter{
-	height:12px;
 	line-height: 14px;
+	margin-top:10px;
 }
 
 #disclaimer{
 	line-height: 14px;
+	margin-top:30px;
+	margin-bottom:20px;
 }
 
 #footerInner ul li{

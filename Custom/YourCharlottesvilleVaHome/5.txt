@@ -1,0 +1,49 @@
+<div id="the_footer">
+  
+  <div id="footer_bar">
+    <div id="footer_bar_left">
+      {{view_as_list}} |
+      {{xml}}
+    </div><!--// #footer_bar_left -->
+    
+    <div id="footer_bar_right">
+      <a href="#">Property Sitemap</a> |
+      <a href="http://search.yourcharlottesvillevahome.com/residentials/list_by_mls_number">MLS # Sitemap</a>
+    </div><!--// #footer_bar_right -->
+    
+    <section id="cta_displet" class="image_replace_anchor">
+      <a href="http://displet.com" title="Displet">Displet</a>
+    </section>
+  </div><!--// #footer_bar -->
+</div><!--// #the_footer -->
+
+<div class="footer"> 
+  <a href="http://www.idxre.com/idx/listingsMap.cfm?cid=36036">Advanced Search</a> | 
+  <a href="http://www.yourcharlottesvillevahome.com/buying-road-map-c6506.html">For Buyers</a> | 
+  <a href="http://www.yourcharlottesvillevahome.com/selling-road-map-c6505.html">For Sellers</a> | 
+  <a href="http://www.yourcharlottesvillevahome.com/new-construction-c27284.html">New Construction</a> | 
+  <a href="http://www.yourcharlottesvillevahome.com/communities.php">Community Guides</a> | 
+  <a href="http://www.yourcharlottesvillevahome.com/about.php">Besty Gunnels </a> <br/>
+  &copy; 2010 yourcharlottesvillevahome.com. | 
+  Charlottesville, VA 22901 | All rights reserved. 
+  <a href="terms.php">Terms</a> | 
+  <a href="sitemap.php">Sitemap</a> | 
+  Design by <a href="http://www.imforza.com" target="_blank">imFORZA</a> -
+  Real Estate Web Site Design 
+</div>
+
+<div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({appId: '164484616937801', status: true, cookie: true,
+                 xfbml: true});
+      };
+      (function() {
+        var e = document.createElement('script');
+        e.type = 'text/javascript';
+        e.src = document.location.protocol +
+          '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>

@@ -94,13 +94,13 @@ globalToolbar Styles
 	float: left;
 }
 
-#quickSearch form {
+#quickSearch form, #quickTermsHolder {
 	float: left;
 	display: inline;
 	padding-top: 9px;
 }
 
-#quickSearch input {
+#quickSearch input, #quickTermsHolder input {
 	display: inline;
 	float: left;
 	height: 24px;
@@ -108,6 +108,10 @@ globalToolbar Styles
 	margin:0 11px;
 	padding: 0px 5px;
 	width: 91px;
+}
+
+#quickTermsHolder input{
+	width: 420px;
 }
 
 input#street_number {
@@ -340,6 +344,7 @@ span.resultsPaginationArrow{
 div.resultRow {
 	overflow: hidden;
 	margin-bottom: 5px;
+	line-height: 16px;
 }
 
 div.resultRow:hover {
@@ -365,14 +370,14 @@ div.propertyAddress {
 	float: left;
 	width: 155px;
 	padding:0 10px;
-	margin-top:4px;
+	margin-top:5px;
 }
 
 div.propertyPriceBedsSf {
 	float: left;
 	width: 94px;
 	padding:0 8px;
-	margin-top:4px;
+	margin-top:5px;
 }
 
 #resultsDiv .viewDetailsLink{
@@ -760,20 +765,24 @@ td.propertyActions .viewDetailsLink {
 Footer Link / Disclaimer Styles
 ******************/
 
+#customFooter{
+	padding-bottom:10px;
+}
+
 #footerOuter, #disclaimer{
 	width: 880px;
 	margin: 0px auto;
-	margin-top: 10px;
 }
 
 #footerOuter{
-	height:10px;
 	line-height: 10px;
+	margin-top: 10px;
 }
 
 #disclaimer{
 	line-height: 14px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 #footerInner ul li{

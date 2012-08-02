@@ -132,7 +132,7 @@ globalToolbar Styles
 	line-height:24px;
 	margin:0 11px;
 	padding: 0px 5px;
-	width: 81px;
+	width: 66px;
 	font-size: 11px;
 }
 
@@ -213,7 +213,7 @@ searchFormContainer Styles
 }
 
 /* Make these tiny selects default size  */
-#searchFormContainer #area_mls_defined{
+#searchFormContainer #area_mls_defined, #searchFormContainer #advancedExtra .tinySearchSelect{
 	width:113px;
 }
 
@@ -244,7 +244,7 @@ searchFormContainer Styles
 }
 
 #searchFormContainer .ctrlHolder .triggerLabel{
-	padding-bottom:4px;
+	padding-bottom:0px;
 }
 
 #propertyStyleHolder label:first-child{
@@ -427,6 +427,8 @@ div.propertyPriceBedsSf {
 
 .balloonWrapper #stats{
 	line-height: 18px;
+  padding-bottom:20px;
+  background:url('http://displet.com/images/nwforeclosurenetwork/statslogo.png') right bottom no-repeat;
 }
 
 /* Balloon pic */
@@ -443,6 +445,7 @@ Detail Page Styles
 #white{
 	background-color: #fff;
 	padding: 20px 0px;
+  padding-top:10px;
 }
 
 #residentials_detail .damf{
@@ -552,17 +555,21 @@ body #detailPhotos #imageNav{
 }
 
 #actions1 {
-	margin-left: 30px;
 	margin-top: 16px;
 }
 
 #actions1 #sendToFriend, #actions1 #print, #actions1 #addToFavorites {
 	float:left;
 	line-height: 18px;
+  height:18px;
 	font-size: 14px;
 	font-weight: bold;
 	font-family: Arial, sans-serif;
-	margin-right: 34px;
+	margin-right: 22px;
+}
+
+#actions1 #addToFavorites{
+  margin-right:0px;
 }
 
 #actions1 a, #actions1 a:visited {
@@ -682,7 +689,7 @@ body #detailPhotos #imageNav{
 
 #actions3 .right{
 	width: 346px;
-	font-size: 11px;
+	font-size: 12px;
 	font-family: Arial, sans-serif;
 	color: #000;
 	line-height: 21px;
@@ -724,6 +731,7 @@ body #detailPhotos #imageNav{
 	margin-bottom: 21px;
 }
 
+/*
 #actions3 .right .mdfs{
 	font-size: 14px;
 	line-height: 24px;
@@ -732,12 +740,28 @@ body #detailPhotos #imageNav{
 	text-align: center;
 }
 
+
 #actions3 .right .mdfs span{
 	font-weight: bold;
 }
 
 #actions3 .right .mdfs span span{
 	color: #ed6c0a;
+}
+*/
+
+#actions3 .right .mdfs{
+  width: 253px;
+  height: 69px;
+	margin-top: 20px;
+  background:url('http://displet.com/images/nwforeclosurenetwork/mdfs.png') 0 0 no-repeat;
+}
+
+#actions3 .right .mdfs a{
+  display:block;
+  text-indent:-9999px;
+  line-height:39px;
+  margin-left:34px;
 }
 
 #likeprop{
@@ -801,7 +825,7 @@ body #detailPhotos #imageNav{
 
 #testform .left .text{
 	color: #000;
-	line-height: 20px;
+	line-height: 25px;
 	font-size: 12px;
 	padding: 17px 14px 14px 14px;
 }
@@ -878,15 +902,15 @@ body #detailPhotos #imageNav{
 }
 
 #searchContextPagination{
-	float: right;
 	margin-right: 1px;
-	line-height:12px;
+	line-height:14px;
 	padding-right:25px;
 	font-size:11px;
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	background: url('http://displet.com/images/nwforeclosurenetwork/backarrow.png') right 0px no-repeat;
 	margin-bottom: 18px;
+  text-align:right;
 }
 
 #searchContextPagination a{
@@ -906,23 +930,35 @@ body #detailPhotos #imageNav{
 }
 
 #likes .left{
-	width: 159px;
+	width: 185px;
 }
 
 #likes .left .center{
-	max-width:145px;
+	max-width:180px;
 	margin: 0px auto;
-	padding-top: 8px;
+  position:relative;
 }
 
 #likes .left .center div{
 	display: inline-block;
 	overflow: hidden;
-	max-width:145px;
+	max-width:180px;
 }
 
 #likes .left .center div div{
-	max-width: 60px;
+	max-width: 84px;
+  margin-top:8px !important;
+}
+
+#likes .left .center div div:last-child{
+  position:absolute;
+  top:8px;
+  right:0px;
+  margin-top:0px !important;
+}
+
+#likes .left .center div div div{
+  margin-top:0px !important;
 }
 
 #likes .left .center div:first-child{
@@ -934,13 +970,14 @@ body #detailPhotos #imageNav{
 }
 
 #likes .right{
-	width: 228px;
+	width: 201px;
 	background-color: #b2a1c7;
 	color: #000;
 	font-size: 10px;
 	font-family: Arial, sans-serif;
 	text-align: center;
 	line-height: 37px;
+  height:37px;
 }
 
 #likes .right span{
@@ -964,24 +1001,30 @@ body #detailPhotos #imageNav{
 #box{
 	/*height: 402px;
 	border: 1px solid #d1d1d1;*/
-	margin-top: 20px;
+	margin-top: 15px;
+}
+
+#box form{
+  overflow:hidden;
 }
 
 #watchthese{
-	background-color: #36393b;
-	border: 1px solid #d1d1d1;
-	color: #fff;
+	background-color: #73a246;
+	border: 1px solid #73a246;
+	color: #000;
+  font-weight:700;
 	font-size: 16px;
 	font-family: Arial, sans-serif;
 	line-height: 19px;
 	padding: 7px 0px;
 	text-align: center;
-	margin-top: 19px;
+	margin-top: 15px;
 }
 
 #secondvid{
-	height: 278px;
-	margin-top: 9px;
+	height: 311px;
+	margin-top: 15px;
+  overflow:hidden;
 }
 
 #mortgageq{
@@ -989,12 +1032,13 @@ body #detailPhotos #imageNav{
 	line-height: 39px;
 	width: 387px;
 	border: 1px solid #585858;
-	margin-top: 10px;
+	margin-top: 15px;
 	background: url('http://displet.com/images/nwforeclosurenetwork/mortgageback.png') 0px 0px repeat-x;
 	text-align: center;
 	font-size: 16px;
 	font-family: Arial, sans-serif;
-	color: #666;
+	color: #000;
+  font-weight:700;
 }
 
 #mortgageq span{
@@ -1002,8 +1046,9 @@ body #detailPhotos #imageNav{
 }
 
 #thirdvid{
-	height: 263px;
-	margin-top: 7px;
+	height: 311px;
+	margin-top: 15px;
+  overflow:hidden;
 }
 
 /******************
@@ -1419,4 +1464,445 @@ Site Specific Styles
 
 body #ez-fat-footer-container-wrap{
 	margin:0px;
+}
+/******************
+Global Styles
+******************/
+
+/******************
+Wrapper Styles
+******************/
+
+#contentWrapperOuter {
+	background:#fff;
+}
+
+#contentWrapper {
+	font-family: Arial, sans-serif;
+	color: #000;
+}
+
+/******************
+globalToolbar Styles
+******************/
+
+#globalToolbar {
+	background:url('http://displet.com/images/nwforeclosurenetwork/globaltoolbarback.png') 0 0 repeat-x;
+	font-weight: bold;
+	color:#000;
+	font-family: Tahoma, sans-serif;
+	text-shadow: 1px 1px 1px #e29b53;
+}
+
+#globalToolbar a {
+	color: #000;
+	text-decoration: none;
+}
+
+#globalToolbar a:hover {
+	text-decoration: underline;
+}
+
+#userToolbarLinks li {
+	background: url('http://displet.com/images/nwforeclosurenetwork/globaltoolbarborder.png') right top repeat-y;
+}
+
+#userToolbarLinks li a{
+	display: inline-block;
+	padding-right: 2px;
+}
+
+#quickSearch input {
+	border-top: 1px solid #404040;
+	border-left: 1px solid #404040;
+	background:#fff;
+	color:#434343;
+	text-shadow:none;
+}
+
+#userToolbarLinks li, #quickSearch span#textOr, #quickSearch span#textQuick{
+	text-transform: uppercase;
+}
+
+#loggedIn {
+	color: #fff;
+	font-weight: bold;
+	background:url('http://displet.com/images/nwforeclosurenetwork/loginback.png') 0 0 no-repeat;
+	width:108px;
+	height:25px;
+	line-height:25px;
+	text-shadow:none;
+}
+
+#loggedIn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#loggedIn a:hover {
+	text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+
+#searchFormContainer {
+	border:1px solid #cfcfcf;
+	font-weight: bold;
+}
+
+#searchFormContainer .ctrlHolder .triggerLabel, #searchFormContainer select, #searchFormContainer input{
+	font-weight: normal;
+}
+
+#searchFormContainer select, #searchFormContainer input{
+	background:#fff;
+	color:#a4a4a4;
+	border:1px solid #8ba6bf;
+}
+
+#searchFormContainer input{
+	border: 1px solid #ddd;
+	border-top: 1px solid #949494;
+	border-left: 1px solid #949494;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#standardFields #stdColumn2 {
+	border-left:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
+}
+
+#advancedExtra {
+	border-top: 1px solid #e6e6e6;
+}
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+	height: 24px;
+	line-height: 24px;
+	background-color: #5c5c5c;
+}
+
+#searchFormLinks a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+	text-decoration: underline;
+}
+
+#searchFormLinks #saveSearchLink, #searchFormLinks #searchformResetter {
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#searchFormLinks #saveSearchLink:hover, #searchFormLinks #searchformResetter:hover{
+	text-decoration:underline;
+}
+
+#saveSearchLink {
+	background-image: url('http://displet.com/images/nwforeclosurenetwork/saveback.png');
+}
+
+#searchformResetter {
+	background-image: url('http://displet.com/images/nwforeclosurenetwork/resetback.png');
+}
+
+/******************
+Map and Listings Styles
+******************/
+
+#leftColumn{
+	color: #000;
+	font-family: Tahoma, sans-serif;
+}
+
+#resultsNav {
+	border:1px solid #c9c9c9;
+}
+
+#prePage a, #nextPage a {
+	width: 12px;
+	background-position: 0px center;
+	background-repeat: no-repeat;
+}
+
+#prePage a {
+	background-image: url('http://displet.com/images/nwforeclosurenetwork/leftarrow.png');
+}
+
+#nextPage a {
+	background-image: url('http://displet.com/images/nwforeclosurenetwork/rightarrow.png');
+}
+
+#resultsList {
+	border: 1px solid #c9c9c9;
+	border-top: none;
+}
+
+div.resultRow {
+	background: url('http://displet.com/images/nwforeclosurenetwork/resultrowback.png') 0 0 no-repeat;
+	height: 72px;
+	width: 410px;
+	font-weight: normal !important;
+}
+
+#leftColumn #resultsDiv a {
+	color: #000;
+	text-decoration: none;
+}
+
+#leftColumn #resultsDiv a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+div.propertyPreviewPic img {
+	border: 1px solid #fff;
+}
+
+#rightColumn {
+	border:1px solid #c9c9c9;
+}
+
+/* Already 2px from above image */
+.balloonWrapper .viewDetailsLink{
+	text-indent: -9999px;
+	width: 103px;
+	height: 28px;
+	background: url('http://displet.com/images/nwforeclosurenetwork/balloondetails.png') 0 0 no-repeat;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#detailTabs li a {
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+	border: 1px solid #cacaca;
+	border-bottom: 0;
+	color: #000;
+	background-color: #ededed;
+}
+
+#detailTabs li a:hover{
+	text-decoration: underline;
+}
+
+#detailTabs li a.active {
+	background-color: #3f4346;
+	border-color: #3f4346;
+	color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+	border: 1px solid #d1d1d1;
+}
+
+#userCommentsContainer a, #userCommentsContainer a:visited{
+	color: #333;
+}
+
+img#largeImage {
+	border: 1px solid #a8a8a8;
+}
+
+#horizontal_carousel .container img {
+	border: 1px solid #dfdfdf;
+}
+
+/******************
+Search List Results Styles
+******************/
+
+#resultsToolbar {
+	border:1px solid #d1d1d1;
+	background-color: #5c5c5c;
+	color: #fff;
+	font-weight: bold;
+}
+
+#resultsToolbar a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#resultsToolbar a:hover{
+	text-decoration: none;
+}
+
+#resultsToolbar #totalRecords {
+	color: #fa9a34;
+}
+
+.resultListContainer, body .resultListContainer.even {
+	border: 1px solid #c9c9c9;
+	background-color: #f0eae7;
+}
+
+body .resultListContainer a, body .resultListContainer a:visited, body .resultListContainer a:hover{
+	text-decoration: none;
+	color: #333;
+	font-family: Arial, sans-serif;
+}
+
+.resultListContainer table td {
+	border-right: 1px solid #d3d1d0;
+}
+
+td.propertyPreviewPic img {
+	width: 114px;
+	height:82px;
+	border: 1px solid #787573;
+}
+
+td.price .price {
+	color: #4b8b00;
+}
+
+td.actions .addToFaves {
+	background: url('http://displet.com/images/nwforeclosurenetwork/liststar.png') 0 0 no-repeat;
+	color: #b60a0a;
+	text-decoration:underline;
+}
+
+body .resultListContainer .addToFaves:hover{
+	color: #b60a0a;
+	text-decoration: none;
+}
+
+td.actions .addToFaves:hover {
+	text-decoration: none;
+}
+
+body td.actions .makeRequest {
+	width: 114px;
+	height: 26px;
+	line-height: 26px;
+	text-decoration: none;
+	color: #fff;
+	background:url('http://displet.com/images/nwforeclosurenetwork/requestinfoback.png') 0 0 no-repeat;
+}
+
+body .resultListContainer .makeRequest:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+td.actions .makeRequest:hover {
+	text-decoration: underline;
+}
+
+td.propertyActions .viewDetailsLink {
+	height: 41px;
+	width: 112px;
+	background: url('http://displet.com/images/nwforeclosurenetwork/view-details.png') 0 0 no-repeat;
+	text-indent: -9999px;
+	border-radius: 6px;
+}
+
+td.propertyActions .viewDetailsLink:hover{
+	box-shadow:1px 1px 4px #666;
+}
+
+/******************
+Footer Link / Disclaimer Styles
+******************/
+
+#firstvid{
+  position:relative;
+  height:311px;
+  margin-bottom:15px;
+  overflow:hidden;
+}
+
+#firstvid object{
+  position:absolute;
+}
+
+#testform .af-form{
+	width: 321px !important;
+}
+
+#newbox{
+  margin-top:20px;
+  font-family:Arial;
+  font-size:12px;
+  font-weight:bold;
+}
+
+#newbox .gray, #newbox .green{
+  height:29px;
+  line-height:29px;
+  text-align:center;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+#newbox .gray{
+  background:url('http://displet.com/images/nwforeclosurenetwork/gray.png') 0 0 repeat-x;
+}
+
+#newbox .left, #newbox .right{
+  line-height:24px;
+  color:#000;
+  min-height:144px;
+  padding:8px 0px;
+}
+
+#newbox .left{
+  float:left;
+  width:50%;
+  background:#eaeaea;
+}
+
+#newbox .right{
+  float:right;
+  width:50%;
+  background:#bfbfbf;
+}
+
+#newbox .left div, #newbox .right div{
+  padding:0px 14px;
+}
+
+#newbox .green{
+  background:url('http://displet.com/images/nwforeclosurenetwork/green.png') 0 0 repeat-x;
+}
+
+#newbox .tril{
+  float:left;
+  width:156px;
+  text-align:center;
+  color:#fff;
+  line-height:20px;
+  padding:10px 4px;
+  background:#36393b;
+}
+
+#newbox .extra{
+  width:158px;
+}
+
+#jmalogo{
+  margin-top:4px;
+  width:372px;
+  height:63px;
+  float:left;
+  background:url('http://displet.com/images/nwforeclosurenetwork/jma.png') 0 0 no-repeat;
 }

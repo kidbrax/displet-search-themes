@@ -1,0 +1,24 @@
+<a href='{{ residential_url }}'>
+	<div rel='{{ mls_number }}' class="resultRow {{ mapped_class }}">
+    	<div class='resultRowInner' id="row-{{ residential_id }}">
+    	
+    		<div class="propertyPreviewPic">
+				{{ print_preview_image }}
+    		</div>
+    		
+    		<div class="propertyAddress">
+    			<div class="address">{{ address }}</div>
+    			<div class="cityStateZip">{{ city }}, {{ state }} {{ zip }}</div>
+    			<div class="propertySubdivision">{{ subdivision }}</div>
+    		</div>
+    		
+    		<div class="propertyPriceBedsSf">
+    			<div class="mlsNumber">MLS# {{ mls_number }}</div>
+    			<div class="price">{{ price }}</div>
+    			<div class="bedsBaths">{{ num_bedrooms }} Bed/{{ num_baths }} Bath</div>
+    			<div class="propertySquareFeet">{{ square_feet }} sq. ft.</div>
+    		</div>
+    	
+    	</div>
+	</div>
+</a>

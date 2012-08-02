@@ -4,7 +4,7 @@ function printpage()
   window.print()
   }
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
    var flashvars = {};
    var params = { wmode: "opaque" };
@@ -33,4 +33,4 @@ function printpage()
    swfobject.embedSWF("http://www.youtube.com/v/Ms3q-Rhnq6A?version=3&feature=player_embedded", "flash", "width", "height", "7",
                       "expressinstall.swf", flashvars, params, attributes);
 
-</script>
+</script> -->

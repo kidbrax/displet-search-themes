@@ -1,0 +1,1665 @@
+/******************
+Global Styles
+******************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+}
+
+img {border: 0;}
+
+img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.right, .alignright {float: right;}
+
+.left, .alignleft {float:left;}
+
+.clear {clear:both;}
+
+section,
+nav,
+footer,
+header,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/******************
+Image Replacement Styles
+******************/
+.image_replace {
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.image_replace_anchor {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.image_replace_anchor a {
+  display: block;
+  text-indent: -9999px;
+  outline: none;
+}
+
+#logo_fqr {
+  width: 394px;
+  height: 60px;
+  line-height: 60px;
+  background-image: url(http://174.121.0.59/~fqr/wp-content/themes/fqr/images/logo_fqr.png);
+  float: left;
+}
+
+#logo_fqr a {
+  width: 394px;
+  height: 60px;
+  line-height: 60px;
+}
+
+/******************
+Wrapper Styles
+******************/
+#wrapper {
+  
+}
+
+/******************
+Header Styles
+******************/
+#header {
+  height: 100px;
+  padding: 28px 0px 0px 10px;
+  overflow: hidden;
+  width: 950px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/******************
+Navigation Styles
+******************/
+#navigation {
+  float: right;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  background-image: url(http://174.121.0.59/~fqr/wp-content/themes/fqr/images/bg_navigation.png);
+  background-position: 0px bottom;
+  background-repeat: repeat-x;
+  padding-top: 10px;
+}
+
+#navigation ul {
+  
+}
+
+#navigation ul li {
+  float: left;
+  background-image: url(http://174.121.0.59/~fqr/wp-content/themes/fqr/images/bg_nav.png);
+  background-position: right 7px;
+  background-repeat: no-repeat;
+  padding: 0px 11px 10px 11px;
+}
+
+#navigation ul li:last-child {
+  background-image: none;
+}
+
+#navigation ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+
+#navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+#navigation ul li.current-menu-item {
+  border-bottom: 8px solid #ff8100;
+}
+
+#navigation ul li.current-menu-item a {
+  color: #ff8100;
+}
+
+#navigation ul li.current-menu-item a:hover {
+  
+}
+
+#navigation ul li ul {
+  position: absolute;
+  background-color: #666666;
+  padding: 10px 10px 0px 10px;
+  left: -9999px;
+}
+
+#navigation ul li:hover ul {
+  left: auto;
+}
+
+#navigation ul li ul li {
+  float: none;
+  background: none;
+}
+
+#navigation ul li ul li a {
+  color: #fff !important;
+}
+
+#navigation ul li ul li a:hover {
+  
+}
+
+/******************
+Footer Styles
+******************/
+#footer ul {
+  display: none;
+}
+
+#disclaimer {
+  display: none;
+}
+
+#footer_wrapper {
+  background-image: url(http://174.121.0.59/~fqr/wp-content/themes/fqr/images/bg_footer.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  background-color: #999;
+}
+#powered_displet{
+  margin: 0px auto;
+  margin-top: 25px;
+}
+#the_footer {
+  width: 940px;
+  margin: 0px auto;
+  overflow: hidden;
+  padding: 45px 0px;
+}
+
+#footer_left {
+  float: left;
+  width: 445px;
+  padding-right: 35px;
+  margin-right: 15px;
+  background-image: url(http://174.121.0.59/~fqr/wp-content/themes/fqr/images/border_footer.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  min-height: 175px;
+}
+
+#footer_map_wrapper {
+  border: 2px solid #383838;
+  background-color: #808080;
+  padding: 5px;
+}
+
+#footer_map {
+  border: 1px solid #4D4D4D;
+  padding: 15px;
+  overflow: hidden;
+}
+
+#footer_map_image {
+  float: left;
+  border: 1px solid #6D6E71;
+}
+
+#footer_map_image img {
+  display: block;
+}
+
+#footer_map_content {
+  float: right;
+  width: 155px;
+  padding: 15px;
+  background-color: #5C5C5C;
+  color: #fff;
+  font-size: 12px;
+  min-height: 108px;
+}
+
+#footer_map_content h3 {
+  font-size: 13px;
+  font-family: Georgia;
+  padding-bottom: 5px;
+}
+
+#footer_map_content h3 a {
+  color:#ffffff;
+}
+
+#footer_map_address {
+  color: #adadad;
+  padding-bottom: 5px;
+}
+
+#footer_map_contact {
+  color: #fff;
+}
+
+#footer_map_contact strong {
+  color: #adadad;
+  display: inline-block;
+  width: 15px;
+  font-family: Georgia;
+}
+
+#footer_map_contact a {
+  color: #fff;
+}
+
+#footer_map_email {
+  padding-top: 5px;
+}
+
+#footer_middle {
+  float: left;
+  width: 215px;
+  padding-right: 35px;
+  background-image: url(http://174.121.0.59/~fqr/wp-content/themes/fqr/images/border_footer.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  min-height: 175px;
+}
+
+#footer_right {
+  float: right;
+  width: 165px;
+}
+
+#footer_facebook,
+#footer_twitter {
+  border: 7px solid #3D3D3D;
+  background-color: #3D3D3D;
+  font-family: Georgia;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#footer_facebook a,
+#footer_twitter a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #a2a2a2;
+  text-align: center;
+  color: #fff;
+}
+
+/******************
+Wrapper Styles
+******************/
+#mainHeaderOuter {
+  
+}
+
+#mainHeaderInner {
+  
+}
+
+#contentWrapperOuter {
+  overflow: hidden;
+  width: 930px;
+  border: 1px solid #dedede;
+  margin: 0px auto;
+  padding: 14px;
+}
+
+#contentWrapper {
+	
+}
+
+#contentWrapper h1, 
+#contentWrapper h2, 
+#contentWrapper h3, 
+#contentWrapper h4, 
+#contentWrapper h5, 
+#contentWrapper h6 {
+  font-size: normal;
+  line-height: normal;
+}
+
+#columnsFooter {
+  clear: both;
+}
+
+#residentials_results #contentWrapper p {
+  padding: 10px;
+}
+
+/******************
+globalToolbar Styles
+******************/
+#globalToolbar {
+  height: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  background-image: url(http://displet.com/images/fqr/bg_globalToolbar.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  margin-bottom: 15px;
+}
+
+#globalToolbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#globalToolbar a:hover {
+  text-decoration: underline;
+}
+
+#userToolbarLinks {
+  float: left;
+}
+
+#userToolbarLinks li {
+  float: left;
+}
+
+#userToolbarLinks li a {
+  display: block;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 20px;
+  background-image: url(http://displet.com/images/fqr/bg_userToolbarLinks.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+}
+
+#userToolbarLinks li#dashboardList a {
+  
+}
+
+#textQuick {
+  color: #F57D05;
+}
+
+#quickSearch {
+  float: left;
+  padding-left: 20px;
+}
+
+#quickSearch form {
+  display: inline-block;
+  padding-top: 6px;
+}
+
+#quickSearch form#mlsSearchForm {
+  padding-right: 10px;
+}
+
+#quickSearch form input {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #404040;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 5px;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+}
+
+#quickSearch form#mlsSearchForm input {
+  margin-right: 0px;
+}
+
+#quickSearch span {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#textOr {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#street_name {
+  width: 100px;
+}
+
+#loggedIn {
+  float: right;
+  color: #fff;
+  margin: 0px 0px 0px 0px;
+  background-color: #fff;
+  padding-left: 10px;
+  font-size: 11px;
+}
+
+#loggedIn #loginBox {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 15px;
+  background-image: url(http://displet.com/images/fqr/bg_loggedIn.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  font-size: 12px;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+}
+
+#loggedIn a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 36px !important;
+}
+
+#loggedIn a:hover {
+  text-decoration: underline;
+}
+
+/******************
+searchFormContainer Styles
+******************/
+#searchFormContainer {
+  font-size: 11px;
+  color: #000;
+  font-weight: bold;
+  background-color: #F5F5F5;
+  border: 1px solid #dedede;
+}
+
+#standardFields {
+  width: 100%;
+  overflow: hidden;
+}
+
+#standardFields label.triggerLabel {
+  font-weight: normal !important;
+}
+
+#standardFields .column {
+  float: left;
+}
+
+#standardFields #stdColumn1 {
+  padding: 5px 10px 20px 10px;
+  border-right: 1px solid #dedede;
+}
+
+#standardFields #stdColumn1 label {
+  display: block;
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+}
+
+#standardFields #stdColumn1 .ctrlHolder {
+ padding-right: 10px; 
+}
+
+#bedHolder, #bathHolder, #minSquareFeetHolder {
+  float: left;
+}
+
+#priceHolder.ctrlHolder {
+  padding-right: 0px;
+}
+
+#standardFields #stdColumn1 #bedHolder {
+  clear: left;
+}
+
+#standardFields #stdColumn2 {
+  padding: 5px 0px 20px 40px;
+  border-right: 1px solid #dedede;
+}
+
+#standardFields #stdColumn2 label {
+  display: block;
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+}
+
+#standardFields #stdColumn2 .ctrlHolder {
+  float: left;
+  width: 155px;
+}
+
+#standardFields #stdColumn2 select, #standardFields #stdColumn2 input {
+  width: 135px;
+}
+
+#standardFields #stdColumn2 #subdivisionHolder {
+  clear: left;
+}
+
+#standardFields #stdColumn3 {
+  padding: 15px 0px 20px 10px;
+  float: right !important;
+}
+
+#standardFields #stdColumn3 .ctrlHolder {
+  float: left;
+  padding: 0px 20px 10px 0px;
+}
+
+#standardFields #stdColumn3 .ctrlHolder label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#advancedExtra {
+  border-top: 1px solid #dedede;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+#advancedExtra .column {
+  float: left;
+}
+
+#advancedExtra #advColumn1 {
+  padding: 0px 20px;
+}
+
+#advancedExtra .column label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#advancedExtra .ctrlHolder {
+  padding: 0px 20px 20px 0px;
+}
+
+#advancedExtra .column label.triggerLabel {
+  font-weight: normal !important;
+}
+
+#advancedExtra #advColumn2 {
+  padding: 0px 0px 0px 80px;
+}
+
+#advancedExtra #advColumn2 .ctrlHolder {
+  float: left;
+}
+
+#minAcresHolder {
+  float: left;
+  clear: left;
+}
+
+#propertyTypeHolder {
+  float: left;
+}
+
+#storiesHolder {
+  
+}
+
+#advColumn3 {
+  float: right !important;
+}
+
+#advColumn3 .ctrlHolder {
+  float: left;
+}
+
+#schoolNameHolder {
+  clear: left;
+}
+
+#schoolNameHolder input {
+  width: 150px;
+}
+
+#zipHolder {
+  clear: none !important;
+}
+
+#lastModifiedHolder {
+  clear: left;
+}
+
+/******************
+Search Form Links Styles
+******************/
+#searchFormLinks {
+  height: 21px;
+  line-height: 21px;
+  background-color: #474747;
+  padding: 0px 20px;
+}
+
+#searchFormLinks small {
+  font-size: 12px;
+}
+
+#searchFormLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#searchFormLinks a:hover {
+  text-decoration: underline;
+}
+
+#searchLinksOne, #searchLinksTwo {
+  float: left;
+}
+
+#searchLinksThree {
+  float: right;
+}
+
+#saveSearchLink, #searchformResetter {
+  display: block;
+  float: left;
+  height: 21px;
+  line-height: 21px;
+  margin-left: 10px;
+  width: 110px;
+  padding-left: 13px;
+  color: #fff !important;
+  font-weight: normal !important;
+  text-decoration: none;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#saveSearchLink span, #searchformResetter span {
+  display: none;
+}
+
+#saveSearchLink {
+  background-image: url(http://displet.com/images/fqr/bg_saveSearchLw.png);
+}
+
+#searchformResetter {
+  background-image: url(http://displet.com/images/fqr/bg_searchformResetter.png);
+}
+
+/******************
+Map and Listings Styles
+******************/
+#listLoader, #mapLoader {
+  background: white;
+  opacity: .7;
+  background-image: url('/images/loader_small_dots.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#listLoader.on, #mapLoader.on {
+  display: block;
+  position: absolute;
+  height: 415px;
+  background-color: #fff;
+}
+
+#leftColumn, #rightColumn {
+  padding: 30px 0px;
+  height: 415px;
+}
+
+#leftColumn {
+  float: left;
+}
+
+#leftColumn, #listLoader {
+  width: 461px;
+}
+
+#resultsNav {
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #474747;
+  background-color: #fff;
+  border-bottom: none;
+  font-size: 14px;
+  color: #000;
+}
+
+#displayingRecords {
+  color: #000;
+}
+
+#prePage span, #nextPage span, #prePage a, #nextPage a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 12px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#prePage span, #prePage a {
+  background-image: url(http://displet.com/images/fqr/bg_prePage.png);
+}
+
+#nextPage span, #nextPage a {
+  background-image: url(http://displet.com/images/fqr/bg_nextPage.png);
+}
+
+#resultsList {
+  height: 389px;
+  padding-left: 10px;
+  border: 1px solid #474747;
+  background-color: #fff;
+  border-top: none;
+  overflow: scroll;
+  font-size: 12px;
+}
+
+div.resultRow {
+  background-image: url(http://displet.com/images/fqr/bg_resultRow.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 417px;
+  padding: 8px 0px 0px 8px;
+  overflow: hidden;
+}
+
+div.resultRow:hover {
+  background-position: 0px bottom;
+}
+
+div.resultRow a {
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
+}
+
+div.resultRow:hover a {
+  color: #fff !important;
+}
+
+div.propertyPreviewPic {
+  float: left;
+}
+
+div.propertyPreviewPic img {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #fff;
+}
+
+div.propertyAddress {
+  float: left;
+  width: 170px;
+  padding: 10px 0 0 10px;
+  color: #fff;
+}
+
+div.resultRow:hover div.propertyAddress {
+  color: #fff;
+}
+
+div.propertyAddress a {
+  
+}
+
+div.resultRow:hover div.propertyAddress a {
+  color: #fff;
+}
+
+div.propertyAddress strong {
+  font-weight: normal;
+  color: #fff;
+}
+
+div.resultRow:hover strong {
+  color: #fff;
+}
+
+div.propertyPriceBedsSf {
+  float: left;
+  width: 97px;
+  padding-left: 10px;
+  padding-top: 2px;
+  color: #fff;
+}
+
+div.resultRow:hover div.propertyPriceBedsSf {
+  color: #fff;
+}
+
+div.propertyPriceBedsSf a {
+  
+}
+
+div.propertyActions, div.propertyActions .viewDetailsLink a {
+  float: left;
+  display: block;
+  width: 65px;
+  height: 65px;
+}
+
+div.propertyActions .viewDetailsLink a {
+  text-indent: -9999px;
+}
+
+#rightColumn {
+  float: right;
+  width: 438px;
+}
+
+#resultsMap {
+  height: 415px;
+}
+
+/******************
+Search Results Styles
+******************/
+#resultsToolbar {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0px 20px;
+  margin: 0 0 15px 0;
+  background-color: #f5f5f5;
+  border: 1px solid #dedede;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+#resultsToolbar a {
+  color: #000;
+}
+
+#resultsToolbar table {
+  width: 100%;
+}
+
+#resultsToolbar td {
+  width: 50%;
+  text-align: right;
+}
+
+#resultsToolbar #totalRecords {
+  color: #FC7F15;
+}
+
+#resultsToolbar td:first-child {
+  text-align: left;
+}
+
+.resultListContainer {
+  border: 1px solid #929292;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.resultListContainer table {
+  height: 104px;
+  width: 100%;
+}
+
+.resultListContainer table td {
+  border-right: 1px solid #cbcbcb;
+}
+
+td.propertyPreviewPic {
+  padding: 0px 10px;
+  width: 116px;
+  border-right: none !important;
+}
+
+td.propertyPreviewPic img {
+  width: 105px;
+  border: 1px solid #cbcbcb;
+}
+
+td.propertyAddress {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 10px;
+}
+
+td.propertyAddress strong {
+  font-weight: normal;
+}
+
+td.price {
+  width: 125px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+td.price .price {
+  color: #FC7F15;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+td.propertyBedsSf {
+  width: 110px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+td.actions {
+  width: 155px;
+  padding-left: 10px;
+}
+
+td.actions .addToFaves {
+  display: block;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 25px;
+  background-image: url(http://displet.com/images/fqr/icon_star.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+td.actions .addToFaves:hover {
+  text-decoration: none;
+}
+
+td.actions .makeRequest {
+  display: block;
+  text-align: center;
+  width: 112px;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  background-image: url(http://displet.com/images/fqr/bg_makeRequest.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  color: #fff;
+  background-color: #FC7F15;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 0px auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+td.actions .makeRequest:hover {
+  text-decoration: underline;
+}
+
+td.propertyActions {
+  border-right: none !important;
+  width: 160px;
+  padding: 0px 10px;
+}
+
+td.propertyActions .viewDetailsLink {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  width: 114px;
+  background-image: url(http://displet.com/images/fqr/bg_viewDetailsLink2.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  outline: none;
+  margin: 0px auto;
+}
+
+td.propertyActions .viewDetailsLink:hover {
+  background-position: 0px bottom;
+}
+
+/******************
+Detail Page Styles
+******************/
+
+#residentials_detail{
+	font-family: Arial, sans-serif;
+}
+
+#back_link {
+  
+}
+
+#back_link a {
+  display: block;
+  margin-bottom: 30px;
+  background-image: url(http://displet.com/images/fqr/arrow.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+#residentials_detail .col1 {
+  padding-top: 6px;
+}
+
+#residentials_detail .col2{
+	padding-top: 20px;
+}
+
+#residentials_detail .col1 {
+  float: left;
+  width: 470px;
+}
+
+#residentials_detail .col2 {
+  float: right;
+  width: 440px;
+}
+
+#actions1 {
+  height: 29px;
+	margin-bottom: 30px;
+}
+
+#actions1 div {
+  float: right;
+}
+
+#actions1 div:first-child {
+  float: left;
+}
+
+#actions1 a {
+  display: block;
+  float: left;
+  width: 188px;
+  padding-left: 20px;
+  height: 29px;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#actions1 .redButton {
+  background-image: url(http://displet.com/images/fqr/bg_redButton.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions1 #saveFaveLink {
+  background-image: url(http://displet.com/images/fqr/bg_favoriteLink.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+#actions2 {
+  height: 31px;
+  color: #000;
+	margin-bottom: 15px;
+}
+
+#actions2 div {
+  float: left;
+}
+
+#callUs {
+  width: 186px;
+  padding: 0 0px 0 40px;
+  line-height: 14px;
+  background-image: url(http://displet.com/images/fqr/bg_callUs.png);
+  background-position: 15px 0px;
+  background-repeat: no-repeat;
+  height: 31px;
+  margin-right: 15px;
+  color: #000;
+}
+
+#callUs span {
+  font-weight: bold;
+  color: #000;
+}
+
+#sendToFriend {
+  background-image: url(http://displet.com/images/fqr/bg_sendToFriend.png);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  line-height: 30px;
+  padding-left: 45px;
+  margin-left: 30px;
+}
+
+#sendToFriend a {
+  
+}
+
+#sendToFriend a:hover {
+  text-decoration: none;
+}
+
+#facebook_like {
+  background-color: #fff;
+  width: 350px;
+  padding: 10px;
+  margin: 0px auto 20px auto;
+}
+
+#detailsHeader {
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 26px;
+}
+
+#detailsHeader .address {
+  line-height: 50px;
+  font-size: 20px;
+  padding-left: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #dedede;
+  text-transform: uppercase;
+  font-weight: lighter;
+  background-image: url(http://displet.com/images/fqr/bg_detailsHeader.png);
+  background-position: right 0px;
+  background-repeat: no-repeat;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+#detailsHeader .left{
+	font-size: 14px;
+	line-height: 14px;
+	font-family: Arial, sans-serif;
+	color: #000;
+	padding-top: 5px;
+}
+
+#detailsHeader .price {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: lighter;
+  color: #FC7F15;
+  text-align: right;
+}
+
+#detailsProperty {
+  font-size: 14px;
+  padding: 10px 0px;
+}
+
+#detailsProperty p {
+  padding-bottom: 10px;
+}
+
+#detailsProperty .subColumnOne, #detailsProperty .subColumnTwo {
+  float: left;
+  width: 50%;
+}
+
+.subColumnTwo {
+  text-align: right;
+}
+
+#propertyAge {
+  padding-bottom: 0px;
+  color: #000;
+}
+
+#propertyAge .red {
+  color: #FC7F15;
+}
+
+.tanBack {
+  padding: 16px 20px 0px 20px;
+  border: 2px solid #cbcbcb;
+  background-color: #fff;
+  margin-bottom: 20px;
+	line-height: 18px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	color: #000;
+}
+
+.tanBack.left, .tanBack.right {
+  width: 170px;
+}
+
+.tanBack p {
+  padding-bottom: 16px;
+}
+
+.tanBack ul{
+	padding-bottom: 10px;
+}
+
+.tanBack p.remarks {
+  padding: 0px 0px 0px 15px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px -20px;
+  background-color: #cbcbcb;
+}
+
+.tanBack p.remarks .red {
+  
+}
+
+.tanBack ul li {
+  padding-bottom: 3px;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 6px 0px;
+}
+
+.tanBack p:first-child {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  padding-bottom: 10px !important;
+}
+
+.tanBack .tancol{
+	float: left;
+	width: 255px;
+}
+
+.tanBack .middle{
+	margin-left: 60px;
+}
+
+.tanBack .last{
+	float: right;
+}
+
+.tanBack .title{
+	font-weight: bold;
+}
+
+.tanBack .aright{
+	float: right;
+	text-align: right;
+}
+
+#searchContextPagination, #detailFooter {
+  clear: both;
+  font-size: 14px;
+  padding: 10px 0px 10px 20px;
+}
+
+#detailFooter{
+	font-size: 12px;
+}
+
+#detailTabs {
+  padding-left: 10px;
+}
+
+#detailTabs li {
+  float: left;
+  padding-right: 10px;
+}
+
+#detailTabs li a {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 25px;
+  border: 1px solid #cbcbcb;
+  border-bottom: none;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  background-color: #fff;
+}
+
+#detailTabs li a.active {
+  border: 1px solid #FC7F15;
+  border-bottom: none;
+  background-color: #FC7F15;
+  color: #fff;
+}
+
+#detailPhotos, #detailMapOuter, #userCommentsContainer {
+  clear: both;
+  border: 2px solid #cbcbcb;
+  padding: 9px 6px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+#userCommentsContainer{
+	display: none;
+}
+
+img#largeImage {
+  width: 401px !important;
+  display: block;
+  margin: 0px auto;
+}
+
+#horizontal_carousel {
+  width: 401px !important;
+  height: 415px !important;
+}
+
+#horizontal_carousel .container {
+  width: 340px !important;
+  left: 33px !important;
+}
+
+#horizontal_carousel .container {
+  top: 330px !important;
+}
+
+#horizontal_carousel .container img {
+  width: 100px !important;
+  height: 90px !important;
+  border: 0px solid #d7d7d7;
+}
+
+#horizontal_carousel .next_button, #horizontal_carousel .previous_button {
+  bottom: 37px !important;
+}
+
+#horizontal_carousel .previous_button {
+  width: auto !important;
+}
+
+#imageNav {
+  width: 410px !important;
+}
+
+#detailMap {
+  width: 400px;
+  height: 380px;
+}
+
+#dashboardActions {
+  float: left;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#dashOutput {
+  float: right;
+  width: 50%;
+  padding: 20px 0px;
+}
+
+#loginSignupFormcontainer {
+  padding: 10px;
+}
+
+#loginSignupFormcontainer table {
+  width: 100%;
+}
+
+#loginSignupFormcontainer table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+#loginSignupFormcontainer input {
+  border: 1px solid #ccc;
+}
+
+#loginSignupFormcontainer p {
+  padding-bottom: 4px;
+}
+
+#loginSignupFormcontainer p.required input {
+  border: 1px solid red;
+}
+
+#loginSignupFormcontainer label {
+  display: block;
+}
+
+/******************
+Map Bubble Styles
+******************/
+#propertyInfoWindow {
+	width: 220px;
+	opacity: .9;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  height: 230px;
+}
+
+body#residentials_index .balloonInfo {
+  font-size: 14px !important;
+}
+
+#propertyInfoWindow a {
+  text-decoration: none;
+  color: #000;
+}
+
+#propertyInfoWindow img {
+  width: 105px;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+#propertyInfoWindow .closeBalloon {
+  display: block;
+  float: right;
+  width: 10px;
+  height: 8px;
+  line-height: 8px;
+  background-image: url(http://displet.com/images/fqr/bg_closeBalloon.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+#propertyInfoWindow table {
+  width: 100%;
+}
+
+#propertyInfoWindow table td {
+  vertical-align: top;
+  padding: 5px;
+  font-size: 12px !important;
+}
+
+#propertyInfoWindow_contents{
+	background-color: #FFF;
+	border: 0px solid #fff !important;
+	width: 214px;
+	overflow: hidden;
+}
+
+#propertyInfoWindow_beak {
+  width: 24px;
+  height: 20px;
+  background: url('../images/black_beak.png') top left no-repeat transparent;
+}
+
+#propertyInfoWindow .viewDetailsLink, #propertyInfoWindow:hover .viewDetailsLink {
+	display: block;
+	width: 103px;
+	height: 28px;
+	line-height: 28px;
+	background-image: url(http://displet.com/images/fqr/bg_viewDetailsLink.png) !important;
+	background-position: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	text-indent: -9999px;
+}
+
+#propertyInfoWindow_tl,
+#propertyInfoWindow_tr,
+#propertyInfoWindow_bl,
+#propertyInfoWindow_br,
+#propertyInfoWindow_t,
+#propertyInfoWindow_l,
+#propertyInfoWindow_r,
+#propertyInfoWindow_b {
+  height: 0px;
+  width: 0px;
+}
+
+/* added by system 2011.03.11 */
+.loginSignupDialog { max-width: 560px; }
+
+
+
+/* added by system 2011.05.17 */
+#loginButton { cursor: pointer; }
+
+
+
+/* added by system 2011.05.18 */
+#signupButton { cursor: pointer; }
+
+/* FB login stuff */
+#localLoginLinkContainer {
+  margin-top: 18px !important;
+}
+#localLoginLink {
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  float: left !important;
+  cursor: pointer !important;
+}
+#localLoginLink:hover, #localLoginIcon:hover {
+  cursor: pointer !important;
+}
+#localLoginForm {
+  height: 120px !important;
+  overflow: hidden !important;
+  clear: both !important;
+}
+#loginForm {
+  overflow;auto !important;
+  margin-bottom: 16px !important;
+  margin-top: 10px !important;
+}
+#signupForm {
+  clear: both !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed gray !important;
+}
+#loginUserForm {
+  overflow: auto !important;
+  position: relative !important;
+  margin-bottom: 30px !important;
+}
+#loginUserForm p, #signupUserForm p {
+  float: left !important;
+  margin: 10px !important;
+}
+#loginUserForm p.leftColumnField, #signupUserForm p.leftColumnField {
+  clear: left !important;
+  border: 1px blue !important;
+}
+#signupUserForm p.leftColumnField.solo {
+  margin-left: 280px !important;
+}
+#loginUserForm p input, #signupUserForm p input {
+  padding: 3px !important;
+  font-size: 90% !important;
+}
+#loginUserForm #rememberMe {
+  float: left !important;
+}
+form p.submitter {
+  clear: both !important;
+  float: right !important;
+}
+#loginForm p.submitter {
+  margin: 4px 22px 0 0 !important;
+  clear: none !important;
+}
+#registerInfo {
+  clear: both !important;
+  font-size: 90% !important;
+  line-height: 126% !important;
+  margin: 4px !important;
+}
+#registerInfo p {
+  margin: 4px !important;
+}
+#signupUserForm .required input {}
+#signupUserForm .required input::-webkit-input-placeholder { color: #FF7B7B !important; }
+#signupUserForm .required input:-moz-placeholder { color: #FF7B7B !important; }
+#signupUserForm .hasError {
+  border: 1px solid red !important;
+}
+#signupErrorMsg {
+  font-size: 80% !important;
+  margin: 0 !important;
+}
+#forgotPasswordBlock {
+  overflow: auto !important;
+  height: 93px !important;
+  padding-left: 25px !important;
+  padding-right: 19px !important;
+  position:relative !important;
+}
+#forgotPasswordBlock * {
+  float: none !important;
+}
+#forgotPasswordBlock.active {
+  background: #ccc !important;
+  padding: 16px !important;
+  border-radius: 4px !important;
+}
+#forgotPasswordRow p.submitter {
+  margin: 6px -6px 0 0 !important;
+}
+#submitButtonForgotPassword {
+  margin: 4px 5px 0 0 !important;
+  padding: 3px !important;
+}
+#cancelForgot {
+  font-size: 80% !important;
+  float: right !important;
+  margin-right:14px !important;
+}
+#forgotPasswordStatusMsgRow {
+  font-size: 80% !important;
+}
+p#loginErrorRow {
+  margin: 6px 0 0 10px !important;
+  font-size: 80% !important;
+}
+.smallItalics {
+  color: gray !important;
+  font-size: 10pt !important;
+  font-style: italic !important;
+}
+.orSplit {
+  display: block !important;
+  font-size: 76% !important;
+  color: gray !important;
+  margin-top: 14px !important;
+}
+#forgotLink {
+  font-size: 80%;
+  display: block;
+  clear: both;
+  margin: 4px 0 0 8px;
+}
+.passwordLabel {
+  color: gray;
+  font-weight: normal;
+}
